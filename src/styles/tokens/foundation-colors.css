@@ -11,6 +11,9 @@
 
     /* Primary */
     --foundation-primary: #254CA8;
+    --foundation-primary-alpha-10: rgba(37, 76, 168, 0.1);
+    --foundation-primary-alpha-20: rgba(37, 76, 168, 0.2);
+    --foundation-primary-alpha-30: rgba(37, 76, 168, 0.3);
 
     /* Gray Scale */
     --foundation-gray900: #141518;
@@ -73,6 +76,8 @@
     --states-focus: var(--foundation-primary);
     --states-disabled-bg: var(--foundation-gray700);
     --states-disabled-text: var(--foundation-gray400);
+    --states-favorite-active-bg: var(--foundation-primary-alpha-20);
+    --states-favorite-active-hover-bg: var(--foundation-primary-alpha-30);
 
     /* ============================================
      COMPONENTS - Компоненты
