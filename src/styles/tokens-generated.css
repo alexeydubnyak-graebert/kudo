@@ -1,0 +1,279 @@
+/**
+ * ARES Design System - CSS Variables
+ * Автоматически сгенерировано из tokens-full.json
+ * 
+ * Структура:
+ * 1. Глобальные палитры (vader, obi, kylo, etc.)
+ * 2. Глобальные цветовые токены (light/dark)
+ * 3. Глобальные размеры
+ * 4. Глобальная типографика
+ * 5. Токены брендов (Commander, kudo)
+ */
+
+/* ============================================
+   ГЛОБАЛЬНЫЕ ЦВЕТОВЫЕ ТОКЕНЫ - СВЕТЛАЯ ТЕМА
+   ============================================ */
+
+:root {
+  /* === States === */
+  --states-bg-disabled: #f5f5f6;
+  --states-bg-primary-standard: #f5f5f6;
+  --states-bg-primary-hover: #d5ddef;
+  --states-bg-primary-pressed: #becae7;
+  --states-bg-primary-active: #e2e2e2;
+  --states-bg-primary-disabled: #f5f5f6;
+  --states-bg-secondary-standard: #f5f5f6;
+  --states-bg-secondary-hover: #e2e2e2;
+  --states-bg-secondary-pressed: #cccccc;
+  --states-bg-secondary-active: #d5ddef;
+  --states-bg-secondary-disabled: #f5f5f6;
+  --states-bg-tertiary-standard: #f5f5f6;
+  --states-bg-tertiary-hover: #edf0f8;
+  --states-bg-tertiary-pressed: #d5ddef;
+  --states-bg-tertiary-active: #a6b7de;
+  --states-bg-tertiary-disabled: #f5f5f6;
+  --states-bg-fourth-standard: #f5f5f6;
+  --states-bg-fourth-hover: #edf0f8;
+  --states-bg-fourth-pressed: #d5ddef;
+  --states-bg-fourth-active: #a6b7de;
+  --states-bg-fourth-disabled: #f5f5f6;
+  --states-text-color-standard: #272727;
+  --states-text-color-active: #050505;
+  --states-text-color-disabled: #898b8c;
+  --states-text-color-error: #ed0000;
+  --states-icon-color-standard: #272727;
+  --states-icon-color-active: #050505;
+  --states-icon-color-disabled: #898b8c;
+  --states-border-primary-standard: #f5f5f6;
+  --states-border-primary-hover: #edf0f8;
+  --states-border-primary-pressed: #d5ddef;
+  --states-border-primary-active: #a6b7de;
+  --states-border-primary-disabled: #f5f5f6;
+  --states-border-primary-error: #ed0000;
+  --states-border-secondary-standard: #bcbcbd;
+  --states-border-secondary-hover: #dde3f2;
+  --states-border-secondary-pressed: #c6d0ea;
+  --states-border-secondary-active: #97aad8;
+  --states-border-secondary-disabled: #e7e7e8;
+  --states-border-secondary-error: #ed0000;
+  --states-highlight-default: rgba(235, 197, 41, 0.5000);
+
+  /* === Text Colors === */
+  --text-color-default: #010101;
+  --text-color-ribbon-section-name: #272727;
+
+  /* === Backgrounds === */
+  --background-tooltip: #6e6e6e;
+  --background-ribbon-main: #f5f5f6;
+  --background-palette-main: #f5f5f6;
+
+  /* === Dividers === */
+  --divider-ribbon: #bcbcbd;
+}
+
+/* ============================================
+   ГЛОБАЛЬНЫЕ ЦВЕТОВЫЕ ТОКЕНЫ - ТЕМНАЯ ТЕМА
+   ============================================ */
+
+:root[data-theme="dark"] {
+  /* === States === */
+  --states-bg-disabled: #f5f5f6;
+  --states-bg-primary-standard: #214bac;
+  --states-bg-primary-hover: #395eb5;
+  --states-bg-primary-pressed: #193882;
+  --states-bg-primary-active: #214bac;
+  --states-bg-primary-disabled: #f5f5f6;
+  --states-bg-secondary-standard: #333538;
+  --states-bg-secondary-hover: #1f2022;
+  --states-bg-secondary-pressed: #26282a;
+  --states-bg-secondary-active: #010101;
+  --states-bg-secondary-disabled: #f5f5f6;
+  --states-bg-tertiary-standard: #1e2023;
+  --states-bg-tertiary-hover: #333538;
+  --states-bg-tertiary-pressed: #2c2e30;
+  --states-bg-tertiary-active: #1f2022;
+  --states-bg-tertiary-disabled: #f5f5f6;
+  --states-bg-fourth-standard: #141518;
+  --states-bg-fourth-hover: #1c1d20;
+  --states-bg-fourth-pressed: #252628;
+  --states-bg-fourth-active: #141518;
+  --states-bg-fourth-disabled: #f5f5f6;
+  --states-text-color-standard: #cfcfcf;
+  --states-text-color-active: #ffffff;
+  --states-text-color-disabled: #5e6062;
+  --states-text-color-error: #f89999;
+  --states-icon-color-standard: #cfcfcf;
+  --states-icon-color-active: #ffffff;
+  --states-icon-color-disabled: #5e6062;
+  --states-border-primary-standard: #214bac;
+  --states-border-primary-hover: #395eb5;
+  --states-border-primary-pressed: #193882;
+  --states-border-primary-active: #214bac;
+  --states-border-primary-disabled: #656769;
+  --states-border-primary-error: #ed0000;
+  --states-border-secondary-standard: #505254;
+  --states-border-secondary-hover: #505254;
+  --states-border-secondary-pressed: #505254;
+  --states-border-secondary-active: #505254;
+  --states-border-secondary-disabled: #57595b;
+  --states-border-secondary-error: #ed0000;
+  --states-highlight-default: rgba(235, 197, 41, 0.5000);
+
+  /* === Text Colors === */
+  --text-color-default: #ffffff;
+  --text-color-ribbon-section-name: #272727;
+
+  /* === Backgrounds === */
+  --background-tooltip: #24262d;
+  --background-ribbon-main: #333538;
+  --background-palette-main: #333538;
+
+  /* === Dividers === */
+  --divider-ribbon: #010101;
+}
+
+/* ============================================
+   ГЛОБАЛЬНЫЕ РАЗМЕРЫ
+   ============================================ */
+
+:root {
+  /* === Base Sizes === */
+  --size-2: 2px;
+  --size-4: 4px;
+  --size-6: 6px;
+  --size-8: 8px;
+  --size-10: 10px;
+  --size-12: 12px;
+  --size-14: 14px;
+  --size-16: 16px;
+  --size-18: 18px;
+  --size-20: 20px;
+  --size-22: 22px;
+  --size-24: 24px;
+  --size-26: 26px;
+  --size-28: 28px;
+  --size-30: 30px;
+}
+
+/* ============================================
+   ГЛОБАЛЬНАЯ ТИПОГРАФИКА
+   ============================================ */
+
+:root {
+  /* === Font Families === */
+  --font-family-commander: 'Segoe UI', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-family-kudo: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+
+  /* === Font Sizes === */
+  --font-size-lg: 14px;
+  --font-size-xl: 16px;
+  --font-size-sm: 10px;
+  --font-size-md: 12px;
+  --font-size-heading1: 32px;
+  --font-size-heading2: 26px;
+  --font-size-heading3: 24px;
+  --font-size-heading4: 20px;
+  --font-size-heading5: 16px;
+
+  /* === Font Weights === */
+  --font-weight-sm: 300;
+  --font-weight-md: 400;
+  --font-weight-lg: 900;
+  --font-weight-xlg: 1200;
+
+  /* === Line Heights === */
+  --line-height-sm: 12px;
+  --line-height-md: 16px;
+  --line-height-lg: 20px;
+  --line-height-xlg: 26px;
+
+  /* === Letter Spacing === */
+  --letter-spacing-sm: -0.5px;
+  --letter-spacing-lg: 1px;
+}
+
+/* ============================================
+   KUDO - LIGHT ТЕМА
+   ============================================ */
+
+:root {
+  /* === kudo Colors === */
+  --kudo-slider-item-background: #ffffff;
+  --kudo-slider-line-background: #ffffff;
+  --kudo-tooltip-background: #e2e2e2;
+  --kudo-tooltip-border: #898b8c;
+  --kudo-tooltip-text-color: #272727;
+  --kudo-ribbon-background-main: #f5f5f6;
+  --kudo-ribbon-item-divider: #bcbcbd;
+  --kudo-ribbon-item-icon-color-item-standard: #272727;
+  --kudo-ribbon-item-icon-color-item-active: #050505;
+  --kudo-ribbon-item-icon-color-item-disabled: #898b8c;
+  --kudo-ribbon-item-text-color-standard: #272727;
+  --kudo-ribbon-item-text-color-active: #050505;
+  --kudo-ribbon-item-text-color-disabled: #898b8c;
+  --kudo-ribbon-item-background-standard: #f5f5f6;
+  --kudo-ribbon-item-background-hover: #e2e2e2;
+  --kudo-ribbon-item-background-pressed: #cccccc;
+  --kudo-ribbon-item-background-active: #d5ddef;
+  --kudo-ribbon-item-background-disabled: #f5f5f6;
+  --kudo-ribbon-item-border-standard: #f5f5f6;
+  --kudo-ribbon-item-border-hover: #e2e2e2;
+  --kudo-ribbon-item-border-pressed: #cccccc;
+  --kudo-ribbon-item-border-active: #d5ddef;
+  --kudo-ribbon-item-border-disabled: #f5f5f6;
+  --kudo-dropdown-menu-border: #bcbcbd;
+
+  /* === kudo Dimensions === */
+  --kudo-item-border-radius: 4px;
+  --kudo-item-margin: 6px;
+  --kudo-item-padding-top: 6px;
+  --kudo-item-padding-bottom: 6px;
+  --kudo-item-padding-left: 6px;
+  --kudo-item-padding-right: 6px;
+
+  /* === Divider === */
+  --kudo-divider: #bcbcbd;
+}
+
+/* ============================================
+   KUDO - DARK ТЕМА
+   ============================================ */
+
+:root[data-theme="dark"] {
+  /* === kudo Colors === */
+  --kudo-slider-item-background: #e2e2e2;
+  --kudo-slider-line-background: #141518;
+  --kudo-tooltip-background: #e2e2e2;
+  --kudo-tooltip-border: #898b8c;
+  --kudo-tooltip-text-color: #272727;
+  --kudo-ribbon-background-main: #333538;
+  --kudo-ribbon-item-divider: #010101;
+  --kudo-ribbon-item-icon-color-item-standard: #cfcfcf;
+  --kudo-ribbon-item-icon-color-item-active: #ffffff;
+  --kudo-ribbon-item-icon-color-item-disabled: #5e6062;
+  --kudo-ribbon-item-text-color-standard: #cfcfcf;
+  --kudo-ribbon-item-text-color-active: #ffffff;
+  --kudo-ribbon-item-text-color-disabled: #5e6062;
+  --kudo-ribbon-item-background-standard: #333538;
+  --kudo-ribbon-item-background-hover: #1f2022;
+  --kudo-ribbon-item-background-pressed: #26282a;
+  --kudo-ribbon-item-background-active: #010101;
+  --kudo-ribbon-item-background-disabled: #f5f5f6;
+  --kudo-ribbon-item-border-standard: #505254;
+  --kudo-ribbon-item-border-hover: #505254;
+  --kudo-ribbon-item-border-pressed: #505254;
+  --kudo-ribbon-item-border-active: #505254;
+  --kudo-ribbon-item-border-disabled: #57595b;
+  --kudo-dropdown-menu-border: #010101;
+
+  /* === kudo Dimensions === */
+  --kudo-item-border-radius: 4px;
+  --kudo-item-margin: 6px;
+  --kudo-item-padding-top: 6px;
+  --kudo-item-padding-bottom: 6px;
+  --kudo-item-padding-left: 6px;
+  --kudo-item-padding-right: 6px;
+
+  /* === Divider === */
+  --kudo-divider: #010101;
+}

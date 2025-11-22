@@ -1,0 +1,24 @@
+/**
+ * LineDropdownDemo - Стили демо компонента
+ */
+
+.line-dropdown-demo {
+    padding: var(--size-24);
+}
+
+.line-dropdown-demo__title {
+    font-family: var(--font-family-kudo);
+    font-size: var(--font-size-heading4);
+    font-weight: var(--font-weight-lg);
+    color: var(--text-color-default);
+    margin-bottom: var(--size-16);
+}
+
+.line-dropdown-demo__container {
+    display: flex;
+    gap: var(--size-16);
+    align-items: flex-start;
+    padding: var(--size-16);
+    background-color: var(--background-ribbon-main);
+    border-radius: var(--size-8);
+}

@@ -1,0 +1,202 @@
+/**
+ * ARES KUDO - ТОКЕНЫ БРЕНДА
+ * Переиспользуют глобальные токены и палитры
+ * Уровень 3: Специфичные для бренда kudo
+ */
+
+/* ============================================
+   СВЕТЛАЯ ТЕМА (по умолчанию)
+   ============================================ */
+
+:root {
+  /* === Slider === */
+  --kudo-slider-item-background: var(--palette-white);
+  --kudo-slider-line-background: var(--palette-white);
+
+  /* === Tooltip === */
+  --kudo-tooltip-background: var(--palette-clone-tint-24);
+  --kudo-tooltip-border: var(--palette-jango-tint-13);
+  --kudo-tooltip-text-color: var(--palette-rey-shadow-24);
+
+  /* === Header === */
+  --kudo-header-background-main: var(--background-header-main);
+
+  /* === Ribbon === */
+  --kudo-ribbon-background-main: var(--background-ribbon-main);
+
+  /* === Ribbon Item === */
+  --kudo-ribbon-item-divider: var(--divider-ribbon);
+
+  /* Icon Colors */
+  --kudo-ribbon-item-icon-standard: var(--states-icon-color-standard);
+  --kudo-ribbon-item-icon-active: var(--states-icon-color-active);
+  --kudo-ribbon-item-icon-disabled: var(--states-icon-color-disabled);
+
+  /* Text Colors */
+  --kudo-ribbon-item-text-standard: var(--states-text-color-standard);
+  --kudo-ribbon-item-text-active: var(--states-text-color-active);
+  --kudo-ribbon-item-text-disabled: var(--states-text-color-disabled);
+
+  /* Backgrounds */
+  --kudo-ribbon-item-bg-standard: var(--states-bg-secondary-standard);
+  --kudo-ribbon-item-bg-hover: var(--states-bg-secondary-hover);
+  --kudo-ribbon-item-bg-pressed: var(--states-bg-secondary-pressed);
+  --kudo-ribbon-item-bg-active: var(--states-bg-secondary-active);
+  --kudo-ribbon-item-bg-disabled: var(--states-bg-secondary-disabled);
+
+  /* Borders */
+  --kudo-ribbon-item-border-standard: var(--states-bg-secondary-standard);
+  --kudo-ribbon-item-border-hover: var(--states-bg-secondary-hover);
+  --kudo-ribbon-item-border-pressed: var(--states-bg-secondary-pressed);
+  --kudo-ribbon-item-border-active: var(--states-bg-secondary-active);
+  --kudo-ribbon-item-border-disabled: var(--states-bg-secondary-disabled);
+
+  /* === Dropdown Menu === */
+  --kudo-dropdown-menu-border: var(--states-border-secondary-standard);
+
+  /* === Input === */
+  --kudo-input-divider: var(--divider-ribbon);
+
+  --kudo-input-icon-standard: var(--states-icon-color-standard);
+  --kudo-input-icon-active: var(--states-icon-color-active);
+  --kudo-input-icon-disabled: var(--states-icon-color-disabled);
+
+  --kudo-input-text-standard: var(--states-text-color-standard);
+  --kudo-input-text-active: var(--states-text-color-active);
+  --kudo-input-text-disabled: var(--states-text-color-disabled);
+  --kudo-input-text-error: var(--states-text-color-error);
+
+  --kudo-input-bg-standard: var(--states-bg-secondary-standard);
+  --kudo-input-bg-hover: var(--states-bg-secondary-hover);
+  --kudo-input-bg-pressed: var(--states-bg-secondary-pressed);
+  --kudo-input-bg-active: var(--states-bg-secondary-active);
+  --kudo-input-bg-disabled: var(--states-bg-secondary-disabled);
+
+  --kudo-input-border-standard: var(--states-border-secondary-standard);
+  --kudo-input-border-hover: var(--states-border-secondary-hover);
+  --kudo-input-border-pressed: var(--states-border-secondary-pressed);
+  --kudo-input-border-active: var(--states-border-secondary-active);
+  --kudo-input-border-disabled: var(--states-border-secondary-disabled);
+  --kudo-input-border-error: var(--states-border-secondary-error);
+
+  /* === Split Arrow === */
+  --kudo-split-arrow-divider: var(--divider-ribbon);
+
+  --kudo-split-arrow-icon-standard: var(--states-icon-color-standard);
+  --kudo-split-arrow-icon-active: var(--states-icon-color-active);
+  --kudo-split-arrow-icon-disabled: var(--states-icon-color-disabled);
+
+  --kudo-split-arrow-text-standard: var(--states-text-color-standard);
+  --kudo-split-arrow-text-active: var(--states-text-color-active);
+  --kudo-split-arrow-text-disabled: var(--states-text-color-disabled);
+
+  --kudo-split-arrow-bg-standard: var(--states-bg-secondary-standard);
+  --kudo-split-arrow-bg-hover: var(--states-bg-secondary-hover);
+  --kudo-split-arrow-bg-pressed: var(--states-bg-secondary-pressed);
+  --kudo-split-arrow-bg-active: var(--states-bg-secondary-active);
+  --kudo-split-arrow-bg-disabled: var(--states-bg-secondary-disabled);
+
+  --kudo-split-arrow-border-standard: var(--states-bg-secondary-standard);
+  --kudo-split-arrow-border-hover: var(--states-bg-secondary-hover);
+  --kudo-split-arrow-border-pressed: var(--states-bg-secondary-pressed);
+  --kudo-split-arrow-border-active: var(--states-bg-secondary-active);
+  --kudo-split-arrow-border-disabled: var(--states-bg-secondary-disabled);
+
+  /* Split Button Group Hover */
+  --kudo-split-button-border-group-hover: var(--kudo-ribbon-item-bg-hover);
+
+  /* === Tab Ribbon === */
+  --kudo-tab-ribbon-bg-standard: var(--states-bg-secondary-standard);
+  --kudo-tab-ribbon-bg-hover: var(--states-bg-secondary-hover);
+  --kudo-tab-ribbon-bg-pressed: var(--states-bg-secondary-pressed);
+  --kudo-tab-ribbon-bg-active: var(--states-bg-secondary-active);
+  --kudo-tab-ribbon-bg-disabled: var(--states-bg-secondary-disabled);
+
+  --kudo-tab-ribbon-text-standard: var(--states-text-color-standard);
+  --kudo-tab-ribbon-text-active: var(--states-text-color-active);
+  --kudo-tab-ribbon-text-disabled: var(--states-text-color-disabled);
+
+  --kudo-tab-ribbon-icon-standard: var(--states-icon-color-standard);
+  --kudo-tab-ribbon-icon-active: var(--states-icon-color-active);
+  --kudo-tab-ribbon-icon-disabled: var(--states-icon-color-disabled);
+
+  /* === Dimensions === */
+  --kudo-item-margin: var(--size-6);
+  --kudo-item-padding: var(--size-6);
+  --kudo-item-padding-top: var(--size-6);
+  --kudo-item-padding-bottom: var(--size-6);
+  --kudo-item-padding-left: var(--size-6);
+  --kudo-item-padding-right: var(--size-6);
+  --kudo-item-border-radius: var(--size-4);
+
+  --kudo-ribbon-margin: var(--size-4);
+  --kudo-ribbon-padding: var(--size-4);
+
+  --kudo-section-name-padding: var(--size-6);
+
+  --kudo-split-arrow-margin: var(--size-6);
+  --kudo-split-arrow-padding-top: var(--size-6);
+  --kudo-split-arrow-padding-bottom: var(--size-6);
+  --kudo-split-arrow-padding-left: 0px;
+  --kudo-split-arrow-padding-right: 0px;
+  --kudo-split-arrow-border-radius: var(--size-4);
+
+  --kudo-tab-ribbon-margin: var(--size-6);
+  --kudo-tab-ribbon-padding-top: var(--size-6);
+  --kudo-tab-ribbon-padding-bottom: var(--size-6);
+  --kudo-tab-ribbon-padding-left: var(--size-12);
+  --kudo-tab-ribbon-padding-right: var(--size-12);
+  --kudo-tab-ribbon-border-radius: 0px;
+
+  /* === Divider === */
+  --kudo-divider: var(--divider-ribbon);
+}
+
+/* ============================================
+   ТЕМНАЯ ТЕМА
+   ============================================ */
+
+:root[data-theme="dark"] {
+  /* === Slider === */
+  --kudo-slider-item-background: var(--palette-rey-tint-12);
+  --kudo-slider-line-background: var(--palette-vader-tint-1);
+
+  /* === Tooltip === */
+  /* Остается как в светлой теме */
+
+  /* === Ribbon === */
+  /* Наследуется из глобальных токенов */
+
+  /* === Ribbon Item === */
+  /* Borders в темной теме отличаются */
+  --kudo-ribbon-item-border-standard: var(--states-border-secondary-standard);
+  --kudo-ribbon-item-border-hover: var(--states-border-secondary-hover);
+  --kudo-ribbon-item-border-pressed: var(--states-border-secondary-pressed);
+  --kudo-ribbon-item-border-active: var(--states-border-secondary-active);
+  --kudo-ribbon-item-border-disabled: var(--states-border-secondary-disabled);
+
+  /* === Dropdown Menu === */
+  --kudo-dropdown-menu-border: var(--palette-black);
+
+  /* === Input === */
+  --kudo-input-bg-hover: var(--states-bg-tertiary-hover);
+  --kudo-input-bg-pressed: var(--states-bg-tertiary-pressed);
+  --kudo-input-bg-active: var(--states-bg-tertiary-active);
+
+  /* === Split Arrow === */
+  --kudo-split-arrow-icon-standard: var(--states-icon-color-standard);
+  --kudo-split-arrow-icon-active: var(--states-icon-color-active);
+
+  /* Фоны остаются secondary - наследуются из светлой темы */
+  /* Только borders переопределяются */
+  --kudo-split-arrow-border-standard: var(--states-border-secondary-standard);
+  --kudo-split-arrow-border-hover: var(--states-border-secondary-hover);
+  --kudo-split-arrow-border-pressed: var(--states-border-secondary-pressed);
+  --kudo-split-arrow-border-active: var(--states-border-secondary-active);
+  --kudo-split-arrow-border-disabled: var(--states-border-secondary-disabled);
+
+  /* === Tab Ribbon === */
+  --kudo-tab-ribbon-bg-hover: var(--states-bg-tertiary-hover);
+  --kudo-tab-ribbon-bg-pressed: var(--states-bg-tertiary-pressed);
+  --kudo-tab-ribbon-bg-active: var(--states-bg-tertiary-active);
+}

@@ -1,0 +1,30 @@
+/**
+ * Ribbon - Стили главного компонента ленты
+ */
+
+.ribbon {
+    display: flex;
+    align-items: stretch;
+    background-color: var(--background-ribbon-main);
+    border-bottom: 1px solid var(--kudo-divider);
+    min-height: 100px;
+    padding: 0;
+}
+
+.ribbon--loading,
+.ribbon--error {
+    justify-content: center;
+    align-items: center;
+    padding: var(--size-16);
+}
+
+.ribbon__loading-message,
+.ribbon__error-message {
+    font-family: var(--font-family-kudo);
+    font-size: var(--font-size-md);
+    color: var(--kudo-ribbon-item-text-standard);
+}
+
+.ribbon__error-message {
+    color: var(--states-text-color-error, #d32f2f);
+}

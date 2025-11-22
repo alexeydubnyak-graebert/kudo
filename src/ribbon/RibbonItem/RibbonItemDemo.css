@@ -1,0 +1,25 @@
+/**
+ * RibbonItemDemo - Стили для демонстрации компонента
+ */
+
+.ribbon-item-demo {
+  margin-bottom: var(--size-30);
+}
+
+.ribbon-item-demo h2 {
+  margin-bottom: var(--size-16);
+  padding: 0 var(--size-20);
+  color: var(--text-color-default);
+  font-family: var(--font-family-kudo);
+  font-size: var(--font-size-xl);
+}
+
+/* Контейнер с фоном ribbon */
+.ribbon-container {
+  background: var(--kudo-ribbon-background-main);
+  padding: var(--kudo-ribbon-padding);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0;
+  border-radius: var(--size-4);
+}

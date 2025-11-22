@@ -1,0 +1,162 @@
+.token-inspector {
+  background-color: var(--bg-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: 2rem;
+  margin: 2rem 0;
+}
+
+.token-inspector h3 {
+  margin-bottom: 0.5rem;
+  color: var(--color-text);
+}
+
+.inspector-description {
+  color: var(--color-text-muted);
+  margin-bottom: 2rem;
+  font-size: 0.9rem;
+}
+
+.chains-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.chain-card {
+  background-color: var(--states-bg-primary-standard);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: 1.5rem;
+  transition: all var(--transition-base);
+}
+
+.chain-card:hover {
+  box-shadow: var(--shadow-lg);
+  transform: translateY(-2px);
+}
+
+.chain-header {
+  margin-bottom: 1rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 2px solid var(--color-border);
+  color: var(--color-text);
+  font-size: 1.1rem;
+}
+
+.chain-level {
+  background-color: var(--bg-main);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  padding: 0.75rem;
+  margin: 0.5rem 0;
+}
+
+.level-label {
+  display: block;
+  font-size: 0.75rem;
+  color: var(--color-text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 0.5rem;
+}
+
+.token-name {
+  display: block;
+  font-family: 'Courier New', monospace;
+  font-size: 0.9rem;
+  color: var(--states-text-color-active);
+  font-weight: 600;
+}
+
+.token-reference {
+  margin-top: 0.5rem;
+  font-size: 0.85rem;
+  color: var(--color-text-muted);
+  font-family: 'Courier New', monospace;
+}
+
+.token-value {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-top: 0.5rem;
+}
+
+.color-preview {
+  width: 24px;
+  height: 24px;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--color-border);
+  box-shadow: var(--shadow-sm);
+}
+
+.color-preview.large {
+  width: 40px;
+  height: 40px;
+}
+
+.token-value span {
+  font-family: 'Courier New', monospace;
+  font-size: 0.85rem;
+  color: var(--color-text);
+}
+
+.chain-arrow {
+  text-align: center;
+  color: var(--color-text-muted);
+  font-size: 0.9rem;
+  margin: 0.5rem 0;
+  font-weight: 600;
+}
+
+.chain-result {
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 2px solid var(--color-border);
+}
+
+.chain-result strong {
+  display: block;
+  margin-bottom: 0.75rem;
+  color: var(--color-text);
+}
+
+.result-preview {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.75rem;
+  background-color: var(--bg-main);
+  border-radius: var(--radius-sm);
+}
+
+.result-preview code {
+  font-family: 'Courier New', monospace;
+  font-size: 0.9rem;
+  color: var(--states-text-color-active);
+}
+
+.inspector-note {
+  background-color: var(--states-bg-primary-hover);
+  border-left: 4px solid var(--states-border-primary-active);
+  padding: 1rem;
+  border-radius: var(--radius-sm);
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+.inspector-note strong {
+  color: var(--color-text);
+}
+
+@media (max-width: 768px) {
+  .chains-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .token-inspector {
+    padding: 1.5rem;
+  }
+}

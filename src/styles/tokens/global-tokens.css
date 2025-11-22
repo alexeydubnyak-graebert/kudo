@@ -1,0 +1,155 @@
+/**
+ * ГЛОБАЛЬНЫЕ ТОКЕНЫ
+ * Семантические токены, которые используют палитры
+ * Уровень 2: Переиспользуют global-palette
+ */
+
+/* ============================================
+   СВЕТЛАЯ ТЕМА (по умолчанию)
+   ============================================ */
+
+:root {
+  /* === States: Background === */
+  --states-bg-disabled: var(--palette-jango-tint-28);
+
+  --states-bg-primary-standard: var(--palette-jango-tint-28);
+  --states-bg-primary-hover: var(--palette-obi-tint-24);
+  --states-bg-primary-pressed: var(--palette-obi-tint-21);
+  --states-bg-primary-active: var(--palette-clone-tint-24);
+  --states-bg-primary-disabled: var(--palette-jango-tint-28);
+
+  --states-bg-secondary-standard: var(--palette-jango-tint-28);
+  --states-bg-secondary-hover: var(--palette-clone-tint-24);
+  --states-bg-secondary-pressed: var(--palette-clone-tint-20);
+  --states-bg-secondary-active: var(--palette-obi-tint-24);
+  --states-bg-secondary-disabled: var(--palette-jango-tint-28);
+
+  --states-bg-tertiary-standard: var(--palette-jango-tint-28);
+  --states-bg-tertiary-hover: var(--palette-obi-tint-27);
+  --states-bg-tertiary-pressed: var(--palette-obi-tint-24);
+  --states-bg-tertiary-active: var(--palette-obi-tint-18);
+  --states-bg-tertiary-disabled: var(--palette-jango-tint-28);
+
+  --states-bg-fourth-standard: var(--palette-jango-tint-28);
+  --states-bg-fourth-hover: var(--palette-obi-tint-27);
+  --states-bg-fourth-pressed: var(--palette-obi-tint-24);
+  --states-bg-fourth-active: var(--palette-obi-tint-18);
+  --states-bg-fourth-disabled: var(--palette-jango-tint-28);
+
+  /* === States: Text Color === */
+  --states-text-color-standard: var(--palette-rey-shadow-24);
+  --states-text-color-active: var(--palette-rey-shadow-30);
+  --states-text-color-disabled: var(--palette-jango-tint-13);
+  --states-text-color-error: var(--palette-red-tint-1);
+
+  /* === States: Icon Color === */
+  --states-icon-color-standard: var(--palette-rey-shadow-24);
+  --states-icon-color-active: var(--palette-rey-shadow-30);
+  --states-icon-color-disabled: var(--palette-jango-tint-13);
+
+  /* === States: Border === */
+  --states-border-primary-standard: var(--palette-jango-tint-28);
+  --states-border-primary-hover: var(--palette-obi-tint-27);
+  --states-border-primary-pressed: var(--palette-obi-tint-24);
+  --states-border-primary-active: var(--palette-obi-tint-18);
+  --states-border-primary-disabled: var(--palette-jango-tint-28);
+  --states-border-primary-error: var(--palette-red-tint-1);
+
+  --states-border-secondary-standard: var(--palette-jango-tint-20);
+  --states-border-secondary-hover: var(--palette-obi-tint-25);
+  --states-border-secondary-pressed: var(--palette-obi-tint-22);
+  --states-border-secondary-active: var(--palette-obi-tint-16);
+  --states-border-secondary-disabled: var(--palette-jango-tint-26);
+  --states-border-secondary-error: var(--palette-red-tint-1);
+
+  /* === States: Highlight === */
+  --states-highlight-default: var(--palette-highlight-yellow);
+
+  /* === Text Colors === */
+  --text-color-default: var(--palette-black);
+  --text-color-ribbon-section-name: var(--palette-rey-shadow-24);
+
+  /* === Backgrounds === */
+  --background-tooltip: var(--palette-tooltip-dark);
+  --background-ribbon-main: var(--palette-jango-tint-28);
+  --background-palette-main: var(--palette-jango-tint-28);
+  --background-header-main: var(--palette-white);
+
+  /* === Dividers === */
+  --divider-ribbon: var(--palette-jango-tint-20);
+}
+
+/* ============================================
+   ТЕМНАЯ ТЕМА
+   ============================================ */
+
+:root[data-theme="dark"] {
+  /* === States: Background === */
+  --states-bg-disabled: var(--palette-jango-tint-28);
+
+  --states-bg-primary-standard: var(--palette-obi-tint-1);
+  --states-bg-primary-hover: var(--palette-obi-tint-4);
+  --states-bg-primary-pressed: var(--palette-obi-shadow-8);
+  --states-bg-primary-active: var(--palette-obi-tint-1);
+  --states-bg-primary-disabled: var(--palette-jango-tint-28);
+
+  --states-bg-secondary-standard: var(--palette-jango-tint-1);
+  --states-bg-secondary-hover: var(--palette-jango-shadow-12);
+  --states-bg-secondary-pressed: var(--palette-jango-shadow-8);
+  --states-bg-secondary-active: var(--palette-black);
+  --states-bg-secondary-disabled: var(--palette-jango-tint-28);
+
+  --states-bg-tertiary-standard: var(--palette-snoke-tint-1);
+  --states-bg-tertiary-hover: var(--palette-jango-tint-1);
+  --states-bg-tertiary-pressed: var(--palette-jango-shadow-5);
+  --states-bg-tertiary-active: var(--palette-jango-shadow-12);
+  --states-bg-tertiary-disabled: var(--palette-jango-tint-28);
+
+  --states-bg-fourth-standard: var(--palette-vader-tint-1);
+  --states-bg-fourth-hover: var(--palette-vader-tint-2);
+  --states-bg-fourth-pressed: var(--palette-vader-tint-3);
+  --states-bg-fourth-active: var(--palette-vader-tint-1);
+  --states-bg-fourth-disabled: var(--palette-jango-tint-28);
+
+  /* === States: Text Color === */
+  --states-text-color-standard: var(--palette-rey-tint-1);
+  --states-text-color-active: var(--palette-white);
+  --states-text-color-disabled: var(--palette-jango-tint-7);
+  --states-text-color-error: var(--palette-red-tint-18);
+
+  /* === States: Icon Color === */
+  --states-icon-color-standard: var(--palette-rey-tint-1);
+  --states-icon-color-active: var(--palette-rey-tint-1);
+  --states-icon-color-disabled: var(--palette-jango-tint-7);
+
+  /* === States: Border === */
+  --states-border-primary-standard: var(--palette-obi-tint-1);
+  --states-border-primary-hover: var(--palette-obi-tint-4);
+  --states-border-primary-pressed: var(--palette-obi-shadow-8);
+  --states-border-primary-active: var(--palette-obi-tint-1);
+  --states-border-primary-disabled: var(--palette-jango-tint-8);
+  --states-border-primary-error: var(--palette-red-tint-1);
+
+  --states-border-secondary-standard: var(--palette-jango-tint-5);
+  --states-border-secondary-hover: var(--palette-jango-tint-5);
+  --states-border-secondary-pressed: var(--palette-jango-tint-5);
+  --states-border-secondary-active: var(--palette-jango-tint-5);
+  --states-border-secondary-disabled: var(--palette-jango-tint-6);
+  --states-border-secondary-error: var(--palette-red-tint-1);
+
+  /* === States: Highlight === */
+  --states-highlight-default: var(--palette-highlight-yellow);
+
+  /* === Text Colors === */
+  --text-color-default: var(--palette-white);
+  --text-color-ribbon-section-name: var(--palette-rey-shadow-24);
+
+  /* === Backgrounds === */
+  --background-tooltip: var(--palette-tooltip-darker);
+  --background-ribbon-main: var(--palette-jango-tint-1);
+  --background-palette-main: var(--palette-jango-tint-1);
+  --background-header-main: var(--palette-snoke-tint-1);
+
+  /* === Dividers === */
+  --divider-ribbon: var(--palette-black);
+}

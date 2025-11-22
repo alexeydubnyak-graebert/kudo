@@ -1,0 +1,107 @@
+/**
+ * RibbonItem - Стили компонента элемента ленты
+ * Использует модульную систему токенов с трехуровневой иерархией
+ */
+
+.ribbon-item {
+  /* Сброс стилей кнопки */
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+
+  /* Layout */
+  display: flex;
+  align-items: center;
+  gap: var(--size-6);
+
+  /* Размеры из токенов kudo */
+  margin: 0;
+  padding: 0 var(--size-6);
+  border-radius: var(--kudo-item-border-radius);
+  height: 28px;
+
+  /* Цвета - используют глобальные токены через kudo */
+  background-color: var(--kudo-ribbon-item-bg-standard);
+  color: var(--kudo-ribbon-item-text-standard);
+
+  /* Типографика */
+  font-family: var(--font-family-kudo);
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-md);
+  line-height: var(--line-height-md);
+
+  /* Интерактивность */
+  cursor: pointer;
+  user-select: none;
+  transition: background-color 0.15s ease, color 0.15s ease;
+
+  /* Убираем лишние отступы */
+  white-space: nowrap;
+}
+
+/* === Состояние: Hover === */
+.ribbon-item:hover:not(:disabled):not(.ribbon-item--active) {
+  background-color: var(--kudo-ribbon-item-bg-hover);
+}
+
+/* === Состояние: Active (нажатие) === */
+.ribbon-item:active:not(:disabled):not(.ribbon-item--active) {
+  background-color: var(--kudo-ribbon-item-bg-pressed);
+}
+
+/* === Состояние: Active (выбранный элемент) === */
+.ribbon-item--active {
+  background-color: var(--kudo-ribbon-item-bg-active);
+  color: var(--kudo-ribbon-item-text-active);
+}
+
+.ribbon-item--active:hover {
+  background-color: var(--kudo-ribbon-item-bg-active);
+}
+
+/* === Состояние: Disabled === */
+.ribbon-item:disabled,
+.ribbon-item--disabled {
+  background-color: var(--kudo-ribbon-item-bg-disabled);
+  color: var(--kudo-ribbon-item-text-disabled);
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+/* === Иконка === */
+.ribbon-item__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+  color: var(--kudo-ribbon-item-icon-standard);
+}
+
+.ribbon-item--active .ribbon-item__icon {
+  color: var(--kudo-ribbon-item-icon-active);
+}
+
+.ribbon-item:disabled .ribbon-item__icon,
+.ribbon-item--disabled .ribbon-item__icon {
+  color: var(--kudo-ribbon-item-icon-disabled);
+}
+
+/* === Метка === */
+.ribbon-item__label {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+/* === Focus состояние для доступности === */
+.ribbon-item:focus-visible {
+  outline: 2px solid var(--states-border-secondary-active);
+  outline-offset: 2px;
+}
+
+/* === Темная тема === */
+/* Все цвета автоматически меняются через систему токенов */
+/* Дополнительные переопределения не требуются */

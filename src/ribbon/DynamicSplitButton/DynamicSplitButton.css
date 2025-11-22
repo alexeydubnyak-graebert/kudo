@@ -1,0 +1,133 @@
+/**
+ * DynamicSplitButton - Стили универсального SplitButton
+ */
+
+.dynamic-split-button {
+    position: relative;
+    display: inline-block;
+}
+
+.dynamic-split-button__trigger {
+    display: flex;
+    align-items: center;
+    gap: 0;
+}
+
+.dynamic-split-button__trigger .ribbon-item {
+    margin: 0;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    box-sizing: border-box;
+    border: 1px solid transparent;
+    transition: border-color 0.15s ease;
+}
+
+.dynamic-split-button__trigger .split-arrow {
+    margin: 0;
+    box-sizing: border-box;
+    border: 1px solid transparent;
+    transition: border-color 0.15s ease;
+}
+
+/* При наведении на RibbonItem - обводка у SplitArrow */
+.dynamic-split-button__trigger .ribbon-item:hover + .split-arrow {
+    border-color: var(--kudo-split-button-border-group-hover);
+}
+
+/* При наведении на SplitArrow - обводка у RibbonItem */
+.dynamic-split-button__trigger .split-arrow:hover {
+    border-color: transparent;
+}
+
+.dynamic-split-button__trigger:has(.split-arrow:hover) .ribbon-item {
+    border-color: var(--kudo-split-button-border-group-hover);
+}
+
+/* === Выпадающее меню === */
+.dynamic-split-button__menu {
+    position: absolute;
+    top: calc(100% + 2px);
+    left: 0;
+    z-index: 1000;
+
+    min-width: 200px;
+
+    background-color: var(--background-ribbon-main);
+    border: 1px solid var(--kudo-dropdown-menu-border);
+    border-radius: var(--kudo-item-border-radius);
+
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+
+    padding: var(--size-4);
+
+    animation: dropdown-fade-in 0.15s ease-out;
+}
+
+@keyframes dropdown-fade-in {
+    from {
+        opacity: 0;
+        transform: translateY(-8px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* === Элемент меню === */
+.dynamic-split-button__menu-item {
+    /* Сброс кнопки */
+    border: none;
+    outline: none;
+    background: none;
+
+    /* Layout */
+    display: flex;
+    align-items: center;
+    gap: var(--size-6);
+    width: 100%;
+
+    /* Отступы */
+    padding: var(--kudo-item-padding-top) var(--kudo-item-padding-right) var(--kudo-item-padding-bottom) var(--kudo-item-padding-left);
+
+    /* Скругление */
+    border-radius: var(--kudo-item-border-radius);
+
+    /* Цвета */
+    background-color: var(--kudo-ribbon-item-bg-standard);
+    color: var(--kudo-ribbon-item-text-standard);
+
+    /* Интерактивность */
+    cursor: pointer;
+    user-select: none;
+    transition: background-color 0.15s ease, color 0.15s ease;
+
+    /* Типографика */
+    font-family: var(--font-family-kudo);
+    font-size: var(--font-size-lg);
+    font-weight: var(--font-weight-md);
+    line-height: var(--line-height-md);
+    text-align: left;
+}
+
+.dynamic-split-button__menu-item:hover {
+    background-color: var(--kudo-ribbon-item-bg-hover);
+}
+
+.dynamic-split-button__menu-item:active {
+    background-color: var(--kudo-ribbon-item-bg-pressed);
+}
+
+.dynamic-split-button__menu-icon {
+    width: 16px;
+    height: 16px;
+    flex-shrink: 0;
+}
+
+/* === Разделитель === */
+.dynamic-split-button__divider {
+    height: 1px;
+    background-color: var(--kudo-divider);
+    margin: var(--size-2) 0;
+}

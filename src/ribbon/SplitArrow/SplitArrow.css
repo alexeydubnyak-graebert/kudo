@@ -1,0 +1,76 @@
+/**
+ * SplitArrow - Стили компонента кнопки со стрелкой
+ * Использует модульную систему токенов с трехуровневой иерархией
+ */
+
+.split-arrow {
+  /* Сброс стилей кнопки */
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+
+  /* Layout */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  /* Размеры из токенов kudo */
+  margin: 0;
+  padding: 0;
+
+  /* Border radius - только справа */
+  border-top-right-radius: var(--kudo-split-arrow-border-radius);
+  border-bottom-right-radius: var(--kudo-split-arrow-border-radius);
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+
+  /* Цвета - используют глобальные токены через kudo */
+  background-color: var(--kudo-split-arrow-bg-standard);
+  color: var(--kudo-split-arrow-icon-standard);
+
+  /* Интерактивность */
+  cursor: pointer;
+  user-select: none;
+  transition: background-color 0.15s ease, color 0.15s ease;
+
+  /* Размер sm (единственный) */
+  width: 16px;
+  height: 28px;
+}
+
+/* === Состояние: Hover === */
+.split-arrow:hover:not(:disabled) {
+  background-color: var(--kudo-split-arrow-bg-hover);
+}
+
+/* === Состояние: Pressed === */
+.split-arrow:active:not(:disabled) {
+  background-color: var(--kudo-split-arrow-bg-pressed);
+}
+
+/* === Состояние: Disabled === */
+.split-arrow:disabled,
+.split-arrow--disabled {
+  background-color: var(--kudo-split-arrow-bg-disabled);
+  color: var(--kudo-split-arrow-icon-disabled);
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+/* === Иконка === */
+.split-arrow__icon {
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+  color: inherit;
+}
+
+/* === Focus состояние для доступности === */
+.split-arrow:focus-visible {
+  outline: 2px solid var(--states-border-secondary-active);
+  outline-offset: 2px;
+}
+
+/* === Темная тема === */
+/* Все цвета автоматически меняются через систему токенов */
+/* Дополнительные переопределения не требуются */

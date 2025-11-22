@@ -1,0 +1,148 @@
+/**
+ * FOUNDATION COLORS
+ * Базовые цвета дизайн-системы
+ * Уровень 1: Фундаментальные значения
+ */
+
+:root {
+    /* ============================================
+     FOUNDATION - Базовые цвета
+     ============================================ */
+
+    /* Primary */
+    --foundation-primary: #254CA8;
+
+    /* Gray Scale */
+    --foundation-gray900: #141518;
+    --foundation-gray800: #1E2023;
+    --foundation-gray700: #242629;
+    --foundation-gray600: #2A2C2F;
+    --foundation-gray500: #333538;
+    --foundation-gray400: #47494D;
+    --foundation-gray300: #5B5D62;
+    --foundation-gray200: #787A80;
+    --foundation-gray100: #A7A9AD;
+    --foundation-gray50: #DADBDE;
+    --foundation-gray0: #FFFFFF;
+
+    /* ============================================
+     SEMANTIC - Семантические цвета
+     ============================================ */
+
+    --semantic-success: #2ECC71;
+    --semantic-warning: #F1C40F;
+    --semantic-error: #E74C3C;
+    --semantic-info: #3498DB;
+
+    /* ============================================
+     SURFACE - Поверхности
+     ============================================ */
+
+    --surface-page: var(--foundation-gray900);
+    --surface-base: var(--foundation-gray800);
+    --surface-alt: var(--foundation-gray700);
+    --surface-overlay: rgba(0, 0, 0, 0.4);
+    --surface-hover: var(--foundation-gray700);
+    --surface-selected: var(--foundation-gray900);
+
+    /* ============================================
+     TEXT - Текст
+     ============================================ */
+
+    --text-primary: var(--foundation-gray0);
+    --text-secondary: var(--foundation-gray200);
+    --text-muted: var(--foundation-gray300);
+    --text-inverse: var(--foundation-gray900);
+    --text-on-primary: var(--foundation-gray0);
+
+    /* ============================================
+     BORDER - Границы
+     ============================================ */
+
+    --border-default: var(--foundation-gray600);
+    --border-strong: var(--foundation-gray500);
+    --border-subtle: var(--foundation-gray700);
+
+    /* ============================================
+     STATES - Состояния
+     ============================================ */
+
+    --states-hover: #2A2C2F;
+    --states-active: var(--foundation-gray500);
+    --states-selected: var(--foundation-primary);
+    --states-focus: var(--foundation-primary);
+    --states-disabled-bg: var(--foundation-gray700);
+    --states-disabled-text: var(--foundation-gray400);
+
+    /* ============================================
+     COMPONENTS - Компоненты
+     ============================================ */
+
+    /* === Sidebar === */
+    --sidebar-background: var(--foundation-gray900);
+    --sidebar-background-hover: var(--foundation-gray800);
+    --sidebar-background-active: var(--foundation-primary);
+    --sidebar-text: var(--foundation-gray50);
+    --sidebar-text-muted: var(--foundation-gray300);
+    --sidebar-icon: var(--foundation-gray300);
+    --sidebar-icon-active: var(--foundation-primary);
+    --sidebar-border-right: var(--border-default);
+
+    /* === Header === */
+    --header-background: var(--foundation-gray800);
+    --header-background-elevated: var(--foundation-gray700);
+    --header-text: var(--text-primary);
+    --header-text-secondary: var(--text-secondary);
+    --header-icon: var(--text-primary);
+    --header-border-bottom: var(--border-default);
+    --header-button-bg: var(--surface-alt);
+    --header-button-hover: var(--states-hover);
+    --header-button-active: var(--states-active);
+    --header-button-text: var(--text-primary);
+
+    /* === Browser === */
+    --browser-background: var(--surface-base);
+    --browser-background-alt: var(--surface-alt);
+    --browser-row-bg: var(--surface-base);
+    --browser-row-hover: var(--states-hover);
+    --browser-row-selected: var(--states-selected);
+    --browser-text: var(--text-primary);
+    --browser-text-secondary: var(--text-secondary);
+    --browser-border-row: var(--border-default);
+    --browser-border-grid: var(--border-default);
+    --browser-status-synced: var(--semantic-success);
+    --browser-status-error: var(--semantic-error);
+    --browser-status-warning: var(--semantic-warning);
+    --browser-status-info: var(--semantic-info);
+
+    /* === Activity === */
+    --activity-background: var(--surface-base);
+    --activity-background-alt: var(--surface-alt);
+    --activity-text: var(--text-primary);
+    --activity-text-secondary: var(--text-secondary);
+    --activity-border-left: var(--border-default);
+    --activity-border-item: var(--border-default);
+    --activity-event-created: var(--semantic-success);
+    --activity-event-updated: var(--foundation-primary);
+    --activity-event-deleted: var(--semantic-error);
+    --activity-event-shared: var(--semantic-info);
+
+    /* === Button === */
+    --button-primary-bg: var(--foundation-primary);
+    --button-primary-hover: #305CBA;
+    --button-primary-active: #1C3F84;
+    --button-primary-text: var(--text-on-primary);
+    --button-primary-disabled-bg: var(--foundation-gray700);
+    --button-primary-disabled-text: var(--foundation-gray400);
+    --button-secondary-bg: var(--surface-alt);
+    --button-secondary-border: var(--border-default);
+    --button-secondary-text: var(--text-primary);
+    --button-secondary-hover: var(--states-hover);
+    --button-secondary-active: var(--states-active);
+
+    /* === Panel === */
+    --panel-background: var(--surface-base);
+    --panel-border: var(--border-default);
+    --panel-header-bg: var(--surface-alt);
+    --panel-header-text: var(--text-primary);
+}

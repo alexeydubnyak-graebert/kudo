@@ -1,0 +1,87 @@
+/* FavoriteFileItem - элемент избранного файла */
+.favorite-file-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+    width: 100%;
+    padding: 6px 8px;
+    cursor: pointer;
+    transition: background-color 0.15s ease;
+    user-select: none;
+    box-sizing: border-box;
+    border-radius: 4px;
+}
+
+.favorite-file-item:hover {
+    background-color: var(--surface-hover);
+}
+
+.favorite-file-item--dragging {
+    opacity: 0.5;
+}
+
+.favorite-file-item--drag-over {
+    background-color: rgba(37, 76, 168, 0.2);
+    border: 2px dashed var(--foundation-primary);
+}
+
+.favorite-file-item__icon {
+    width: 32px;
+    height: 32px;
+    flex-shrink: 0;
+    object-fit: contain;
+}
+
+.favorite-file-item__info {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    flex: 1;
+    min-width: 0;
+}
+
+.favorite-file-item__name {
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    color: var(--text-primary);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.favorite-file-item__size {
+    font-family: 'Roboto', sans-serif;
+    font-size: 10px;
+    font-weight: 400;
+    color: var(--text-secondary);
+}
+
+/* Кнопка удаления */
+.favorite-file-item__remove {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+    background: none;
+    border: none;
+    color: var(--text-secondary);
+    font-size: 20px;
+    line-height: 1;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 0.15s ease, color 0.15s ease;
+    padding: 0;
+}
+
+.favorite-file-item:hover .favorite-file-item__remove {
+    opacity: 1;
+}
+
+.favorite-file-item__remove:hover {
+    color: var(--semantic-error);
+}

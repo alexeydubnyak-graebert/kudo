@@ -1,0 +1,41 @@
+/**
+ * RibbonSection - Стили секции ribbon
+ */
+
+.ribbon-section {
+    display: flex;
+    flex-direction: column;
+    padding: var(--size-8) var(--size-12);
+    border-right: 1px solid var(--kudo-divider);
+    min-height: 100%;
+}
+
+.ribbon-section:last-child {
+    border-right: none;
+}
+
+.ribbon-section__content {
+    display: flex;
+    flex-direction: column;
+    gap: var(--size-4);
+    flex: 1;
+}
+
+.ribbon-section__label {
+    font-family: var(--font-family-kudo);
+    font-size: var(--font-size-md);
+    font-weight: var(--font-weight-md);
+    line-height: var(--font-size-md);
+    letter-spacing: var(--letter-spacing-md);
+    color: var(--kudo-ribbon-item-text-standard);
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: var(--size-4);
+    white-space: nowrap;
+    border-top: 1px solid var(--kudo-divider);
+    margin-top: var(--size-4);
+    margin-left: calc(-1 * var(--size-12));
+    margin-right: calc(-1 * var(--size-12));
+    padding-left: var(--size-12);
+    padding-right: var(--size-12);
+}

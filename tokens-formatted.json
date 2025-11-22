@@ -1,0 +1,2634 @@
+{
+  "globalColorTokens": {
+    "statesBackgroundPrimaryStandard": {
+      "light": "#f5f5f6",
+      "dark": "#214bac"
+    },
+    "statesBackgroundPrimaryHover": {
+      "light": "#d5ddef",
+      "dark": "#395eb5"
+    },
+    "statesBackgroundPrimaryPressed": {
+      "light": "#becae7",
+      "dark": "#193882"
+    },
+    "statesBackgroundPrimaryActive": {
+      "light": "#e2e2e2",
+      "dark": "#214bac"
+    },
+    "statesBackgroundPrimaryDisabled": {
+      "light": "#f5f5f6",
+      "dark": "#f5f5f6"
+    },
+    "textColorDefault": {
+      "light": "#010101",
+      "dark": "#ffffff"
+    },
+    "statesBackgroundSecondaryStandard": {
+      "light": "#f5f5f6",
+      "dark": "#333538"
+    },
+    "statesBackgroundSecondaryHover": {
+      "light": "#e2e2e2",
+      "dark": "#1f2022"
+    },
+    "statesBackgroundSecondaryPressed": {
+      "light": "#cccccc",
+      "dark": "#26282a"
+    },
+    "statesBackgroundSecondaryActive": {
+      "light": "#d5ddef",
+      "dark": "#010101"
+    },
+    "statesBackgroundSecondaryDisabled": {
+      "light": "#f5f5f6",
+      "dark": "#f5f5f6"
+    },
+    "statesHighlightDefault": {
+      "light": "#ebc5297f",
+      "dark": "#ebc5297f"
+    },
+    "backgroundRibbonMain": {
+      "light": "#f5f5f6",
+      "dark": "#333538"
+    },
+    "statesTextColorStandard": {
+      "light": "#272727",
+      "dark": "#cfcfcf"
+    },
+    "statesTextColorActive": {
+      "light": "#050505",
+      "dark": "#ffffff"
+    },
+    "statesTextColorDisabled": {
+      "light": "#898b8c",
+      "dark": "#5e6062"
+    },
+    "statesBorderSecondaryStandard": {
+      "light": "#bcbcbd",
+      "dark": "#505254"
+    },
+    "statesBorderSecondaryHover": {
+      "light": "#dde3f2",
+      "dark": "#505254"
+    },
+    "statesBorderSecondaryPressed": {
+      "light": "#c6d0ea",
+      "dark": "#505254"
+    },
+    "statesBorderSecondaryActive": {
+      "light": "#97aad8",
+      "dark": "#505254"
+    },
+    "statesBorderSecondaryDisabled": {
+      "light": "#e7e7e8",
+      "dark": "#57595b"
+    },
+    "statesBorderPrimaryStandard": {
+      "light": "#f5f5f6",
+      "dark": "#214bac"
+    },
+    "statesBorderPrimaryHover": {
+      "light": "#edf0f8",
+      "dark": "#395eb5"
+    },
+    "statesBorderPrimaryPressed": {
+      "light": "#d5ddef",
+      "dark": "#193882"
+    },
+    "statesBorderPrimaryActive": {
+      "light": "#a6b7de",
+      "dark": "#214bac"
+    },
+    "statesBorderPrimaryDisabled": {
+      "light": "#f5f5f6",
+      "dark": "#656769"
+    },
+    "statesIconColorStandard": {
+      "light": "#272727",
+      "dark": "#cfcfcf"
+    },
+    "statesIconColorActive": {
+      "light": "#050505",
+      "dark": "#ffffff"
+    },
+    "statesIconColorDisabled": {
+      "light": "#898b8c",
+      "dark": "#5e6062"
+    },
+    "backgroundPaletteMain": {
+      "light": "#f5f5f6",
+      "dark": "#333538"
+    },
+    "dividerRibbon": {
+      "light": "#bcbcbd",
+      "dark": "#010101"
+    },
+    "textColorRibbonSectionName": {
+      "light": "#272727",
+      "dark": "#272727"
+    },
+    "statesBackgroundTertiaryStandard": {
+      "light": "#f5f5f6",
+      "dark": "#1e2023"
+    },
+    "statesBackgroundTertiaryHover": {
+      "light": "#edf0f8",
+      "dark": "#333538"
+    },
+    "statesBackgroundTertiaryPressed": {
+      "light": "#d5ddef",
+      "dark": "#2c2e30"
+    },
+    "statesBackgroundTertiaryActive": {
+      "light": "#a6b7de",
+      "dark": "#f5f5f6"
+    },
+    "statesBackgroundTertiaryDisabled": {
+      "light": "#f5f5f6",
+      "dark": "#f5f5f6"
+    },
+    "statesBackgroundDisabled": {
+      "light": "#f5f5f6",
+      "dark": "#f5f5f6"
+    },
+    "statesBackgroundFourthStandard": {
+      "light": "#f5f5f6",
+      "dark": "#141518"
+    },
+    "statesBackgroundFourthHover": {
+      "light": "#edf0f8",
+      "dark": "#1c1d20"
+    },
+    "statesBackgroundFourthPressed": {
+      "light": "#d5ddef",
+      "dark": "#252628"
+    },
+    "statesBackgroundFourthActive": {
+      "light": "#a6b7de",
+      "dark": "#141518"
+    },
+    "statesBackgroundFourthDisabled": {
+      "light": "#f5f5f6",
+      "dark": "#f5f5f6"
+    },
+    "statesTextColorError": {
+      "light": "#ed0000",
+      "dark": "#f89999"
+    },
+    "statesBorderPrimaryError": {
+      "light": "#ed0000",
+      "dark": "#ed0000"
+    },
+    "statesBorderSecondaryError": {
+      "light": "#ed0000",
+      "dark": "#ed0000"
+    },
+    "backgroundTooltip": {
+      "light": "#6e6e6e",
+      "dark": "#24262d"
+    }
+  },
+  "aRESCommander": {
+    "divider": {
+      "light": "#bcbcbd",
+      "dark": "#bcbcbd"
+    },
+    "commanderColorsRibbonBackgroundMain": {
+      "light": "#f5f5f6",
+      "dark": "#f5f5f6"
+    },
+    "commanderColorsRibbonItemTextColorStandard": {
+      "light": "#272727",
+      "dark": "#272727"
+    },
+    "commanderColorsRibbonItemTextColorActive": {
+      "light": "#050505",
+      "dark": "#050505"
+    },
+    "commanderColorsRibbonItemBackgroundStandard": {
+      "light": "#f5f5f6",
+      "dark": "#f5f5f6"
+    },
+    "commanderColorsRibbonItemBackgroundHover": {
+      "light": "#e2e2e2",
+      "dark": "#e2e2e2"
+    },
+    "commanderColorsRibbonItemBackgroundPressed": {
+      "light": "#cccccc",
+      "dark": "#cccccc"
+    },
+    "commanderColorsRibbonItemBackgroundActive": {
+      "light": "#d5ddef",
+      "dark": "#d5ddef"
+    },
+    "commanderColorsRibbonItemBackgroundDisabled": {
+      "light": "#f5f5f6",
+      "dark": "#f5f5f6"
+    },
+    "commanderColorsRibbonItemDropdownMenuBorder": {
+      "light": "#bcbcbd",
+      "dark": "#010101"
+    },
+    "commanderColorsRibbonItemTextColorRibbonSection": {
+      "light": "#272727",
+      "dark": "#272727"
+    },
+    "commanderColorsTabRibbonBackgroundStandard": {
+      "light": "#f5f5f6",
+      "dark": "#f5f5f6"
+    },
+    "commanderColorsTabRibbonBackgroundHover": {
+      "light": "#e2e2e2",
+      "dark": "#edf0f8"
+    },
+    "commanderColorsTabRibbonBackgroundPressed": {
+      "light": "#cccccc",
+      "dark": "#d5ddef"
+    },
+    "commanderColorsTabRibbonBackgroundActive": {
+      "light": "#d5ddef",
+      "dark": "#a6b7de"
+    },
+    "commanderColorsTabRibbonBackgroundDisabledStandard": {
+      "light": "#f5f5f6",
+      "dark": "#f5f5f6"
+    },
+    "commanderColorsRibbonItemIconColorStandard": {
+      "light": "#272727",
+      "dark": "#272727"
+    },
+    "commanderColorsRibbonItemIconColorActive": {
+      "light": "#050505",
+      "dark": "#050505"
+    },
+    "commanderColorsRibbonItemIconColorDisabled": {
+      "light": "#898b8c",
+      "dark": "#898b8c"
+    },
+    "commanderColorsRibbonItemTextColorDisabled": {
+      "light": "#898b8c",
+      "dark": "#898b8c"
+    },
+    "commanderColorsTabRibbonTextColorStandard": {
+      "light": "#272727",
+      "dark": "#272727"
+    },
+    "commanderColorsTabRibbonTextColorActive": {
+      "light": "#050505",
+      "dark": "#050505"
+    },
+    "commanderColorsTabRibbonTextColorDisabled": {
+      "light": "#898b8c",
+      "dark": "#898b8c"
+    },
+    "commanderColorsTabRibbonBackgroundDisabledActive": {
+      "light": "#f5f5f6",
+      "dark": "#f5f5f6"
+    },
+    "commanderColorsInputBackgroundStandard": {
+      "light": "#f5f5f6",
+      "dark": "#f5f5f6"
+    },
+    "commanderColorsInputIconColorStandard": {
+      "light": "#272727",
+      "dark": "#272727"
+    },
+    "commanderColorsInputIconColorActive": {
+      "light": "#050505",
+      "dark": "#050505"
+    },
+    "commanderColorsInputIconColorDisabled": {
+      "light": "#898b8c",
+      "dark": "#898b8c"
+    },
+    "commanderColorsInputTextColorStandard": {
+      "light": "#272727",
+      "dark": "#272727"
+    },
+    "commanderColorsInputTextColorActive": {
+      "light": "#050505",
+      "dark": "#050505"
+    },
+    "commanderColorsInputTextColorDisabled": {
+      "light": "#898b8c",
+      "dark": "#898b8c"
+    },
+    "commanderColorsInputTextColorRibbonSection": {
+      "light": "#272727",
+      "dark": "#272727"
+    },
+    "commanderColorsInputBackgroundHover": {
+      "light": "#edf0f8",
+      "dark": "#edf0f8"
+    },
+    "commanderColorsInputBackgroundPressed": {
+      "light": "#d5ddef",
+      "dark": "#d5ddef"
+    },
+    "commanderColorsInputBackgroundActive": {
+      "light": "#a6b7de",
+      "dark": "#a6b7de"
+    },
+    "commanderColorsInputBackgroundDisabled": {
+      "light": "#f5f5f6",
+      "dark": "#f5f5f6"
+    },
+    "commanderColorsRibbonItemBorderStandard": {
+      "light": "#f5f5f6",
+      "dark": "#f5f5f6"
+    },
+    "commanderColorsRibbonItemBorderHover": {
+      "light": "#e2e2e2",
+      "dark": "#e2e2e2"
+    },
+    "commanderColorsRibbonItemBorderPressed": {
+      "light": "#cccccc",
+      "dark": "#cccccc"
+    },
+    "commanderColorsRibbonItemBorderActive": {
+      "light": "#d5ddef",
+      "dark": "#d5ddef"
+    },
+    "commanderColorsRibbonItemBorderDisabled": {
+      "light": "#f5f5f6",
+      "dark": "#f5f5f6"
+    },
+    "commanderColorsInputBorderStandard": {
+      "light": "#f5f5f6",
+      "dark": "#f5f5f6"
+    },
+    "commanderColorsInputBorderHover": {
+      "light": "#e2e2e2",
+      "dark": "#e2e2e2"
+    },
+    "commanderColorsInputBorderPressed": {
+      "light": "#cccccc",
+      "dark": "#cccccc"
+    },
+    "commanderColorsInputBorderActive": {
+      "light": "#d5ddef",
+      "dark": "#d5ddef"
+    },
+    "commanderColorsInputBorderDisabled": {
+      "light": "#f5f5f6",
+      "dark": "#f5f5f6"
+    },
+    "commanderColorsSplitArrowBackgroundStandard": {
+      "light": "#f5f5f6",
+      "dark": "#f5f5f6"
+    },
+    "commanderColorsSplitArrowBackgroundHover": {
+      "light": "#e2e2e2",
+      "dark": "#edf0f8"
+    },
+    "commanderColorsSplitArrowBackgroundPressed": {
+      "light": "#cccccc",
+      "dark": "#d5ddef"
+    },
+    "commanderColorsSplitArrowBackgroundActive": {
+      "light": "#d5ddef",
+      "dark": "#a6b7de"
+    },
+    "commanderColorsSplitArrowBackgroundDisabled": {
+      "light": "#f5f5f6",
+      "dark": "#f5f5f6"
+    },
+    "commanderColorsSplitArrowBorderStandard": {
+      "light": "#f5f5f6",
+      "dark": "#f5f5f6"
+    },
+    "commanderColorsSplitArrowBorderHover": {
+      "light": "#e2e2e2",
+      "dark": "#e2e2e2"
+    },
+    "commanderColorsSplitArrowBorderPressed": {
+      "light": "#cccccc",
+      "dark": "#cccccc"
+    },
+    "commanderColorsSplitArrowBorderActive": {
+      "light": "#d5ddef",
+      "dark": "#d5ddef"
+    },
+    "commanderColorsSplitArrowBorderDisabled": {
+      "light": "#f5f5f6",
+      "dark": "#f5f5f6"
+    },
+    "commanderColorsSplitArrowIconColorStandard": {
+      "light": "#272727",
+      "dark": "#ffffff"
+    },
+    "commanderColorsSplitArrowIconColorActive": {
+      "light": "#050505",
+      "dark": "#ffffff"
+    },
+    "commanderColorsSplitArrowIconColorDisabled": {
+      "light": "#898b8c",
+      "dark": "#898b8c"
+    },
+    "commanderColorsInputBorderError": {
+      "light": "#ed0000",
+      "dark": "#ed0000"
+    },
+    "commanderColorsInputTextColorError": {
+      "light": "#ed0000",
+      "dark": "#ed0000"
+    },
+    "commanderColorsRibbonItemBackgroundHighlited": {
+      "light": "#ffffff",
+      "dark": "#ffffff"
+    },
+    "commanderColorsTabRibbonBackgroundHighlited": {
+      "light": "#ffffff",
+      "dark": "#ffffff"
+    },
+    "commanderColorsTabRibbonTextColorContextual": {
+      "light": "#ffffff",
+      "dark": "#ffffff"
+    },
+    "commanderColorsTooltipBackground": {
+      "light": "#e2e2e2",
+      "dark": "#e2e2e2"
+    },
+    "commanderColorsTooltipBorder": {
+      "light": "#898b8c",
+      "dark": "#898b8c"
+    },
+    "commanderColorsTooltipTextColor": {
+      "light": "#272727",
+      "dark": "#272727"
+    }
+  },
+  "globalPalette": {
+    "paletteDefaultReyShadowsReyShadow30": {
+      "mode1": "#050505"
+    },
+    "paletteDefaultReyShadowsReyShadow29": {
+      "mode1": "#020202"
+    },
+    "paletteDefaultReyShadowsReyShadow28": {
+      "mode1": "#0a0a0a"
+    },
+    "paletteDefaultReyShadowsReyShadow27": {
+      "mode1": "#111111"
+    },
+    "paletteDefaultReyShadowsReyShadow26": {
+      "mode1": "#181818"
+    },
+    "paletteDefaultReyShadowsReyShadow25": {
+      "mode1": "#202020"
+    },
+    "paletteDefaultReyShadowsReyShadow24": {
+      "mode1": "#272727"
+    },
+    "paletteDefaultReyShadowsReyShadow23": {
+      "mode1": "#2e2e2e"
+    },
+    "paletteDefaultReyShadowsReyShadow22": {
+      "mode1": "#363636"
+    },
+    "paletteDefaultReyShadowsReyShadow21": {
+      "mode1": "#3d3d3d"
+    },
+    "paletteDefaultReyShadowsReyShadow20": {
+      "mode1": "#444444"
+    },
+    "paletteDefaultReyShadowsReyShadow19": {
+      "mode1": "#4b4b4b"
+    },
+    "paletteDefaultReyShadowsReyShadow18": {
+      "mode1": "#535353"
+    },
+    "paletteDefaultReyShadowsReyShadow17": {
+      "mode1": "#5a5a5a"
+    },
+    "paletteDefaultReyShadowsReyShadow16": {
+      "mode1": "#616161"
+    },
+    "paletteDefaultReyShadowsReyShadow15": {
+      "mode1": "#696969"
+    },
+    "paletteDefaultReyShadowsReyShadow14": {
+      "mode1": "#707070"
+    },
+    "paletteDefaultReyShadowsReyShadow13": {
+      "mode1": "#777777"
+    },
+    "paletteDefaultReyShadowsReyShadow12": {
+      "mode1": "#7f7f7f"
+    },
+    "paletteDefaultReyShadowsReyShadow11": {
+      "mode1": "#868686"
+    },
+    "paletteDefaultReyShadowsReyShadow10": {
+      "mode1": "#8d8d8d"
+    },
+    "paletteDefaultReyShadowsReyShadow9": {
+      "mode1": "#959595"
+    },
+    "paletteDefaultReyShadowsReyShadow8": {
+      "mode1": "#9c9c9c"
+    },
+    "paletteDefaultReyShadowsReyShadow7": {
+      "mode1": "#a3a3a3"
+    },
+    "paletteDefaultReyShadowsReyShadow6": {
+      "mode1": "#aaaaaa"
+    },
+    "paletteDefaultReyShadowsReyShadow5": {
+      "mode1": "#b2b2b2"
+    },
+    "paletteDefaultReyShadowsReyShadow4": {
+      "mode1": "#b9b9b9"
+    },
+    "paletteDefaultReyShadowsReyShadow3": {
+      "mode1": "#c0c0c0"
+    },
+    "paletteDefaultReyShadowsReyShadow2": {
+      "mode1": "#c8c8c8"
+    },
+    "paletteDefaultReyShadowsReyShadow1": {
+      "mode1": "#cfcfcf"
+    },
+    "paletteDefaultReyTintsReyTint30": {
+      "mode1": "#ffffff"
+    },
+    "paletteDefaultReyTintsReyTint29": {
+      "mode1": "#fefefe"
+    },
+    "paletteDefaultReyTintsReyTint28": {
+      "mode1": "#fdfdfd"
+    },
+    "paletteDefaultReyTintsReyTint27": {
+      "mode1": "#fbfbfb"
+    },
+    "paletteDefaultReyTintsReyTint26": {
+      "mode1": "#f9f9f9"
+    },
+    "paletteDefaultReyTintsReyTint25": {
+      "mode1": "#f8f8f8"
+    },
+    "paletteDefaultReyTintsReyTint24": {
+      "mode1": "#f6f6f6"
+    },
+    "paletteDefaultReyTintsReyTint23": {
+      "mode1": "#f4f4f4"
+    },
+    "paletteDefaultReyTintsReyTint22": {
+      "mode1": "#f3f3f3"
+    },
+    "paletteDefaultReyTintsReyTint21": {
+      "mode1": "#f1f1f1"
+    },
+    "paletteDefaultReyTintsReyTint20": {
+      "mode1": "#efefef"
+    },
+    "paletteDefaultReyTintsReyTint19": {
+      "mode1": "#ededed"
+    },
+    "paletteDefaultReyTintsReyTint18": {
+      "mode1": "#ececec"
+    },
+    "paletteDefaultReyTintsReyTint17": {
+      "mode1": "#eaeaea"
+    },
+    "paletteDefaultReyTintsReyTint16": {
+      "mode1": "#e8e8e8"
+    },
+    "paletteDefaultReyTintsReyTint15": {
+      "mode1": "#e7e7e7"
+    },
+    "paletteDefaultReyTintsReyTint14": {
+      "mode1": "#e5e5e5"
+    },
+    "paletteDefaultReyTintsReyTint13": {
+      "mode1": "#e3e3e3"
+    },
+    "paletteDefaultReyTintsReyTint12": {
+      "mode1": "#e2e2e2"
+    },
+    "paletteDefaultReyTintsReyTint11": {
+      "mode1": "#e0e0e0"
+    },
+    "paletteDefaultReyTintsReyTint10": {
+      "mode1": "#dedede"
+    },
+    "paletteDefaultReyTintsReyTint9": {
+      "mode1": "#dddddd"
+    },
+    "paletteDefaultReyTintsReyTint8": {
+      "mode1": "#dbdbdb"
+    },
+    "paletteDefaultReyTintsReyTint7": {
+      "mode1": "#d9d9d9"
+    },
+    "paletteDefaultReyTintsReyTint6": {
+      "mode1": "#d7d7d7"
+    },
+    "paletteDefaultReyTintsReyTint5": {
+      "mode1": "#d6d6d6"
+    },
+    "paletteDefaultReyTintsReyTint4": {
+      "mode1": "#d4d4d4"
+    },
+    "paletteDefaultReyTintsReyTint3": {
+      "mode1": "#d2d2d2"
+    },
+    "paletteDefaultReyTintsReyTint2": {
+      "mode1": "#d1d1d1"
+    },
+    "paletteDefaultReyTintsReyTint1": {
+      "mode1": "#cfcfcf"
+    },
+    "paletteDefaultObiShadowsObiShadow30": {
+      "mode1": "#010204"
+    },
+    "paletteDefaultObiShadowsObiShadow29": {
+      "mode1": "#000102"
+    },
+    "paletteDefaultObiShadowsObiShadow28": {
+      "mode1": "#020408"
+    },
+    "paletteDefaultObiShadowsObiShadow27": {
+      "mode1": "#03060e"
+    },
+    "paletteDefaultObiShadowsObiShadow26": {
+      "mode1": "#040914"
+    },
+    "paletteDefaultObiShadowsObiShadow25": {
+      "mode1": "#050b1a"
+    },
+    "paletteDefaultObiShadowsObiShadow24": {
+      "mode1": "#060e20"
+    },
+    "paletteDefaultObiShadowsObiShadow23": {
+      "mode1": "#071126"
+    },
+    "paletteDefaultObiShadowsObiShadow22": {
+      "mode1": "#09132d"
+    },
+    "paletteDefaultObiShadowsObiShadow21": {
+      "mode1": "#0a1633"
+    },
+    "paletteDefaultObiShadowsObiShadow20": {
+      "mode1": "#0b1939"
+    },
+    "paletteDefaultObiShadowsObiShadow19": {
+      "mode1": "#0c1b3f"
+    },
+    "paletteDefaultObiShadowsObiShadow18": {
+      "mode1": "#0d1e45"
+    },
+    "paletteDefaultObiShadowsObiShadow17": {
+      "mode1": "#0e214b"
+    },
+    "paletteDefaultObiShadowsObiShadow16": {
+      "mode1": "#102351"
+    },
+    "paletteDefaultObiShadowsObiShadow15": {
+      "mode1": "#112657"
+    },
+    "paletteDefaultObiShadowsObiShadow14": {
+      "mode1": "#12295d"
+    },
+    "paletteDefaultObiShadowsObiShadow13": {
+      "mode1": "#132b63"
+    },
+    "paletteDefaultObiShadowsObiShadow12": {
+      "mode1": "#142e69"
+    },
+    "paletteDefaultObiShadowsObiShadow11": {
+      "mode1": "#15316f"
+    },
+    "paletteDefaultObiShadowsObiShadow10": {
+      "mode1": "#173375"
+    },
+    "paletteDefaultObiShadowsObiShadow9": {
+      "mode1": "#18367b"
+    },
+    "paletteDefaultObiShadowsObiShadow8": {
+      "mode1": "#193882"
+    },
+    "paletteDefaultObiShadowsObiShadow7": {
+      "mode1": "#1a3b88"
+    },
+    "paletteDefaultObiShadowsObiShadow6": {
+      "mode1": "#1b3e8e"
+    },
+    "paletteDefaultObiShadowsObiShadow5": {
+      "mode1": "#1c4094"
+    },
+    "paletteDefaultObiShadowsObiShadow4": {
+      "mode1": "#1e439a"
+    },
+    "paletteDefaultObiShadowsObiShadow3": {
+      "mode1": "#1f46a0"
+    },
+    "paletteDefaultObiShadowsObiShadow2": {
+      "mode1": "#2048a6"
+    },
+    "paletteDefaultObiShadowsObiShadow1": {
+      "mode1": "#214bac"
+    },
+    "paletteDefaultObiTintsObiTint30": {
+      "mode1": "#ffffff"
+    },
+    "paletteDefaultObiTintsObiTint29": {
+      "mode1": "#fcfdfe"
+    },
+    "paletteDefaultObiTintsObiTint28": {
+      "mode1": "#f5f7fb"
+    },
+    "paletteDefaultObiTintsObiTint27": {
+      "mode1": "#edf0f8"
+    },
+    "paletteDefaultObiTintsObiTint26": {
+      "mode1": "#e5eaf5"
+    },
+    "paletteDefaultObiTintsObiTint25": {
+      "mode1": "#dde3f2"
+    },
+    "paletteDefaultObiTintsObiTint24": {
+      "mode1": "#d5ddef"
+    },
+    "paletteDefaultObiTintsObiTint23": {
+      "mode1": "#cdd7ec"
+    },
+    "paletteDefaultObiTintsObiTint22": {
+      "mode1": "#c6d0ea"
+    },
+    "paletteDefaultObiTintsObiTint21": {
+      "mode1": "#becae7"
+    },
+    "paletteDefaultObiTintsObiTint20": {
+      "mode1": "#b6c4e4"
+    },
+    "paletteDefaultObiTintsObiTint19": {
+      "mode1": "#aebde1"
+    },
+    "paletteDefaultObiTintsObiTint18": {
+      "mode1": "#a6b7de"
+    },
+    "paletteDefaultObiTintsObiTint17": {
+      "mode1": "#9eb1db"
+    },
+    "paletteDefaultObiTintsObiTint16": {
+      "mode1": "#97aad8"
+    },
+    "paletteDefaultObiTintsObiTint15": {
+      "mode1": "#8fa4d5"
+    },
+    "paletteDefaultObiTintsObiTint14": {
+      "mode1": "#879ed2"
+    },
+    "paletteDefaultObiTintsObiTint13": {
+      "mode1": "#7f97cf"
+    },
+    "paletteDefaultObiTintsObiTint12": {
+      "mode1": "#7791cc"
+    },
+    "paletteDefaultObiTintsObiTint11": {
+      "mode1": "#6f8bc9"
+    },
+    "paletteDefaultObiTintsObiTint10": {
+      "mode1": "#6884c6"
+    },
+    "paletteDefaultObiTintsObiTint9": {
+      "mode1": "#607ec3"
+    },
+    "paletteDefaultObiTintsObiTint8": {
+      "mode1": "#5877c1"
+    },
+    "paletteDefaultObiTintsObiTint7": {
+      "mode1": "#5071be"
+    },
+    "paletteDefaultObiTintsObiTint6": {
+      "mode1": "#486bbb"
+    },
+    "paletteDefaultObiTintsObiTint5": {
+      "mode1": "#4064b8"
+    },
+    "paletteDefaultObiTintsObiTint4": {
+      "mode1": "#395eb5"
+    },
+    "paletteDefaultObiTintsObiTint3": {
+      "mode1": "#3158b2"
+    },
+    "paletteDefaultObiTintsObiTint2": {
+      "mode1": "#2951af"
+    },
+    "paletteDefaultObiTintsObiTint1": {
+      "mode1": "#214bac"
+    },
+    "paletteDefaultKyloShadowsKyloShadow30": {
+      "mode1": "#040100"
+    },
+    "paletteDefaultKyloShadowsKyloShadow29": {
+      "mode1": "#020000"
+    },
+    "paletteDefaultKyloShadowsKyloShadow28": {
+      "mode1": "#090201"
+    },
+    "paletteDefaultKyloShadowsKyloShadow27": {
+      "mode1": "#0f0302"
+    },
+    "paletteDefaultKyloShadowsKyloShadow26": {
+      "mode1": "#160402"
+    },
+    "paletteDefaultKyloShadowsKyloShadow25": {
+      "mode1": "#1c0503"
+    },
+    "paletteDefaultKyloShadowsKyloShadow24": {
+      "mode1": "#230604"
+    },
+    "paletteDefaultKyloShadowsKyloShadow23": {
+      "mode1": "#290705"
+    },
+    "paletteDefaultKyloShadowsKyloShadow22": {
+      "mode1": "#300905"
+    },
+    "paletteDefaultKyloShadowsKyloShadow21": {
+      "mode1": "#360a06"
+    },
+    "paletteDefaultKyloShadowsKyloShadow20": {
+      "mode1": "#3d0b07"
+    },
+    "paletteDefaultKyloShadowsKyloShadow19": {
+      "mode1": "#430c08"
+    },
+    "paletteDefaultKyloShadowsKyloShadow18": {
+      "mode1": "#4a0d08"
+    },
+    "paletteDefaultKyloShadowsKyloShadow17": {
+      "mode1": "#500e09"
+    },
+    "paletteDefaultKyloShadowsKyloShadow16": {
+      "mode1": "#57100a"
+    },
+    "paletteDefaultKyloShadowsKyloShadow15": {
+      "mode1": "#5d110b"
+    },
+    "paletteDefaultKyloShadowsKyloShadow14": {
+      "mode1": "#64120b"
+    },
+    "paletteDefaultKyloShadowsKyloShadow13": {
+      "mode1": "#6a130c"
+    },
+    "paletteDefaultKyloShadowsKyloShadow12": {
+      "mode1": "#71140d"
+    },
+    "paletteDefaultKyloShadowsKyloShadow11": {
+      "mode1": "#77150e"
+    },
+    "paletteDefaultKyloShadowsKyloShadow10": {
+      "mode1": "#7e170e"
+    },
+    "paletteDefaultKyloShadowsKyloShadow9": {
+      "mode1": "#84180f"
+    },
+    "paletteDefaultKyloShadowsKyloShadow8": {
+      "mode1": "#8b1910"
+    },
+    "paletteDefaultKyloShadowsKyloShadow7": {
+      "mode1": "#911a11"
+    },
+    "paletteDefaultKyloShadowsKyloShadow6": {
+      "mode1": "#981b11"
+    },
+    "paletteDefaultKyloShadowsKyloShadow5": {
+      "mode1": "#9e1c12"
+    },
+    "paletteDefaultKyloShadowsKyloShadow4": {
+      "mode1": "#a51e13"
+    },
+    "paletteDefaultKyloShadowsKyloShadow3": {
+      "mode1": "#ab1f14"
+    },
+    "paletteDefaultKyloShadowsKyloShadow2": {
+      "mode1": "#b22014"
+    },
+    "paletteDefaultKyloShadowsKyloShadow1": {
+      "mode1": "#b82115"
+    },
+    "paletteDefaultKyloTintsKyloTint30": {
+      "mode1": "#ffffff"
+    },
+    "paletteDefaultKyloTintsKyloTint29": {
+      "mode1": "#fefcfc"
+    },
+    "paletteDefaultKyloTintsKyloTint28": {
+      "mode1": "#fcf5f4"
+    },
+    "paletteDefaultKyloTintsKyloTint27": {
+      "mode1": "#f9edec"
+    },
+    "paletteDefaultKyloTintsKyloTint26": {
+      "mode1": "#f7e5e3"
+    },
+    "paletteDefaultKyloTintsKyloTint25": {
+      "mode1": "#f4dddb"
+    },
+    "paletteDefaultKyloTintsKyloTint24": {
+      "mode1": "#f2d5d3"
+    },
+    "paletteDefaultKyloTintsKyloTint23": {
+      "mode1": "#efcdcb"
+    },
+    "paletteDefaultKyloTintsKyloTint22": {
+      "mode1": "#edc6c2"
+    },
+    "paletteDefaultKyloTintsKyloTint21": {
+      "mode1": "#eabeba"
+    },
+    "paletteDefaultKyloTintsKyloTint20": {
+      "mode1": "#e8b6b2"
+    },
+    "paletteDefaultKyloTintsKyloTint19": {
+      "mode1": "#e5aeaa"
+    },
+    "paletteDefaultKyloTintsKyloTint18": {
+      "mode1": "#e3a6a1"
+    },
+    "paletteDefaultKyloTintsKyloTint17": {
+      "mode1": "#e09e99"
+    },
+    "paletteDefaultKyloTintsKyloTint16": {
+      "mode1": "#de9791"
+    },
+    "paletteDefaultKyloTintsKyloTint15": {
+      "mode1": "#db8f89"
+    },
+    "paletteDefaultKyloTintsKyloTint14": {
+      "mode1": "#d98780"
+    },
+    "paletteDefaultKyloTintsKyloTint13": {
+      "mode1": "#d67f78"
+    },
+    "paletteDefaultKyloTintsKyloTint12": {
+      "mode1": "#d47770"
+    },
+    "paletteDefaultKyloTintsKyloTint11": {
+      "mode1": "#d16f68"
+    },
+    "paletteDefaultKyloTintsKyloTint10": {
+      "mode1": "#cf685f"
+    },
+    "paletteDefaultKyloTintsKyloTint9": {
+      "mode1": "#cc6057"
+    },
+    "paletteDefaultKyloTintsKyloTint8": {
+      "mode1": "#ca584f"
+    },
+    "paletteDefaultKyloTintsKyloTint7": {
+      "mode1": "#c75047"
+    },
+    "paletteDefaultKyloTintsKyloTint6": {
+      "mode1": "#c5483e"
+    },
+    "paletteDefaultKyloTintsKyloTint5": {
+      "mode1": "#c24036"
+    },
+    "paletteDefaultKyloTintsKyloTint4": {
+      "mode1": "#c0392e"
+    },
+    "paletteDefaultKyloTintsKyloTint3": {
+      "mode1": "#bd3126"
+    },
+    "paletteDefaultKyloTintsKyloTint2": {
+      "mode1": "#bb291d"
+    },
+    "paletteDefaultKyloTintsKyloTint1": {
+      "mode1": "#b82115"
+    },
+    "paletteDefaultCloneShadowsCloneShadow30": {
+      "mode1": "#020202"
+    },
+    "paletteDefaultCloneShadowsCloneShadow29": {
+      "mode1": "#010101"
+    },
+    "paletteDefaultCloneShadowsCloneShadow28": {
+      "mode1": "#050505"
+    },
+    "paletteDefaultCloneShadowsCloneShadow27": {
+      "mode1": "#080808"
+    },
+    "paletteDefaultCloneShadowsCloneShadow26": {
+      "mode1": "#0c0c0c"
+    },
+    "paletteDefaultCloneShadowsCloneShadow25": {
+      "mode1": "#0f0f0f"
+    },
+    "paletteDefaultCloneShadowsCloneShadow24": {
+      "mode1": "#131313"
+    },
+    "paletteDefaultCloneShadowsCloneShadow23": {
+      "mode1": "#161616"
+    },
+    "paletteDefaultCloneShadowsCloneShadow22": {
+      "mode1": "#1a1a1a"
+    },
+    "paletteDefaultCloneShadowsCloneShadow21": {
+      "mode1": "#1d1d1d"
+    },
+    "paletteDefaultCloneShadowsCloneShadow20": {
+      "mode1": "#212121"
+    },
+    "paletteDefaultCloneShadowsCloneShadow19": {
+      "mode1": "#242424"
+    },
+    "paletteDefaultCloneShadowsCloneShadow18": {
+      "mode1": "#282828"
+    },
+    "paletteDefaultCloneShadowsCloneShadow17": {
+      "mode1": "#2c2c2c"
+    },
+    "paletteDefaultCloneShadowsCloneShadow16": {
+      "mode1": "#2f2f2f"
+    },
+    "paletteDefaultCloneShadowsCloneShadow15": {
+      "mode1": "#333333"
+    },
+    "paletteDefaultCloneShadowsCloneShadow14": {
+      "mode1": "#363636"
+    },
+    "paletteDefaultCloneShadowsCloneShadow13": {
+      "mode1": "#3a3a3a"
+    },
+    "paletteDefaultCloneShadowsCloneShadow12": {
+      "mode1": "#3d3d3d"
+    },
+    "paletteDefaultCloneShadowsCloneShadow11": {
+      "mode1": "#414141"
+    },
+    "paletteDefaultCloneShadowsCloneShadow10": {
+      "mode1": "#444444"
+    },
+    "paletteDefaultCloneShadowsCloneShadow9": {
+      "mode1": "#484848"
+    },
+    "paletteDefaultCloneShadowsCloneShadow8": {
+      "mode1": "#4b4b4b"
+    },
+    "paletteDefaultCloneShadowsCloneShadow7": {
+      "mode1": "#4f4f4f"
+    },
+    "paletteDefaultCloneShadowsCloneShadow6": {
+      "mode1": "#525252"
+    },
+    "paletteDefaultCloneShadowsCloneShadow5": {
+      "mode1": "#565656"
+    },
+    "paletteDefaultCloneShadowsCloneShadow4": {
+      "mode1": "#595959"
+    },
+    "paletteDefaultCloneShadowsCloneShadow3": {
+      "mode1": "#5d5d5d"
+    },
+    "paletteDefaultCloneShadowsCloneShadow2": {
+      "mode1": "#606060"
+    },
+    "paletteDefaultCloneShadowsCloneShadow1": {
+      "mode1": "#646464"
+    },
+    "paletteDefaultCloneTintsCloneTint30": {
+      "mode1": "#ffffff"
+    },
+    "paletteDefaultCloneTintsCloneTint29": {
+      "mode1": "#fdfdfd"
+    },
+    "paletteDefaultCloneTintsCloneTint28": {
+      "mode1": "#f8f8f8"
+    },
+    "paletteDefaultCloneTintsCloneTint27": {
+      "mode1": "#f2f2f2"
+    },
+    "paletteDefaultCloneTintsCloneTint26": {
+      "mode1": "#ededed"
+    },
+    "paletteDefaultCloneTintsCloneTint25": {
+      "mode1": "#e7e7e7"
+    },
+    "paletteDefaultCloneTintsCloneTint24": {
+      "mode1": "#e2e2e2"
+    },
+    "paletteDefaultCloneTintsCloneTint23": {
+      "mode1": "#dcdcdc"
+    },
+    "paletteDefaultCloneTintsCloneTint22": {
+      "mode1": "#d7d7d7"
+    },
+    "paletteDefaultCloneTintsCloneTint21": {
+      "mode1": "#d1d1d1"
+    },
+    "paletteDefaultCloneTintsCloneTint20": {
+      "mode1": "#cccccc"
+    },
+    "paletteDefaultCloneTintsCloneTint19": {
+      "mode1": "#c6c6c6"
+    },
+    "paletteDefaultCloneTintsCloneTint18": {
+      "mode1": "#c1c1c1"
+    },
+    "paletteDefaultCloneTintsCloneTint17": {
+      "mode1": "#bcbcbc"
+    },
+    "paletteDefaultCloneTintsCloneTint16": {
+      "mode1": "#b6b6b6"
+    },
+    "paletteDefaultCloneTintsCloneTint15": {
+      "mode1": "#b1b1b1"
+    },
+    "paletteDefaultCloneTintsCloneTint14": {
+      "mode1": "#ababab"
+    },
+    "paletteDefaultCloneTintsCloneTint13": {
+      "mode1": "#a6a6a6"
+    },
+    "paletteDefaultCloneTintsCloneTint12": {
+      "mode1": "#a0a0a0"
+    },
+    "paletteDefaultCloneTintsCloneTint11": {
+      "mode1": "#9b9b9b"
+    },
+    "paletteDefaultCloneTintsCloneTint10": {
+      "mode1": "#959595"
+    },
+    "paletteDefaultCloneTintsCloneTint9": {
+      "mode1": "#909090"
+    },
+    "paletteDefaultCloneTintsCloneTint8": {
+      "mode1": "#8a8a8a"
+    },
+    "paletteDefaultCloneTintsCloneTint7": {
+      "mode1": "#858585"
+    },
+    "paletteDefaultCloneTintsCloneTint6": {
+      "mode1": "#7f7f7f"
+    },
+    "paletteDefaultCloneTintsCloneTint5": {
+      "mode1": "#7a7a7a"
+    },
+    "paletteDefaultCloneTintsCloneTint4": {
+      "mode1": "#747474"
+    },
+    "paletteDefaultCloneTintsCloneTint3": {
+      "mode1": "#6f6f6f"
+    },
+    "paletteDefaultCloneTintsCloneTint2": {
+      "mode1": "#696969"
+    },
+    "paletteDefaultCloneTintsCloneTint1": {
+      "mode1": "#646464"
+    },
+    "paletteDefaultJangoShadowsJangoShadow30": {
+      "mode1": "#010101"
+    },
+    "paletteDefaultJangoShadowsJangoShadow29": {
+      "mode1": "#010101"
+    },
+    "paletteDefaultJangoShadowsJangoShadow28": {
+      "mode1": "#020203"
+    },
+    "paletteDefaultJangoShadowsJangoShadow27": {
+      "mode1": "#040405"
+    },
+    "paletteDefaultJangoShadowsJangoShadow26": {
+      "mode1": "#060607"
+    },
+    "paletteDefaultJangoShadowsJangoShadow25": {
+      "mode1": "#080809"
+    },
+    "paletteDefaultJangoShadowsJangoShadow24": {
+      "mode1": "#0a0a0b"
+    },
+    "paletteDefaultJangoShadowsJangoShadow23": {
+      "mode1": "#0b0c0d"
+    },
+    "paletteDefaultJangoShadowsJangoShadow22": {
+      "mode1": "#0d0e0e"
+    },
+    "paletteDefaultJangoShadowsJangoShadow21": {
+      "mode1": "#0f1010"
+    },
+    "paletteDefaultJangoShadowsJangoShadow20": {
+      "mode1": "#111112"
+    },
+    "paletteDefaultJangoShadowsJangoShadow19": {
+      "mode1": "#131314"
+    },
+    "paletteDefaultJangoShadowsJangoShadow18": {
+      "mode1": "#141516"
+    },
+    "paletteDefaultJangoShadowsJangoShadow17": {
+      "mode1": "#161718"
+    },
+    "paletteDefaultJangoShadowsJangoShadow16": {
+      "mode1": "#18191a"
+    },
+    "paletteDefaultJangoShadowsJangoShadow15": {
+      "mode1": "#1a1b1c"
+    },
+    "paletteDefaultJangoShadowsJangoShadow14": {
+      "mode1": "#1c1d1e"
+    },
+    "paletteDefaultJangoShadowsJangoShadow13": {
+      "mode1": "#1d1f20"
+    },
+    "paletteDefaultJangoShadowsJangoShadow12": {
+      "mode1": "#1f2022"
+    },
+    "paletteDefaultJangoShadowsJangoShadow11": {
+      "mode1": "#212224"
+    },
+    "paletteDefaultJangoShadowsJangoShadow10": {
+      "mode1": "#232426"
+    },
+    "paletteDefaultJangoShadowsJangoShadow9": {
+      "mode1": "#252628"
+    },
+    "paletteDefaultJangoShadowsJangoShadow8": {
+      "mode1": "#26282a"
+    },
+    "paletteDefaultJangoShadowsJangoShadow7": {
+      "mode1": "#282a2c"
+    },
+    "paletteDefaultJangoShadowsJangoShadow6": {
+      "mode1": "#2a2c2e"
+    },
+    "paletteDefaultJangoShadowsJangoShadow5": {
+      "mode1": "#2c2e30"
+    },
+    "paletteDefaultJangoShadowsJangoShadow4": {
+      "mode1": "#2e2f32"
+    },
+    "paletteDefaultJangoShadowsJangoShadow3": {
+      "mode1": "#2f3134"
+    },
+    "paletteDefaultJangoShadowsJangoShadow2": {
+      "mode1": "#313336"
+    },
+    "paletteDefaultJangoShadowsJangoShadow1": {
+      "mode1": "#333538"
+    },
+    "paletteDefaultJangoTintsJangoTint30": {
+      "mode1": "#ffffff"
+    },
+    "paletteDefaultJangoTintsJangoTint29": {
+      "mode1": "#fdfdfd"
+    },
+    "paletteDefaultJangoTintsJangoTint28": {
+      "mode1": "#f5f5f6"
+    },
+    "paletteDefaultJangoTintsJangoTint27": {
+      "mode1": "#eeeeef"
+    },
+    "paletteDefaultJangoTintsJangoTint26": {
+      "mode1": "#e7e7e8"
+    },
+    "paletteDefaultJangoTintsJangoTint25": {
+      "mode1": "#e0e0e1"
+    },
+    "paletteDefaultJangoTintsJangoTint24": {
+      "mode1": "#d9d9da"
+    },
+    "paletteDefaultJangoTintsJangoTint23": {
+      "mode1": "#d1d2d3"
+    },
+    "paletteDefaultJangoTintsJangoTint22": {
+      "mode1": "#cacbcb"
+    },
+    "paletteDefaultJangoTintsJangoTint21": {
+      "mode1": "#c3c4c4"
+    },
+    "paletteDefaultJangoTintsJangoTint20": {
+      "mode1": "#bcbcbd"
+    },
+    "paletteDefaultJangoTintsJangoTint19": {
+      "mode1": "#b5b5b6"
+    },
+    "paletteDefaultJangoTintsJangoTint18": {
+      "mode1": "#adaeaf"
+    },
+    "paletteDefaultJangoTintsJangoTint17": {
+      "mode1": "#a6a7a8"
+    },
+    "paletteDefaultJangoTintsJangoTint16": {
+      "mode1": "#9fa0a1"
+    },
+    "paletteDefaultJangoTintsJangoTint15": {
+      "mode1": "#98999a"
+    },
+    "paletteDefaultJangoTintsJangoTint14": {
+      "mode1": "#919293"
+    },
+    "paletteDefaultJangoTintsJangoTint13": {
+      "mode1": "#898b8c"
+    },
+    "paletteDefaultJangoTintsJangoTint12": {
+      "mode1": "#828385"
+    },
+    "paletteDefaultJangoTintsJangoTint11": {
+      "mode1": "#7b7c7e"
+    },
+    "paletteDefaultJangoTintsJangoTint10": {
+      "mode1": "#747577"
+    },
+    "paletteDefaultJangoTintsJangoTint9": {
+      "mode1": "#6d6e70"
+    },
+    "paletteDefaultJangoTintsJangoTint8": {
+      "mode1": "#656769"
+    },
+    "paletteDefaultJangoTintsJangoTint7": {
+      "mode1": "#5e6062"
+    },
+    "paletteDefaultJangoTintsJangoTint6": {
+      "mode1": "#57595b"
+    },
+    "paletteDefaultJangoTintsJangoTint5": {
+      "mode1": "#505254"
+    },
+    "paletteDefaultJangoTintsJangoTint4": {
+      "mode1": "#494a4d"
+    },
+    "paletteDefaultJangoTintsJangoTint3": {
+      "mode1": "#414346"
+    },
+    "paletteDefaultJangoTintsJangoTint2": {
+      "mode1": "#3a3c3f"
+    },
+    "paletteDefaultJangoTintsJangoTint1": {
+      "mode1": "#333538"
+    },
+    "paletteDefaultSnokeShadowsSnokeShadow30": {
+      "mode1": "#010101"
+    },
+    "paletteDefaultSnokeShadowsSnokeShadow29": {
+      "mode1": "#000000"
+    },
+    "paletteDefaultSnokeShadowsSnokeShadow28": {
+      "mode1": "#010202"
+    },
+    "paletteDefaultSnokeShadowsSnokeShadow27": {
+      "mode1": "#020303"
+    },
+    "paletteDefaultSnokeShadowsSnokeShadow26": {
+      "mode1": "#040404"
+    },
+    "paletteDefaultSnokeShadowsSnokeShadow25": {
+      "mode1": "#050505"
+    },
+    "paletteDefaultSnokeShadowsSnokeShadow24": {
+      "mode1": "#060607"
+    },
+    "paletteDefaultSnokeShadowsSnokeShadow23": {
+      "mode1": "#070708"
+    },
+    "paletteDefaultSnokeShadowsSnokeShadow22": {
+      "mode1": "#080809"
+    },
+    "paletteDefaultSnokeShadowsSnokeShadow21": {
+      "mode1": "#09090a"
+    },
+    "paletteDefaultSnokeShadowsSnokeShadow20": {
+      "mode1": "#0a0b0c"
+    },
+    "paletteDefaultSnokeShadowsSnokeShadow19": {
+      "mode1": "#0b0c0d"
+    },
+    "paletteDefaultSnokeShadowsSnokeShadow18": {
+      "mode1": "#0c0d0e"
+    },
+    "paletteDefaultSnokeShadowsSnokeShadow17": {
+      "mode1": "#0d0e0f"
+    },
+    "paletteDefaultSnokeShadowsSnokeShadow16": {
+      "mode1": "#0e0f10"
+    },
+    "paletteDefaultSnokeShadowsSnokeShadow15": {
+      "mode1": "#0f1012"
+    },
+    "paletteDefaultSnokeShadowsSnokeShadow14": {
+      "mode1": "#101113"
+    },
+    "paletteDefaultSnokeShadowsSnokeShadow13": {
+      "mode1": "#111214"
+    },
+    "paletteDefaultSnokeShadowsSnokeShadow12": {
+      "mode1": "#121415"
+    },
+    "paletteDefaultSnokeShadowsSnokeShadow11": {
+      "mode1": "#131517"
+    },
+    "paletteDefaultSnokeShadowsSnokeShadow10": {
+      "mode1": "#141618"
+    },
+    "paletteDefaultSnokeShadowsSnokeShadow9": {
+      "mode1": "#161719"
+    },
+    "paletteDefaultSnokeShadowsSnokeShadow8": {
+      "mode1": "#17181a"
+    },
+    "paletteDefaultSnokeShadowsSnokeShadow7": {
+      "mode1": "#18191c"
+    },
+    "paletteDefaultSnokeShadowsSnokeShadow6": {
+      "mode1": "#191a1d"
+    },
+    "paletteDefaultSnokeShadowsSnokeShadow5": {
+      "mode1": "#1a1b1e"
+    },
+    "paletteDefaultSnokeShadowsSnokeShadow4": {
+      "mode1": "#1b1d1f"
+    },
+    "paletteDefaultSnokeShadowsSnokeShadow3": {
+      "mode1": "#1c1e21"
+    },
+    "paletteDefaultSnokeShadowsSnokeShadow2": {
+      "mode1": "#1d1f22"
+    },
+    "paletteDefaultSnokeShadowsSnokeShadow1": {
+      "mode1": "#1e2023"
+    },
+    "paletteDefaultSnokeTintsSnokeTint30": {
+      "mode1": "#ffffff"
+    },
+    "paletteDefaultSnokeTintsSnokeTint29": {
+      "mode1": "#fcfcfc"
+    },
+    "paletteDefaultSnokeTintsSnokeTint28": {
+      "mode1": "#f4f5f5"
+    },
+    "paletteDefaultSnokeTintsSnokeTint27": {
+      "mode1": "#eceded"
+    },
+    "paletteDefaultSnokeTintsSnokeTint26": {
+      "mode1": "#e5e5e5"
+    },
+    "paletteDefaultSnokeTintsSnokeTint25": {
+      "mode1": "#dddddd"
+    },
+    "paletteDefaultSnokeTintsSnokeTint24": {
+      "mode1": "#d5d5d6"
+    },
+    "paletteDefaultSnokeTintsSnokeTint23": {
+      "mode1": "#cdcdce"
+    },
+    "paletteDefaultSnokeTintsSnokeTint22": {
+      "mode1": "#c5c5c6"
+    },
+    "paletteDefaultSnokeTintsSnokeTint21": {
+      "mode1": "#bdbdbe"
+    },
+    "paletteDefaultSnokeTintsSnokeTint20": {
+      "mode1": "#b5b6b7"
+    },
+    "paletteDefaultSnokeTintsSnokeTint19": {
+      "mode1": "#adaeaf"
+    },
+    "paletteDefaultSnokeTintsSnokeTint18": {
+      "mode1": "#a5a6a7"
+    },
+    "paletteDefaultSnokeTintsSnokeTint17": {
+      "mode1": "#9d9e9f"
+    },
+    "paletteDefaultSnokeTintsSnokeTint16": {
+      "mode1": "#959697"
+    },
+    "paletteDefaultSnokeTintsSnokeTint15": {
+      "mode1": "#8d8e90"
+    },
+    "paletteDefaultSnokeTintsSnokeTint14": {
+      "mode1": "#858688"
+    },
+    "paletteDefaultSnokeTintsSnokeTint13": {
+      "mode1": "#7d7e80"
+    },
+    "paletteDefaultSnokeTintsSnokeTint12": {
+      "mode1": "#757778"
+    },
+    "paletteDefaultSnokeTintsSnokeTint11": {
+      "mode1": "#6d6f71"
+    },
+    "paletteDefaultSnokeTintsSnokeTint10": {
+      "mode1": "#656769"
+    },
+    "paletteDefaultSnokeTintsSnokeTint9": {
+      "mode1": "#5e5f61"
+    },
+    "paletteDefaultSnokeTintsSnokeTint8": {
+      "mode1": "#565759"
+    },
+    "paletteDefaultSnokeTintsSnokeTint7": {
+      "mode1": "#4e4f52"
+    },
+    "paletteDefaultSnokeTintsSnokeTint6": {
+      "mode1": "#46474a"
+    },
+    "paletteDefaultSnokeTintsSnokeTint5": {
+      "mode1": "#3e3f42"
+    },
+    "paletteDefaultSnokeTintsSnokeTint4": {
+      "mode1": "#36383a"
+    },
+    "paletteDefaultSnokeTintsSnokeTint3": {
+      "mode1": "#2e3033"
+    },
+    "paletteDefaultSnokeTintsSnokeTint2": {
+      "mode1": "#26282b"
+    },
+    "paletteDefaultSnokeTintsSnokeTint1": {
+      "mode1": "#1e2023"
+    },
+    "paletteDefaultVaderShadowsVaderShadow29": {
+      "mode1": "#000000"
+    },
+    "paletteDefaultVaderShadowsVaderShadow28": {
+      "mode1": "#010101"
+    },
+    "paletteDefaultVaderShadowsVaderShadow27": {
+      "mode1": "#020202"
+    },
+    "paletteDefaultVaderShadowsVaderShadow26": {
+      "mode1": "#020203"
+    },
+    "paletteDefaultVaderShadowsVaderShadow25": {
+      "mode1": "#030304"
+    },
+    "paletteDefaultVaderShadowsVaderShadow24": {
+      "mode1": "#040405"
+    },
+    "paletteDefaultVaderShadowsVaderShadow22": {
+      "mode1": "#050506"
+    },
+    "paletteDefaultVaderShadowsVaderShadow21": {
+      "mode1": "#060607"
+    },
+    "paletteDefaultVaderShadowsVaderShadow30": {
+      "mode1": "#000001"
+    },
+    "paletteDefaultVaderShadowsVaderShadow23": {
+      "mode1": "#040505"
+    },
+    "paletteDefaultVaderShadowsVaderShadow20": {
+      "mode1": "#070708"
+    },
+    "paletteDefaultVaderShadowsVaderShadow19": {
+      "mode1": "#070809"
+    },
+    "paletteDefaultVaderShadowsVaderShadow18": {
+      "mode1": "#08080a"
+    },
+    "paletteDefaultVaderShadowsVaderShadow17": {
+      "mode1": "#09090a"
+    },
+    "paletteDefaultVaderShadowsVaderShadow16": {
+      "mode1": "#090a0b"
+    },
+    "paletteDefaultVaderShadowsVaderShadow15": {
+      "mode1": "#0a0b0c"
+    },
+    "paletteDefaultVaderShadowsVaderShadow14": {
+      "mode1": "#0b0b0d"
+    },
+    "paletteDefaultVaderShadowsVaderShadow13": {
+      "mode1": "#0c0c0e"
+    },
+    "paletteDefaultVaderShadowsVaderShadow12": {
+      "mode1": "#0c0d0f"
+    },
+    "paletteDefaultVaderShadowsVaderShadow11": {
+      "mode1": "#0d0e10"
+    },
+    "paletteDefaultVaderShadowsVaderShadow10": {
+      "mode1": "#0e0e10"
+    },
+    "paletteDefaultVaderShadowsVaderShadow9": {
+      "mode1": "#0e0f11"
+    },
+    "paletteDefaultVaderShadowsVaderShadow8": {
+      "mode1": "#0f1012"
+    },
+    "paletteDefaultVaderShadowsVaderShadow7": {
+      "mode1": "#101113"
+    },
+    "paletteDefaultVaderShadowsVaderShadow6": {
+      "mode1": "#101114"
+    },
+    "paletteDefaultVaderShadowsVaderShadow5": {
+      "mode1": "#111215"
+    },
+    "paletteDefaultVaderShadowsVaderShadow4": {
+      "mode1": "#121315"
+    },
+    "paletteDefaultVaderShadowsVaderShadow3": {
+      "mode1": "#131416"
+    },
+    "paletteDefaultVaderShadowsVaderShadow2": {
+      "mode1": "#131417"
+    },
+    "paletteDefaultVaderShadowsVaderShadow1": {
+      "mode1": "#141518"
+    },
+    "paletteDefaultVaderTintsVaderTint30": {
+      "mode1": "#ffffff"
+    },
+    "paletteDefaultVaderTintsVaderTint29": {
+      "mode1": "#fcfcfc"
+    },
+    "paletteDefaultVaderTintsVaderTint28": {
+      "mode1": "#f4f4f4"
+    },
+    "paletteDefaultVaderTintsVaderTint27": {
+      "mode1": "#ececec"
+    },
+    "paletteDefaultVaderTintsVaderTint26": {
+      "mode1": "#e3e3e4"
+    },
+    "paletteDefaultVaderTintsVaderTint25": {
+      "mode1": "#dbdbdc"
+    },
+    "paletteDefaultVaderTintsVaderTint24": {
+      "mode1": "#d3d3d4"
+    },
+    "paletteDefaultVaderTintsVaderTint23": {
+      "mode1": "#cacbcb"
+    },
+    "paletteDefaultVaderTintsVaderTint22": {
+      "mode1": "#c2c2c3"
+    },
+    "paletteDefaultVaderTintsVaderTint21": {
+      "mode1": "#bababb"
+    },
+    "paletteDefaultVaderTintsVaderTint20": {
+      "mode1": "#b2b2b3"
+    },
+    "paletteDefaultVaderTintsVaderTint19": {
+      "mode1": "#a9aaab"
+    },
+    "paletteDefaultVaderTintsVaderTint18": {
+      "mode1": "#a1a1a3"
+    },
+    "paletteDefaultVaderTintsVaderTint17": {
+      "mode1": "#99999a"
+    },
+    "paletteDefaultVaderTintsVaderTint16": {
+      "mode1": "#909192"
+    },
+    "paletteDefaultVaderTintsVaderTint15": {
+      "mode1": "#88898a"
+    },
+    "paletteDefaultVaderTintsVaderTint14": {
+      "mode1": "#808082"
+    },
+    "paletteDefaultVaderTintsVaderTint13": {
+      "mode1": "#78787a"
+    },
+    "paletteDefaultVaderTintsVaderTint12": {
+      "mode1": "#6f7072"
+    },
+    "paletteDefaultVaderTintsVaderTint11": {
+      "mode1": "#67686a"
+    },
+    "paletteDefaultVaderTintsVaderTint10": {
+      "mode1": "#5f5f61"
+    },
+    "paletteDefaultVaderTintsVaderTint9": {
+      "mode1": "#565759"
+    },
+    "paletteDefaultVaderTintsVaderTint8": {
+      "mode1": "#4e4f51"
+    },
+    "paletteDefaultVaderTintsVaderTint7": {
+      "mode1": "#464749"
+    },
+    "paletteDefaultVaderTintsVaderTint6": {
+      "mode1": "#3d3e41"
+    },
+    "paletteDefaultVaderTintsVaderTint5": {
+      "mode1": "#353639"
+    },
+    "paletteDefaultVaderTintsVaderTint4": {
+      "mode1": "#2d2e30"
+    },
+    "paletteDefaultVaderTintsVaderTint3": {
+      "mode1": "#252628"
+    },
+    "paletteDefaultVaderTintsVaderTint2": {
+      "mode1": "#1c1d20"
+    },
+    "paletteDefaultVaderTintsVaderTint1": {
+      "mode1": "#141518"
+    },
+    "white": {
+      "mode1": "#ffffff"
+    },
+    "black": {
+      "mode1": "#010101"
+    },
+    "paletteDefaultRedShadowsRedShadow1": {
+      "mode1": "#ed0000"
+    },
+    "paletteDefaultRedShadowsRedShadow10": {
+      "mode1": "#a20000"
+    },
+    "paletteDefaultRedShadowsRedShadow11": {
+      "mode1": "#990000"
+    },
+    "paletteDefaultRedShadowsRedShadow12": {
+      "mode1": "#910000"
+    },
+    "paletteDefaultRedShadowsRedShadow13": {
+      "mode1": "#890000"
+    },
+    "paletteDefaultRedShadowsRedShadow14": {
+      "mode1": "#800000"
+    },
+    "paletteDefaultRedShadowsRedShadow15": {
+      "mode1": "#780000"
+    },
+    "paletteDefaultRedShadowsRedShadow16": {
+      "mode1": "#700000"
+    },
+    "paletteDefaultRedShadowsRedShadow17": {
+      "mode1": "#670000"
+    },
+    "paletteDefaultRedShadowsRedShadow18": {
+      "mode1": "#5f0000"
+    },
+    "paletteDefaultRedShadowsRedShadow19": {
+      "mode1": "#560000"
+    },
+    "paletteDefaultRedShadowsRedShadow2": {
+      "mode1": "#e50000"
+    },
+    "paletteDefaultRedShadowsRedShadow20": {
+      "mode1": "#4e0000"
+    },
+    "paletteDefaultRedShadowsRedShadow21": {
+      "mode1": "#460000"
+    },
+    "paletteDefaultRedShadowsRedShadow22": {
+      "mode1": "#3d0000"
+    },
+    "paletteDefaultRedShadowsRedShadow23": {
+      "mode1": "#350000"
+    },
+    "paletteDefaultRedShadowsRedShadow24": {
+      "mode1": "#2d0000"
+    },
+    "paletteDefaultRedShadowsRedShadow25": {
+      "mode1": "#240000"
+    },
+    "paletteDefaultRedShadowsRedShadow26": {
+      "mode1": "#1c0000"
+    },
+    "paletteDefaultRedShadowsRedShadow27": {
+      "mode1": "#140000"
+    },
+    "paletteDefaultRedShadowsRedShadow28": {
+      "mode1": "#0b0000"
+    },
+    "paletteDefaultRedShadowsRedShadow29": {
+      "mode1": "#030000"
+    },
+    "paletteDefaultRedShadowsRedShadow3": {
+      "mode1": "#dc0000"
+    },
+    "paletteDefaultRedShadowsRedShadow30": {
+      "mode1": "#060000"
+    },
+    "paletteDefaultRedShadowsRedShadow4": {
+      "mode1": "#d40000"
+    },
+    "paletteDefaultRedShadowsRedShadow5": {
+      "mode1": "#cc0000"
+    },
+    "paletteDefaultRedShadowsRedShadow6": {
+      "mode1": "#c30000"
+    },
+    "paletteDefaultRedShadowsRedShadow7": {
+      "mode1": "#bb0000"
+    },
+    "paletteDefaultRedShadowsRedShadow8": {
+      "mode1": "#b20000"
+    },
+    "paletteDefaultRedShadowsRedShadow9": {
+      "mode1": "#aa0000"
+    },
+    "paletteDefaultRedTintsRedTint1": {
+      "mode1": "#ed0000"
+    },
+    "paletteDefaultRedTintsRedTint10": {
+      "mode1": "#f35151"
+    },
+    "paletteDefaultRedTintsRedTint11": {
+      "mode1": "#f35a5a"
+    },
+    "paletteDefaultRedTintsRedTint12": {
+      "mode1": "#f46363"
+    },
+    "paletteDefaultRedTintsRedTint13": {
+      "mode1": "#f56c6c"
+    },
+    "paletteDefaultRedTintsRedTint14": {
+      "mode1": "#f57575"
+    },
+    "paletteDefaultRedTintsRedTint15": {
+      "mode1": "#f67e7e"
+    },
+    "paletteDefaultRedTintsRedTint16": {
+      "mode1": "#f78787"
+    },
+    "paletteDefaultRedTintsRedTint17": {
+      "mode1": "#f79090"
+    },
+    "paletteDefaultRedTintsRedTint18": {
+      "mode1": "#f89999"
+    },
+    "paletteDefaultRedTintsRedTint19": {
+      "mode1": "#f8a2a2"
+    },
+    "paletteDefaultRedTintsRedTint2": {
+      "mode1": "#ee0909"
+    },
+    "paletteDefaultRedTintsRedTint20": {
+      "mode1": "#f9abab"
+    },
+    "paletteDefaultRedTintsRedTint21": {
+      "mode1": "#fab4b4"
+    },
+    "paletteDefaultRedTintsRedTint22": {
+      "mode1": "#fabdbd"
+    },
+    "paletteDefaultRedTintsRedTint23": {
+      "mode1": "#fbc6c6"
+    },
+    "paletteDefaultRedTintsRedTint24": {
+      "mode1": "#fccfcf"
+    },
+    "paletteDefaultRedTintsRedTint25": {
+      "mode1": "#fcd8d8"
+    },
+    "paletteDefaultRedTintsRedTint26": {
+      "mode1": "#fde1e1"
+    },
+    "paletteDefaultRedTintsRedTint27": {
+      "mode1": "#feeaea"
+    },
+    "paletteDefaultRedTintsRedTint28": {
+      "mode1": "#fef3f3"
+    },
+    "paletteDefaultRedTintsRedTint29": {
+      "mode1": "#fffcfc"
+    },
+    "paletteDefaultRedTintsRedTint3": {
+      "mode1": "#ee1212"
+    },
+    "paletteDefaultRedTintsRedTint30": {
+      "mode1": "#ffffff"
+    },
+    "paletteDefaultRedTintsRedTint4": {
+      "mode1": "#ef1b1b"
+    },
+    "paletteDefaultRedTintsRedTint5": {
+      "mode1": "#f02424"
+    },
+    "paletteDefaultRedTintsRedTint6": {
+      "mode1": "#f02d2d"
+    },
+    "paletteDefaultRedTintsRedTint7": {
+      "mode1": "#f13636"
+    },
+    "paletteDefaultRedTintsRedTint8": {
+      "mode1": "#f13f3f"
+    },
+    "paletteDefaultRedTintsRedTint9": {
+      "mode1": "#f24848"
+    }
+  },
+  "aRESKudo": {
+    "divider": {
+      "light": "#bcbcbd",
+      "dark": "#bcbcbd"
+    },
+    "kudoColorsRibbonBackgroundMain": {
+      "light": "#f5f5f6",
+      "dark": "#f5f5f6"
+    },
+    "kudoColorsDropdownMenuBorder": {
+      "light": "#bcbcbd",
+      "dark": "#010101"
+    },
+    "kudoColorsRibbonItemBackgroundStandard": {
+      "light": "#f5f5f6",
+      "dark": "#f5f5f6"
+    },
+    "kudoColorsRibbonItemBackgroundHover": {
+      "light": "#e2e2e2",
+      "dark": "#e2e2e2"
+    },
+    "kudoColorsRibbonItemBackgroundPressed": {
+      "light": "#cccccc",
+      "dark": "#cccccc"
+    },
+    "kudoColorsRibbonItemBackgroundActive": {
+      "light": "#d5ddef",
+      "dark": "#d5ddef"
+    },
+    "kudoColorsRibbonItemBackgroundDisabled": {
+      "light": "#f5f5f6",
+      "dark": "#f5f5f6"
+    },
+    "kudoColorsTabRibbonBackgroundStandard": {
+      "light": "#f5f5f6",
+      "dark": "#f5f5f6"
+    },
+    "kudoColorsTabRibbonBackgroundHover": {
+      "light": "#e2e2e2",
+      "dark": "#edf0f8"
+    },
+    "kudoColorsTabRibbonBackgroundPressed": {
+      "light": "#cccccc",
+      "dark": "#d5ddef"
+    },
+    "kudoColorsTabRibbonBackgroundActive": {
+      "light": "#d5ddef",
+      "dark": "#a6b7de"
+    },
+    "kudoColorsTabRibbonBackgroundDisabledStandard": {
+      "light": "#f5f5f6",
+      "dark": "#f5f5f6"
+    },
+    "kudoColorsRibbonItemBorderStandard": {
+      "light": "#f5f5f6",
+      "dark": "#bcbcbd"
+    },
+    "kudoColorsRibbonItemBorderHover": {
+      "light": "#e2e2e2",
+      "dark": "#dde3f2"
+    },
+    "kudoColorsRibbonItemBorderPressed": {
+      "light": "#cccccc",
+      "dark": "#c6d0ea"
+    },
+    "kudoColorsRibbonItemBorderActive": {
+      "light": "#d5ddef",
+      "dark": "#97aad8"
+    },
+    "kudoColorsRibbonItemBorderDisabled": {
+      "light": "#f5f5f6",
+      "dark": "#e7e7e8"
+    },
+    "kudoColorsRibbonItemIconColorItemStandard": {
+      "light": "#272727",
+      "dark": "#272727"
+    },
+    "kudoColorsRibbonItemIconColorItemActive": {
+      "light": "#050505",
+      "dark": "#050505"
+    },
+    "kudoColorsRibbonItemIconColorItemDisabled": {
+      "light": "#898b8c",
+      "dark": "#898b8c"
+    },
+    "kudoColorsRibbonItemDivider": {
+      "light": "#bcbcbd",
+      "dark": "#bcbcbd"
+    },
+    "kudoColorsTabRibbonTextColorActive": {
+      "light": "#050505",
+      "dark": "#050505"
+    },
+    "kudoColorsTabRibbonTextColorStandard": {
+      "light": "#272727",
+      "dark": "#272727"
+    },
+    "kudoColorsTabRibbonTextColorDisabled": {
+      "light": "#898b8c",
+      "dark": "#898b8c"
+    },
+    "kudoColorsTabRibbonBackgroundDisabledActive": {
+      "light": "#f5f5f6",
+      "dark": "#f5f5f6"
+    },
+    "kudoColorsRibbonItemTextColorActive": {
+      "light": "#050505",
+      "dark": "#050505"
+    },
+    "kudoColorsRibbonItemTextColorStandard": {
+      "light": "#272727",
+      "dark": "#272727"
+    },
+    "kudoColorsRibbonItemTextColorDisabled": {
+      "light": "#898b8c",
+      "dark": "#898b8c"
+    },
+    "kudoColorsTabRibbonIconColorItemStandard": {
+      "light": "#272727",
+      "dark": "#272727"
+    },
+    "kudoColorsTabRibbonIconColorItemActive": {
+      "light": "#050505",
+      "dark": "#050505"
+    },
+    "kudoColorsTabRibbonIconColorItemDisabled": {
+      "light": "#898b8c",
+      "dark": "#898b8c"
+    },
+    "kudoColorsInputIconColorStandard": {
+      "light": "#272727",
+      "dark": "#272727"
+    },
+    "kudoColorsInputIconColorActive": {
+      "light": "#050505",
+      "dark": "#050505"
+    },
+    "kudoColorsInputIconColorDisabled": {
+      "light": "#898b8c",
+      "dark": "#898b8c"
+    },
+    "kudoColorsInputDivider": {
+      "light": "#bcbcbd",
+      "dark": "#bcbcbd"
+    },
+    "kudoColorsInputTextColorStandard": {
+      "light": "#272727",
+      "dark": "#272727"
+    },
+    "kudoColorsInputTextColorActive": {
+      "light": "#050505",
+      "dark": "#050505"
+    },
+    "kudoColorsInputTextColorDisabled": {
+      "light": "#898b8c",
+      "dark": "#898b8c"
+    },
+    "kudoColorsInputBackgroundStandard": {
+      "light": "#f5f5f6",
+      "dark": "#f5f5f6"
+    },
+    "kudoColorsInputBackgroundHover": {
+      "light": "#e2e2e2",
+      "dark": "#edf0f8"
+    },
+    "kudoColorsInputBackgroundPressed": {
+      "light": "#cccccc",
+      "dark": "#d5ddef"
+    },
+    "kudoColorsInputBackgroundActive": {
+      "light": "#d5ddef",
+      "dark": "#a6b7de"
+    },
+    "kudoColorsInputBackgroundDisabled": {
+      "light": "#f5f5f6",
+      "dark": "#f5f5f6"
+    },
+    "kudoColorsInputBorderStandard": {
+      "light": "#bcbcbd",
+      "dark": "#bcbcbd"
+    },
+    "kudoColorsInputBorderHover": {
+      "light": "#dde3f2",
+      "dark": "#dde3f2"
+    },
+    "kudoColorsInputBorderPressed": {
+      "light": "#c6d0ea",
+      "dark": "#c6d0ea"
+    },
+    "kudoColorsInputBorderActive": {
+      "light": "#97aad8",
+      "dark": "#97aad8"
+    },
+    "kudoColorsInputBorderDisabled": {
+      "light": "#e7e7e8",
+      "dark": "#e7e7e8"
+    },
+    "kudoColorsSplitArrowDivider": {
+      "light": "#bcbcbd",
+      "dark": "#bcbcbd"
+    },
+    "kudoColorsSplitArrowIconColorStandard": {
+      "light": "#272727",
+      "dark": "#272727"
+    },
+    "kudoColorsSplitArrowIconColorActive": {
+      "light": "#050505",
+      "dark": "#050505"
+    },
+    "kudoColorsSplitArrowIconColorDisabled": {
+      "light": "#898b8c",
+      "dark": "#898b8c"
+    },
+    "kudoColorsSplitArrowTextColorStandard": {
+      "light": "#272727",
+      "dark": "#272727"
+    },
+    "kudoColorsSplitArrowTextColorActive": {
+      "light": "#050505",
+      "dark": "#050505"
+    },
+    "kudoColorsSplitArrowTextColorDisabled": {
+      "light": "#898b8c",
+      "dark": "#898b8c"
+    },
+    "kudoColorsSplitArrowBackgroundStandard": {
+      "light": "#f5f5f6",
+      "dark": "#f5f5f6"
+    },
+    "kudoColorsSplitArrowBackgroundHover": {
+      "light": "#e2e2e2",
+      "dark": "#edf0f8"
+    },
+    "kudoColorsSplitArrowBackgroundPressed": {
+      "light": "#cccccc",
+      "dark": "#d5ddef"
+    },
+    "kudoColorsSplitArrowBackgroundActive": {
+      "light": "#d5ddef",
+      "dark": "#a6b7de"
+    },
+    "kudoColorsSplitArrowBackgroundDisabled": {
+      "light": "#f5f5f6",
+      "dark": "#f5f5f6"
+    },
+    "kudoColorsSplitArrowBorderStandard": {
+      "light": "#f5f5f6",
+      "dark": "#bcbcbd"
+    },
+    "kudoColorsSplitArrowBorderHover": {
+      "light": "#e2e2e2",
+      "dark": "#dde3f2"
+    },
+    "kudoColorsSplitArrowBorderPressed": {
+      "light": "#cccccc",
+      "dark": "#c6d0ea"
+    },
+    "kudoColorsSplitArrowBorderActive": {
+      "light": "#d5ddef",
+      "dark": "#97aad8"
+    },
+    "kudoColorsSplitArrowBorderDisabled": {
+      "light": "#f5f5f6",
+      "dark": "#e7e7e8"
+    },
+    "kudoColorsSliderItemBackground": {
+      "light": "#ffffff",
+      "dark": "#efefef"
+    },
+    "kudoColorsSliderLineBackground": {
+      "light": "#ffffff",
+      "dark": "#141518"
+    },
+    "kudoColorsInputBorderError": {
+      "light": "#ed0000",
+      "dark": "#ed0000"
+    },
+    "kudoColorsInputTextColorError": {
+      "light": "#ed0000",
+      "dark": "#ed0000"
+    },
+    "kudoColorsTooltipBackground": {
+      "light": "#e2e2e2",
+      "dark": "#e2e2e2"
+    },
+    "kudoColorsTooltipBorder": {
+      "light": "#898b8c",
+      "dark": "#898b8c"
+    },
+    "kudoColorsTooltipTextColor": {
+      "light": "#272727",
+      "dark": "#272727"
+    },
+    "oppa": {
+      "light": "#ffffff",
+      "dark": "#f5f5f6"
+    }
+  },
+  "xDraftSight": {
+    "kudoColorsSliderItemBackground": {
+      "light": "#ffffff",
+      "dark": "#efefef"
+    },
+    "kudoColorsRibbonBackgroundMain": {
+      "light": "#f1f1f1",
+      "dark": "#f5f5f6"
+    },
+    "kudoColorsTabRibbonBackgroundStandard": {
+      "light": "#f5f5f6",
+      "dark": "#f5f5f6"
+    },
+    "kudoColorsTabRibbonBackgroundHover": {
+      "light": "#e2e2e2",
+      "dark": "#edf0f8"
+    },
+    "kudoColorsTabRibbonBackgroundPressed": {
+      "light": "#cccccc",
+      "dark": "#d5ddef"
+    },
+    "kudoColorsTabRibbonBackgroundActive": {
+      "light": "#d5ddef",
+      "dark": "#a6b7de"
+    },
+    "kudoColorsTabRibbonBackgroundDisabledStandard": {
+      "light": "#f5f5f6",
+      "dark": "#f5f5f6"
+    },
+    "kudoColorsTabRibbonBackgroundDisabledActive": {
+      "light": "#f5f5f6",
+      "dark": "#f5f5f6"
+    },
+    "kudoColorsTabRibbonTextColorStandard": {
+      "light": "#272727",
+      "dark": "#272727"
+    },
+    "kudoColorsTabRibbonTextColorActive": {
+      "light": "#050505",
+      "dark": "#050505"
+    },
+    "kudoColorsTabRibbonTextColorDisabled": {
+      "light": "#898b8c",
+      "dark": "#898b8c"
+    },
+    "kudoColorsTabRibbonIconColorItemStandard": {
+      "light": "#272727",
+      "dark": "#272727"
+    },
+    "kudoColorsTabRibbonIconColorItemActive": {
+      "light": "#050505",
+      "dark": "#050505"
+    },
+    "kudoColorsTabRibbonIconColorItemDisabled": {
+      "light": "#898b8c",
+      "dark": "#898b8c"
+    },
+    "kudoColorsDropdownMenuBorder": {
+      "light": "#bcbcbd",
+      "dark": "#010101"
+    },
+    "kudoColorsInputDivider": {
+      "light": "#bcbcbd",
+      "dark": "#bcbcbd"
+    },
+    "kudoColorsInputIconColorStandard": {
+      "light": "#272727",
+      "dark": "#272727"
+    },
+    "kudoColorsInputIconColorActive": {
+      "light": "#050505",
+      "dark": "#050505"
+    },
+    "kudoColorsInputIconColorDisabled": {
+      "light": "#898b8c",
+      "dark": "#898b8c"
+    },
+    "kudoColorsInputTextColorStandard": {
+      "light": "#272727",
+      "dark": "#272727"
+    },
+    "kudoColorsInputTextColorActive": {
+      "light": "#050505",
+      "dark": "#050505"
+    },
+    "kudoColorsInputTextColorDisabled": {
+      "light": "#898b8c",
+      "dark": "#898b8c"
+    },
+    "kudoColorsInputTextColorError": {
+      "light": "#ed0000",
+      "dark": "#ed0000"
+    },
+    "kudoColorsInputBackgroundStandard": {
+      "light": "#f5f5f6",
+      "dark": "#f5f5f6"
+    },
+    "kudoColorsInputBackgroundHover": {
+      "light": "#e2e2e2",
+      "dark": "#edf0f8"
+    },
+    "kudoColorsInputBackgroundPressed": {
+      "light": "#cccccc",
+      "dark": "#d5ddef"
+    },
+    "kudoColorsInputBackgroundActive": {
+      "light": "#d5ddef",
+      "dark": "#a6b7de"
+    },
+    "kudoColorsInputBackgroundDisabled": {
+      "light": "#f5f5f6",
+      "dark": "#f5f5f6"
+    },
+    "kudoColorsInputBorderStandard": {
+      "light": "#bcbcbd",
+      "dark": "#bcbcbd"
+    },
+    "kudoColorsInputBorderHover": {
+      "light": "#dde3f2",
+      "dark": "#dde3f2"
+    },
+    "kudoColorsInputBorderPressed": {
+      "light": "#c6d0ea",
+      "dark": "#c6d0ea"
+    },
+    "kudoColorsInputBorderActive": {
+      "light": "#97aad8",
+      "dark": "#97aad8"
+    },
+    "kudoColorsInputBorderDisabled": {
+      "light": "#e7e7e8",
+      "dark": "#e7e7e8"
+    },
+    "kudoColorsInputBorderError": {
+      "light": "#ed0000",
+      "dark": "#ed0000"
+    },
+    "divider": {
+      "light": "#bcbcbd",
+      "dark": "#bcbcbd"
+    },
+    "kudoColorsSplitArrowDivider": {
+      "light": "#bcbcbd",
+      "dark": "#bcbcbd"
+    },
+    "kudoColorsSplitArrowIconColorStandard": {
+      "light": "#272727",
+      "dark": "#272727"
+    },
+    "kudoColorsSplitArrowIconColorActive": {
+      "light": "#050505",
+      "dark": "#050505"
+    },
+    "kudoColorsSplitArrowIconColorDisabled": {
+      "light": "#898b8c",
+      "dark": "#898b8c"
+    },
+    "kudoColorsSplitArrowTextColorStandard": {
+      "light": "#272727",
+      "dark": "#272727"
+    },
+    "kudoColorsSplitArrowTextColorActive": {
+      "light": "#050505",
+      "dark": "#050505"
+    },
+    "kudoColorsSplitArrowTextColorDisabled": {
+      "light": "#898b8c",
+      "dark": "#898b8c"
+    },
+    "kudoColorsSplitArrowBackgroundStandard": {
+      "light": "#f5f5f6",
+      "dark": "#f5f5f6"
+    },
+    "kudoColorsSplitArrowBackgroundHover": {
+      "light": "#e2e2e2",
+      "dark": "#edf0f8"
+    },
+    "kudoColorsSplitArrowBackgroundPressed": {
+      "light": "#cccccc",
+      "dark": "#d5ddef"
+    },
+    "kudoColorsSplitArrowBackgroundActive": {
+      "light": "#d5ddef",
+      "dark": "#a6b7de"
+    },
+    "kudoColorsSplitArrowBackgroundDisabled": {
+      "light": "#f5f5f6",
+      "dark": "#f5f5f6"
+    },
+    "kudoColorsSplitArrowBorderStandard": {
+      "light": "#f5f5f6",
+      "dark": "#bcbcbd"
+    },
+    "kudoColorsSplitArrowBorderHover": {
+      "light": "#e2e2e2",
+      "dark": "#dde3f2"
+    },
+    "kudoColorsSplitArrowBorderPressed": {
+      "light": "#cccccc",
+      "dark": "#c6d0ea"
+    },
+    "kudoColorsSplitArrowBorderActive": {
+      "light": "#d5ddef",
+      "dark": "#97aad8"
+    },
+    "kudoColorsSplitArrowBorderDisabled": {
+      "light": "#f5f5f6",
+      "dark": "#e7e7e8"
+    },
+    "kudoColorsSliderLineBackground": {
+      "light": "#ffffff",
+      "dark": "#141518"
+    },
+    "kudoColorsButtonDivider": {
+      "light": "#bcbcbd",
+      "dark": "#bcbcbd"
+    },
+    "kudoColorsButtonTextColorStandard": {
+      "light": "#3d3d3d",
+      "dark": "#272727"
+    },
+    "kudoColorsButtonTextColorActive": {
+      "light": "#005686",
+      "dark": "#050505"
+    },
+    "kudoColorsButtonTextColorDisabled": {
+      "light": "#a8a8a8",
+      "dark": "#898b8c"
+    },
+    "kudoColorsButtonBackgroundStandard": {
+      "light": "#f1f1f1",
+      "dark": "#f5f5f6"
+    },
+    "kudoColorsButtonBackgroundHover": {
+      "light": "#e2e4e3",
+      "dark": "#edf0f8"
+    },
+    "kudoColorsButtonBackgroundPressed": {
+      "light": "#d1d4d4",
+      "dark": "#d5ddef"
+    },
+    "kudoColorsButtonBackgroundActive": {
+      "light": "#d5e8f2",
+      "dark": "#a6b7de"
+    },
+    "kudoColorsButtonBackgroundDisabled": {
+      "light": "#f1f1f1",
+      "dark": "#f5f5f6"
+    },
+    "kudoColorsButtonBorderStandard": {
+      "light": "#b4b6ba",
+      "dark": "#bcbcbd"
+    },
+    "kudoColorsButtonBorderHover": {
+      "light": "#707070",
+      "dark": "#dde3f2"
+    },
+    "kudoColorsButtonBorderPressed": {
+      "light": "#3d3d3d",
+      "dark": "#c6d0ea"
+    },
+    "kudoColorsButtonBorderActive": {
+      "light": "#368ec4",
+      "dark": "#97aad8"
+    },
+    "kudoColorsButtonBorderDisabled": {
+      "light": "#b4b6ba",
+      "dark": "#e7e7e8"
+    },
+    "kudoColorsButtonBackgroundActiveHover": {
+      "light": "#d5e8f2",
+      "dark": "#a6b7de"
+    },
+    "kudoColorsButtonBorderActiveHover": {
+      "light": "#005686",
+      "dark": "#97aad8"
+    },
+    "kudoColorsButtonTextColorHover": {
+      "light": "#3d3d3d",
+      "dark": "#272727"
+    },
+    "kudoColorsButtonTextColorPressed": {
+      "light": "#3d3d3d",
+      "dark": "#272727"
+    },
+    "kudoColorsButtonTextColorActiveHover": {
+      "light": "#004970",
+      "dark": "#050505"
+    },
+    "kudoColorsButtonIconColorStandard": {
+      "light": "#3d3d3d",
+      "dark": "#272727"
+    },
+    "kudoColorsButtonIconColorHover": {
+      "light": "#3d3d3d",
+      "dark": "#272727"
+    },
+    "kudoColorsButtonIconColorPressed": {
+      "light": "#3d3d3d",
+      "dark": "#272727"
+    },
+    "kudoColorsButtonIconColorActive": {
+      "light": "#005686",
+      "dark": "#050505"
+    },
+    "kudoColorsButtonIconColorActiveHover": {
+      "light": "#004970",
+      "dark": "#050505"
+    },
+    "kudoColorsButtonIconColorDisabled": {
+      "light": "#a8a8a8",
+      "dark": "#898b8c"
+    },
+    "kudoColorsRibbonItemDivider": {
+      "light": "#bcbcbd",
+      "dark": "#bcbcbd"
+    },
+    "kudoColorsRibbonItemBackgroundStandard": {
+      "light": "#f1f1f1",
+      "dark": "#f5f5f6"
+    },
+    "kudoColorsRibbonItemBackgroundHover": {
+      "light": "#e2e4e3",
+      "dark": "#edf0f8"
+    },
+    "kudoColorsRibbonItemBackgroundPressed": {
+      "light": "#d1d4d4",
+      "dark": "#d5ddef"
+    },
+    "kudoColorsRibbonItemBackgroundActive": {
+      "light": "#d5e8f2",
+      "dark": "#a6b7de"
+    },
+    "kudoColorsRibbonItemBackgroundActiveHover": {
+      "light": "#d5e8f2",
+      "dark": "#a6b7de"
+    },
+    "kudoColorsRibbonItemBackgroundDisabled": {
+      "light": "#f1f1f1",
+      "dark": "#f5f5f6"
+    },
+    "kudoColorsRibbonItemIconColorStandard": {
+      "light": "#3d3d3d",
+      "dark": "#272727"
+    },
+    "kudoColorsRibbonItemIconColorHover": {
+      "light": "#3d3d3d",
+      "dark": "#272727"
+    },
+    "kudoColorsRibbonItemIconColorPressed": {
+      "light": "#3d3d3d",
+      "dark": "#272727"
+    },
+    "kudoColorsRibbonItemIconColorActive": {
+      "light": "#005686",
+      "dark": "#050505"
+    },
+    "kudoColorsRibbonItemIconColorActiveHover": {
+      "light": "#004970",
+      "dark": "#050505"
+    },
+    "kudoColorsRibbonItemIconColorDisabled": {
+      "light": "#a8a8a8",
+      "dark": "#898b8c"
+    },
+    "kudoColorsRibbonItemTextColorStandard": {
+      "light": "#3d3d3d",
+      "dark": "#272727"
+    },
+    "kudoColorsRibbonItemTextColorHover": {
+      "light": "#3d3d3d",
+      "dark": "#272727"
+    },
+    "kudoColorsRibbonItemTextColorPressed": {
+      "light": "#3d3d3d",
+      "dark": "#272727"
+    },
+    "kudoColorsRibbonItemTextColorActive": {
+      "light": "#005686",
+      "dark": "#050505"
+    },
+    "kudoColorsRibbonItemTextColorActiveHover": {
+      "light": "#004970",
+      "dark": "#050505"
+    },
+    "kudoColorsRibbonItemTextColorDisabled": {
+      "light": "#a8a8a8",
+      "dark": "#898b8c"
+    },
+    "kudoColorsRibbonItemBorderStandard": {
+      "light": "#f1f1f1",
+      "dark": "#bcbcbd"
+    },
+    "kudoColorsRibbonItemBorderHover": {
+      "light": "#b4b6ba",
+      "dark": "#dde3f2"
+    },
+    "kudoColorsRibbonItemBorderPressed": {
+      "light": "#3d3d3d",
+      "dark": "#c6d0ea"
+    },
+    "kudoColorsRibbonItemBorderActive": {
+      "light": "#368ec4",
+      "dark": "#97aad8"
+    },
+    "kudoColorsRibbonItemBorderActiveHover": {
+      "light": "#005686",
+      "dark": "#97aad8"
+    },
+    "kudoColorsRibbonItemBorderDisabled": {
+      "light": "#b4b6ba",
+      "dark": "#e7e7e8"
+    },
+    "kudoColorsTooltipBackground": {
+      "light": "#f1f1f1",
+      "dark": "#ffffff"
+    },
+    "kudoColorsTooltipBorder": {
+      "light": "#7a7a7a",
+      "dark": "#ffffff"
+    },
+    "kudoColorsTooltipTextColor": {
+      "light": "#3d3d3d",
+      "dark": "#ffffff"
+    }
+  }
+}

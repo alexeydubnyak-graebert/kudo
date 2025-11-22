@@ -1,0 +1,37 @@
+/**
+ * ГЛОБАЛЬНАЯ ТИПОГРАФИКА
+ * Шрифты, размеры, веса и интервалы
+ */
+
+:root {
+  /* === Font Families === */
+  --font-family-commander: 'Segoe UI', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-family-kudo: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+
+  /* === Font Sizes === */
+  --font-size-sm: 10px;
+  --font-size-md: 12px;
+  --font-size-lg: 14px;
+  --font-size-xl: 16px;
+  --font-size-heading5: 16px;
+  --font-size-heading4: 20px;
+  --font-size-heading3: 24px;
+  --font-size-heading2: 26px;
+  --font-size-heading1: 32px;
+
+  /* === Font Weights === */
+  --font-weight-sm: 300;
+  --font-weight-md: 400;
+  --font-weight-lg: 900;
+  --font-weight-xlg: 1200;
+
+  /* === Line Heights === */
+  --line-height-sm: 12px;
+  --line-height-md: 16px;
+  --line-height-lg: 20px;
+  --line-height-xlg: 26px;
+
+  /* === Letter Spacing === */
+  --letter-spacing-sm: -0.5px;
+  --letter-spacing-lg: 1px;
+}

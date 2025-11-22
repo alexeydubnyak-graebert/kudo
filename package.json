@@ -1,0 +1,34 @@
+{
+  "name": "ares-kudo",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "lint": "eslint .",
+    "preview": "vite preview",
+    "generate:tokens": "node scripts/generate-tokens-v2.js",
+    "generate:tokens:old": "node scripts/generate-tokens.js",
+    "tokens:watch": "nodemon --watch tokens-full.json --exec npm run generate:tokens",
+    "create:tokens": "node create-tokens-full.js",
+    "update-paths": "node scripts/update-icon-paths.js",
+    "setup": "node scripts/update-icon-paths.js && npm run dev",
+    "fix-quotes": "./scripts/fix-quotes.sh"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.43",
+    "@types/react-dom": "^18.2.17",
+    "@vitejs/plugin-react": "^4.2.1",
+    "eslint": "^8.55.0",
+    "eslint-plugin-react": "^7.33.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.4.5",
+    "vite": "^5.0.8",
+    "vite-plugin-svgr": "^4.5.0"
+  }
+}

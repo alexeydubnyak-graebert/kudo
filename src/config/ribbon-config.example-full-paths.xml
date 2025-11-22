@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+  Пример конфигурации с полными путями к иконкам
+  Используйте npm run update-paths для автоматического обновления имени пользователя
+-->
+<ribbon>
+  <section name="Draw">
+    <row>
+      <!-- Пример с полным путем -->
+      <ribbonItem 
+        id="line" 
+        label="Line" 
+        icon="/Users/dubnyakalexey/Documents/GitHub/application-icons/ribbon/home/draw/light/line.svg" 
+      />
+      
+      <!-- Пример с полным путем -->
+      <ribbonItem 
+        id="circle" 
+        label="Circle" 
+        icon="/Users/dubnyakalexey/Documents/GitHub/application-icons/ribbon/home/draw/light/circle.svg" 
+      />
+      
+      <!-- SplitButton с полными путями -->
+      <splitButton 
+        id="polyline" 
+        label="Polyline"
+        icon="/Users/dubnyakalexey/Documents/GitHub/application-icons/ribbon/home/draw/light/polyline.svg"
+      >
+        <dropdown>
+          <item 
+            id="polyline" 
+            label="Polyline" 
+            icon="/Users/dubnyakalexey/Documents/GitHub/application-icons/ribbon/home/draw/light/polyline.svg" 
+          />
+          <item 
+            id="3dPolyline" 
+            label="3D Polyline" 
+            icon="/Users/dubnyakalexey/Documents/GitHub/application-icons/ribbon/home/draw/light/3d_polyline.svg" 
+          />
+        </dropdown>
+      </splitButton>
+    </row>
+  </section>
+</ribbon>

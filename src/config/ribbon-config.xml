@@ -1,0 +1,729 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ribbon>
+  <!-- Секция Draw -->
+  <section name="Draw">
+    <!-- Первый ряд -->
+    <row>
+      <!-- SplitButton: Line -->
+      <splitButton 
+        id="line" 
+        label="Line"
+        icon-light="/Users/dubnyakalexey/Documents/GitHub/application-icons/Modules/Desktop/ARGONQT/Resources/svg_icons/light/draw/line.svg"
+        icon-dark="/Users/dubnyakalexey/Documents/GitHub/application-icons/Modules/Desktop/ARGONQT/Resources/svg_icons/dark/draw/line.svg"
+      >
+        <dropdown>
+          <item 
+            id="line" 
+            label="Line"
+            icon-light="/Users/dubnyakalexey/Documents/GitHub/application-icons/Modules/Desktop/ARGONQT/Resources/svg_icons/light/draw/line.svg"
+            icon-dark="/Users/dubnyakalexey/Documents/GitHub/application-icons/Modules/Desktop/ARGONQT/Resources/svg_icons/dark/draw/line.svg"
+          />
+          <group dividers="true">
+            <item 
+              id="infiniteLine" 
+              label="Infinite Line"
+              icon-light="/Users/dubnyakalexey/Documents/GitHub/application-icons/Modules/Desktop/ARGONQT/Resources/svg_icons/light/draw/constuction line.svg"
+              icon-dark="/Users/dubnyakalexey/Documents/GitHub/application-icons/Modules/Desktop/ARGONQT/Resources/svg_icons/dark/draw/constuction line.svg"
+            />
+            <item 
+              id="ray" 
+              label="Ray"
+              icon-light="/Users/dubnyakalexey/Documents/GitHub/application-icons/Modules/Desktop/ARGONQT/Resources/svg_icons/light/draw/ray.svg"
+              icon-dark="/Users/dubnyakalexey/Documents/GitHub/application-icons/Modules/Desktop/ARGONQT/Resources/svg_icons/dark/draw/ray.svg"
+            />
+          </group>
+          <item 
+            id="richLine" 
+            label="RichLine"
+            icon-light="/Users/dubnyakalexey/Documents/GitHub/application-icons/Modules/Desktop/ARGONQT/Resources/svg_icons/light/draw/Mline.svg"
+            icon-dark="/Users/dubnyakalexey/Documents/GitHub/application-icons/Modules/Desktop/ARGONQT/Resources/svg_icons/dark/draw/Mline.svg"
+          />
+        </dropdown>
+      </splitButton>
+
+      <!-- SplitButton: Rectangle -->
+      <splitButton 
+        id="rectangle" 
+        label="Rectangle"
+        icon-light="/Users/dubnyakalexey/Documents/GitHub/application-icons/Modules/Desktop/ARGONQT/Resources/svg_icons/light/draw/rectangle.svg"
+        icon-dark="/Users/dubnyakalexey/Documents/GitHub/application-icons/Modules/Desktop/ARGONQT/Resources/svg_icons/dark/draw/rectangle.svg"
+      >
+        <dropdown>
+        <group divider-bottom="true">
+          <item 
+            id="corner" 
+            label="Corner"
+            icon-light="/Users/dubnyakalexey/Documents/GitHub/application-icons/Modules/Desktop/ARGONQT/Resources/svg_icons/light/draw/rectangle.svg"
+            icon-dark="/Users/dubnyakalexey/Documents/GitHub/application-icons/Modules/Desktop/ARGONQT/Resources/svg_icons/dark/draw/rectangle.svg"
+          />
+          
+            <item 
+              id="center" 
+              label="Center"
+              icon-light="/Users/dubnyakalexey/Documents/GitHub/application-icons/Modules/Desktop/ARGONQT/Resources/svg_icons/light/draw/rectangle_center.svg"
+              icon-dark="/Users/dubnyakalexey/Documents/GitHub/application-icons/Modules/Desktop/ARGONQT/Resources/svg_icons/dark/draw/rectangle_center.svg"
+            />
+            <item 
+              id="3 point corner" 
+              label="3 Point Corner"
+              icon-light="/Users/dubnyakalexey/Documents/GitHub/application-icons/Modules/Desktop/ARGONQT/Resources/svg_icons/light/draw/rectangle_three_corner.svg"
+              icon-dark="/Users/dubnyakalexey/Documents/GitHub/application-icons/Modules/Desktop/ARGONQT/Resources/svg_icons/dark/draw/rectangle_three_corner.svg"
+            />
+
+             <item 
+              id="3 point center" 
+              label="3 Point Center"
+              icon-light="/Users/dubnyakalexey/Documents/GitHub/application-icons/Modules/Desktop/ARGONQT/Resources/svg_icons/light/draw/rectangle_three_point.svg"
+              icon-dark="/Users/dubnyakalexey/Documents/GitHub/application-icons/Modules/Desktop/ARGONQT/Resources/svg_icons/dark/draw/rectangle_three_point.svg"
+            />
+          </group>
+          <item 
+              id="parallelogram" 
+              label="Parallelogram"
+              icon-light="/Users/dubnyakalexey/Documents/GitHub/application-icons/Modules/Desktop/ARGONQT/Resources/svg_icons/light/draw/rectangle_parallelogram.svg"
+              icon-dark="/Users/dubnyakalexey/Documents/GitHub/application-icons/Modules/Desktop/ARGONQT/Resources/svg_icons/dark/draw/rectangle_parallelogram.svg"
+            />
+
+             <item 
+              id="trapezoid" 
+              label="Trapezoid"
+              icon-light="/Users/dubnyakalexey/Documents/GitHub/application-icons/Modules/Desktop/ARGONQT/Resources/svg_icons/light/draw/trapezoid.svg"
+              icon-dark="/Users/dubnyakalexey/Documents/GitHub/application-icons/Modules/Desktop/ARGONQT/Resources/svg_icons/dark/draw/trapezoid.svg"
+            />
+          
+        </dropdown>
+      </splitButton>
+
+      <!-- SplitButton: Arc -->
+      <splitButton 
+        id="arc"
+        label=""
+        icon-light="/Users/dubnyakalexey/Documents/GitHub/application-icons/Modules/Desktop/ARGONQT/Resources/svg_icons/light/draw/arc.svg"
+        icon-dark="/Users/dubnyakalexey/Documents/GitHub/application-icons/Modules/Desktop/ARGONQT/Resources/svg_icons/dark/draw/Arc.svg"
+      >
+        <dropdown>
+          <group divider-bottom="true">
+            <item 
+              id="arc"
+              label="Arc"
+              icon-light="/Users/dubnyakalexey/Documents/GitHub/application-icons/Modules/Desktop/ARGONQT/Resources/svg_icons/light/draw/arc.svg"
+              icon-dark="/Users/dubnyakalexey/Documents/GitHub/application-icons/Modules/Desktop/ARGONQT/Resources/svg_icons/dark/draw/Arc.svg"
+            />
+            <item 
+              id="arcStartCenterEnd"
+              label="Start, Center, End"
+              icon-light="/Users/dubnyakalexey/Documents/GitHub/application-icons/Modules/Desktop/ARGONQT/Resources/svg_icons/light/draw/arc_start_center_end.svg"
+              icon-dark="/Users/dubnyakalexey/Documents/GitHub/application-icons/Modules/Desktop/ARGONQT/Resources/svg_icons/dark/draw/arc_start_center_end.svg"
+            />
+            <item 
+              id="arcStartCenterAngle"
+              label="Start, Center, Angle"
+              icon-light="/Users/dubnyakalexey/Documents/GitHub/application-icons/Modules/Desktop/ARGONQT/Resources/svg_icons/light/draw/arc_start_center_angle.svg"
+              icon-dark="/Users/dubnyakalexey/Documents/GitHub/application-icons/Modules/Desktop/ARGONQT/Resources/svg_icons/dark/draw/arc_start_center_angle.svg"
+            />
+            <item 
+              id="arcStartCenterLength"
+              label="Start, Center, Length"
+              icon-light="/Users/dubnyakalexey/Documents/GitHub/application-icons/Modules/Desktop/ARGONQT/Resources/svg_icons/light/draw/arc_start_center_lenght.svg"
+              icon-dark="/Users/dubnyakalexey/Documents/GitHub/application-icons/Modules/Desktop/ARGONQT/Resources/svg_icons/dark/draw/arc_start_center_lenght.svg"
+            />
+          </group>
+          <group divider-bottom="true">
+            <item 
+              id="arcStartEndAngle"
+              label="Start, End, Angle"
+              icon-light="/Users/dubnyakalexey/Documents/GitHub/application-icons/Modules/Desktop/ARGONQT/Resources/svg_icons/light/draw/arc_start_end_angle.svg"
+              icon-dark="/Users/dubnyakalexey/Documents/GitHub/application-icons/Modules/Desktop/ARGONQT/Resources/svg_icons/dark/draw/arc_start_end_angle.svg"
+            />
+            <item 
+              id="arcStartEndDirection"
+              label="Start, End, Direction"
+              icon-light="/Users/dubnyakalexey/Documents/GitHub/application-icons/Modules/Desktop/ARGONQT/Resources/svg_icons/light/draw/arc_start_end_direction.svg"
+              icon-dark="/Users/dubnyakalexey/Documents/GitHub/application-icons/Modules/Desktop/ARGONQT/Resources/svg_icons/dark/draw/arc_start_end_direction.svg"
+            />
+            <item 
+              id="arcStartEndRadius"
+              label="Start, End, Radius"
+              icon-light="/Users/dubnyakalexey/Documents/GitHub/application-icons/Modules/Desktop/ARGONQT/Resources/svg_icons/light/draw/arc_end_radius.svg"
+              icon-dark="/Users/dubnyakalexey/Documents/GitHub/application-icons/Modules/Desktop/ARGONQT/Resources/svg_icons/dark/draw/arc_end_radius.svg"
+            />
+          </group>
+          <group divider-bottom="true">
+            <item 
+              id="arcCenterStartEnd"
+              label="Center, Start, End"
+              icon-light="/Users/dubnyakalexey/Documents/GitHub/application-icons/Modules/Desktop/ARGONQT/Resources/svg_icons/light/draw/arc_center_start_end.svg"
+              icon-dark="/Users/dubnyakalexey/Documents/GitHub/application-icons/Modules/Desktop/ARGONQT/Resources/svg_icons/dark/draw/arc_center_start_end.svg"
+            />
+            <item 
+              id="arcCenterStartAngle"
+              label="Center, Start, Angle"
+              icon-light="/Users/dubnyakalexey/Documents/GitHub/application-icons/Modules/Desktop/ARGONQT/Resources/svg_icons/light/draw/arc_center_start_angle.svg"
+              icon-dark="/Users/dubnyakalexey/Documents/GitHub/application-icons/Modules/Desktop/ARGONQT/Resources/svg_icons/dark/draw/arc_center_start_angle.svg"
+            />
+            <item 
+              id="arcCenterStartLength"
+              label="Center, Start, Length"
+              icon-light="/Users/dubnyakalexey/Documents/GitHub/application-icons/Modules/Desktop/ARGONQT/Resources/svg_icons/light/draw/arc_start_center_lenght.svg"
+              icon-dark="/Users/dubnyakalexey/Documents/GitHub/application-icons/Modules/Desktop/ARGONQT/Resources/svg_icons/dark/draw/arc_start_center_lenght.svg"
+            />
+          </group>
+          <item 
+            id="arcContinue"
+            label="Continue"
+            icon-light="/Users/dubnyakalexey/Documents/GitHub/application-icons/Modules/Desktop/ARGONQT/Resources/svg_icons/light/draw/arc_continue.svg"
+            icon-dark="/Users/dubnyakalexey/Documents/GitHub/application-icons/Modules/Desktop/ARGONQT/Resources/svg_icons/dark/draw/arc_continue.svg"
+          />
+        </dropdown>
+      </splitButton>
+
+      <!-- SplitButton: Ellipse -->
+      <splitButton 
+        id="ellipse"
+        label=""
+        icon-light="/Users/dubnyakalexey/Documents/GitHub/application-icons/Modules/Desktop/ARGONQT/Resources/svg_icons/light/draw/elipse.svg"
+        icon-dark="/Users/dubnyakalexey/Documents/GitHub/application-icons/Modules/Desktop/ARGONQT/Resources/svg_icons/dark/draw/elipse.svg"
+      >
+        <dropdown>
+          <group divider-bottom="true">
+            <item 
+              id="ellipseCenter"
+              label="Center"
+              icon-light="/Users/dubnyakalexey/Documents/GitHub/application-icons/Modules/Desktop/ARGONQT/Resources/svg_icons/light/draw/elipse_center.svg"
+              icon-dark="/Users/dubnyakalexey/Documents/GitHub/application-icons/Modules/Desktop/ARGONQT/Resources/svg_icons/dark/draw/elipse_center.svg"
+            />
+            <item 
+              id="ellipseAxes"
+              label="Axes"
+              icon-light="/Users/dubnyakalexey/Documents/GitHub/application-icons/Modules/Desktop/ARGONQT/Resources/svg_icons/light/draw/elipse.svg"
+              icon-dark="/Users/dubnyakalexey/Documents/GitHub/application-icons/Modules/Desktop/ARGONQT/Resources/svg_icons/dark/draw/elipse.svg"
+            />
+          </group>
+          <group divider-bottom="true">
+            <item 
+              id="ellipticalArc"
+              label="Elliptical Arc"
+              icon-light="/Users/dubnyakalexey/Documents/GitHub/application-icons/Modules/Desktop/ARGONQT/Resources/svg_icons/light/draw/elipse arc.svg"
+              icon-dark="/Users/dubnyakalexey/Documents/GitHub/application-icons/Modules/Desktop/ARGONQT/Resources/svg_icons/dark/draw/elipse arc.svg"
+            />
+          </group>
+          <item 
+            id="splineFit"
+            label="Spline Fit"
+            icon-light="/Users/dubnyakalexey/Documents/GitHub/application-icons/Modules/Desktop/ARGONQT/Resources/svg_icons/light/draw/spline_fit.svg"
+            icon-dark="/Users/dubnyakalexey/Documents/GitHub/application-icons/Modules/Desktop/ARGONQT/Resources/svg_icons/dark/draw/spline_fit.svg"
+          />
+          <item 
+            id="splineCV"
+            label="Spline CV"
+            icon-light="/Users/dubnyakalexey/Documents/GitHub/application-icons/Modules/Desktop/ARGONQT/Resources/svg_icons/light/draw/spline_cv.svg"
+            icon-dark="/Users/dubnyakalexey/Documents/GitHub/application-icons/Modules/Desktop/ARGONQT/Resources/svg_icons/dark/draw/spline_cv.svg"
+          />
+        </dropdown>
+      </splitButton>
+
+      <!-- RibbonItem: Region -->
+      <ribbonItem 
+        id="region"
+        icon-light="/Users/dubnyakalexey/Documents/GitHub/application-icons/Modules/Desktop/ARGONQT/Resources/svg_icons/light/draw/region.svg"
+        icon-dark="/Users/dubnyakalexey/Documents/GitHub/application-icons/Modules/Desktop/ARGONQT/Resources/svg_icons/dark/draw/region.svg"
+      />
+    </row>
+
+    <!-- Второй ряд -->
+    <row>
+      <!-- SplitButton: PolyLine -->
+      <splitButton 
+        id="polyline"
+        label="PolyLine"
+        icon-light="/Users/dubnyakalexey/Documents/GitHub/application-icons/Modules/Desktop/ARGONQT/Resources/svg_icons/light/draw/polyline.svg"
+        icon-dark="/Users/dubnyakalexey/Documents/GitHub/application-icons/Modules/Desktop/ARGONQT/Resources/svg_icons/dark/draw/polyline.svg"
+      >
+        <dropdown>
+          <item 
+            id="polyline"
+            label="PolyLine"
+            icon-light="/Users/dubnyakalexey/Documents/GitHub/application-icons/Modules/Desktop/ARGONQT/Resources/svg_icons/light/draw/polyline.svg"
+            icon-dark="/Users/dubnyakalexey/Documents/GitHub/application-icons/Modules/Desktop/ARGONQT/Resources/svg_icons/dark/draw/polyline.svg"
+          />
+          <item 
+            id="polygon"
+            label="Polygon"
+            icon-light="/Users/dubnyakalexey/Documents/GitHub/application-icons/Modules/Desktop/ARGONQT/Resources/svg_icons/light/draw/polygon.svg"
+            icon-dark="/Users/dubnyakalexey/Documents/GitHub/application-icons/Modules/Desktop/ARGONQT/Resources/svg_icons/dark/draw/polygon.svg"
+          />
+          <item 
+            id="ring"
+            label="Ring"
+            icon-light="/Users/dubnyakalexey/Documents/GitHub/application-icons/Modules/Desktop/ARGONQT/Resources/svg_icons/light/draw/donut.svg"
+            icon-dark="/Users/dubnyakalexey/Documents/GitHub/application-icons/Modules/Desktop/ARGONQT/Resources/svg_icons/dark/draw/donut.svg"
+          />
+          <item 
+            id="3dPolyline"
+            label="3D Polyline"
+            icon-light="/Users/dubnyakalexey/Documents/GitHub/application-icons/Modules/Desktop/ARGONQT/Resources/svg_icons/light/draw/3d_polyline 1.svg"
+            icon-dark="/Users/dubnyakalexey/Documents/GitHub/application-icons/Modules/Desktop/ARGONQT/Resources/svg_icons/dark/draw/3d_polyline 1.svg"
+          />
+        </dropdown>
+      </splitButton>
+
+      <!-- SplitButton: Circle -->
+      <splitButton 
+        id="circle"
+        label="Circle"
+        icon-light="/Users/dubnyakalexey/Documents/GitHub/application-icons/Modules/Desktop/ARGONQT/Resources/svg_icons/light/draw/circle.svg"
+        icon-dark="/Users/dubnyakalexey/Documents/GitHub/application-icons/Modules/Desktop/ARGONQT/Resources/svg_icons/dark/draw/circle.svg"
+      >
+        <dropdown>
+          <group divider-bottom="true">
+            <item 
+              id="circle"
+              label="Circle"
+              icon-light="/Users/dubnyakalexey/Documents/GitHub/application-icons/Modules/Desktop/ARGONQT/Resources/svg_icons/light/draw/circle.svg"
+              icon-dark="/Users/dubnyakalexey/Documents/GitHub/application-icons/Modules/Desktop/ARGONQT/Resources/svg_icons/dark/draw/circle.svg"
+            />
+            <item 
+              id="circleCenterDiameter"
+              label="Center, Diameter"
+              icon-light="/Users/dubnyakalexey/Documents/GitHub/application-icons/Modules/Desktop/ARGONQT/Resources/svg_icons/light/draw/circle_diameter.svg"
+              icon-dark="/Users/dubnyakalexey/Documents/GitHub/application-icons/Modules/Desktop/ARGONQT/Resources/svg_icons/dark/draw/circle_diameter.svg"
+            />
+          </group>
+          <group divider-bottom="true">
+            <item 
+              id="circle2Points"
+              label="2 Points"
+              icon-light="/Users/dubnyakalexey/Documents/GitHub/application-icons/Modules/Desktop/ARGONQT/Resources/svg_icons/light/draw/circle_2pnt 1.svg"
+              icon-dark="/Users/dubnyakalexey/Documents/GitHub/application-icons/Modules/Desktop/ARGONQT/Resources/svg_icons/dark/draw/circle_2pnt 1.svg"
+            />
+            <item 
+              id="circle3Points"
+              label="3 Points"
+              icon-light="/Users/dubnyakalexey/Documents/GitHub/application-icons/Modules/Desktop/ARGONQT/Resources/svg_icons/light/draw/circle_3pnt Kopie.svg"
+              icon-dark="/Users/dubnyakalexey/Documents/GitHub/application-icons/Modules/Desktop/ARGONQT/Resources/svg_icons/dark/draw/circle_3pnt Kopie.svg"
+            />
+          </group>
+          <item 
+            id="circleTanTanRadius"
+            label="Tangent, Tangent, Radius"
+            icon-light="/Users/dubnyakalexey/Documents/GitHub/application-icons/Modules/Desktop/ARGONQT/Resources/svg_icons/light/draw/circle_tan_tan_rad.svg"
+            icon-dark="/Users/dubnyakalexey/Documents/GitHub/application-icons/Modules/Desktop/ARGONQT/Resources/svg_icons/dark/draw/circle_tan_tan_rad.svg"
+          />
+          <item 
+            id="circleTanTanTan"
+            label="Tangent, Tangent, Tangent"
+            icon-light="/Users/dubnyakalexey/Documents/GitHub/application-icons/Modules/Desktop/ARGONQT/Resources/svg_icons/light/draw/circle_tan_tan_tan.svg"
+            icon-dark="/Users/dubnyakalexey/Documents/GitHub/application-icons/Modules/Desktop/ARGONQT/Resources/svg_icons/dark/draw/circle_tan_tan_tan.svg"
+          />
+        </dropdown>
+      </splitButton>
+
+      <!-- SplitButton: Hatch -->
+      <splitButton 
+        id="hatch"
+        icon-light="/Users/dubnyakalexey/Documents/GitHub/application-icons/Modules/Desktop/ARGONQT/Resources/svg_icons/light/draw/hatch.svg"
+        icon-dark="/Users/dubnyakalexey/Documents/GitHub/application-icons/Modules/Desktop/ARGONQT/Resources/svg_icons/dark/draw/hatch.svg"
+      >
+        <dropdown>
+          <item 
+            id="hatch"
+            label="Hatch..."
+            icon-light="/Users/dubnyakalexey/Documents/GitHub/application-icons/Modules/Desktop/ARGONQT/Resources/svg_icons/light/draw/hatch.svg"
+            icon-dark="/Users/dubnyakalexey/Documents/GitHub/application-icons/Modules/Desktop/ARGONQT/Resources/svg_icons/dark/draw/hatch.svg"
+          />
+          <item 
+            id="fillArea"
+            label="Fill area..."
+            icon-light="/Users/dubnyakalexey/Documents/GitHub/application-icons/Modules/Desktop/ARGONQT/Resources/svg_icons/light/draw/gradienthatch.svg"
+            icon-dark="/Users/dubnyakalexey/Documents/GitHub/application-icons/Modules/Desktop/ARGONQT/Resources/svg_icons/dark/draw/gradienthatch.svg"
+          />
+          <item 
+            id="areaBoundary"
+            label="Area Boundary..."
+            icon-light="/Users/dubnyakalexey/Documents/GitHub/application-icons/Modules/Desktop/ARGONQT/Resources/svg_icons/light/draw/boundary.svg"
+            icon-dark="/Users/dubnyakalexey/Documents/GitHub/application-icons/Modules/Desktop/ARGONQT/Resources/svg_icons/dark/draw/boundary.svg"
+          />
+          <item 
+            id="sketch"
+            label="Sketch"
+            icon-light="/Users/dubnyakalexey/Documents/GitHub/application-icons/Modules/Desktop/ARGONQT/Resources/svg_icons/light/draw/sketch.svg"
+            icon-dark="/Users/dubnyakalexey/Documents/GitHub/application-icons/Modules/Desktop/ARGONQT/Resources/svg_icons/dark/draw/sketch.svg"
+          />
+          <item 
+            id="trace"
+            label="Trace"
+            icon-light="/Users/dubnyakalexey/Documents/GitHub/application-icons/Modules/Desktop/ARGONQT/Resources/svg_icons/light/draw/spine.svg"
+            icon-dark="/Users/dubnyakalexey/Documents/GitHub/application-icons/Modules/Desktop/ARGONQT/Resources/svg_icons/dark/draw/spine.svg"
+          />
+        </dropdown>
+      </splitButton>
+
+      <!-- SplitButton: Point -->
+      <splitButton 
+        id="point"
+        icon-light="/Users/dubnyakalexey/Documents/GitHub/application-icons/Modules/Desktop/ARGONQT/Resources/svg_icons/light/command/multiple_point.svg"
+        icon-dark="/Users/dubnyakalexey/Documents/GitHub/application-icons/Modules/Desktop/ARGONQT/Resources/svg_icons/dark/command/multiple_point.svg"
+      >
+        <dropdown>
+          <item 
+            id="multiplePoints"
+            label="Multiple Points"
+            icon-light="/Users/dubnyakalexey/Documents/GitHub/application-icons/Modules/Desktop/ARGONQT/Resources/svg_icons/light/command/multiple_point.svg"
+            icon-dark="/Users/dubnyakalexey/Documents/GitHub/application-icons/Modules/Desktop/ARGONQT/Resources/svg_icons/dark/command/multiple_point.svg"
+          />
+          <item 
+            id="singlePoint"
+            label="Single Point"
+            icon-light="/Users/dubnyakalexey/Documents/GitHub/application-icons/Modules/Desktop/ARGONQT/Resources/svg_icons/light/draw/point.svg"
+            icon-dark="/Users/dubnyakalexey/Documents/GitHub/application-icons/Modules/Desktop/ARGONQT/Resources/svg_icons/dark/draw/point.svg"
+          />
+          <item 
+            id="markDivisions"
+            label="Mark Divisions"
+            icon-light="/Users/dubnyakalexey/Documents/GitHub/application-icons/Modules/Desktop/ARGONQT/Resources/svg_icons/light/draw/point_divide.svg"
+            icon-dark="/Users/dubnyakalexey/Documents/GitHub/application-icons/Modules/Desktop/ARGONQT/Resources/svg_icons/dark/draw/point_divide.svg"
+          />
+          <item 
+            id="markLengths"
+            label="Mark Lengths"
+            icon-light="/Users/dubnyakalexey/Documents/GitHub/application-icons/Modules/Desktop/ARGONQT/Resources/svg_icons/light/draw/point_measure.svg"
+            icon-dark="/Users/dubnyakalexey/Documents/GitHub/application-icons/Modules/Desktop/ARGONQT/Resources/svg_icons/dark/draw/point_measure.svg"
+          />
+        </dropdown>
+      </splitButton>
+
+      <!-- RibbonItem: 2D Solid -->
+      <ribbonItem 
+        id="2dSolid"
+        icon-light="/Users/dubnyakalexey/Documents/GitHub/application-icons/Modules/Desktop/ARGONQT/Resources/svg_icons/light/modeling/2d_solid.svg"
+        icon-dark="/Users/dubnyakalexey/Documents/GitHub/application-icons/Modules/Desktop/ARGONQT/Resources/svg_icons/dark/modeling/2d_solid.svg"
+      />
+    </row>
+  </section>
+
+  <!-- Секция Modify -->
+  <section name="Modify">
+    <row>
+      <!-- SplitButton: Copy/Move -->
+      <splitButton 
+        id="copyMove"
+        icon-light="/Users/dubnyakalexey/Documents/GitHub/application-icons/Modules/Desktop/ARGONQT/Resources/svg_icons/light/modify/copy object.svg"
+        icon-dark="/Users/dubnyakalexey/Documents/GitHub/application-icons/Modules/Desktop/ARGONQT/Resources/svg_icons/dark/modify/copy object.svg"
+      >
+        <dropdown>
+          <item 
+            id="copy"
+            label="Copy"
+            icon-light="/Users/dubnyakalexey/Documents/GitHub/application-icons/Modules/Desktop/ARGONQT/Resources/svg_icons/light/modify/copy object.svg"
+            icon-dark="/Users/dubnyakalexey/Documents/GitHub/application-icons/Modules/Desktop/ARGONQT/Resources/svg_icons/dark/modify/copy object.svg"
+          />
+          <item 
+            id="move"
+            label="Move"
+            icon-light="/Users/dubnyakalexey/Documents/GitHub/application-icons/Modules/Desktop/ARGONQT/Resources/svg_icons/light/modify/move.svg"
+            icon-dark="/Users/dubnyakalexey/Documents/GitHub/application-icons/Modules/Desktop/ARGONQT/Resources/svg_icons/dark/modify/move.svg"
+          />
+          <item 
+            id="rotate"
+            label="Rotate"
+            icon-light="/Users/dubnyakalexey/Documents/GitHub/application-icons/Modules/Desktop/ARGONQT/Resources/svg_icons/light/modify/rotate.svg"
+            icon-dark="/Users/dubnyakalexey/Documents/GitHub/application-icons/Modules/Desktop/ARGONQT/Resources/svg_icons/dark/modify/rotate.svg"
+          />
+          <item 
+            id="mirror"
+            label="Mirror"
+            icon-light="/Users/dubnyakalexey/Documents/GitHub/application-icons/Modules/Desktop/ARGONQT/Resources/svg_icons/light/modify/mirror.svg"
+            icon-dark="/Users/dubnyakalexey/Documents/GitHub/application-icons/Modules/Desktop/ARGONQT/Resources/svg_icons/dark/modify/mirror.svg"
+          />
+          <item 
+            id="scale"
+            label="Scale"
+            icon-light="/Users/dubnyakalexey/Documents/GitHub/application-icons/Modules/Desktop/ARGONQT/Resources/svg_icons/light/modify/scale.svg"
+            icon-dark="/Users/dubnyakalexey/Documents/GitHub/application-icons/Modules/Desktop/ARGONQT/Resources/svg_icons/dark/modify/scale.svg"
+          />
+          <item 
+            id="stretch"
+            label="Stretch"
+            icon-light="/Users/dubnyakalexey/Documents/GitHub/application-icons/Modules/Desktop/ARGONQT/Resources/svg_icons/light/modify/stretch.svg"
+            icon-dark="/Users/dubnyakalexey/Documents/GitHub/application-icons/Modules/Desktop/ARGONQT/Resources/svg_icons/dark/modify/stretch.svg"
+          />
+          <item 
+            id="quickModify"
+            label="Quick Modify"
+            icon-light="/Users/dubnyakalexey/Documents/GitHub/application-icons/Modules/Desktop/ARGONQT/Resources/svg_icons/light/modify/quickModify.svg"
+            icon-dark="/Users/dubnyakalexey/Documents/GitHub/application-icons/Modules/Desktop/ARGONQT/Resources/svg_icons/dark/modify/quickModify.svg"
+          />
+          <item 
+            id="align"
+            label="Align"
+            icon-light="/Users/dubnyakalexey/Documents/GitHub/application-icons/Modules/Desktop/ARGONQT/Resources/svg_icons/light/command/align.svg"
+            icon-dark="/Users/dubnyakalexey/Documents/GitHub/application-icons/Modules/Desktop/ARGONQT/Resources/svg_icons/dark/command/align.svg"
+          />
+        </dropdown>
+      </splitButton>
+
+      <!-- SplitButton: Fillet -->
+      <splitButton 
+        id="fillet"
+        icon-light="/Users/dubnyakalexey/Documents/GitHub/application-icons/Modules/Desktop/ARGONQT/Resources/svg_icons/light/modify/fillet.svg"
+        icon-dark="/Users/dubnyakalexey/Documents/GitHub/application-icons/Modules/Desktop/ARGONQT/Resources/svg_icons/dark/modify/fillet.svg"
+      >
+        <dropdown>
+          <item 
+            id="fillet"
+            label="Fillet"
+            icon-light="/Users/dubnyakalexey/Documents/GitHub/application-icons/Modules/Desktop/ARGONQT/Resources/svg_icons/light/modify/fillet.svg"
+            icon-dark="/Users/dubnyakalexey/Documents/GitHub/application-icons/Modules/Desktop/ARGONQT/Resources/svg_icons/dark/modify/fillet.svg"
+          />
+          <item 
+            id="chamfer"
+            label="Chamfer"
+            icon-light="/Users/dubnyakalexey/Documents/GitHub/application-icons/Modules/Desktop/ARGONQT/Resources/svg_icons/light/modify/chamfer.svg"
+            icon-dark="/Users/dubnyakalexey/Documents/GitHub/application-icons/Modules/Desktop/ARGONQT/Resources/svg_icons/dark/modify/chamfer.svg"
+          />
+          <item 
+            id="changeLength"
+            label="Change Length"
+            icon-light="/Users/dubnyakalexey/Documents/GitHub/application-icons/Modules/Desktop/ARGONQT/Resources/svg_icons/light/modify/lengthen.svg"
+            icon-dark="/Users/dubnyakalexey/Documents/GitHub/application-icons/Modules/Desktop/ARGONQT/Resources/svg_icons/dark/modify/lengthen.svg"
+          />
+        </dropdown>
+      </splitButton>
+
+      <!-- RibbonItem: Offset -->
+      <ribbonItem 
+        id="offset"
+        icon-light="/Users/dubnyakalexey/Documents/GitHub/application-icons/Modules/Desktop/ARGONQT/Resources/svg_icons/light/modify/offset.svg"
+        icon-dark="/Users/dubnyakalexey/Documents/GitHub/application-icons/Modules/Desktop/ARGONQT/Resources/svg_icons/dark/modify/offset.svg"
+      />
+
+      <!-- SplitButton: Delete -->
+      <splitButton 
+        id="delete"
+        icon-light="/Users/dubnyakalexey/Documents/GitHub/application-icons/Modules/Desktop/ARGONQT/Resources/svg_icons/light/modify/erase.svg"
+        icon-dark="/Users/dubnyakalexey/Documents/GitHub/application-icons/Modules/Desktop/ARGONQT/Resources/svg_icons/dark/modify/erase.svg"
+      >
+        <dropdown>
+          <item 
+            id="delete"
+            label="Delete"
+            icon-light="/Users/dubnyakalexey/Documents/GitHub/application-icons/Modules/Desktop/ARGONQT/Resources/svg_icons/light/modify/erase.svg"
+            icon-dark="/Users/dubnyakalexey/Documents/GitHub/application-icons/Modules/Desktop/ARGONQT/Resources/svg_icons/dark/modify/erase.svg"
+          />
+          <item 
+            id="discardDuplicates"
+            label="Discard Duplicates"
+            icon-light="/Users/dubnyakalexey/Documents/GitHub/application-icons/Modules/Desktop/ARGONQT/Resources/svg_icons/light/modify/DiscardDuplicates.svg"
+            icon-dark="/Users/dubnyakalexey/Documents/GitHub/application-icons/Modules/Desktop/ARGONQT/Resources/svg_icons/dark/modify/DiscardDuplicates.svg"
+          />
+        </dropdown>
+      </splitButton>
+
+      <!-- SplitButton: Edit -->
+      <splitButton 
+        id="edit"
+        icon-light="/Users/dubnyakalexey/Documents/GitHub/application-icons/Modules/Desktop/ARGONQT/Resources/svg_icons/light/modify/edit_polyline.svg"
+        icon-dark="/Users/dubnyakalexey/Documents/GitHub/application-icons/Modules/Desktop/ARGONQT/Resources/svg_icons/dark/modify/edit_polyline.svg"
+      >
+        <dropdown>
+          <group divider-bottom="true">
+            <item 
+              id="editPolyline"
+              label="Edit PolyLine"
+              icon-light="/Users/dubnyakalexey/Documents/GitHub/application-icons/Modules/Desktop/ARGONQT/Resources/svg_icons/light/modify/edit_polyline.svg"
+              icon-dark="/Users/dubnyakalexey/Documents/GitHub/application-icons/Modules/Desktop/ARGONQT/Resources/svg_icons/dark/modify/edit_polyline.svg"
+            />
+            <item 
+              id="editSpline"
+              label="Edit Spline"
+              icon-light="/Users/dubnyakalexey/Documents/GitHub/application-icons/Modules/Desktop/ARGONQT/Resources/svg_icons/light/modify/edit_spline.svg"
+              icon-dark="/Users/dubnyakalexey/Documents/GitHub/application-icons/Modules/Desktop/ARGONQT/Resources/svg_icons/dark/modify/edit_spline.svg"
+            />
+            <item 
+              id="editHatch"
+              label="Edit Hatch..."
+              icon-light="/Users/dubnyakalexey/Documents/GitHub/application-icons/Modules/Desktop/ARGONQT/Resources/svg_icons/light/modify/edit_HATCH.svg"
+              icon-dark="/Users/dubnyakalexey/Documents/GitHub/application-icons/Modules/Desktop/ARGONQT/Resources/svg_icons/dark/modify/edit_HATCH.svg"
+            />
+            <item 
+              id="editAnnotation"
+              label="Edit Annotation..."
+              icon-light="/Users/dubnyakalexey/Documents/GitHub/application-icons/Modules/Desktop/ARGONQT/Resources/svg_icons/light/modify/textedit.svg"
+              icon-dark="/Users/dubnyakalexey/Documents/GitHub/application-icons/Modules/Desktop/ARGONQT/Resources/svg_icons/dark/modify/textedit.svg"
+            />
+            <item 
+              id="editRichLine"
+              label="Edit RichLine..."
+              icon-light="/Users/dubnyakalexey/Documents/GitHub/application-icons/Modules/Desktop/ARGONQT/Resources/svg_icons/light/command/richline_edit.svg"
+              icon-dark="/Users/dubnyakalexey/Documents/GitHub/application-icons/Modules/Desktop/ARGONQT/Resources/svg_icons/dark/command/richline_edit.svg"
+            />
+          </group>
+          <item 
+            id="convertPolyline"
+            label="Convert PolyLine"
+            icon-light="/Users/dubnyakalexey/Documents/GitHub/application-icons/Modules/Desktop/ARGONQT/Resources/svg_icons/light/modify/convertpolyline.svg"
+            icon-dark="/Users/dubnyakalexey/Documents/GitHub/application-icons/Modules/Desktop/ARGONQT/Resources/svg_icons/dark/modify/convertpolyline.svg"
+          />
+        </dropdown>
+      </splitButton>
+    </row>
+
+    <row>
+      <!-- SplitButton: Trim -->
+      <splitButton 
+        id="powerTrim"
+        icon-light="/Users/dubnyakalexey/Documents/GitHub/application-icons/Modules/Desktop/ARGONQT/Resources/svg_icons/light/command/power_trim_24x.svg"
+        icon-dark="/Users/dubnyakalexey/Documents/GitHub/application-icons/Modules/Desktop/ARGONQT/Resources/svg_icons/dark/command/power_trim_24x.svg"
+      >
+        <dropdown>
+          <group divider-bottom="true">
+            <item 
+              id="powerTrim"
+              label="Power Trim"
+              icon-light="/Users/dubnyakalexey/Documents/GitHub/application-icons/Modules/Desktop/ARGONQT/Resources/svg_icons/light/command/power_trim_24x.svg"
+              icon-dark="/Users/dubnyakalexey/Documents/GitHub/application-icons/Modules/Desktop/ARGONQT/Resources/svg_icons/dark/command/power_trim_24x.svg"
+            />
+            <item 
+              id="cornerTrim"
+              label="Corner Trim"
+              icon-light="/Users/dubnyakalexey/Documents/GitHub/application-icons/Modules/Desktop/ARGONQT/Resources/svg_icons/light/command/corner_trim_24x.svg"
+              icon-dark="/Users/dubnyakalexey/Documents/GitHub/application-icons/Modules/Desktop/ARGONQT/Resources/svg_icons/dark/command/corner_trim_24x.svg"
+            />
+          </group>
+          <item 
+            id="trim"
+            label="Trim"
+            icon-light="/Users/dubnyakalexey/Documents/GitHub/application-icons/Modules/Desktop/ARGONQT/Resources/svg_icons/light/modify/trim.svg"
+            icon-dark="/Users/dubnyakalexey/Documents/GitHub/application-icons/Modules/Desktop/ARGONQT/Resources/svg_icons/dark/modify/trim.svg"
+          />
+          <item 
+            id="extend"
+            label="Extend"
+            icon-light="/Users/dubnyakalexey/Documents/GitHub/application-icons/Modules/Desktop/ARGONQT/Resources/svg_icons/light/modify/extend.svg"
+            icon-dark="/Users/dubnyakalexey/Documents/GitHub/application-icons/Modules/Desktop/ARGONQT/Resources/svg_icons/dark/modify/extend.svg"
+          />
+        </dropdown>
+      </splitButton>
+
+      <!-- RibbonItem: Array -->
+      <ribbonItem 
+        id="array"
+        icon-light="/Users/dubnyakalexey/Documents/GitHub/application-icons/Modules/Desktop/ARGONQT/Resources/svg_icons/light/modify/ARRAY.svg"
+        icon-dark="/Users/dubnyakalexey/Documents/GitHub/application-icons/Modules/Desktop/ARGONQT/Resources/svg_icons/dark/modify/ARRAY.svg"
+      />
+
+      <!-- SplitButton: Join -->
+      <splitButton 
+        id="join"
+        icon-light="/Users/dubnyakalexey/Documents/GitHub/application-icons/Modules/Desktop/ARGONQT/Resources/svg_icons/light/modify/join.svg"
+        icon-dark="/Users/dubnyakalexey/Documents/GitHub/application-icons/Modules/Desktop/ARGONQT/Resources/svg_icons/dark/modify/join.svg"
+      >
+        <dropdown>
+          <item 
+            id="weld"
+            label="Weld"
+            icon-light="/Users/dubnyakalexey/Documents/GitHub/application-icons/Modules/Desktop/ARGONQT/Resources/svg_icons/light/modify/join.svg"
+            icon-dark="/Users/dubnyakalexey/Documents/GitHub/application-icons/Modules/Desktop/ARGONQT/Resources/svg_icons/dark/modify/join.svg"
+          />
+          <item 
+            id="split"
+            label="Split"
+            icon-light="/Users/dubnyakalexey/Documents/GitHub/application-icons/Modules/Desktop/ARGONQT/Resources/svg_icons/light/modify/break.svg"
+            icon-dark="/Users/dubnyakalexey/Documents/GitHub/application-icons/Modules/Desktop/ARGONQT/Resources/svg_icons/dark/modify/break.svg"
+          />
+          <item 
+            id="splitAtPoint"
+            label="Split at Point"
+            icon-light="/Users/dubnyakalexey/Documents/GitHub/application-icons/Modules/Desktop/ARGONQT/Resources/svg_icons/light/modify/break_at_point.svg"
+            icon-dark="/Users/dubnyakalexey/Documents/GitHub/application-icons/Modules/Desktop/ARGONQT/Resources/svg_icons/dark/modify/break_at_point.svg"
+          />
+        </dropdown>
+      </splitButton>
+
+      <!-- SplitButton: Explode -->
+      <splitButton 
+        id="explode"
+        icon-light="/Users/dubnyakalexey/Documents/GitHub/application-icons/Modules/Desktop/ARGONQT/Resources/svg_icons/light/modify/explode.svg"
+        icon-dark="/Users/dubnyakalexey/Documents/GitHub/application-icons/Modules/Desktop/ARGONQT/Resources/svg_icons/dark/modify/explode.svg"
+      >
+        <dropdown>
+          <item 
+            id="explode"
+            label="Explode"
+            icon-light="/Users/dubnyakalexey/Documents/GitHub/application-icons/Modules/Desktop/ARGONQT/Resources/svg_icons/light/modify/explode.svg"
+            icon-dark="/Users/dubnyakalexey/Documents/GitHub/application-icons/Modules/Desktop/ARGONQT/Resources/svg_icons/dark/modify/explode.svg"
+          />
+          <item 
+            id="explodeBlockX"
+            label="ExplodeBlockX"
+            icon-light="/Users/dubnyakalexey/Documents/GitHub/application-icons/Modules/Desktop/ARGONQT/Resources/svg_icons/light/modify/explodeBlockX.svg"
+            icon-dark="/Users/dubnyakalexey/Documents/GitHub/application-icons/Modules/Desktop/ARGONQT/Resources/svg_icons/dark/modify/explodeBlockX.svg"
+          />
+        </dropdown>
+      </splitButton>
+    </row>
+  </section>
+
+  <!-- Секция Annotations -->
+  <section name="Annotations">
+    <row>
+      <splitButton 
+        id="text" 
+        label="Text"
+        icon-light="/Users/dubnyakalexey/Documents/GitHub/application-icons/Modules/Desktop/ARGONQT/Resources/svg_icons/light/annotations/text.svg"
+        icon-dark="/Users/dubnyakalexey/Documents/GitHub/application-icons/Modules/Desktop/ARGONQT/Resources/svg_icons/dark/annotations/text.svg"
+      >
+        <dropdown>
+          <item 
+            id="multilineText" 
+            label="Multiline Text"
+            icon-light="/Users/dubnyakalexey/Documents/GitHub/application-icons/Modules/Desktop/ARGONQT/Resources/svg_icons/light/annotations/multiline text.svg"
+            icon-dark="/Users/dubnyakalexey/Documents/GitHub/application-icons/Modules/Desktop/ARGONQT/Resources/svg_icons/dark/annotations/multiline text.svg"
+          />
+          <item 
+            id="singleLineText" 
+            label="Single Line Text"
+            icon-light="/Users/dubnyakalexey/Documents/GitHub/application-icons/Modules/Desktop/ARGONQT/Resources/svg_icons/light/annotations/single line text.svg"
+            icon-dark="/Users/dubnyakalexey/Documents/GitHub/application-icons/Modules/Desktop/ARGONQT/Resources/svg_icons/dark/annotations/single line text.svg"
+          />
+        </dropdown>
+      </splitButton>
+      <ribbonItem 
+        id="dimension" 
+        label="Dimension"
+        icon-light="/Users/dubnyakalexey/Documents/GitHub/application-icons/Modules/Desktop/ARGONQT/Resources/svg_icons/light/annotations/dimension.svg"
+        icon-dark="/Users/dubnyakalexey/Documents/GitHub/application-icons/Modules/Desktop/ARGONQT/Resources/svg_icons/dark/annotations/dimension.svg"
+      />
+    </row>
+    <row>
+      <ribbonItem 
+        id="leader" 
+        label="Leader"
+        icon-light="/Users/dubnyakalexey/Documents/GitHub/application-icons/Modules/Desktop/ARGONQT/Resources/svg_icons/light/annotations/leader.svg"
+        icon-dark="/Users/dubnyakalexey/Documents/GitHub/application-icons/Modules/Desktop/ARGONQT/Resources/svg_icons/dark/annotations/leader.svg"
+      />
+      <ribbonItem 
+        id="table" 
+        label="Table"
+        icon-light="/Users/dubnyakalexey/Documents/GitHub/application-icons/Modules/Desktop/ARGONQT/Resources/svg_icons/light/annotations/table.svg"
+        icon-dark="/Users/dubnyakalexey/Documents/GitHub/application-icons/Modules/Desktop/ARGONQT/Resources/svg_icons/dark/annotations/table.svg"
+      />
+    </row>
+  </section>
+
+  <!-- Секция Layers -->
+  <section name="Layers">
+    <row>
+      <!-- Здесь будет select для выбора слоя -->
+      <select id="layerSelect" label="Layers Manager" width="200" />
+    </row>
+    <row>
+      <ribbonItem 
+        id="byLayer" 
+        label="ByLayer"
+        icon-light="/Users/dubnyakalexey/Documents/GitHub/application-icons/Modules/Desktop/ARGONQT/Resources/svg_icons/light/layers/by layer.svg"
+        icon-dark="/Users/dubnyakalexey/Documents/GitHub/application-icons/Modules/Desktop/ARGONQT/Resources/svg_icons/dark/layers/by layer.svg"
+      />
+    </row>
+  </section>
+</ribbon>

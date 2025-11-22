@@ -1,0 +1,27 @@
+/**
+ * ARES kudo - Главный файл стилей
+ * Импорт дизайн-токенов и базовых стилей
+ * 
+ * Порядок импорта важен:
+ * 1. Палитры (базовые цвета)
+ * 2. Глобальные токены (используют палитры)
+ * 3. Размеры и типографика
+ * 4. Токены брендов (используют глобальные)
+ * 5. Базовые стили
+ */
+
+/* === Уровень 1: Палитры === */
+@import './styles/tokens/global-palette.css';
+@import './styles/tokens/foundation-colors.css';
+
+/* === Уровень 2: Глобальные токены === */
+@import './styles/tokens/global-tokens.css';
+@import './styles/tokens/dimensions.css';
+@import './styles/tokens/typography.css';
+
+/* === Уровень 3: Токены брендов === */
+@import './styles/tokens/ares-kudo.css';
+@import './styles/tokens/ares-commander.css';
+
+/* === Базовые стили === */
+@import './styles/base.css';

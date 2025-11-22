@@ -1,0 +1,43 @@
+/**
+ * SplitButton - Стили комбо-кнопки
+ * Объединяет RibbonItem + SplitArrow
+ */
+
+.split-button {
+  display: flex;
+  align-items: stretch;
+  gap: 0;
+  position: relative;
+}
+
+/* === Основная кнопка === */
+.split-button__main {
+  /* Убираем скругление справа */
+  border-top-right-radius: 0 !important;
+  border-bottom-right-radius: 0 !important;
+  margin: 0 !important;
+}
+
+/* === Стрелка === */
+.split-button__arrow {
+  margin: 0 !important;
+  /* Добавляем разделитель слева */
+  border-left: 1px solid var(--kudo-ribbon-item-divider);
+}
+
+/* === Состояние: Active === */
+/* Основная кнопка и стрелка управляются через свои компоненты */
+.split-button--active .split-button__arrow {
+  border-left-color: var(--kudo-ribbon-item-divider);
+}
+
+/* === Состояние: Disabled === */
+.split-button--disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* === Темная тема === */
+:root[data-theme="dark"] .split-button__arrow {
+  border-left-color: var(--kudo-ribbon-item-divider);
+}

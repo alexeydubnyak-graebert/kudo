@@ -1,0 +1,19 @@
+/**
+ * RibbonRow - Стили ряда элементов
+ */
+
+.ribbon-row {
+    display: flex;
+    align-items: center;
+    gap: var(--size-4);
+    height: 28px;
+}
+
+.ribbon-select-placeholder {
+    padding: var(--size-4) var(--size-8);
+    background-color: var(--kudo-ribbon-item-bg-standard);
+    border-radius: var(--kudo-item-border-radius);
+    font-family: var(--font-family-kudo);
+    font-size: var(--font-size-md);
+    color: var(--kudo-ribbon-item-text-standard);
+}

@@ -1,0 +1,162 @@
+/**
+ * ARES COMMANDER - ТОКЕНЫ БРЕНДА
+ * Переиспользуют глобальные токены и палитры
+ * Уровень 3: Специфичные для бренда Commander
+ */
+
+/* ============================================
+   СВЕТЛАЯ ТЕМА (по умолчанию)
+   ============================================ */
+
+:root {
+  /* === Tooltip === */
+  --commander-tooltip-background: var(--palette-clone-tint-24);
+  --commander-tooltip-border: var(--palette-jango-tint-13);
+  --commander-tooltip-text-color: var(--palette-rey-shadow-24);
+
+  /* === Ribbon === */
+  --commander-ribbon-background-main: var(--background-ribbon-main);
+
+  /* === Ribbon Item === */
+  --commander-ribbon-item-dropdown-border: var(--states-border-secondary-standard);
+  
+  --commander-ribbon-item-bg-standard: var(--states-bg-secondary-standard);
+  --commander-ribbon-item-bg-hover: var(--states-bg-secondary-hover);
+  --commander-ribbon-item-bg-pressed: var(--states-bg-secondary-pressed);
+  --commander-ribbon-item-bg-active: var(--states-bg-secondary-active);
+  --commander-ribbon-item-bg-disabled: var(--states-bg-secondary-disabled);
+  --commander-ribbon-item-bg-highlighted: var(--palette-white);
+  
+  --commander-ribbon-item-border-standard: var(--states-bg-secondary-standard);
+  --commander-ribbon-item-border-hover: var(--states-bg-secondary-hover);
+  --commander-ribbon-item-border-pressed: var(--states-bg-secondary-pressed);
+  --commander-ribbon-item-border-active: var(--states-bg-secondary-active);
+  --commander-ribbon-item-border-disabled: var(--states-bg-secondary-disabled);
+  
+  --commander-ribbon-item-icon-standard: var(--states-icon-color-standard);
+  --commander-ribbon-item-icon-active: var(--states-icon-color-active);
+  --commander-ribbon-item-icon-disabled: var(--states-icon-color-disabled);
+  
+  --commander-ribbon-item-text-standard: var(--states-text-color-standard);
+  --commander-ribbon-item-text-active: var(--states-text-color-active);
+  --commander-ribbon-item-text-disabled: var(--states-text-color-disabled);
+  --commander-ribbon-item-text-section: var(--text-color-ribbon-section-name);
+
+  /* === Tab Ribbon === */
+  --commander-tab-ribbon-bg-standard: var(--states-bg-secondary-standard);
+  --commander-tab-ribbon-bg-hover: var(--states-bg-secondary-hover);
+  --commander-tab-ribbon-bg-pressed: var(--states-bg-secondary-pressed);
+  --commander-tab-ribbon-bg-active: var(--states-bg-secondary-active);
+  --commander-tab-ribbon-bg-disabled-standard: var(--states-bg-secondary-disabled);
+  --commander-tab-ribbon-bg-disabled-active: var(--states-bg-secondary-disabled);
+  --commander-tab-ribbon-bg-highlighted: var(--palette-white);
+  
+  --commander-tab-ribbon-text-standard: var(--states-text-color-standard);
+  --commander-tab-ribbon-text-active: var(--states-text-color-active);
+  --commander-tab-ribbon-text-disabled: var(--states-text-color-disabled);
+  --commander-tab-ribbon-text-contextual: var(--palette-white);
+
+  /* === Input === */
+  --commander-input-bg-standard: var(--states-bg-tertiary-standard);
+  --commander-input-bg-hover: var(--states-bg-tertiary-hover);
+  --commander-input-bg-pressed: var(--states-bg-tertiary-pressed);
+  --commander-input-bg-active: var(--states-bg-tertiary-active);
+  --commander-input-bg-disabled: var(--states-bg-tertiary-disabled);
+  
+  --commander-input-border-standard: var(--states-bg-secondary-standard);
+  --commander-input-border-hover: var(--states-bg-secondary-hover);
+  --commander-input-border-pressed: var(--states-bg-secondary-pressed);
+  --commander-input-border-active: var(--states-bg-secondary-active);
+  --commander-input-border-disabled: var(--states-bg-secondary-disabled);
+  --commander-input-border-error: var(--states-border-secondary-error);
+  
+  --commander-input-icon-standard: var(--states-icon-color-standard);
+  --commander-input-icon-active: var(--states-icon-color-active);
+  --commander-input-icon-disabled: var(--states-icon-color-disabled);
+  
+  --commander-input-text-standard: var(--states-text-color-standard);
+  --commander-input-text-active: var(--states-text-color-active);
+  --commander-input-text-disabled: var(--states-text-color-disabled);
+  --commander-input-text-error: var(--states-text-color-error);
+  --commander-input-text-section: var(--text-color-ribbon-section-name);
+
+  /* === Split Arrow === */
+  --commander-split-arrow-bg-standard: var(--states-bg-secondary-standard);
+  --commander-split-arrow-bg-hover: var(--states-bg-secondary-hover);
+  --commander-split-arrow-bg-pressed: var(--states-bg-secondary-pressed);
+  --commander-split-arrow-bg-active: var(--states-bg-secondary-active);
+  --commander-split-arrow-bg-disabled: var(--states-bg-secondary-disabled);
+  
+  --commander-split-arrow-border-standard: var(--states-bg-secondary-standard);
+  --commander-split-arrow-border-hover: var(--states-bg-secondary-hover);
+  --commander-split-arrow-border-pressed: var(--states-bg-secondary-pressed);
+  --commander-split-arrow-border-active: var(--states-bg-secondary-active);
+  --commander-split-arrow-border-disabled: var(--states-bg-secondary-disabled);
+  
+  --commander-split-arrow-icon-standard: var(--states-icon-color-standard);
+  --commander-split-arrow-icon-active: var(--states-icon-color-active);
+  --commander-split-arrow-icon-disabled: var(--states-icon-color-disabled);
+
+  /* === Dimensions === */
+  --commander-input-margin: var(--size-14);
+  --commander-input-border-radius: 0px;
+  --commander-input-padding-top: var(--size-4);
+  --commander-input-padding-bottom: var(--size-4);
+  --commander-input-padding-left: var(--size-12);
+  --commander-input-padding-right: var(--size-12);
+
+  --commander-split-arrow-margin: var(--size-6);
+  --commander-split-arrow-border-radius: 0px;
+  --commander-split-arrow-padding-top: var(--size-4);
+  --commander-split-arrow-padding-bottom: var(--size-4);
+  --commander-split-arrow-padding-left: var(--size-4);
+  --commander-split-arrow-padding-right: var(--size-4);
+
+  --commander-ribbon-margin: var(--size-2);
+  --commander-ribbon-padding: var(--size-2);
+  --commander-ribbon-item-margin: var(--size-6);
+  --commander-ribbon-item-border-radius: 0px;
+  --commander-ribbon-item-padding-top: var(--size-6);
+  --commander-ribbon-item-padding-bottom: var(--size-6);
+  --commander-ribbon-item-padding-left: var(--size-6);
+  --commander-ribbon-item-padding-right: var(--size-6);
+
+  --commander-section-name-padding: var(--size-6);
+
+  /* === Divider === */
+  --commander-divider: var(--divider-ribbon);
+}
+
+/* ============================================
+   ТЕМНАЯ ТЕМА
+   ============================================ */
+
+:root[data-theme="dark"] {
+  /* === Tooltip === */
+  /* Остается как в светлой теме */
+
+  /* === Ribbon Item === */
+  --commander-ribbon-item-dropdown-border: var(--palette-black);
+
+  /* === Tab Ribbon === */
+  --commander-tab-ribbon-bg-hover: var(--states-bg-tertiary-hover);
+  --commander-tab-ribbon-bg-pressed: var(--states-bg-tertiary-pressed);
+  --commander-tab-ribbon-bg-active: var(--states-bg-tertiary-active);
+
+  /* === Input === */
+  --commander-input-margin: var(--size-6);
+
+  /* === Split Arrow === */
+  --commander-split-arrow-icon-standard: var(--palette-white);
+  --commander-split-arrow-icon-active: var(--palette-white);
+  
+  --commander-split-arrow-bg-hover: var(--states-bg-tertiary-hover);
+  --commander-split-arrow-bg-pressed: var(--states-bg-tertiary-pressed);
+  --commander-split-arrow-bg-active: var(--states-bg-tertiary-active);
+  
+  --commander-split-arrow-border-standard: var(--states-border-secondary-standard);
+  --commander-split-arrow-border-hover: var(--states-border-secondary-hover);
+  --commander-split-arrow-border-pressed: var(--states-border-secondary-pressed);
+  --commander-split-arrow-border-active: var(--states-border-secondary-active);
+  --commander-split-arrow-border-disabled: var(--states-border-secondary-disabled);
+}
