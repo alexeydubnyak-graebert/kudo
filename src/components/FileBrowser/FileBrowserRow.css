@@ -151,14 +151,15 @@
 
 /* Кнопка Favorites всегда видна если активна */
 .file-browser-row__action-btn--favorite-active {
-    background: var(--states-favorite-active-bg);
+    background: var(--foundation-primary);
     border-color: transparent;
     opacity: 1 !important;
 }
 
 .file-browser-row__action-btn--favorite-active:hover {
-    background: var(--states-favorite-active-hover-bg);
-    border-color: var(--foundation-primary);
+    background: var(--foundation-primary);
+    border-color: transparent;
+    opacity: 0.9;
 }
 
 /* MODIFIED секция */
