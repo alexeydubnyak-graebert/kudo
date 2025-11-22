@@ -31,6 +31,7 @@
 .sidebar--collapsed .sidebar__section-title,
 .sidebar--collapsed .sidebar__section-arrow,
 .sidebar--collapsed .sidebar__item-text,
+.sidebar--collapsed .sidebar__item-email,
 .sidebar--collapsed .sidebar__inner-item-text,
 .sidebar--collapsed .sidebar__footer {
     display: none;
@@ -245,7 +246,8 @@
     stroke: var(--text-on-primary);
 }
 
-.sidebar__item.active .sidebar__item-text {
+.sidebar__item.active .sidebar__item-text,
+.sidebar__item.active .sidebar__item-email {
     color: var(--text-on-primary);
 }
 
@@ -274,6 +276,14 @@
     padding: 2px;
 }
 
+.sidebar__item-content {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    flex: 1;
+    min-width: 0;
+}
+
 .sidebar__item-text {
     color: var(--sidebar-text);
     font-family: 'Roboto', sans-serif;
@@ -282,7 +292,21 @@
     line-height: 18px;
     margin: 0;
     white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
     transition: color 0.15s ease;
+}
+
+.sidebar__item-email {
+    color: var(--sidebar-text-muted);
+    font-family: 'Roboto', sans-serif;
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 14px;
+    margin: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 /* Inner Item (Sub-item) */

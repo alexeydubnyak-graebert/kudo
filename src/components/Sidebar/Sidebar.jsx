@@ -190,7 +190,10 @@ const Sidebar = ({
                             <div className="sidebar__item-icon">
                                 <KudoStorageIcon />
                             </div>
-                            <p className="sidebar__item-text">Kudo Storage</p>
+                            <div className="sidebar__item-content">
+                                <p className="sidebar__item-text">Kudo Storage</p>
+                                <p className="sidebar__item-email">storage@kudo.com</p>
+                            </div>
                         </button>
 
                         <button
@@ -200,7 +203,10 @@ const Sidebar = ({
                             <div className="sidebar__item-icon">
                                 <GoogleDriveIcon />
                             </div>
-                            <p className="sidebar__item-text">Google Drive</p>
+                            <div className="sidebar__item-content">
+                                <p className="sidebar__item-text">Google Drive</p>
+                                <p className="sidebar__item-email">user@gmail.com</p>
+                            </div>
                         </button>
 
                         <button
@@ -210,7 +216,10 @@ const Sidebar = ({
                             <div className="sidebar__item-icon">
                                 <OneDriveIcon />
                             </div>
-                            <p className="sidebar__item-text">One Drive</p>
+                            <div className="sidebar__item-content">
+                                <p className="sidebar__item-text">One Drive</p>
+                                <p className="sidebar__item-email">user@outlook.com</p>
+                            </div>
                         </button>
 
                         <button
@@ -220,7 +229,10 @@ const Sidebar = ({
                             <div className="sidebar__item-icon">
                                 <DropboxIcon />
                             </div>
-                            <p className="sidebar__item-text">Dropbox</p>
+                            <div className="sidebar__item-content">
+                                <p className="sidebar__item-text">Dropbox</p>
+                                <p className="sidebar__item-email">user@dropbox.com</p>
+                            </div>
                         </button>
 
                         <button
@@ -230,7 +242,10 @@ const Sidebar = ({
                             <div className="sidebar__item-icon">
                                 <BoxIcon />
                             </div>
-                            <p className="sidebar__item-text">Box</p>
+                            <div className="sidebar__item-content">
+                                <p className="sidebar__item-text">Box</p>
+                                <p className="sidebar__item-email">user@box.com</p>
+                            </div>
                         </button>
 
                         <button
@@ -240,7 +255,10 @@ const Sidebar = ({
                             <div className="sidebar__item-icon">
                                 <SharePointIcon />
                             </div>
-                            <p className="sidebar__item-text">SharePoint</p>
+                            <div className="sidebar__item-content">
+                                <p className="sidebar__item-text">SharePoint</p>
+                                <p className="sidebar__item-email">user@company.com</p>
+                            </div>
                         </button>
 
                         <button
@@ -250,7 +268,10 @@ const Sidebar = ({
                             <div className="sidebar__item-icon">
                                 <NextcloudIcon />
                             </div>
-                            <p className="sidebar__item-text">Nextcloud</p>
+                            <div className="sidebar__item-content">
+                                <p className="sidebar__item-text">Nextcloud</p>
+                                <p className="sidebar__item-email">user@nextcloud.com</p>
+                            </div>
                         </button>
 
                         <button
@@ -260,7 +281,10 @@ const Sidebar = ({
                             <div className="sidebar__item-icon">
                                 <WebDavIcon />
                             </div>
-                            <p className="sidebar__item-text">WebDAV</p>
+                            <div className="sidebar__item-content">
+                                <p className="sidebar__item-text">WebDAV</p>
+                                <p className="sidebar__item-email">user@webdav.server</p>
+                            </div>
                         </button>
                     </div>
 
