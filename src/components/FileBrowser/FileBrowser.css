@@ -22,6 +22,8 @@
     flex: 1;
     overflow: hidden;
     background: var(--surface-page);
+    display: flex;
+    flex-direction: row;
 }
 
 /* File Browser Table */

@@ -3,6 +3,7 @@ import Sidebar from '../Sidebar/Sidebar';
 import Header from '../Header/Header';
 import FileBrowserTable from './FileBrowserTable';
 import ContextMenu from '../ContextMenu/ContextMenu';
+import FileDetails from '../FileDetails/FileDetails';
 import { getAllItems } from './data/fileSystem';
 import { useFavorites } from '../../contexts/FavoritesContext';
 import './FileBrowser.css';
@@ -24,6 +25,9 @@ const FileBrowser = () => {
         position: { x: 0, y: 0 },
         item: null
     });
+    const [fileDetailsVisible, setFileDetailsVisible] = useState(false);
+    const [selectedFile, setSelectedFile] = useState(null);
+    const [fileDetailsTab, setFileDetailsTab] = useState('properties');
 
     // Загружаем содержимое текущей папки
     useEffect(() => {
@@ -39,6 +43,9 @@ const FileBrowser = () => {
 
     const handleFileSelect = (file) => {
         setSelectedFileId(file.id);
+        setSelectedFile(file);
+        setFileDetailsVisible(true);
+        setFileDetailsTab('properties');
         console.log('Selected file:', file);
     };
 
@@ -51,9 +58,19 @@ const FileBrowser = () => {
         }
     };
 
-    const handleFolderNameClick = (folder) => {
-        console.log('Folder name clicked:', folder.name);
-        setCurrentFolderId(folder.id);
+    const handleFolderNameClick = (file) => {
+        console.log('Folder name clicked:', file);
+        if (file.type === 'folder' || file.type === 'shared-folder') {
+            setCurrentFolderId(file.id);
+            setSelectedFileId(null);
+        }
+    };
+
+    const handleFolderInsights = (file) => {
+        console.log('Folder insights clicked:', file);
+        setSelectedFile(file);
+        setFileDetailsVisible(true);
+        setFileDetailsTab('insights');
         setSelectedFileId(null);
     };
 
@@ -191,7 +208,14 @@ const FileBrowser = () => {
                         onFileSelect={handleFileSelect}
                         onFileDoubleClick={handleFileDoubleClick}
                         onFolderNameClick={handleFolderNameClick}
+                        onFolderInsights={handleFolderInsights}
                         onContextMenu={handleContextMenu}
+                    />
+                    <FileDetails
+                        file={selectedFile}
+                        isVisible={fileDetailsVisible}
+                        onClose={() => setFileDetailsVisible(false)}
+                        initialTab={fileDetailsTab}
                     />
                 </div>
             </div>
