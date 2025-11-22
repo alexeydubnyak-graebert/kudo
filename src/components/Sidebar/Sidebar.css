@@ -378,3 +378,20 @@
 .sidebar::-webkit-scrollbar-thumb:hover {
     background: var(--border-strong);
 }
+
+/* Drag and Drop для Favorites секции */
+.sidebar__section--drop-active {
+    background-color: var(--foundation-primary-alpha-10);
+    border: 2px dashed var(--foundation-primary);
+    border-radius: 4px;
+    transition: all 0.2s ease;
+}
+
+.sidebar__section--drop-active .sidebar__section-header {
+    background-color: transparent;
+}
+
+/* Отключаем pointer events для внутренних элементов во время drag */
+.sidebar__section--drop-active * {
+    pointer-events: none;
+}

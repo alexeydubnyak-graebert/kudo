@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import PropTypes from 'prop-types';
 import FavoritesTabs from '../Favorites/FavoritesTabs';
+import { useFavorites } from '../../contexts/FavoritesContext';
 import './Sidebar.css';
 
 // Импорт SVG иконок из side-bar
@@ -63,6 +64,7 @@ const Sidebar = ({
     onNavigate = null,
     onFolderClick = null
 }) => {
+    const { addToFavorites, addFileToFavorites } = useFavorites();
     const [expandedSections, setExpandedSections] = useState({
         'my-files': false,
         'resources': false,
@@ -70,6 +72,7 @@ const Sidebar = ({
         'favorites': false,
         'automation': false
     });
+    const [favoritesDropZoneActive, setFavoritesDropZoneActive] = useState(false);
 
     const toggleSection = (sectionId) => {
         if (!collapsed) {
@@ -77,6 +80,67 @@ const Sidebar = ({
                 ...prev,
                 [sectionId]: !prev[sectionId]
             }));
+        }
+    };
+
+    // Drag-and-drop handlers for Favorites section
+    const handleFavoritesDragOver = (e) => {
+        e.preventDefault();
+        e.stopPropagation();
+        const types = Array.from(e.dataTransfer.types);
+
+        const hasData = types.includes('application/x-folder-data') ||
+            types.includes('application/x-file-data') ||
+            types.includes('application/json');
+
+        if (hasData) {
+            setFavoritesDropZoneActive(true);
+        }
+    };
+
+    const handleFavoritesDragLeave = (e) => {
+        e.preventDefault();
+        // Проверяем, что действительно покинули секцию
+        if (!e.currentTarget.contains(e.relatedTarget)) {
+            setFavoritesDropZoneActive(false);
+        }
+    };
+
+    const handleFavoritesDrop = (e) => {
+        e.preventDefault();
+        e.stopPropagation();
+        setFavoritesDropZoneActive(false);
+
+        try {
+            // Пытаемся получить данные в разных форматах
+            let data = null;
+            let folderData = e.dataTransfer.getData('application/x-folder-data');
+            let fileData = e.dataTransfer.getData('application/x-file-data');
+            let jsonData = e.dataTransfer.getData('application/json');
+
+            if (folderData) {
+                data = JSON.parse(folderData);
+            } else if (fileData) {
+                data = JSON.parse(fileData);
+            } else if (jsonData) {
+                data = JSON.parse(jsonData);
+            }
+
+            if (data) {
+                // Автоматически определяем тип и добавляем в соответствующий таб
+                if (data.type === 'folder' || data.type === 'shared-folder') {
+                    addToFavorites(data);
+                } else if (data.type === 'file') {
+                    addFileToFavorites(data);
+                }
+
+                // Автоматически разворачиваем секцию после добавления
+                if (!expandedSections['favorites']) {
+                    toggleSection('favorites');
+                }
+            }
+        } catch (error) {
+            console.error('Error handling drop on Favorites:', error);
         }
     };
 
@@ -365,7 +429,12 @@ const Sidebar = ({
                 </div>
 
                 {/* Favorites Section */}
-                <div className="sidebar__section">
+                <div
+                    className={`sidebar__section ${favoritesDropZoneActive ? 'sidebar__section--drop-active' : ''}`}
+                    onDragOver={handleFavoritesDragOver}
+                    onDragLeave={handleFavoritesDragLeave}
+                    onDrop={handleFavoritesDrop}
+                >
                     <button
                         className={`sidebar__section-header ${expandedSections['favorites'] ? 'expanded' : ''}`}
                         onClick={() => toggleSection('favorites')}
