@@ -65,7 +65,7 @@ const FileBrowser = () => {
     const [activeStorage, setActiveStorage] = useState({
         id: 'kudo-storage',
         name: 'Kudo Storage',
-        icon: null
+        icon: <KudoStorageIcon />
     });
     const [breadcrumbsPath, setBreadcrumbsPath] = useState([]);
 
