@@ -1,18 +1,19 @@
 /**
  * SearchSelectCombo Component Styles
- * Использует стили как у Select компонента
+ * Использует стили как у Select компонента (Small size)
  */
 
 .search-select-combo {
     display: flex;
     align-items: center;
-    gap: 8px;
-    padding: 8px 4px 8px 12px;
+    gap: 6px;
+    padding: 6px 4px 6px 12px;
     background: var(--surface-base);
     border: 1px solid var(--border-default);
     border-radius: 4px;
     font-family: 'Roboto', sans-serif;
-    font-size: 13px;
+    font-size: 12px;
+    line-height: 16px;
     transition: all 0.2s ease;
     max-width: 400px;
 }
@@ -36,17 +37,20 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 14px;
+    height: 14px;
     color: var(--text-secondary);
     flex-shrink: 0;
 }
 
 .search-select-combo__input {
     flex: 1;
-    padding: 8px 0;
+    padding: 4px 0;
     background: transparent;
     border: none;
     font-family: 'Roboto', sans-serif;
-    font-size: 13px;
+    font-size: 12px;
+    line-height: 16px;
     font-weight: 400;
     color: var(--text-primary);
     outline: none;
@@ -97,8 +101,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 16px;
-    height: 16px;
+    width: 14px;
+    height: 14px;
     flex-shrink: 0;
 }
 
@@ -197,20 +201,20 @@
 }
 
 .search-select-combo__option--selected {
-    background: var(--foundation-primary-alpha-10);
-    color: var(--text-primary);
+    background: var(--foundation-primary);
+    color: var(--text-on-primary);
 }
 
 .search-select-combo__option--selected:hover {
-    background: var(--foundation-primary-alpha-20);
+    background: var(--button-primary-hover);
 }
 
 .search-select-combo__option-icon {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 16px;
-    height: 16px;
+    width: 14px;
+    height: 14px;
     flex-shrink: 0;
 }
 
