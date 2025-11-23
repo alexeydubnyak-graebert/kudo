@@ -3,7 +3,7 @@ import Sidebar from '../Sidebar/Sidebar';
 import Header from '../Header/Header';
 import Breadcrumbs from '../Breadcrumbs/Breadcrumbs';
 import SearchSelectCombo from '../SearchSelectCombo/SearchSelectCombo';
-import SortSelect from '../SortSelect/SortSelect';
+import Select from '../Select/Select';
 import FileBrowserTable from './FileBrowserTable';
 import ContextMenu from '../ContextMenu/ContextMenu';
 import FileDetails from '../FileDetails/FileDetails';
@@ -41,6 +41,14 @@ const STORAGES = [
     { id: 'sharepoint', name: 'SharePoint', icon: <SharePointIcon /> },
     { id: 'nextcloud', name: 'Nextcloud', icon: <NextcloudIcon /> },
     { id: 'webdav', name: 'WebDAV', icon: <WebDavIcon /> }
+];
+
+// Опции сортировки
+const SORT_OPTIONS = [
+    { value: 'filename-asc', label: 'Sort Filename by: A→Z' },
+    { value: 'filename-desc', label: 'Sort Filename by: Z→A' },
+    { value: 'date-newest', label: 'Sort by Date: Newest' },
+    { value: 'date-oldest', label: 'Sort by Date: Oldest' }
 ];
 
 /**
@@ -312,9 +320,12 @@ const FileBrowser = () => {
                             onSearch={handleSearch}
                             searchPlaceholder="Search files and folders..."
                         />
-                        <SortSelect
+                        <Select
+                            options={SORT_OPTIONS}
                             value={sortBy}
                             onChange={handleSortChange}
+                            placeholder="Sort by..."
+                            size="small"
                         />
                     </div>
                     <div className="file-browser-page__content">
