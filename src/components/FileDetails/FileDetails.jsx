@@ -399,7 +399,7 @@ const FileDetails = ({ file, isVisible, onClose, initialTab = 'properties' }) =>
                                     ) : (
                                         <div className="file-details__thumbnail-placeholder">
                                             <div className="file-details__thumbnail-icon">
-                                                <img src={PreviewIcon} alt="File preview" width="48" height="48" />
+                                                <img src={PreviewIcon} alt="File preview" />
                                             </div>
                                             <span className="file-details__thumbnail-text">No preview available</span>
                                         </div>
