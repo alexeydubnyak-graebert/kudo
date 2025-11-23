@@ -68,7 +68,7 @@
 }
 
 .file-browser-page__view-tabs .tab--active {
-    background: var(--surface-sidebar);
+    background: var(--sidebar-background);
 }
 
 .file-browser-page__content {

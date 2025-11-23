@@ -36,13 +36,13 @@
 }
 
 .tab--active {
-    background: var(--surface-sidebar);
+    background: var(--sidebar-background);
     color: var(--text-primary);
     border-color: var(--border-default);
 }
 
 .tab--active:hover {
-    background: var(--surface-sidebar);
+    background: var(--sidebar-background);
     border-color: var(--border-default);
 }
 
@@ -142,5 +142,5 @@
 }
 
 .tab-group .tab--active {
-    background: var(--surface-sidebar);
+    background: var(--sidebar-background);
 }
