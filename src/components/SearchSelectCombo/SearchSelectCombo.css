@@ -83,20 +83,17 @@
     flex-shrink: 0 !important;
 }
 
-/* Dropdown стили для SearchSelectCombo */
+/* Dropdown привязан к SearchSelectCombo контейнеру */
+.search-select-combo {
+    position: relative;
+}
+
 .search-select-combo .select__dropdown {
     position: absolute;
     top: calc(100% + 4px);
     right: 0;
     left: auto;
     z-index: 1000;
-    min-width: 200px;
-    background: var(--surface-base);
-    border: 1px solid var(--border-default);
-    border-radius: 4px;
-    box-shadow: var(--shadow-dropdown);
-    overflow: hidden;
-    animation: dropdownSlideIn 0.2s ease-out;
 }
 
 .search-select-combo .select__option--selected {
