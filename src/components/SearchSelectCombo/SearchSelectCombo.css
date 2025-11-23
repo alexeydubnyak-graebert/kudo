@@ -6,11 +6,11 @@
 .search-select-combo {
     display: flex;
     align-items: center;
-    gap: 0;
+    gap: 8px;
+    padding: 0 4px 0 12px;
     background: var(--surface-base);
     border: 1px solid var(--border-default);
     border-radius: 6px;
-    overflow: hidden;
     transition: border-color 0.15s ease;
     max-width: 400px;
 }
@@ -21,7 +21,40 @@
 }
 
 /* ============================================
-   STORAGE SELECTOR
+   SEARCH INPUT
+   ============================================ */
+
+.search-select-combo__search-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-secondary);
+    flex-shrink: 0;
+}
+
+.search-select-combo__input {
+    flex: 1;
+    padding: 8px 0;
+    background: transparent;
+    border: none;
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    color: var(--text-primary);
+    outline: none;
+    min-width: 0;
+}
+
+.search-select-combo__input::placeholder {
+    color: var(--text-secondary);
+}
+
+.search-select-combo__input:focus {
+    outline: none;
+}
+
+/* ============================================
+   STORAGE SELECTOR (справа внутри поля)
    ============================================ */
 
 .search-select-combo__selector {
@@ -33,14 +66,14 @@
     display: flex;
     align-items: center;
     gap: 4px;
-    padding: 8px 12px;
+    padding: 6px 8px;
     background: transparent;
     border: none;
-    border-right: 1px solid var(--border-default);
+    border-left: 1px solid var(--border-default);
     cursor: pointer;
     transition: background 0.15s ease;
     outline: none;
-    height: 100%;
+    border-radius: 4px;
 }
 
 .search-select-combo__button:hover {
@@ -81,7 +114,7 @@
 .search-select-combo__dropdown {
     position: absolute;
     top: calc(100% + 4px);
-    left: 0;
+    right: 0;
     z-index: 1000;
     min-width: 200px;
     background: var(--surface-base);
@@ -184,46 +217,4 @@
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-}
-
-/* ============================================
-   SEARCH INPUT
-   ============================================ */
-
-.search-select-combo__search {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    flex: 1;
-    padding: 0 12px;
-    min-width: 0;
-}
-
-.search-select-combo__search-icon {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: var(--text-secondary);
-    flex-shrink: 0;
-}
-
-.search-select-combo__input {
-    flex: 1;
-    padding: 8px 0;
-    background: transparent;
-    border: none;
-    font-family: 'Roboto', sans-serif;
-    font-size: 13px;
-    font-weight: 400;
-    color: var(--text-primary);
-    outline: none;
-    min-width: 0;
-}
-
-.search-select-combo__input::placeholder {
-    color: var(--text-secondary);
-}
-
-.search-select-combo__input:focus {
-    outline: none;
 }

@@ -84,7 +84,20 @@ const SearchSelectCombo = ({
 
     return (
         <div className="search-select-combo">
-            {/* Storage Selector */}
+            {/* Search Input */}
+            <span className="search-select-combo__search-icon">
+                <SearchIcon />
+            </span>
+            <input
+                type="text"
+                className="search-select-combo__input"
+                placeholder={searchPlaceholder}
+                value={searchValue}
+                onChange={handleSearchChange}
+                onKeyDown={handleSearchKeyDown}
+            />
+
+            {/* Storage Selector (справа внутри поля) */}
             <div className="search-select-combo__selector">
                 <button
                     ref={buttonRef}
@@ -126,21 +139,6 @@ const SearchSelectCombo = ({
                         </div>
                     </div>
                 )}
-            </div>
-
-            {/* Search Input */}
-            <div className="search-select-combo__search">
-                <span className="search-select-combo__search-icon">
-                    <SearchIcon />
-                </span>
-                <input
-                    type="text"
-                    className="search-select-combo__input"
-                    placeholder={searchPlaceholder}
-                    value={searchValue}
-                    onChange={handleSearchChange}
-                    onKeyDown={handleSearchKeyDown}
-                />
             </div>
         </div>
     );
