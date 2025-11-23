@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import Sidebar from '../Sidebar/Sidebar';
 import Header from '../Header/Header';
+import Breadcrumbs from '../Breadcrumbs/Breadcrumbs';
 import FileBrowserTable from './FileBrowserTable';
 import ContextMenu from '../ContextMenu/ContextMenu';
 import FileDetails from '../FileDetails/FileDetails';
@@ -28,6 +29,12 @@ const FileBrowser = () => {
     const [fileDetailsVisible, setFileDetailsVisible] = useState(false);
     const [selectedFile, setSelectedFile] = useState(null);
     const [fileDetailsTab, setFileDetailsTab] = useState('properties');
+    const [activeStorage, setActiveStorage] = useState({
+        id: 'kudo-storage',
+        name: 'Kudo Storage',
+        icon: null
+    });
+    const [breadcrumbsPath, setBreadcrumbsPath] = useState([]);
 
     // Загружаем содержимое текущей папки
     useEffect(() => {
@@ -54,7 +61,13 @@ const FileBrowser = () => {
         if (file.type === 'folder' || file.type === 'shared-folder') {
             console.log('Opening folder:', file.name);
             setCurrentFolderId(file.id);
-            setSelectedFileId(null); // Сбрасываем выделение при переходе в папку
+            setSelectedFileId(null);
+            // Добавляем папку в breadcrumbs
+            setBreadcrumbsPath([...breadcrumbsPath, {
+                id: file.id,
+                label: file.name,
+                onClick: handleBreadcrumbClick
+            }]);
         }
     };
 
@@ -63,6 +76,12 @@ const FileBrowser = () => {
         if (file.type === 'folder' || file.type === 'shared-folder') {
             setCurrentFolderId(file.id);
             setSelectedFileId(null);
+            // Добавляем папку в breadcrumbs
+            setBreadcrumbsPath([...breadcrumbsPath, {
+                id: file.id,
+                label: file.name,
+                onClick: handleBreadcrumbClick
+            }]);
         }
     };
 
@@ -76,6 +95,30 @@ const FileBrowser = () => {
 
     const handleSidebarToggle = () => {
         setIsSidebarCollapsed(!isSidebarCollapsed);
+    };
+
+    const handleStorageChange = (storage) => {
+        console.log('Storage changed:', storage);
+        setActiveStorage(storage);
+        setCurrentFolderId('root');
+        setSelectedFileId(null);
+        setBreadcrumbsPath([]);
+    };
+
+    const handleBreadcrumbClick = (item) => {
+        console.log('Breadcrumb clicked:', item);
+        if (item.id === 'storage') {
+            setCurrentFolderId('root');
+            setBreadcrumbsPath([]);
+        } else {
+            setCurrentFolderId(item.id);
+            // Обрезаем path до выбранного элемента
+            const itemIndex = breadcrumbsPath.findIndex(p => p.id === item.id);
+            if (itemIndex !== -1) {
+                setBreadcrumbsPath(breadcrumbsPath.slice(0, itemIndex + 1));
+            }
+        }
+        setSelectedFileId(null);
     };
 
     const handleFavoriteFolderClick = (folder) => {
@@ -189,12 +232,24 @@ const FileBrowser = () => {
         return menuItems;
     };
 
+    // Формируем breadcrumbs items
+    const breadcrumbsItems = [
+        {
+            id: 'storage',
+            label: activeStorage.name,
+            icon: activeStorage.icon,
+            onClick: handleBreadcrumbClick
+        },
+        ...breadcrumbsPath
+    ];
+
     return (
         <div className="file-browser-page">
             <Sidebar
                 isCollapsed={isSidebarCollapsed}
                 onToggleCollapse={handleSidebarToggle}
                 onFolderClick={handleFavoriteFolderClick}
+                onStorageChange={handleStorageChange}
             />
             <div className="file-browser-page__right">
                 <Header
@@ -202,6 +257,7 @@ const FileBrowser = () => {
                     onThemeToggle={handleThemeToggle}
                 />
                 <div className="file-browser-page__main">
+                    <Breadcrumbs items={breadcrumbsItems} />
                     <FileBrowserTable
                         files={items}
                         selectedId={selectedFileId}

@@ -62,7 +62,8 @@ const Sidebar = ({
     collapsed = false,
     onCollapse = null,
     onNavigate = null,
-    onFolderClick = null
+    onFolderClick = null,
+    onStorageChange = null
 }) => {
     const { addToFavorites, addFileToFavorites } = useFavorites();
     const [expandedSections, setExpandedSections] = useState({
@@ -147,6 +148,25 @@ const Sidebar = ({
     const handleNavigate = (sectionId, itemId = null) => {
         if (onNavigate) {
             onNavigate(sectionId, itemId);
+        }
+
+        // Если это хранилище в My Files, вызываем onStorageChange
+        if (sectionId === 'my-files' && itemId && onStorageChange) {
+            const storageMap = {
+                'kudo-storage': { id: 'kudo-storage', name: 'Kudo Storage', icon: <KudoStorageIcon /> },
+                'google-drive': { id: 'google-drive', name: 'Google Drive', icon: <GoogleDriveIcon /> },
+                'one-drive': { id: 'one-drive', name: 'One Drive', icon: <OneDriveIcon /> },
+                'dropbox': { id: 'dropbox', name: 'Dropbox', icon: <DropboxIcon /> },
+                'box': { id: 'box', name: 'Box', icon: <BoxIcon /> },
+                'sharepoint': { id: 'sharepoint', name: 'SharePoint', icon: <SharePointIcon /> },
+                'nextcloud': { id: 'nextcloud', name: 'Nextcloud', icon: <NextcloudIcon /> },
+                'webdav': { id: 'webdav', name: 'WebDAV', icon: <WebDavIcon /> }
+            };
+
+            const storage = storageMap[itemId];
+            if (storage) {
+                onStorageChange(storage);
+            }
         }
     };
 
