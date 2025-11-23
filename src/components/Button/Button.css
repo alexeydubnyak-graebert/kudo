@@ -52,7 +52,7 @@
    ============================================ */
 
 .button--secondary {
-    background: transparent;
+    background: var(--surface-base);
     color: var(--text-primary);
     border-color: var(--border-default);
 }
@@ -63,12 +63,13 @@
 }
 
 .button--secondary:active:not(.button--disabled) {
-    background: var(--states-active);
+    background: var(--surface-hover);
     border-color: var(--border-strong);
 }
 
 .button--secondary:focus-visible {
-    box-shadow: 0 0 0 2px var(--states-focus);
+    border-color: var(--foundation-primary);
+    box-shadow: 0 0 0 2px var(--foundation-primary-alpha-20);
 }
 
 /* ============================================
