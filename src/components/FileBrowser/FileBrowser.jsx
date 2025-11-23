@@ -2,12 +2,45 @@ import React, { useState, useEffect } from 'react';
 import Sidebar from '../Sidebar/Sidebar';
 import Header from '../Header/Header';
 import Breadcrumbs from '../Breadcrumbs/Breadcrumbs';
+import SearchSelectCombo from '../SearchSelectCombo/SearchSelectCombo';
 import FileBrowserTable from './FileBrowserTable';
 import ContextMenu from '../ContextMenu/ContextMenu';
 import FileDetails from '../FileDetails/FileDetails';
 import { getAllItems } from './data/fileSystem';
 import { useFavorites } from '../../contexts/FavoritesContext';
 import './FileBrowser.css';
+
+// Импорт иконок хранилищ
+import KudoStorageIconSvg from '../../assets/storage/ares.svg';
+import GoogleDriveIconSvg from '../../assets/storage/google-drive.svg';
+import OneDriveIconSvg from '../../assets/storage/onedrive.svg';
+import DropboxIconSvg from '../../assets/storage/dropbox.svg';
+import BoxIconSvg from '../../assets/storage/box.svg';
+import SharePointIconSvg from '../../assets/storage/sharepoint.svg';
+import NextcloudIconSvg from '../../assets/storage/nextcloud.svg';
+import WebDavIconSvg from '../../assets/storage/WebDav.svg';
+
+// Компоненты иконок
+const KudoStorageIcon = () => <img src={KudoStorageIconSvg} alt="" width="16" height="16" />;
+const GoogleDriveIcon = () => <img src={GoogleDriveIconSvg} alt="" width="16" height="16" />;
+const OneDriveIcon = () => <img src={OneDriveIconSvg} alt="" width="16" height="16" />;
+const DropboxIcon = () => <img src={DropboxIconSvg} alt="" width="16" height="16" />;
+const BoxIcon = () => <img src={BoxIconSvg} alt="" width="16" height="16" />;
+const SharePointIcon = () => <img src={SharePointIconSvg} alt="" width="16" height="16" />;
+const NextcloudIcon = () => <img src={NextcloudIconSvg} alt="" width="16" height="16" />;
+const WebDavIcon = () => <img src={WebDavIconSvg} alt="" width="16" height="16" />;
+
+// Список всех хранилищ
+const STORAGES = [
+    { id: 'kudo-storage', name: 'Kudo Storage', icon: <KudoStorageIcon /> },
+    { id: 'google-drive', name: 'Google Drive', icon: <GoogleDriveIcon /> },
+    { id: 'one-drive', name: 'One Drive', icon: <OneDriveIcon /> },
+    { id: 'dropbox', name: 'Dropbox', icon: <DropboxIcon /> },
+    { id: 'box', name: 'Box', icon: <BoxIcon /> },
+    { id: 'sharepoint', name: 'SharePoint', icon: <SharePointIcon /> },
+    { id: 'nextcloud', name: 'Nextcloud', icon: <NextcloudIcon /> },
+    { id: 'webdav', name: 'WebDAV', icon: <WebDavIcon /> }
+];
 
 /**
  * FileBrowser - Полноценный компонент файлового браузера со всей логикой
@@ -119,6 +152,11 @@ const FileBrowser = () => {
             }
         }
         setSelectedFileId(null);
+    };
+
+    const handleSearch = (searchQuery) => {
+        console.log('Search:', searchQuery, 'in storage:', activeStorage.id);
+        // TODO: Implement search functionality
     };
 
     const handleFavoriteFolderClick = (folder) => {
@@ -257,7 +295,16 @@ const FileBrowser = () => {
                     onThemeToggle={handleThemeToggle}
                 />
                 <div className="file-browser-page__main">
-                    <Breadcrumbs items={breadcrumbsItems} />
+                    <div className="file-browser-page__toolbar">
+                        <Breadcrumbs items={breadcrumbsItems} />
+                        <SearchSelectCombo
+                            storages={STORAGES}
+                            selectedStorageId={activeStorage.id}
+                            onStorageChange={handleStorageChange}
+                            onSearch={handleSearch}
+                            searchPlaceholder="Search files and folders..."
+                        />
+                    </div>
                     <div className="file-browser-page__content">
                         <FileBrowserTable
                             files={items}

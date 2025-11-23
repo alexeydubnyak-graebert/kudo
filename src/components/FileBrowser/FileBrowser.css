@@ -26,6 +26,16 @@
     flex-direction: column;
 }
 
+.file-browser-page__toolbar {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding-right: 20px;
+    background: var(--surface-base);
+    border-bottom: 1px solid var(--border-default);
+    flex-shrink: 0;
+}
+
 .file-browser-page__content {
     flex: 1;
     overflow: hidden;

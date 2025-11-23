@@ -4,9 +4,10 @@
  */
 
 .breadcrumbs {
+    flex: 1;
     padding: 12px 20px;
     background: var(--surface-base);
-    border-bottom: 1px solid var(--border-default);
+    min-width: 0;
 }
 
 .breadcrumbs__list {
