@@ -77,7 +77,7 @@ const FileBrowser = () => {
         icon: <KudoStorageIcon />
     });
     const [breadcrumbsPath, setBreadcrumbsPath] = useState([]);
-    const [sortBy, setSortBy] = useState('filename-asc');
+    const [sortBy, setSortBy] = useState(null);
 
     // Загружаем содержимое текущей папки
     useEffect(() => {
