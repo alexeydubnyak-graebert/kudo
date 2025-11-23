@@ -23,6 +23,13 @@
     overflow: hidden;
     background: var(--surface-page);
     display: flex;
+    flex-direction: column;
+}
+
+.file-browser-page__content {
+    flex: 1;
+    overflow: hidden;
+    display: flex;
     flex-direction: row;
 }
 

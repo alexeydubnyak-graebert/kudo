@@ -258,21 +258,23 @@ const FileBrowser = () => {
                 />
                 <div className="file-browser-page__main">
                     <Breadcrumbs items={breadcrumbsItems} />
-                    <FileBrowserTable
-                        files={items}
-                        selectedId={selectedFileId}
-                        onFileSelect={handleFileSelect}
-                        onFileDoubleClick={handleFileDoubleClick}
-                        onFolderNameClick={handleFolderNameClick}
-                        onFolderInsights={handleFolderInsights}
-                        onContextMenu={handleContextMenu}
-                    />
-                    <FileDetails
-                        file={selectedFile}
-                        isVisible={fileDetailsVisible}
-                        onClose={() => setFileDetailsVisible(false)}
-                        initialTab={fileDetailsTab}
-                    />
+                    <div className="file-browser-page__content">
+                        <FileBrowserTable
+                            files={items}
+                            selectedId={selectedFileId}
+                            onFileSelect={handleFileSelect}
+                            onFileDoubleClick={handleFileDoubleClick}
+                            onFolderNameClick={handleFolderNameClick}
+                            onFolderInsights={handleFolderInsights}
+                            onContextMenu={handleContextMenu}
+                        />
+                        <FileDetails
+                            file={selectedFile}
+                            isVisible={fileDetailsVisible}
+                            onClose={() => setFileDetailsVisible(false)}
+                            initialTab={fileDetailsTab}
+                        />
+                    </div>
                 </div>
             </div>
             <ContextMenu
