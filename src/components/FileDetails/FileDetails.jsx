@@ -5,6 +5,7 @@ import './FileDetails.css';
 import DateIcon from '../../assets/file-browser/date.svg';
 import UsersIcon from '../../assets/file-browser/usernames.svg';
 import ActionsIcon from '../../assets/file-browser/actions.svg';
+import PreviewIcon from '../../assets/file-browser/preview-big.svg';
 
 const FileDetails = ({ file, isVisible, onClose, initialTab = 'properties' }) => {
     const [activeTab, setActiveTab] = useState(initialTab);
@@ -398,13 +399,7 @@ const FileDetails = ({ file, isVisible, onClose, initialTab = 'properties' }) =>
                                     ) : (
                                         <div className="file-details__thumbnail-placeholder">
                                             <div className="file-details__thumbnail-icon">
-                                                {file.type === 'pdf' && '📄'}
-                                                {file.type === 'dwg' && '📐'}
-                                                {file.type === 'doc' || file.type === 'docx' ? '📝' : ''}
-                                                {file.type === 'xls' || file.type === 'xlsx' ? '📊' : ''}
-                                                {file.type === 'ppt' || file.type === 'pptx' ? '📽️' : ''}
-                                                {file.type === 'jpg' || file.type === 'jpeg' || file.type === 'png' || file.type === 'gif' ? '🖼️' : ''}
-                                                {!['pdf', 'dwg', 'doc', 'docx', 'xls', 'xlsx', 'ppt', 'pptx', 'jpg', 'jpeg', 'png', 'gif'].includes(file.type) && '📄'}
+                                                <img src={PreviewIcon} alt="File preview" width="48" height="48" />
                                             </div>
                                             <span className="file-details__thumbnail-text">No preview available</span>
                                         </div>
