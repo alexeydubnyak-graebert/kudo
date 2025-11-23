@@ -1,20 +1,68 @@
 /**
  * SearchSelectCombo Component Styles
- * Контейнер для Input и Select компонентов
+ * Input с встроенным Select справа
  */
 
 .search-select-combo {
-  display: flex;
-  align-items: center;
-  gap: 8px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 6px 4px 6px 12px;
+    background: var(--foundation-gray600);
+    border: 1px solid var(--border-strong);
+    border-radius: 4px;
+    transition: all 0.2s ease;
+}
+
+.search-select-combo:hover {
+    border-color: var(--border-strong);
+    background: var(--foundation-gray500);
+}
+
+.search-select-combo:focus-within {
+    border-color: var(--foundation-primary);
+    box-shadow: 0 0 0 2px var(--foundation-primary-alpha-20);
+    background: var(--foundation-gray600);
+}
+
+/* Убираем border у вложенных Input и Select */
+.search-select-combo .input {
+    border: none;
+    padding: 0;
+    background: transparent;
+}
+
+.search-select-combo .input:hover,
+.search-select-combo .input:focus-within {
+    border: none;
+    box-shadow: none;
+    background: transparent;
+}
+
+.search-select-combo .select {
+    border: none;
+    border-left: 1px solid var(--border-default);
+    padding: 4px 8px;
+    background: transparent;
+    border-radius: 0;
+}
+
+.search-select-combo .select:hover,
+.search-select-combo .select:focus-visible,
+.search-select-combo .select--open {
+    border: none;
+    border-left: 1px solid var(--border-default);
+    box-shadow: none;
+    background: transparent;
 }
 
 .search-select-combo .input-wrapper {
-  flex: 1;
-  min-width: 200px;
+    flex: 1;
+    min-width: 0;
 }
 
 .search-select-combo .select-wrapper {
-  flex-shrink: 0;
-  width: auto;
+    flex-shrink: 0;
+    width: auto;
 }
