@@ -1,0 +1,147 @@
+/**
+ * Tab Component Styles
+ * Использует те же размеры и состояния что и Select
+ */
+
+/* ============================================
+   TAB CONTAINER
+   ============================================ */
+
+.tab {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 8px 12px;
+    background: var(--foundation-gray600);
+    border: 1px solid var(--border-strong);
+    border-radius: 4px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+    color: var(--text-primary);
+    cursor: pointer;
+    transition: all 0.2s ease;
+    outline: none;
+    user-select: none;
+}
+
+.tab:hover:not(.tab--disabled) {
+    border-color: var(--border-strong);
+    background: var(--foundation-gray500);
+}
+
+.tab:focus-visible {
+    border-color: var(--foundation-primary);
+    box-shadow: 0 0 0 2px var(--foundation-primary-alpha-20);
+}
+
+.tab--active {
+    background: var(--surface-sidebar);
+    color: var(--text-primary);
+    border-color: var(--border-default);
+}
+
+.tab--active:hover {
+    background: var(--surface-sidebar);
+    border-color: var(--border-default);
+}
+
+.tab--disabled {
+    background: var(--states-disabled-bg);
+    border-color: var(--border-subtle);
+    cursor: not-allowed;
+    opacity: 0.6;
+}
+
+.tab--disabled .tab__icon {
+    color: var(--states-disabled-text);
+}
+
+.tab--disabled .tab__label {
+    color: var(--states-disabled-text);
+}
+
+/* ============================================
+   TAB CONTENT
+   ============================================ */
+
+.tab__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-secondary);
+    flex-shrink: 0;
+}
+
+.tab--active .tab__icon {
+    color: var(--text-primary);
+}
+
+.tab__label {
+    font-weight: 500;
+    white-space: nowrap;
+}
+
+/* ============================================
+   SIZES
+   ============================================ */
+
+.tab--small {
+    padding: 6px 12px;
+    font-size: 12px;
+}
+
+.tab--small .tab__icon {
+    width: 14px;
+    height: 14px;
+}
+
+.tab--medium {
+    padding: 8px 16px;
+    font-size: 13px;
+}
+
+.tab--medium .tab__icon {
+    width: 16px;
+    height: 16px;
+}
+
+.tab--large {
+    padding: 10px 20px;
+    font-size: 14px;
+}
+
+.tab--large .tab__icon {
+    width: 18px;
+    height: 18px;
+}
+
+/* ============================================
+   TAB GROUP
+   ============================================ */
+
+.tab-group {
+    display: flex;
+    align-items: center;
+    gap: 0;
+    background: var(--foundation-gray600);
+    border: 1px solid var(--border-strong);
+    border-radius: 4px;
+    padding: 2px;
+}
+
+.tab-group .tab {
+    border: none;
+    border-radius: 2px;
+    margin: 0;
+    flex: 1;
+}
+
+.tab-group .tab:not(.tab--active):hover {
+    background: var(--foundation-gray500);
+}
+
+.tab-group .tab--active {
+    background: var(--surface-sidebar);
+}

@@ -7,9 +7,14 @@ import Select from '../Select/Select';
 import FileBrowserTable from './FileBrowserTable';
 import ContextMenu from '../ContextMenu/ContextMenu';
 import FileDetails from '../FileDetails/FileDetails';
+import Tab from '../Tab/Tab';
 import { getAllItems } from './data/fileSystem';
 import { useFavorites } from '../../contexts/FavoritesContext';
 import './FileBrowser.css';
+
+// Импорт иконок для табов
+import GridIcon from '../../assets/file-browser/grid_view.svg';
+import ListIcon from '../../assets/file-browser/list_view.svg';
 
 // Импорт иконок хранилищ
 import KudoStorageIconSvg from '../../assets/storage/ares.svg';
@@ -63,6 +68,8 @@ const FileBrowser = () => {
     const [isSidebarCollapsed, setIsSidebarCollapsed] = useState(false);
     const [currentFolderId, setCurrentFolderId] = useState('root');
     const [items, setItems] = useState([]);
+    const [sortBy, setSortBy] = useState(null);
+    const [viewMode, setViewMode] = useState('list'); // 'list' | 'grid'
     const [contextMenu, setContextMenu] = useState({
         isOpen: false,
         position: { x: 0, y: 0 },
@@ -327,6 +334,22 @@ const FileBrowser = () => {
                             placeholder="Sort by..."
                             size="small"
                         />
+
+                        {/* View Mode Tabs */}
+                        <div className="file-browser-page__view-tabs">
+                            <Tab
+                                size="small"
+                                active={viewMode === 'list'}
+                                icon={<img src={ListIcon} alt="List view" />}
+                                onClick={() => setViewMode('list')}
+                            />
+                            <Tab
+                                size="small"
+                                active={viewMode === 'grid'}
+                                icon={<img src={GridIcon} alt="Grid view" />}
+                                onClick={() => setViewMode('grid')}
+                            />
+                        </div>
                     </div>
                     <div className="file-browser-page__content">
                         <FileBrowserTable

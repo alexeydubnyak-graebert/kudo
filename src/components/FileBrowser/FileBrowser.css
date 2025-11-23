@@ -43,6 +43,34 @@
     max-width: 250px;
 }
 
+/* View Mode Tabs */
+.file-browser-page__view-tabs {
+    display: flex;
+    align-items: center;
+    gap: 0;
+    background: var(--foundation-gray600);
+    border: 1px solid var(--border-strong);
+    border-radius: 4px;
+    padding: 2px;
+}
+
+.file-browser-page__view-tabs .tab {
+    border: none;
+    border-radius: 2px;
+    margin: 0;
+    min-width: 32px;
+    width: 32px;
+    padding: 6px;
+}
+
+.file-browser-page__view-tabs .tab:not(.tab--active):hover {
+    background: var(--foundation-gray500);
+}
+
+.file-browser-page__view-tabs .tab--active {
+    background: var(--surface-sidebar);
+}
+
 .file-browser-page__content {
     flex: 1;
     overflow: hidden;
