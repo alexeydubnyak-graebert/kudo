@@ -63,6 +63,7 @@
 .search-select-combo .input-wrapper {
     flex: 1;
     min-width: 0;
+    margin-right: 4px;
 }
 
 .search-select-combo .select-wrapper {
