@@ -11,9 +11,7 @@ import './Sidebar.css';
 // Импорт SVG иконок из side-bar
 import CollapseIconSvg from '../../assets/side-bar/collapse.svg';
 import MyFilesIconSvg from '../../assets/side-bar/my-files.svg';
-import SettingsIconSvg from '../../assets/side-bar/settings.svg';
 import StorageIconSvg from '../../assets/side-bar/storage.svg';
-import WebGLIconSvg from '../../assets/side-bar/webgl-test.svg';
 import ResourcesIconSvg from '../../assets/side-bar/resources.svg';
 import FavoritesIconSvg from '../../assets/side-bar/favorites.svg';
 import AutomationIconSvg from '../../assets/side-bar/automation.svg';
@@ -32,9 +30,7 @@ import WebDavIconSvg from '../../assets/storage/WebDav.svg';
 // Компоненты иконок
 const CollapseIcon = () => <img src={CollapseIconSvg} alt="" />;
 const MyFilesIcon = () => <img src={MyFilesIconSvg} alt="" />;
-const SettingsIcon = () => <img src={SettingsIconSvg} alt="" />;
 const StorageIcon = () => <img src={StorageIconSvg} alt="" />;
-const WebGLIcon = () => <img src={WebGLIconSvg} alt="" />;
 const ResourcesIcon = () => <img src={ResourcesIconSvg} alt="" />;
 const FavoritesIcon = () => <img src={FavoritesIconSvg} alt="" />;
 const AutomationIcon = () => <img src={AutomationIconSvg} alt="" />;
@@ -400,50 +396,6 @@ const Sidebar = ({
                     <div className={`sidebar__section-divider ${expandedSections['resources'] ? 'visible' : ''}`}></div>
                 </div>
 
-                {/* Settings Section */}
-                <div className="sidebar__section">
-                    <button
-                        className={`sidebar__section-header ${expandedSections['my-profile'] ? 'expanded' : ''}`}
-                        onClick={() => toggleSection('my-profile')}
-                    >
-                        <div className="sidebar__section-left">
-                            <div className="sidebar__section-icon">
-                                <SettingsIcon />
-                            </div>
-                            <p className="sidebar__section-title">Settings</p>
-                        </div>
-                        <div className={`sidebar__section-arrow ${expandedSections['my-profile'] ? 'expanded' : ''}`}>
-                            <ArrowDropDownIcon />
-                        </div>
-                    </button>
-
-                    <div className={`sidebar__section-content ${expandedSections['my-profile'] ? 'expanded' : ''}`}>
-                        <button
-                            className={`sidebar__inner-item ${activeItem === 'profile' ? 'active' : ''}`}
-                            onClick={() => handleNavigate('settings', 'profile')}
-                        >
-                            <p className="sidebar__inner-item-text">Profile</p>
-                        </button>
-
-                        <button
-                            className={`sidebar__inner-item ${activeItem === 'preferences' ? 'active' : ''}`}
-                            onClick={() => handleNavigate('settings', 'preferences')}
-                        >
-                            <p className="sidebar__inner-item-text">Preferences</p>
-                        </button>
-
-                        <button
-                            className={`sidebar__inner-item ${activeItem === 'company' ? 'active' : ''}`}
-                            onClick={() => handleNavigate('settings', 'company')}
-                        >
-                            <p className="sidebar__inner-item-text">Company</p>
-                        </button>
-                    </div>
-
-                    {/* Разделитель */}
-                    <div className={`sidebar__section-divider ${expandedSections['my-profile'] ? 'visible' : ''}`}></div>
-                </div>
-
                 {/* Storage */}
                 <div className="sidebar__section">
                     <button
@@ -455,21 +407,6 @@ const Sidebar = ({
                                 <StorageIcon />
                             </div>
                             <p className="sidebar__section-title">Storage</p>
-                        </div>
-                    </button>
-                </div>
-
-                {/* WebGL Test */}
-                <div className="sidebar__section">
-                    <button
-                        className="sidebar__section-header"
-                        onClick={() => handleNavigate('webgl-test')}
-                    >
-                        <div className="sidebar__section-left">
-                            <div className="sidebar__section-icon">
-                                <WebGLIcon />
-                            </div>
-                            <p className="sidebar__section-title">WebGL Test</p>
                         </div>
                     </button>
                 </div>

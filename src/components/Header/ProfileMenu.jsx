@@ -3,26 +3,23 @@ import './ProfileMenu.css';
 import MenuItem from './MenuItem';
 import './MenuItem.css';
 import {
-  StorageIcon,
-  FilesIcon,
-  DrawingsIcon,
-  ResourcesIcon,
   ProfileIcon,
-  UsersIcon,
   CompanyIcon,
   WebGLIcon,
   LogoutIcon,
   DropdownIcon
 } from './MenuIcons';
+import SettingsIconSvg from '../../assets/side-bar/settings.svg';
+
+// Иконка Settings как компонент
+const SettingsIcon = () => (
+  <img src={SettingsIconSvg} alt="Settings" width="16" height="16" />
+);
 
 // Данные пунктов меню
 const menuItems = [
-  { id: 'storage', label: 'Storage', icon: StorageIcon },
-  { id: 'files', label: 'My Files', icon: FilesIcon },
-  { id: 'drawings', label: 'Drawings Automation', icon: DrawingsIcon, badge: 'NEW' },
-  { id: 'resources', label: 'Resources', icon: ResourcesIcon },
-  { id: 'profile', label: 'My Profile', icon: ProfileIcon },
-  { id: 'users', label: 'Users', icon: UsersIcon },
+  { id: 'profile', label: 'Profile', icon: ProfileIcon },
+  { id: 'settings', label: 'Settings', icon: SettingsIcon },
   { id: 'company', label: 'My company', icon: CompanyIcon },
   { id: 'webgl', label: 'WebGL Test', icon: WebGLIcon },
   { id: 'logout', label: 'Logout', icon: LogoutIcon }
