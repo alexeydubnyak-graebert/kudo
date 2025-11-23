@@ -62,6 +62,20 @@
     box-shadow: 0 0 0 2px var(--semantic-error-alpha-20);
 }
 
+.select--icon-only {
+    padding: 8px;
+    min-width: auto;
+    width: auto;
+}
+
+.select--icon-only.select--small {
+    padding: 6px;
+}
+
+.select--icon-only.select--large {
+    padding: 10px;
+}
+
 /* ============================================
    SELECT VALUE
    ============================================ */

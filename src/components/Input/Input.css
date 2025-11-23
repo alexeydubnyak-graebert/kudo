@@ -1,0 +1,144 @@
+/**
+ * Input Component Styles
+ * Использует те же стили что и Select
+ */
+
+.input-wrapper {
+    position: relative;
+    width: 100%;
+}
+
+/* ============================================
+   INPUT CONTAINER
+   ============================================ */
+
+.input {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 12px;
+    background: var(--foundation-gray600);
+    border: 1px solid var(--border-strong);
+    border-radius: 4px;
+    transition: all 0.2s ease;
+}
+
+.input:hover:not(.input--disabled) {
+    border-color: var(--border-strong);
+    background: var(--foundation-gray500);
+}
+
+.input:focus-within:not(.input--disabled) {
+    border-color: var(--foundation-primary);
+    box-shadow: 0 0 0 2px var(--foundation-primary-alpha-20);
+    background: var(--foundation-gray600);
+}
+
+.input--disabled {
+    background: var(--states-disabled-bg);
+    border-color: var(--border-subtle);
+    cursor: not-allowed;
+    opacity: 0.6;
+}
+
+.input--error {
+    border-color: var(--semantic-error);
+}
+
+.input--error:focus-within {
+    box-shadow: 0 0 0 2px var(--semantic-error-alpha-20);
+}
+
+/* ============================================
+   ICON
+   ============================================ */
+
+.input__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-secondary);
+    flex-shrink: 0;
+}
+
+/* ============================================
+   INPUT FIELD
+   ============================================ */
+
+.input__field {
+    flex: 1;
+    min-width: 0;
+    background: transparent;
+    border: none;
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+    color: var(--text-primary);
+    outline: none;
+}
+
+.input__field::placeholder {
+    color: var(--text-secondary);
+}
+
+.input--disabled .input__field {
+    color: var(--states-disabled-text);
+    cursor: not-allowed;
+}
+
+/* ============================================
+   SIZES
+   ============================================ */
+
+.input--small {
+    padding: 6px 12px;
+}
+
+.input--small .input__field {
+    font-size: 12px;
+    line-height: 16px;
+}
+
+.input--small .input__icon {
+    width: 14px;
+    height: 14px;
+}
+
+.input--medium {
+    padding: 8px 16px;
+}
+
+.input--medium .input__field {
+    font-size: 13px;
+    line-height: 18px;
+}
+
+.input--medium .input__icon {
+    width: 16px;
+    height: 16px;
+}
+
+.input--large {
+    padding: 10px 20px;
+}
+
+.input--large .input__field {
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.input--large .input__icon {
+    width: 18px;
+    height: 18px;
+}
+
+/* ============================================
+   ERROR TEXT
+   ============================================ */
+
+.input__error-text {
+    display: block;
+    margin-top: 4px;
+    font-size: 12px;
+    color: var(--semantic-error);
+}

@@ -1,5 +1,7 @@
-import React, { useState, useRef, useEffect } from 'react';
+import React, { useState } from 'react';
 import PropTypes from 'prop-types';
+import Input from '../Input/Input';
+import Select from '../Select/Select';
 import './SearchSelectCombo.css';
 
 /**
@@ -19,40 +21,20 @@ const SearchSelectCombo = ({
     onSearch,
     searchPlaceholder = 'Search...'
 }) => {
-    const [isDropdownOpen, setIsDropdownOpen] = useState(false);
     const [searchValue, setSearchValue] = useState('');
-    const dropdownRef = useRef(null);
-    const buttonRef = useRef(null);
 
-    const selectedStorage = storages.find(s => s.id === selectedStorageId) || storages[0];
+    // Преобразуем storages в формат options для Select
+    const storageOptions = storages.map(storage => ({
+        value: storage.id,
+        label: storage.name,
+        icon: storage.icon
+    }));
 
-    // Закрытие dropdown при клике вне
-    useEffect(() => {
-        const handleClickOutside = (event) => {
-            if (
-                dropdownRef.current &&
-                !dropdownRef.current.contains(event.target) &&
-                buttonRef.current &&
-                !buttonRef.current.contains(event.target)
-            ) {
-                setIsDropdownOpen(false);
-            }
-        };
-
-        if (isDropdownOpen) {
-            document.addEventListener('mousedown', handleClickOutside);
-        }
-
-        return () => {
-            document.removeEventListener('mousedown', handleClickOutside);
-        };
-    }, [isDropdownOpen]);
-
-    const handleStorageSelect = (storage) => {
-        if (onStorageChange) {
+    const handleStorageSelect = (storageId) => {
+        const storage = storages.find(s => s.id === storageId);
+        if (onStorageChange && storage) {
             onStorageChange(storage);
         }
-        setIsDropdownOpen(false);
     };
 
     const handleSearchChange = (e) => {
@@ -84,62 +66,21 @@ const SearchSelectCombo = ({
 
     return (
         <div className="search-select-combo">
-            {/* Search Input */}
-            <span className="search-select-combo__search-icon">
-                <SearchIcon />
-            </span>
-            <input
-                type="text"
-                className="search-select-combo__input"
-                placeholder={searchPlaceholder}
+            <Input
                 value={searchValue}
                 onChange={handleSearchChange}
                 onKeyDown={handleSearchKeyDown}
+                placeholder={searchPlaceholder}
+                size="small"
+                icon={<SearchIcon />}
             />
-
-            {/* Storage Selector (справа внутри поля) */}
-            <div className="search-select-combo__selector">
-                <button
-                    ref={buttonRef}
-                    className="search-select-combo__button"
-                    onClick={() => setIsDropdownOpen(!isDropdownOpen)}
-                    type="button"
-                >
-                    {selectedStorage?.icon && (
-                        <span className="search-select-combo__icon">
-                            {selectedStorage.icon}
-                        </span>
-                    )}
-                    <span className="search-select-combo__chevron">
-                        <ChevronIcon />
-                    </span>
-                </button>
-
-                {isDropdownOpen && (
-                    <div ref={dropdownRef} className="search-select-combo__dropdown">
-                        <div className="search-select-combo__dropdown-list">
-                            {storages.map((storage) => (
-                                <button
-                                    key={storage.id}
-                                    className={`search-select-combo__option ${storage.id === selectedStorageId ? 'search-select-combo__option--selected' : ''
-                                        }`}
-                                    onClick={() => handleStorageSelect(storage)}
-                                    type="button"
-                                >
-                                    {storage.icon && (
-                                        <span className="search-select-combo__option-icon">
-                                            {storage.icon}
-                                        </span>
-                                    )}
-                                    <span className="search-select-combo__option-label">
-                                        {storage.name}
-                                    </span>
-                                </button>
-                            ))}
-                        </div>
-                    </div>
-                )}
-            </div>
+            <Select
+                options={storageOptions}
+                value={selectedStorageId}
+                onChange={handleStorageSelect}
+                size="small"
+                iconOnly
+            />
         </div>
     );
 };

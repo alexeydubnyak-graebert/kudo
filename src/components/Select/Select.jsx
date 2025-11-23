@@ -12,6 +12,7 @@ import './Select.css';
  * @param {string} placeholder - Placeholder текст
  * @param {boolean} disabled - Отключен ли select
  * @param {boolean} searchable - Включить поиск
+ * @param {boolean} iconOnly - Показывать только иконку без текста
  * @param {string} size - Размер: 'small' | 'medium' | 'large'
  * @param {string} className - Дополнительные CSS классы
  * @param {string} error - Текст ошибки
@@ -23,6 +24,7 @@ const Select = ({
     placeholder = 'Select option...',
     disabled = false,
     searchable = false,
+    iconOnly = false,
     size = 'medium',
     className = '',
     error = null,
@@ -134,6 +136,7 @@ const Select = ({
         isOpen && 'select--open',
         disabled && 'select--disabled',
         error && 'select--error',
+        iconOnly && 'select--icon-only',
         className
     ].filter(Boolean).join(' ');
 
@@ -156,10 +159,12 @@ const Select = ({
                             {selectedOption.icon && (
                                 <span className="select__icon">{selectedOption.icon}</span>
                             )}
-                            <span className="select__label">{selectedOption.label}</span>
+                            {!iconOnly && (
+                                <span className="select__label">{selectedOption.label}</span>
+                            )}
                         </>
                     ) : (
-                        <span className="select__placeholder">{placeholder}</span>
+                        !iconOnly && <span className="select__placeholder">{placeholder}</span>
                     )}
                 </div>
 
@@ -262,6 +267,7 @@ Select.propTypes = {
     placeholder: PropTypes.string,
     disabled: PropTypes.bool,
     searchable: PropTypes.bool,
+    iconOnly: PropTypes.bool,
     size: PropTypes.oneOf(['small', 'medium', 'large']),
     className: PropTypes.string,
     error: PropTypes.string
