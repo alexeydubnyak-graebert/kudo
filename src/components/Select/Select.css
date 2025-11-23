@@ -76,6 +76,15 @@
     padding: 10px;
 }
 
+.select--icon-only .select__value {
+    flex: 0 0 auto;
+    min-width: auto;
+}
+
+.select--icon-only .select__arrow {
+    flex-shrink: 0;
+}
+
 /* ============================================
    SELECT VALUE
    ============================================ */
