@@ -16,6 +16,7 @@ import ResourcesIconSvg from '../../assets/side-bar/resources.svg';
 import FavoritesIconSvg from '../../assets/side-bar/favorites.svg';
 import AutomationIconSvg from '../../assets/side-bar/automation.svg';
 import TrashIconSvg from '../../assets/side-bar/trash.svg';
+import RecentsIconSvg from '../../assets/side-bar/recents.svg';
 
 // Импорт иконок storage
 import KudoStorageIconSvg from '../../assets/storage/ares.svg';
@@ -35,6 +36,7 @@ const ResourcesIcon = () => <img src={ResourcesIconSvg} alt="" />;
 const FavoritesIcon = () => <img src={FavoritesIconSvg} alt="" />;
 const AutomationIcon = () => <img src={AutomationIconSvg} alt="" />;
 const TrashIcon = () => <img src={TrashIconSvg} alt="" />;
+const RecentsIcon = () => <img src={RecentsIconSvg} alt="" />;
 
 // Компоненты иконок storage
 const KudoStorageIcon = () => <img src={KudoStorageIconSvg} alt="" />;
@@ -68,6 +70,7 @@ const Sidebar = ({
     const { addToFavorites, addFileToFavorites } = useFavorites();
     const [expandedSections, setExpandedSections] = useState({
         'my-files': false,
+        'recents': false,
         'resources': false,
         'my-profile': false,
         'favorites': false,
@@ -363,6 +366,21 @@ const Sidebar = ({
                             <div className="sidebar__section-divider visible"></div>
                         </>
                     )}
+                </div>
+
+                {/* Recents Section */}
+                <div className="sidebar__section">
+                    <button
+                        className={`sidebar__section-header ${activeItem === 'recents' ? 'active' : ''}`}
+                        onClick={() => handleNavigate('recents', null)}
+                    >
+                        <div className="sidebar__section-left">
+                            <div className="sidebar__section-icon">
+                                <RecentsIcon />
+                            </div>
+                            <p className="sidebar__section-title">Recents</p>
+                        </div>
+                    </button>
                 </div>
 
                 {/* Resources Section */}
