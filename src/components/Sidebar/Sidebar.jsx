@@ -1,7 +1,11 @@
-import { useState } from 'react';
+import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import FavoritesTabs from '../Favorites/FavoritesTabs';
 import { useFavorites } from '../../contexts/FavoritesContext';
+import Button from '../Button/Button';
+import UploadIcon from '../../assets/file-browser/upload_file.svg';
+import CreateFolderIcon from '../../assets/file-browser/create_folder.svg';
+import CreateDrawingIcon from '../../assets/file-browser/new.svg';
 import './Sidebar.css';
 
 // Импорт SVG иконок из side-bar
@@ -164,6 +168,39 @@ const Sidebar = ({
                     </div>
                     {!collapsed && <p className="sidebar__collapse-text">Collapse</p>}
                 </button>
+
+                {/* Action Buttons */}
+                {!collapsed && (
+                    <div className="sidebar__actions">
+                        <Button
+                            variant="secondary"
+                            iconPosition="left"
+                            icon={<img src={UploadIcon} alt="Upload" width="16" height="16" />}
+                            onClick={() => console.log('Upload drawing clicked')}
+                            className="sidebar__action-btn"
+                        >
+                            Upload drawing
+                        </Button>
+                        <Button
+                            variant="secondary"
+                            iconPosition="left"
+                            icon={<img src={CreateFolderIcon} alt="Create folder" width="16" height="16" />}
+                            onClick={() => console.log('Create folder clicked')}
+                            className="sidebar__action-btn"
+                        >
+                            Create folder
+                        </Button>
+                        <Button
+                            variant="secondary"
+                            iconPosition="left"
+                            icon={<img src={CreateDrawingIcon} alt="Create drawing" width="16" height="16" />}
+                            onClick={() => console.log('Create drawing clicked')}
+                            className="sidebar__action-btn"
+                        >
+                            Create drawing
+                        </Button>
+                    </div>
+                )}
 
                 {/* My Files Section */}
                 <div className="sidebar__section">
