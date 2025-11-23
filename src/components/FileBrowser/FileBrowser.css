@@ -68,7 +68,8 @@
 }
 
 .file-browser-page__view-tabs .tab--active {
-    background: var(--surface-sidebar);
+    background: var(--foundation-primary);
+    color: var(--text-on-primary);
 }
 
 .file-browser-page__content {

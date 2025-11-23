@@ -37,14 +37,14 @@
 }
 
 .tab--active {
-    background: var(--surface-sidebar);
-    color: var(--text-primary);
-    border-color: var(--border-default);
+    background: var(--foundation-primary);
+    color: var(--text-on-primary);
+    border-color: var(--foundation-primary);
 }
 
 .tab--active:hover {
-    background: var(--surface-sidebar);
-    border-color: var(--border-default);
+    background: var(--button-primary-hover);
+    border-color: var(--button-primary-hover);
 }
 
 .tab--disabled {
@@ -75,7 +75,7 @@
 }
 
 .tab--active .tab__icon {
-    color: var(--text-primary);
+    color: var(--text-on-primary);
 }
 
 .tab__label {
@@ -143,5 +143,6 @@
 }
 
 .tab-group .tab--active {
-    background: var(--surface-sidebar);
+    background: var(--foundation-primary);
+    color: var(--text-on-primary);
 }
