@@ -60,6 +60,7 @@
     margin: 0;
     min-width: 32px;
     width: 32px;
+    padding: 6px;
 }
 
 .file-browser-page__view-tabs .tab:not(.tab--active):hover {

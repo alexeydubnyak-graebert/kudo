@@ -13,7 +13,7 @@
     align-items: center;
     justify-content: center;
     gap: 8px;
-    padding: 0;
+    padding: 8px 12px;
     background: var(--foundation-gray600);
     border: 1px solid var(--border-strong);
     border-radius: 4px;
@@ -82,6 +82,7 @@
    ============================================ */
 
 .tab--small {
+    padding: 6px 12px;
     font-size: 12px;
 }
 
@@ -91,6 +92,7 @@
 }
 
 .tab--medium {
+    padding: 8px 16px;
     font-size: 13px;
 }
 
@@ -100,6 +102,7 @@
 }
 
 .tab--large {
+    padding: 10px 20px;
     font-size: 14px;
 }
 
