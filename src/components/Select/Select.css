@@ -245,12 +245,12 @@
 }
 
 .select__option--selected {
-    background: var(--foundation-primary-alpha-10);
-    color: var(--text-primary);
+    background: var(--foundation-primary);
+    color: var(--text-on-primary);
 }
 
 .select__option--selected:hover {
-    background: var(--foundation-primary-alpha-20);
+    background: var(--button-primary-hover);
 }
 
 .select__option--disabled {

@@ -13,6 +13,7 @@
     border: 1px solid var(--border-strong);
     border-radius: 4px;
     transition: all 0.2s ease;
+    z-index: 1;
 }
 
 .search-select-combo:hover {
@@ -80,4 +81,28 @@
 
 .search-select-combo .select__arrow {
     flex-shrink: 0 !important;
+}
+
+/* Dropdown стили для SearchSelectCombo */
+.search-select-combo .select__dropdown {
+    position: absolute;
+    top: calc(100% + 4px);
+    right: 0;
+    z-index: 1000;
+    min-width: 200px;
+    background: var(--surface-base);
+    border: 1px solid var(--border-default);
+    border-radius: 4px;
+    box-shadow: var(--shadow-dropdown);
+    overflow: hidden;
+    animation: dropdownSlideIn 0.2s ease-out;
+}
+
+.search-select-combo .select__option--selected {
+    background: var(--foundation-primary) !important;
+    color: var(--text-on-primary) !important;
+}
+
+.search-select-combo .select__option--selected:hover {
+    background: var(--button-primary-hover) !important;
 }
