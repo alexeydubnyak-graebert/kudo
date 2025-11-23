@@ -385,6 +385,34 @@ const FileDetails = ({ file, isVisible, onClose, initialTab = 'properties' }) =>
             <div className="file-details__content">
                 {activeTab === 'properties' && (
                     <div className="file-details__properties">
+                        {/* File Thumbnail */}
+                        {!isFolder && (
+                            <div className="file-details__thumbnail">
+                                <div className="file-details__thumbnail-container">
+                                    {file.thumbnail ? (
+                                        <img
+                                            src={file.thumbnail}
+                                            alt={file.name}
+                                            className="file-details__thumbnail-image"
+                                        />
+                                    ) : (
+                                        <div className="file-details__thumbnail-placeholder">
+                                            <div className="file-details__thumbnail-icon">
+                                                {file.type === 'pdf' && '📄'}
+                                                {file.type === 'dwg' && '📐'}
+                                                {file.type === 'doc' || file.type === 'docx' ? '📝' : ''}
+                                                {file.type === 'xls' || file.type === 'xlsx' ? '📊' : ''}
+                                                {file.type === 'ppt' || file.type === 'pptx' ? '📽️' : ''}
+                                                {file.type === 'jpg' || file.type === 'jpeg' || file.type === 'png' || file.type === 'gif' ? '🖼️' : ''}
+                                                {!['pdf', 'dwg', 'doc', 'docx', 'xls', 'xlsx', 'ppt', 'pptx', 'jpg', 'jpeg', 'png', 'gif'].includes(file.type) && '📄'}
+                                            </div>
+                                            <span className="file-details__thumbnail-text">No preview available</span>
+                                        </div>
+                                    )}
+                                </div>
+                            </div>
+                        )}
+
                         <div className="file-details__property">
                             <span className="file-details__property-label">Name:</span>
                             <span className="file-details__property-value">{file.name}</span>
