@@ -16,7 +16,7 @@ import ResourcesIconSvg from '../../assets/side-bar/resources.svg';
 import FavoritesIconSvg from '../../assets/side-bar/favorites.svg';
 import AutomationIconSvg from '../../assets/side-bar/automation.svg';
 import TrashIconSvg from '../../assets/side-bar/trash.svg';
-import RecentsIconSvg from '../../assets/side-bar/recents.svg';
+import RecentsIconSvg from '../../assets/side-bar/storage.svg';
 
 // Импорт иконок storage
 import KudoStorageIconSvg from '../../assets/storage/ares.svg';
