@@ -30,8 +30,8 @@ const Header = ({
 
       {/* Right Section - Theme Toggle + Help + Profile */}
       <div className="header__right">
-        {/* Button Examples Link */}
-        <div className="header__nav-link">
+        {/* Component Examples Links */}
+        <div className="header__nav-link" style={{ display: 'flex', gap: '4px' }}>
           <a
             href="#buttons"
             style={{
@@ -52,7 +52,29 @@ const Header = ({
               e.target.style.background = 'transparent'
             }}
           >
-            Button Examples
+            Button
+          </a>
+          <a
+            href="#select"
+            style={{
+              color: 'var(--text-secondary)',
+              textDecoration: 'none',
+              fontSize: '13px',
+              fontWeight: 500,
+              padding: '8px 12px',
+              borderRadius: '4px',
+              transition: 'all 0.2s ease'
+            }}
+            onMouseEnter={(e) => {
+              e.target.style.color = 'var(--text-primary)'
+              e.target.style.background = 'var(--surface-hover)'
+            }}
+            onMouseLeave={(e) => {
+              e.target.style.color = 'var(--text-secondary)'
+              e.target.style.background = 'transparent'
+            }}
+          >
+            Select
           </a>
         </div>
 
