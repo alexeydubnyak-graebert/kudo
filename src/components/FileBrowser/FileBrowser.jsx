@@ -3,6 +3,7 @@ import Sidebar from '../Sidebar/Sidebar';
 import Header from '../Header/Header';
 import Breadcrumbs from '../Breadcrumbs/Breadcrumbs';
 import SearchSelectCombo from '../SearchSelectCombo/SearchSelectCombo';
+import SortSelect from '../SortSelect/SortSelect';
 import FileBrowserTable from './FileBrowserTable';
 import ContextMenu from '../ContextMenu/ContextMenu';
 import FileDetails from '../FileDetails/FileDetails';
@@ -68,6 +69,7 @@ const FileBrowser = () => {
         icon: <KudoStorageIcon />
     });
     const [breadcrumbsPath, setBreadcrumbsPath] = useState([]);
+    const [sortBy, setSortBy] = useState('filename-asc');
 
     // Загружаем содержимое текущей папки
     useEffect(() => {
@@ -157,6 +159,12 @@ const FileBrowser = () => {
     const handleSearch = (searchQuery) => {
         console.log('Search:', searchQuery, 'in storage:', activeStorage.id);
         // TODO: Implement search functionality
+    };
+
+    const handleSortChange = (newSortBy) => {
+        console.log('Sort changed:', newSortBy);
+        setSortBy(newSortBy);
+        // TODO: Implement sorting functionality
     };
 
     const handleFavoriteFolderClick = (folder) => {
@@ -303,6 +311,10 @@ const FileBrowser = () => {
                             onStorageChange={handleStorageChange}
                             onSearch={handleSearch}
                             searchPlaceholder="Search files and folders..."
+                        />
+                        <SortSelect
+                            value={sortBy}
+                            onChange={handleSortChange}
                         />
                     </div>
                     <div className="file-browser-page__content">
