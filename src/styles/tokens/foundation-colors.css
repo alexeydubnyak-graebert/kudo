@@ -32,9 +32,11 @@
      SEMANTIC - Семантические цвета
      ============================================ */
 
+    /* Semantic */
     --semantic-success: #2ECC71;
     --semantic-warning: #F1C40F;
     --semantic-error: #E74C3C;
+    --semantic-error-alpha-20: rgba(231, 76, 60, 0.2);
     --semantic-info: #3498DB;
 
     /* ============================================
@@ -47,6 +49,9 @@
     --surface-overlay: rgba(0, 0, 0, 0.4);
     --surface-hover: var(--foundation-gray700);
     --surface-selected: var(--foundation-gray900);
+
+    /* Shadows */
+    --shadow-dropdown: 0 4px 12px rgba(0, 0, 0, 0.4);
 
     /* ============================================
      TEXT - Текст

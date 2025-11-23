@@ -82,12 +82,12 @@ export const SelectExamples = () => {
     const [value7, setValue7] = useState('2');
 
     return (
-        <div style={{ padding: '40px', background: '#141518', minHeight: '100vh' }}>
+        <div style={{ padding: '40px', background: 'var(--surface-page)', minHeight: '100vh' }}>
             <div style={{ marginBottom: '20px' }}>
                 <a
                     href="#"
                     style={{
-                        color: '#254CA8',
+                        color: 'var(--foundation-primary)',
                         textDecoration: 'none',
                         fontSize: '14px',
                         fontWeight: 500
@@ -97,11 +97,11 @@ export const SelectExamples = () => {
                 </a>
             </div>
 
-            <h1 style={{ color: '#fff', marginBottom: '40px' }}>Select Component Examples</h1>
+            <h1 style={{ color: 'var(--text-primary)', marginBottom: '40px' }}>Select Component Examples</h1>
 
             {/* BASIC SELECT */}
             <section style={{ marginBottom: '40px' }}>
-                <h2 style={{ color: '#fff', marginBottom: '20px' }}>Basic Select</h2>
+                <h2 style={{ color: 'var(--text-primary)', marginBottom: '20px' }}>Basic Select</h2>
                 <div style={{ maxWidth: '300px' }}>
                     <Select
                         options={simpleOptions}
@@ -110,14 +110,14 @@ export const SelectExamples = () => {
                         placeholder="Choose an option..."
                     />
                 </div>
-                <p style={{ color: '#A7A9AD', fontSize: '12px', marginTop: '8px' }}>
+                <p style={{ color: 'var(--text-secondary)', fontSize: '12px', marginTop: '8px' }}>
                     Selected: {value1 || 'none'}
                 </p>
             </section>
 
             {/* SELECT WITH ICONS */}
             <section style={{ marginBottom: '40px' }}>
-                <h2 style={{ color: '#fff', marginBottom: '20px' }}>Select with Icons</h2>
+                <h2 style={{ color: 'var(--text-primary)', marginBottom: '20px' }}>Select with Icons</h2>
                 <div style={{ maxWidth: '300px' }}>
                     <Select
                         options={optionsWithIcons}
@@ -126,14 +126,14 @@ export const SelectExamples = () => {
                         placeholder="Select type..."
                     />
                 </div>
-                <p style={{ color: '#A7A9AD', fontSize: '12px', marginTop: '8px' }}>
+                <p style={{ color: 'var(--text-secondary)', fontSize: '12px', marginTop: '8px' }}>
                     Selected: {value2}
                 </p>
             </section>
 
             {/* SEARCHABLE SELECT */}
             <section style={{ marginBottom: '40px' }}>
-                <h2 style={{ color: '#fff', marginBottom: '20px' }}>Searchable Select</h2>
+                <h2 style={{ color: 'var(--text-primary)', marginBottom: '20px' }}>Searchable Select</h2>
                 <div style={{ maxWidth: '300px' }}>
                     <Select
                         options={manyOptions}
@@ -143,14 +143,14 @@ export const SelectExamples = () => {
                         searchable
                     />
                 </div>
-                <p style={{ color: '#A7A9AD', fontSize: '12px', marginTop: '8px' }}>
+                <p style={{ color: 'var(--text-secondary)', fontSize: '12px', marginTop: '8px' }}>
                     Selected: {value3 || 'none'}
                 </p>
             </section>
 
             {/* DISABLED OPTIONS */}
             <section style={{ marginBottom: '40px' }}>
-                <h2 style={{ color: '#fff', marginBottom: '20px' }}>With Disabled Options</h2>
+                <h2 style={{ color: 'var(--text-primary)', marginBottom: '20px' }}>With Disabled Options</h2>
                 <div style={{ maxWidth: '300px' }}>
                     <Select
                         options={optionsWithDisabled}
@@ -159,17 +159,17 @@ export const SelectExamples = () => {
                         placeholder="Select..."
                     />
                 </div>
-                <p style={{ color: '#A7A9AD', fontSize: '12px', marginTop: '8px' }}>
+                <p style={{ color: 'var(--text-secondary)', fontSize: '12px', marginTop: '8px' }}>
                     Selected: {value4 || 'none'}
                 </p>
             </section>
 
             {/* SIZES */}
             <section style={{ marginBottom: '40px' }}>
-                <h2 style={{ color: '#fff', marginBottom: '20px' }}>Sizes</h2>
+                <h2 style={{ color: 'var(--text-primary)', marginBottom: '20px' }}>Sizes</h2>
                 <div style={{ display: 'flex', gap: '16px', alignItems: 'flex-start', flexWrap: 'wrap' }}>
                     <div style={{ flex: '1', minWidth: '200px' }}>
-                        <p style={{ color: '#A7A9AD', fontSize: '12px', marginBottom: '8px' }}>Small</p>
+                        <p style={{ color: 'var(--text-secondary)', fontSize: '12px', marginBottom: '8px' }}>Small</p>
                         <Select
                             options={simpleOptions}
                             value={value5}
@@ -179,7 +179,7 @@ export const SelectExamples = () => {
                         />
                     </div>
                     <div style={{ flex: '1', minWidth: '200px' }}>
-                        <p style={{ color: '#A7A9AD', fontSize: '12px', marginBottom: '8px' }}>Medium (default)</p>
+                        <p style={{ color: 'var(--text-secondary)', fontSize: '12px', marginBottom: '8px' }}>Medium (default)</p>
                         <Select
                             options={simpleOptions}
                             value={value6}
@@ -189,7 +189,7 @@ export const SelectExamples = () => {
                         />
                     </div>
                     <div style={{ flex: '1', minWidth: '200px' }}>
-                        <p style={{ color: '#A7A9AD', fontSize: '12px', marginBottom: '8px' }}>Large</p>
+                        <p style={{ color: 'var(--text-secondary)', fontSize: '12px', marginBottom: '8px' }}>Large</p>
                         <Select
                             options={simpleOptions}
                             value={value7}
@@ -203,10 +203,10 @@ export const SelectExamples = () => {
 
             {/* STATES */}
             <section style={{ marginBottom: '40px' }}>
-                <h2 style={{ color: '#fff', marginBottom: '20px' }}>States</h2>
+                <h2 style={{ color: 'var(--text-primary)', marginBottom: '20px' }}>States</h2>
                 <div style={{ display: 'flex', gap: '16px', flexWrap: 'wrap' }}>
                     <div style={{ flex: '1', minWidth: '200px' }}>
-                        <p style={{ color: '#A7A9AD', fontSize: '12px', marginBottom: '8px' }}>Disabled</p>
+                        <p style={{ color: 'var(--text-secondary)', fontSize: '12px', marginBottom: '8px' }}>Disabled</p>
                         <Select
                             options={simpleOptions}
                             value="2"
@@ -215,7 +215,7 @@ export const SelectExamples = () => {
                         />
                     </div>
                     <div style={{ flex: '1', minWidth: '200px' }}>
-                        <p style={{ color: '#A7A9AD', fontSize: '12px', marginBottom: '8px' }}>With Error</p>
+                        <p style={{ color: 'var(--text-secondary)', fontSize: '12px', marginBottom: '8px' }}>With Error</p>
                         <Select
                             options={simpleOptions}
                             value={null}
@@ -229,11 +229,11 @@ export const SelectExamples = () => {
 
             {/* CODE EXAMPLES */}
             <section>
-                <h2 style={{ color: '#fff', marginBottom: '20px' }}>Code Examples</h2>
+                <h2 style={{ color: 'var(--text-primary)', marginBottom: '20px' }}>Code Examples</h2>
                 <pre
                     style={{
-                        background: '#1E2023',
-                        color: '#A7A9AD',
+                        background: 'var(--surface-base)',
+                        color: 'var(--text-secondary)',
                         padding: '20px',
                         borderRadius: '4px',
                         overflow: 'auto'

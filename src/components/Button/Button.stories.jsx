@@ -28,12 +28,12 @@ const SearchIcon = () => (
 
 export const ButtonExamples = () => {
     return (
-        <div style={{ padding: '40px', background: '#141518', minHeight: '100vh' }}>
+        <div style={{ padding: '40px', background: 'var(--surface-page)', minHeight: '100vh' }}>
             <div style={{ marginBottom: '20px' }}>
                 <a
                     href="#"
                     style={{
-                        color: '#254CA8',
+                        color: 'var(--foundation-primary)',
                         textDecoration: 'none',
                         fontSize: '14px',
                         fontWeight: 500
@@ -42,11 +42,11 @@ export const ButtonExamples = () => {
                     ← Back to File Browser
                 </a>
             </div>
-            <h1 style={{ color: '#fff', marginBottom: '40px' }}>Button Component Examples</h1>
+            <h1 style={{ color: 'var(--text-primary)', marginBottom: '40px' }}>Button Component Examples</h1>
 
             {/* PRIMARY BUTTONS */}
             <section style={{ marginBottom: '40px' }}>
-                <h2 style={{ color: '#fff', marginBottom: '20px' }}>Primary Buttons</h2>
+                <h2 style={{ color: 'var(--text-primary)', marginBottom: '20px' }}>Primary Buttons</h2>
                 <div style={{ display: 'flex', gap: '16px', flexWrap: 'wrap' }}>
                     <Button variant="primary">
                         Default
@@ -143,10 +143,10 @@ export const ButtonExamples = () => {
 
             {/* CODE EXAMPLES */}
             <section>
-                <h2 style={{ color: '#fff', marginBottom: '20px' }}>Code Examples</h2>
+                <h2 style={{ color: 'var(--text-primary)', marginBottom: '20px' }}>Code Examples</h2>
                 <pre style={{
-                    background: '#1E2023',
-                    color: '#A7A9AD',
+                    background: 'var(--surface-base)',
+                    color: 'var(--text-secondary)',
                     padding: '20px',
                     borderRadius: '4px',
                     overflow: 'auto'
