@@ -94,6 +94,12 @@
     right: 0;
     left: auto;
     z-index: 1000;
+    transform: translateX(0);
+}
+
+/* Убираем position relative у select-wrapper чтобы dropdown не был привязан к нему */
+.search-select-combo .select-wrapper {
+    position: static;
 }
 
 .search-select-combo .select__option--selected {
