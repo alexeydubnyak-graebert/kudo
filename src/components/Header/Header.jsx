@@ -30,6 +30,32 @@ const Header = ({
 
       {/* Right Section - Theme Toggle + Help + Profile */}
       <div className="header__right">
+        {/* Button Examples Link */}
+        <div className="header__nav-link">
+          <a
+            href="#buttons"
+            style={{
+              color: 'var(--text-secondary)',
+              textDecoration: 'none',
+              fontSize: '13px',
+              fontWeight: 500,
+              padding: '8px 12px',
+              borderRadius: '4px',
+              transition: 'all 0.2s ease'
+            }}
+            onMouseEnter={(e) => {
+              e.target.style.color = 'var(--text-primary)'
+              e.target.style.background = 'var(--surface-hover)'
+            }}
+            onMouseLeave={(e) => {
+              e.target.style.color = 'var(--text-secondary)'
+              e.target.style.background = 'transparent'
+            }}
+          >
+            Button Examples
+          </a>
+        </div>
+
         {/* Theme Toggle Button */}
         <div className="header__theme-toggle">
           <Tooltip content={theme === 'light' ? 'Switch to Dark Theme' : 'Switch to Light Theme'} position="bottom">

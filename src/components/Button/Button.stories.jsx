@@ -29,6 +29,19 @@ const SearchIcon = () => (
 export const ButtonExamples = () => {
     return (
         <div style={{ padding: '40px', background: '#141518', minHeight: '100vh' }}>
+            <div style={{ marginBottom: '20px' }}>
+                <a
+                    href="#"
+                    style={{
+                        color: '#254CA8',
+                        textDecoration: 'none',
+                        fontSize: '14px',
+                        fontWeight: 500
+                    }}
+                >
+                    ← Back to File Browser
+                </a>
+            </div>
             <h1 style={{ color: '#fff', marginBottom: '40px' }}>Button Component Examples</h1>
 
             {/* PRIMARY BUTTONS */}
