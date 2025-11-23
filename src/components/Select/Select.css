@@ -153,6 +153,13 @@
     animation: dropdownSlideIn 0.2s ease-out;
 }
 
+.select--icon-only .select__dropdown {
+    left: auto;
+    right: 0;
+    min-width: 200px;
+    max-width: none;
+}
+
 @keyframes dropdownSlideIn {
     from {
         opacity: 0;
