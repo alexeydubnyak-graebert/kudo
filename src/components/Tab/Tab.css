@@ -13,7 +13,7 @@
     align-items: center;
     justify-content: center;
     gap: 8px;
-    padding: 8px 12px;
+    padding: 0;
     background: var(--foundation-gray600);
     border: 1px solid var(--border-strong);
     border-radius: 4px;
@@ -41,10 +41,6 @@
     border-color: var(--border-default);
 }
 
-.tab--active:hover {
-    background: var(--sidebar-background);
-    border-color: var(--border-default);
-}
 
 .tab--disabled {
     background: var(--states-disabled-bg);
@@ -87,7 +83,8 @@
    ============================================ */
 
 .tab--small {
-    padding: 6px 12px;
+    width: 28px;
+    height: 28px;
     font-size: 12px;
 }
 
@@ -97,7 +94,8 @@
 }
 
 .tab--medium {
-    padding: 8px 16px;
+    width: 32px;
+    height: 32px;
     font-size: 13px;
 }
 
@@ -107,7 +105,8 @@
 }
 
 .tab--large {
-    padding: 10px 20px;
+    width: 36px;
+    height: 36px;
     font-size: 14px;
 }
 
