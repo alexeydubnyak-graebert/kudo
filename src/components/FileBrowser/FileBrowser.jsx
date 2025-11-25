@@ -1,13 +1,18 @@
 import React, { useState, useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
 import Sidebar from '../Sidebar/Sidebar';
 import Header from '../Header/Header';
 import Breadcrumbs from '../Breadcrumbs/Breadcrumbs';
 import SearchSelectCombo from '../SearchSelectCombo/SearchSelectCombo';
 import Select from '../Select/Select';
 import FileBrowserTable from './FileBrowserTable';
+import FileBrowserGrid from './FileBrowserGrid';
 import ContextMenu from '../ContextMenu/ContextMenu';
 import FileDetails from '../FileDetails/FileDetails';
+import TeamActivity from '../TeamActivity/TeamActivity';
+import StatusPanel from '../StatusPanel/StatusPanel';
 import Tab from '../Tab/Tab';
+import ZoomSlider from '../ZoomSlider/ZoomSlider';
 import { getAllItems } from './data/fileSystem';
 import { useFavorites } from '../../contexts/FavoritesContext';
 import './FileBrowser.css';
@@ -38,7 +43,7 @@ const WebDavIcon = () => <img src={WebDavIconSvg} alt="" width="16" height="16" 
 
 // Список всех хранилищ
 const STORAGES = [
-    { id: 'kudo-storage', name: 'Kudo Storage', icon: <KudoStorageIcon /> },
+    { id: 'kudo-storage', name: 'ARES Kudo Drive', icon: <KudoStorageIcon /> },
     { id: 'google-drive', name: 'Google Drive', icon: <GoogleDriveIcon /> },
     { id: 'one-drive', name: 'One Drive', icon: <OneDriveIcon /> },
     { id: 'dropbox', name: 'Dropbox', icon: <DropboxIcon /> },
@@ -66,9 +71,11 @@ const FileBrowser = () => {
     const [theme, setTheme] = useState('dark');
     const [selectedFileId, setSelectedFileId] = useState(null);
     const [isSidebarCollapsed, setIsSidebarCollapsed] = useState(false);
+    const [activeSection, setActiveSection] = useState('my-files');
+    const [activeItem, setActiveItem] = useState('kudo-storage');
     const [currentFolderId, setCurrentFolderId] = useState('root');
     const [items, setItems] = useState([]);
-    const [sortBy, setSortBy] = useState(null);
+    const [sortBy, setSortBy] = useState('filename-asc');
     const [viewMode, setViewMode] = useState('list'); // 'list' | 'grid'
     const [contextMenu, setContextMenu] = useState({
         isOpen: false,
@@ -80,10 +87,15 @@ const FileBrowser = () => {
     const [fileDetailsTab, setFileDetailsTab] = useState('properties');
     const [activeStorage, setActiveStorage] = useState({
         id: 'kudo-storage',
-        name: 'Kudo Storage',
+        name: 'ARES Kudo Drive',
         icon: <KudoStorageIcon />
     });
     const [breadcrumbsPath, setBreadcrumbsPath] = useState([]);
+    const [teamActivityVisible, setTeamActivityVisible] = useState(false);
+    const [statusPanelVisible, setStatusPanelVisible] = useState(true);
+    const [zoomValue, setZoomValue] = useState(75);
+    const [cardsPerRow, setCardsPerRow] = useState(5);
+    const navigate = useNavigate();
 
     // Загружаем содержимое текущей папки
     useEffect(() => {
@@ -91,17 +103,33 @@ const FileBrowser = () => {
         setItems(folderItems);
     }, [currentFolderId]);
 
+    // Закрываем панель properties при переходе в Grid mode
+    useEffect(() => {
+        if (viewMode === 'grid' && fileDetailsVisible) {
+            setFileDetailsVisible(false);
+        }
+    }, [viewMode]);
+
     const handleThemeToggle = () => {
         const newTheme = theme === 'dark' ? 'light' : 'dark';
         setTheme(newTheme);
         document.documentElement.setAttribute('data-theme', newTheme);
     };
 
+    const handleNavigate = (sectionId, itemId) => {
+        setActiveSection(sectionId);
+        setActiveItem(itemId);
+        console.log('Navigate to:', sectionId, itemId);
+    };
+
     const handleFileSelect = (file) => {
         setSelectedFileId(file.id);
         setSelectedFile(file);
-        setFileDetailsVisible(true);
-        setFileDetailsTab('properties');
+        // Only open properties panel in list mode
+        if (viewMode === 'list') {
+            setFileDetailsVisible(true);
+            setFileDetailsTab('properties');
+        }
         console.log('Selected file:', file);
     };
 
@@ -136,10 +164,34 @@ const FileBrowser = () => {
 
     const handleFolderInsights = (file) => {
         console.log('Folder insights clicked:', file);
-        setSelectedFile(file);
-        setFileDetailsVisible(true);
-        setFileDetailsTab('insights');
-        setSelectedFileId(null);
+        // Если панель открыта для этого же файла - закрываем (toggle off)
+        if (fileDetailsVisible && selectedFile?.id === file.id) {
+            setFileDetailsVisible(false);
+            setSelectedFile(null);
+            setSelectedFileId(null);
+        } else {
+            // Иначе открываем панель для этого файла (даже если строка неактивна)
+            setSelectedFileId(file.id);
+            setSelectedFile(file);
+            setFileDetailsVisible(true);
+            setFileDetailsTab('insights');
+        }
+    };
+
+    const handlePermissions = (file) => {
+        console.log('Permissions clicked:', file);
+        // Если панель открыта для этого же файла - закрываем (toggle off)
+        if (fileDetailsVisible && selectedFile?.id === file.id) {
+            setFileDetailsVisible(false);
+            setSelectedFile(null);
+            setSelectedFileId(null);
+        } else {
+            // Иначе открываем панель для этого файла (даже если строка неактивна)
+            setSelectedFileId(file.id);
+            setSelectedFile(file);
+            setFileDetailsVisible(true);
+            setFileDetailsTab('insights');
+        }
     };
 
     const handleSidebarToggle = () => {
@@ -179,6 +231,14 @@ const FileBrowser = () => {
         console.log('Sort changed:', newSortBy);
         setSortBy(newSortBy);
         // TODO: Implement sorting functionality
+    };
+
+    const handleZoomChange = (value) => {
+        setZoomValue(value);
+        // Map zoom 0-100 to cards per row 2-8
+        // 0% = 8 cards, 100% = 2 cards
+        const cards = Math.round(8 - (value / 100) * 6);
+        setCardsPerRow(Math.max(2, Math.min(8, cards)));
     };
 
     const handleFavoriteFolderClick = (folder) => {
@@ -296,7 +356,7 @@ const FileBrowser = () => {
     const breadcrumbsItems = [
         {
             id: 'storage',
-            label: activeStorage.name,
+            label: `${activeStorage.name} / Home`,
             icon: activeStorage.icon,
             onClick: handleBreadcrumbClick
         },
@@ -305,20 +365,22 @@ const FileBrowser = () => {
 
     return (
         <div className="file-browser-page">
-            <Sidebar
-                isCollapsed={isSidebarCollapsed}
-                onToggleCollapse={handleSidebarToggle}
-                onFolderClick={handleFavoriteFolderClick}
-                onStorageChange={handleStorageChange}
+            <Header
+                theme={theme}
+                onThemeToggle={handleThemeToggle}
             />
-            <div className="file-browser-page__right">
-                <Header
-                    theme={theme}
-                    onThemeToggle={handleThemeToggle}
+            <div className="file-browser-page__content-wrapper">
+                <Sidebar
+                    isCollapsed={isSidebarCollapsed}
+                    onToggleCollapse={handleSidebarToggle}
+                    onFolderClick={handleFavoriteFolderClick}
+                    onStorageChange={handleStorageChange}
+                    activeSection={activeSection}
+                    activeItem={activeItem}
+                    onNavigate={handleNavigate}
                 />
                 <div className="file-browser-page__main">
                     <div className="file-browser-page__toolbar">
-                        <Breadcrumbs items={breadcrumbsItems} />
                         <SearchSelectCombo
                             storages={STORAGES}
                             selectedStorageId={activeStorage.id}
@@ -326,46 +388,112 @@ const FileBrowser = () => {
                             onSearch={handleSearch}
                             searchPlaceholder="Search files and folders..."
                         />
-                        <Select
-                            options={SORT_OPTIONS}
-                            value={sortBy}
-                            onChange={handleSortChange}
-                            placeholder="Sort by..."
-                            size="small"
-                        />
 
-                        {/* View Mode Tabs */}
-                        <div className="file-browser-page__view-tabs">
-                            <Tab
+                        {/* Spacer */}
+                        <div style={{ flex: 1 }}></div>
+
+                        {/* Right Side Controls */}
+                        <div className="file-browser-page__toolbar-right">
+                            <Select
+                                options={SORT_OPTIONS}
+                                value={sortBy}
+                                onChange={handleSortChange}
+                                placeholder="Sort by..."
                                 size="small"
-                                active={viewMode === 'list'}
-                                icon={<img src={ListIcon} alt="List view" />}
-                                onClick={() => setViewMode('list')}
                             />
-                            <Tab
-                                size="small"
-                                active={viewMode === 'grid'}
-                                icon={<img src={GridIcon} alt="Grid view" />}
-                                onClick={() => setViewMode('grid')}
-                            />
+
+                            {/* Zoom Slider - only visible in grid mode */}
+                            {viewMode === 'grid' && (
+                                <ZoomSlider
+                                    value={zoomValue}
+                                    onChange={handleZoomChange}
+                                />
+                            )}
+
+                            {/* View Mode Tabs */}
+                            <div className="tab-group">
+                                <Tab
+                                    size="small"
+                                    active={viewMode === 'list'}
+                                    icon={<img src={ListIcon} alt="List view" />}
+                                    onClick={() => setViewMode('list')}
+                                    className="tab--icon-only"
+                                />
+                                <Tab
+                                    size="small"
+                                    active={viewMode === 'grid'}
+                                    icon={<img src={GridIcon} alt="Grid view" />}
+                                    onClick={() => setViewMode('grid')}
+                                    className="tab--icon-only"
+                                />
+                            </div>
                         </div>
                     </div>
                     <div className="file-browser-page__content">
-                        <FileBrowserTable
-                            files={items}
-                            selectedId={selectedFileId}
-                            onFileSelect={handleFileSelect}
-                            onFileDoubleClick={handleFileDoubleClick}
-                            onFolderNameClick={handleFolderNameClick}
-                            onFolderInsights={handleFolderInsights}
-                            onContextMenu={handleContextMenu}
-                        />
-                        <FileDetails
-                            file={selectedFile}
-                            isVisible={fileDetailsVisible}
-                            onClose={() => setFileDetailsVisible(false)}
-                            initialTab={fileDetailsTab}
-                        />
+                        <div className="file-browser-page__breadcrumbs-wrapper">
+                            <Breadcrumbs items={breadcrumbsItems} />
+
+                            {/* Panel Toggles - Right Side */}
+                            <div className="file-browser-page__panel-toggles">
+                                <Tab
+                                    label="Team activity"
+                                    size="small"
+                                    active={teamActivityVisible}
+                                    onClick={() => setTeamActivityVisible(!teamActivityVisible)}
+                                    variant="text-only"
+                                />
+                                <Tab
+                                    label="Status panel"
+                                    size="small"
+                                    active={statusPanelVisible}
+                                    onClick={() => setStatusPanelVisible(!statusPanelVisible)}
+                                    variant="text-only"
+                                />
+                            </div>
+                        </div>
+                        <div className="file-browser-page__content-row">
+                            {viewMode === 'list' ? (
+                                <FileBrowserTable
+                                    files={items}
+                                    selectedId={selectedFileId}
+                                    onFileSelect={handleFileSelect}
+                                    onFileDoubleClick={handleFileDoubleClick}
+                                    onFolderNameClick={handleFolderNameClick}
+                                    onFileOpen={(file) => navigate('/editor')}
+                                    onFolderInsights={handleFolderInsights}
+                                    onPermissions={handlePermissions}
+                                    onContextMenu={handleContextMenu}
+                                    isDetailsPanelOpen={fileDetailsVisible}
+                                />
+                            ) : (
+                                <FileBrowserGrid
+                                    files={items}
+                                    selectedId={selectedFileId}
+                                    onFileSelect={handleFileSelect}
+                                    onFileDoubleClick={handleFileDoubleClick}
+                                    onFileOpen={(file) => navigate('/editor')}
+                                    cardsPerRow={cardsPerRow}
+                                />
+                            )}
+                            <FileDetails
+                                file={selectedFile}
+                                isVisible={fileDetailsVisible}
+                                onClose={() => {
+                                    setFileDetailsVisible(false);
+                                    setSelectedFile(null);
+                                    setSelectedFileId(null);
+                                }}
+                                initialTab={fileDetailsTab}
+                            />
+                            <TeamActivity
+                                isVisible={teamActivityVisible}
+                                onClose={() => setTeamActivityVisible(false)}
+                            />
+                            <StatusPanel
+                                isVisible={statusPanelVisible}
+                                onClose={() => setStatusPanelVisible(false)}
+                            />
+                        </div>
                     </div>
                 </div>
             </div>
@@ -375,7 +503,7 @@ const FileBrowser = () => {
                 onClose={handleCloseContextMenu}
                 items={getContextMenuItems()}
             />
-        </div>
+        </div >
     );
 };
 

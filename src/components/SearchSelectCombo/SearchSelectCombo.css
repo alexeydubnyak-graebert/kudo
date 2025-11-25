@@ -9,22 +9,22 @@
     align-items: center;
     gap: 0;
     padding: 6px 12px;
-    background: var(--foundation-gray600);
-    border: 1px solid var(--border-strong);
+    background: var(--input-bg);
+    border: 1px solid var(--input-border);
     border-radius: 4px;
     transition: all 0.2s ease;
     z-index: 1;
 }
 
 .search-select-combo:hover {
-    border-color: var(--border-strong);
-    background: var(--foundation-gray500);
+    border-color: var(--input-border-hover);
+    background: var(--input-bg-hover);
 }
 
 .search-select-combo:focus-within {
-    border-color: var(--foundation-primary);
+    border-color: var(--input-border-focus);
     box-shadow: 0 0 0 2px var(--foundation-primary-alpha-20);
-    background: var(--foundation-gray600);
+    background: var(--input-bg-focus);
 }
 
 /* Убираем border у вложенных Input и Select */
@@ -104,10 +104,10 @@
 }
 
 .search-select-combo .select__option--selected {
-    background: var(--foundation-primary) !important;
+    background: var(--select-option-bg-selected) !important;
     color: var(--text-on-primary) !important;
 }
 
 .search-select-combo .select__option--selected:hover {
-    background: var(--button-primary-hover) !important;
+    background: var(--select-option-bg-hover) !important;
 }

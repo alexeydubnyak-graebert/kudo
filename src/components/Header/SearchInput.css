@@ -9,14 +9,14 @@
   width: 400px;
   height: 36px;
   position: relative;
-  border: 1px solid #000000;
-  background-color: #333538;
+  border: 1px solid var(--input-border);
+  background-color: var(--input-bg);
   transition: all 0.2s ease-in-out;
 }
 
 /* Состояние фокуса */
 .search-input--focused {
-  border-color: #333538;
+  border-color: var(--input-border-focus);
 }
 
 /* Отключенное состояние */
@@ -40,7 +40,7 @@
   font-size: 12px;
   font-weight: 400;
   line-height: 16px;
-  color: #cfcfcf;
+  color: var(--input-text);
   padding: 0;
   margin: 0;
   font-variation-settings: 'wdth' 100;
@@ -48,27 +48,27 @@
 
 /* Стили плейсхолдера */
 .search-input__field::placeholder {
-  color: #818283;
+  color: var(--input-text-placeholder);
   opacity: 1;
 }
 
 .search-input__field::-webkit-input-placeholder {
-  color: #818283;
+  color: var(--input-text-placeholder);
   opacity: 1;
 }
 
 .search-input__field::-moz-placeholder {
-  color: #818283;
+  color: var(--input-text-placeholder);
   opacity: 1;
 }
 
 .search-input__field:-ms-input-placeholder {
-  color: #818283;
+  color: var(--input-text-placeholder);
   opacity: 1;
 }
 
 .search-input__field:-moz-placeholder {
-  color: #818283;
+  color: var(--input-text-placeholder);
   opacity: 1;
 }
 
@@ -78,7 +78,7 @@
 .search-input__field:-webkit-autofill:focus,
 .search-input__field:-webkit-autofill:active {
   -webkit-box-shadow: 0 0 0 30px transparent inset;
-  -webkit-text-fill-color: #cfcfcf !important;
+  -webkit-text-fill-color: var(--input-text) !important;
 }
 
 /* Адаптивность */
@@ -91,11 +91,11 @@
 
 /* Анимация при вводе */
 .search-input__field:not(:placeholder-shown) {
-  color: #cfcfcf;
+  color: var(--input-text);
 }
 
 /* Стили выделения текста */
 .search-input__field::selection {
-  background-color: #333538;
-  color: #cfcfcf;
+  background-color: var(--input-bg);
+  color: var(--input-text);
 }

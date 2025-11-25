@@ -1,0 +1,198 @@
+/**
+ * FileCard Component
+ * Adapted from collaboration-for-trinity StartPageCard
+ * Uses foundation-colors tokens
+ */
+
+:root {
+    /* Button backgrounds */
+    --sp-bg-button: #1e2023;
+    --sp-bg-button-hover: #141518;
+
+    /* Button borders */
+    --sp-border-default: #4a4a4a;
+    --sp-border-divider: #3d3d3d;
+
+    /* Button text colors */
+    --sp-text-primary: #ffffff;
+    --sp-text-secondary: #b2b2b2;
+
+    /* Tab backgrounds */
+    --sp-bg-tab-inactive: #2a2d31;
+    --sp-bg-tab-active: #333538;
+    --sp-hover-tab: #3d3d3d;
+
+    /* Icon backgrounds */
+    --sp-bg-icon: #4a4a4a;
+}
+
+.start-page-card {
+    display: flex;
+    flex-direction: column;
+    width: calc((100% - (var(--cards-per-row, 5) - 1) * 10px) / var(--cards-per-row, 5));
+    background-color: #2B2D31;
+    border-radius: 4px;
+    overflow: hidden;
+    box-sizing: border-box;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+    transition: width 0.3s ease;
+}
+
+.start-page-card[draggable="true"]:active {
+    cursor: grabbing;
+}
+
+.start-page-card.dropdown-active {
+    z-index: 100;
+    overflow: visible;
+}
+
+.start-page-card-image-wrapper {
+    padding: 8px 8px 0 8px;
+    position: relative;
+}
+
+.start-page-card-image {
+    display: block;
+    width: 100%;
+    height: 142px;
+    object-fit: cover;
+    border-radius: 4px;
+    background-color: #1a1a1a;
+}
+
+.start-page-card-folder-preview {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 142px;
+    background-color: #1a1a1a;
+    border-radius: 4px;
+}
+
+.start-page-card-folder-icon {
+    width: 48px;
+    height: 48px;
+    object-fit: contain;
+    opacity: 0.8;
+}
+
+.start-page-card-favorite-button {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    width: 24px;
+    height: 24px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 0.2s ease;
+    z-index: 2;
+}
+
+.start-page-card-favorite-button:hover {
+    opacity: 0.8;
+}
+
+.start-page-card-favorite-button:focus {
+    outline: none;
+}
+
+.start-page-card-favorite-icon {
+    width: 16px;
+    height: 16px;
+    object-fit: contain;
+}
+
+.start-page-card-filename {
+    padding: 4px 8px;
+    min-height: 40px;
+    display: flex;
+    align-items: flex-start;
+}
+
+.start-page-card-filename-text {
+    font-family: Roboto, 'Noto Sans JP', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    color: #F0F0F0 !important;
+    word-wrap: break-word;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-height: 48px;
+}
+
+.start-page-card-actions {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 8px;
+    position: relative;
+    z-index: 1;
+}
+
+.action-button {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    height: 24px;
+    padding: 4px 8px;
+    border-radius: 4px;
+    border: none;
+    background-color: var(--sp-bg-button);
+    font-family: Roboto, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    font-size: 12px;
+    line-height: 16px;
+    color: var(--sp-text-secondary);
+    cursor: pointer;
+    font-weight: 400;
+    transition: none;
+    white-space: nowrap;
+}
+
+.action-button:hover {
+    background-color: var(--sp-bg-button-hover);
+    border-color: var(--sp-border-default);
+    color: #f0f0f0;
+}
+
+.action-button:focus {
+    outline: none;
+    border-color: var(--sp-border-default);
+}
+
+.start-page-card-footer {
+    background-color: 1e2023;
+    border-top: 1px solid #333538;
+    padding: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.start-page-card-last-opened {
+    font-family: Roboto, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    font-size: 12px;
+    line-height: normal;
+    color: var(--sp-text-secondary);
+}
+
+.start-page-card-filesize {
+    font-family: Roboto, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    font-size: 12px;
+    line-height: normal;
+    color: var(--sp-text-secondary);
+    text-align: right;
+}

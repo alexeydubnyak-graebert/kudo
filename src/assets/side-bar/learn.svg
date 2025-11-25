@@ -1,0 +1,15 @@
+<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Book outline -->
+  <path d="M3 2.5C3 2.22386 3.22386 2 3.5 2H12.5C12.7761 2 13 2.22386 13 2.5V13.5C13 13.7761 12.7761 14 12.5 14H3.5C3.22386 14 3 13.7761 3 13.5V2.5Z" stroke="#EFEFEF" stroke-width="1.2" fill="none"/>
+  
+  <!-- Book spine -->
+  <line x1="5" y1="2" x2="5" y2="14" stroke="#EFEFEF" stroke-width="1.2"/>
+  
+  <!-- Pages lines -->
+  <line x1="6.5" y1="5" x2="11" y2="5" stroke="#EFEFEF" stroke-width="0.8" stroke-linecap="round"/>
+  <line x1="6.5" y1="7" x2="11" y2="7" stroke="#EFEFEF" stroke-width="0.8" stroke-linecap="round"/>
+  <line x1="6.5" y1="9" x2="11" y2="9" stroke="#EFEFEF" stroke-width="0.8" stroke-linecap="round"/>
+  
+  <!-- Bookmark -->
+  <path d="M10 2V6L9 5.5L8 6V2" stroke="#EFEFEF" stroke-width="0.8" fill="none"/>
+</svg>

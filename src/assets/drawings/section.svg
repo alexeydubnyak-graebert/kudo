@@ -1,0 +1,43 @@
+<svg viewBox="0 0 800 600" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Ground -->
+  <line x1="100" y1="450" x2="700" y2="450" stroke="#888888" stroke-width="3" />
+  <rect x="100" y="450" width="600" height="50" fill="rgba(136,136,136,0.3)" />
+  
+  <!-- Foundation -->
+  <rect x="200" y="420" width="400" height="30" stroke="#FFFFFF" stroke-width="2" fill="rgba(255,255,255,0.1)" />
+  
+  <!-- Walls -->
+  <line x1="200" y1="420" x2="200" y2="200" stroke="#FFFFFF" stroke-width="3" />
+  <line x1="600" y1="420" x2="600" y2="200" stroke="#FFFFFF" stroke-width="3" />
+  
+  <!-- Interior wall -->
+  <line x1="400" y1="420" x2="400" y2="250" stroke="#FFFFFF" stroke-width="2" />
+  
+  <!-- Roof structure -->
+  <path d="M 200 200 L 400 120 L 600 200" stroke="#FFFFFF" stroke-width="3" fill="none" />
+  
+  <!-- Roof covering -->
+  <path d="M 200 200 L 400 120 L 600 200 L 600 210 L 400 130 L 200 210 Z" stroke="#888888" stroke-width="1" fill="rgba(136,136,136,0.3)" />
+  
+  <!-- Floors -->
+  <line x1="200" y1="320" x2="600" y2="320" stroke="#888888" stroke-width="2" />
+  
+  <!-- Windows -->
+  <rect x="250" y="250" width="40" height="60" stroke="#0099FF" stroke-width="2" fill="rgba(0,153,255,0.2)" />
+  <rect x="450" y="250" width="40" height="60" stroke="#0099FF" stroke-width="2" fill="rgba(0,153,255,0.2)" />
+  <rect x="250" y="360" width="40" height="50" stroke="#0099FF" stroke-width="2" fill="rgba(0,153,255,0.2)" />
+  <rect x="450" y="360" width="40" height="50" stroke="#0099FF" stroke-width="2" fill="rgba(0,153,255,0.2)" />
+  
+  <!-- Door -->
+  <rect x="360" y="380" width="40" height="40" stroke="#00FF00" stroke-width="2" fill="none" />
+  
+  <!-- Dimensions -->
+  <line x1="620" y1="450" x2="620" y2="200" stroke="#FFFF00" stroke-width="1" />
+  <line x1="615" y1="450" x2="625" y2="450" stroke="#FFFF00" stroke-width="1" />
+  <line x1="615" y1="200" x2="625" y2="200" stroke="#FFFF00" stroke-width="1" />
+  <text x="630" y="330" fill="#FFFF00" font-size="14" font-family="Arial">7500</text>
+  
+  <!-- Labels -->
+  <text x="250" y="340" fill="#AAAAAA" font-size="12" font-family="Arial">2nd FLOOR</text>
+  <text x="250" y="440" fill="#AAAAAA" font-size="12" font-family="Arial">1st FLOOR</text>
+</svg>

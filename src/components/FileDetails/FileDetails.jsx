@@ -1,11 +1,13 @@
 import React, { useState, useEffect } from 'react';
 import './FileDetails.css';
+import Tab from '../Tab/Tab';
 
 // Импорт иконок
 import DateIcon from '../../assets/file-browser/date.svg';
 import UsersIcon from '../../assets/file-browser/usernames.svg';
 import ActionsIcon from '../../assets/file-browser/actions.svg';
 import PreviewIcon from '../../assets/file-browser/preview-big.svg';
+import CloseIcon from '../../assets/file-browser/CloseRounded.svg';
 
 const FileDetails = ({ file, isVisible, onClose, initialTab = 'properties' }) => {
     const [activeTab, setActiveTab] = useState(initialTab);
@@ -243,20 +245,28 @@ const FileDetails = ({ file, isVisible, onClose, initialTab = 'properties' }) =>
         <div className="file-details">
             <div className="file-details__header">
                 <div className="file-details__tabs">
-                    <button
-                        className={`file-details__tab ${activeTab === 'properties' ? 'file-details__tab--active' : ''}`}
+                    <Tab
+                        label="Properties"
+                        active={activeTab === 'properties'}
                         onClick={() => setActiveTab('properties')}
-                    >
-                        Properties
-                    </button>
-                    <button
-                        className={`file-details__tab ${activeTab === 'insights' ? 'file-details__tab--active' : ''}`}
+                        size="small"
+                        variant="text-only"
+                    />
+                    <Tab
+                        label={isFolder ? 'Folder insights' : 'File insights'}
+                        active={activeTab === 'insights'}
                         onClick={() => setActiveTab('insights')}
-                    >
-                        {isFolder ? 'Folder insights' : 'File insights'}
-                        <div className="file-details__tab-badge">NEW</div>
-                    </button>
+                        size="small"
+                        variant="text-only"
+                    />
                 </div>
+                <button
+                    className="file-details__close-btn"
+                    onClick={onClose}
+                    title="Close"
+                >
+                    <img src={CloseIcon} alt="Close" />
+                </button>
             </div>
 
             {activeTab === 'insights' && (

@@ -1,0 +1,17 @@
+<svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Document outline -->
+  <path d="M16 8C16 6.89543 16.8954 6 18 6H38L48 16V56C48 57.1046 47.1046 58 46 58H18C16.8954 58 16 57.1046 16 56V8Z" stroke="white" stroke-width="2" fill="none"/>
+  
+  <!-- Folded corner -->
+  <path d="M38 6V14C38 15.1046 38.8954 16 40 16H48" stroke="white" stroke-width="2" fill="none"/>
+  
+  <!-- 3D cube icon -->
+  <g transform="translate(24, 28)">
+    <!-- Top face -->
+    <path d="M8 4L14 8L8 12L2 8L8 4Z" fill="white" opacity="0.8"/>
+    <!-- Left face -->
+    <path d="M2 8V14L8 18V12L2 8Z" fill="white" opacity="0.5"/>
+    <!-- Right face -->
+    <path d="M14 8V14L8 18V12L14 8Z" fill="white" opacity="0.6"/>
+  </g>
+</svg>

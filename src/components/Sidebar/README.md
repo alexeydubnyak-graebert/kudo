@@ -69,7 +69,7 @@ function App() {
 
 1. **Collapse** - кнопка сворачивания
 2. **My files** - файлы пользователя
-   - Kudo Storage
+   - ARES Kudo Drive
    - Google Drive
    - One Drive
    - Deleted files

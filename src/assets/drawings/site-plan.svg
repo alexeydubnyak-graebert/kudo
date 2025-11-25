@@ -1,0 +1,45 @@
+<svg viewBox="0 0 800 600" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Property boundary -->
+  <rect x="80" y="80" width="640" height="440" stroke="#FFFF00" stroke-width="2" stroke-dasharray="10,5" fill="none" />
+  
+  <!-- Building footprint -->
+  <rect x="250" y="200" width="300" height="200" stroke="#FFFFFF" stroke-width="3" fill="rgba(255,255,255,0.1)" />
+  
+  <!-- Driveway -->
+  <path d="M 80 300 L 250 300 L 250 350 L 80 350 Z" stroke="#888888" stroke-width="2" fill="rgba(136,136,136,0.3)" />
+  
+  <!-- Parking spaces -->
+  <rect x="100" y="305" width="60" height="40" stroke="#888888" stroke-width="1" fill="none" />
+  <rect x="170" y="305" width="60" height="40" stroke="#888888" stroke-width="1" fill="none" />
+  
+  <!-- Trees -->
+  <circle cx="150" cy="150" r="20" stroke="#00FF00" stroke-width="2" fill="rgba(0,255,0,0.2)" />
+  <circle cx="150" cy="150" r="5" fill="#00FF00" />
+  
+  <circle cx="600" cy="150" r="20" stroke="#00FF00" stroke-width="2" fill="rgba(0,255,0,0.2)" />
+  <circle cx="600" cy="150" r="5" fill="#00FF00" />
+  
+  <circle cx="150" cy="450" r="20" stroke="#00FF00" stroke-width="2" fill="rgba(0,255,0,0.2)" />
+  <circle cx="150" cy="450" r="5" fill="#00FF00" />
+  
+  <circle cx="600" cy="450" r="20" stroke="#00FF00" stroke-width="2" fill="rgba(0,255,0,0.2)" />
+  <circle cx="600" cy="450" r="5" fill="#00FF00" />
+  
+  <!-- Walkway -->
+  <rect x="250" y="325" width="40" height="75" stroke="#888888" stroke-width="1" fill="rgba(136,136,136,0.2)" />
+  
+  <!-- North arrow -->
+  <g transform="translate(680, 120)">
+    <line x1="0" y1="0" x2="0" y2="-30" stroke="#FF0000" stroke-width="2" />
+    <path d="M 0 -30 L -5 -20 L 5 -20 Z" fill="#FF0000" />
+    <text x="-5" y="-35" fill="#FF0000" font-size="12" font-family="Arial">N</text>
+  </g>
+  
+  <!-- Dimensions -->
+  <text x="350" y="70" fill="#FFFF00" font-size="14" font-family="Arial">32000</text>
+  <text x="730" y="300" fill="#FFFF00" font-size="14" font-family="Arial">22000</text>
+  
+  <!-- Labels -->
+  <text x="350" y="310" fill="#AAAAAA" font-size="16" font-family="Arial">BUILDING</text>
+  <text x="120" y="330" fill="#AAAAAA" font-size="12" font-family="Arial">PARKING</text>
+</svg>

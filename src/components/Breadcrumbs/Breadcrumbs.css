@@ -5,15 +5,15 @@
 
 .breadcrumbs {
     flex: 1;
-    padding: 12px 20px;
-    background: var(--surface-base);
+    padding: 0px;
+    background: transparent;
     min-width: 0;
 }
 
 .breadcrumbs__list {
     display: flex;
     align-items: center;
-    gap: 8px;
+    gap: 0px;
     list-style: none;
     margin: 0;
     padding: 0;
@@ -23,7 +23,7 @@
 .breadcrumbs__item {
     display: flex;
     align-items: center;
-    gap: 8px;
+    gap: 0px;
 }
 
 /* ============================================

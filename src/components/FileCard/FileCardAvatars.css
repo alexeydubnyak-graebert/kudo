@@ -1,0 +1,192 @@
+/**
+ * FileCardAvatars Component
+ * Adapted from collaboration-for-trinity CardUserAvatars
+ * Uses foundation-colors tokens
+ */
+
+/* Container */
+.card-user-avatars {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    margin-left: auto;
+}
+
+/* Status Icon */
+.card-user-status-icon {
+    width: 12px;
+    height: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--sp-text-secondary);
+    flex-shrink: 0;
+}
+
+/* Avatar */
+.card-avatar-wrapper {
+    position: relative;
+    flex-shrink: 0;
+}
+
+.card-avatar {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.card-avatar-initials {
+    font-family: Roboto, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    font-size: 9px;
+    font-weight: 500;
+    color: #FFFFFF;
+    user-select: none;
+}
+
+/* More Users Button */
+.card-more-users-container {
+    position: relative;
+}
+
+.card-more-users-button {
+    min-width: 32px;
+    height: 20px;
+    border-radius: 4px;
+    background-color: transparent;
+    border: 1px solid var(--sp-border-default);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2px;
+    cursor: pointer;
+    color: var(--sp-text-secondary);
+    transition: background-color 0.2s;
+    padding: 0 4px;
+}
+
+.card-more-users-button:hover {
+    background-color: var(--sp-bg-button-hover);
+    border-color: transparent;
+    color: #f0f0f0;
+}
+
+.card-more-users-button:focus {
+    outline: none;
+}
+
+.card-more-users-count {
+    font-family: Roboto, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    font-size: 10px;
+    font-weight: 500;
+    line-height: 1;
+}
+
+.card-more-users-button svg {
+    transition: transform 0.2s ease;
+    flex-shrink: 0;
+}
+
+.card-more-users-button svg.rotated {
+    transform: rotate(180deg);
+}
+
+/* Dropdown */
+.card-user-list-dropdown {
+    position: absolute;
+    right: 0;
+    background-color: #2a2d31;
+    border: 1px solid var(--sp-border-default);
+    border-radius: 4px;
+    padding: 4px;
+    min-width: 200px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+}
+
+.card-user-list-dropdown-down {
+    top: calc(100% + 4px);
+}
+
+.card-user-list-dropdown-up {
+    bottom: calc(100% + 4px);
+}
+
+.card-user-list-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 6px 8px;
+    border-radius: 4px;
+    transition: background-color 0.2s;
+}
+
+.card-user-list-item:hover {
+    background-color: #141518;
+}
+
+.card-user-list-avatar {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.card-user-list-initials {
+    font-family: Roboto, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    font-size: 10px;
+    font-weight: 500;
+    color: #FFFFFF;
+    user-select: none;
+}
+
+.card-user-list-info {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    min-width: 0;
+    flex: 1;
+}
+
+.card-user-list-name {
+    font-family: Roboto, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    color: #f0f0f0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.card-user-list-email {
+    font-family: Roboto, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    font-size: 11px;
+    color: var(--sp-text-secondary);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.card-user-list-meta {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.card-user-list-status {
+    font-family: Roboto, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    font-size: 10px;
+    color: var(--sp-text-secondary);
+}
+
+.card-user-list-timestamp {
+    font-family: Roboto, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    font-size: 10px;
+    color: var(--sp-text-secondary);
+}

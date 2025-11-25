@@ -1,0 +1,168 @@
+.user-avatars {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 0 16px;
+}
+
+.avatar-wrapper {
+  position: relative;
+  animation: fadeIn 0.3s ease-in;
+  background-color: #141518;
+  border-radius: 2px;
+  padding: 3px 6px;
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  cursor: pointer;
+  transition: transform 0.2s, background-color 0.2s;
+}
+
+.avatar-wrapper:hover {
+  transform: scale(1.05);
+  background-color: #1a1d21;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.avatar {
+  position: relative;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.avatar-initials {
+  font-size: 10px;
+  font-weight: 600;
+  color: #F0F0F0;
+  user-select: none;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.avatar-badge {
+  width: 14px;
+  height: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.more-users-button {
+  background-color: #141518;
+  border: none;
+  border-radius: 2px;
+  padding: 3px 8px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  cursor: pointer;
+  transition: transform 0.2s, background-color 0.2s;
+  color: #ffffff;
+  font-size: 10px;
+  font-weight: 600;
+  outline: none;
+}
+
+.more-users-button:hover {
+  transform: scale(1.05);
+  background-color: #1a1d21;
+}
+
+.more-users-count {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.users-dropdown {
+  position: absolute;
+  top: calc(100% + 8px);
+  right: 0;
+  background-color: #1E2023;
+  border-radius: 4px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+  min-width: 280px;
+  z-index: 1000;
+  animation: dropdownFadeIn 0.2s ease-in;
+}
+
+@keyframes dropdownFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-8px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.users-dropdown-header {
+  padding: 12px 16px;
+  border-bottom: 1px solid #333538;
+  font-size: 12px;
+  font-weight: 600;
+  color: #F0F0F0;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.users-dropdown-list {
+  padding: 8px;
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+.user-list-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px;
+  border-radius: 2px;
+  transition: background-color 0.2s;
+}
+
+.user-list-item:hover {
+  background-color: #141518;
+}
+
+.user-details {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.user-name {
+  font-size: 12px;
+  font-weight: 600;
+  color: #FFFFFF;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.user-email {
+  font-size: 11px;
+  color: #9CA3AF;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.user-time {
+  font-size: 10px;
+  color: #6B7280;
+  font-family: 'Open Sans', sans-serif;
+}

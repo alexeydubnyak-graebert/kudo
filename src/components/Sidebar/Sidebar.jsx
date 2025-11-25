@@ -17,6 +17,9 @@ import FavoritesIconSvg from '../../assets/side-bar/favorites.svg';
 import AutomationIconSvg from '../../assets/side-bar/automation.svg';
 import TrashIconSvg from '../../assets/side-bar/trash.svg';
 import RecentsIconSvg from '../../assets/side-bar/recents.svg';
+import SampleFilesIconSvg from '../../assets/side-bar/sample-files.svg';
+import LearnIconSvg from '../../assets/side-bar/learn.svg';
+import ManageStorageIconSvg from '../../assets/side-bar/manage-storage.svg';
 
 // Импорт иконок storage
 import KudoStorageIconSvg from '../../assets/storage/ares.svg';
@@ -37,6 +40,9 @@ const FavoritesIcon = () => <img src={FavoritesIconSvg} alt="" />;
 const AutomationIcon = () => <img src={AutomationIconSvg} alt="" />;
 const TrashIcon = () => <img src={TrashIconSvg} alt="" />;
 const RecentsIcon = () => <img src={RecentsIconSvg} alt="" />;
+const SampleFilesIcon = () => <img src={SampleFilesIconSvg} alt="" />;
+const LearnIcon = () => <img src={LearnIconSvg} alt="" />;
+const ManageStorageIcon = () => <img src={ManageStorageIconSvg} alt="" />;
 
 // Компоненты иконок storage
 const KudoStorageIcon = () => <img src={KudoStorageIconSvg} alt="" />;
@@ -59,13 +65,13 @@ const ArrowDropDownIcon = () => (
  * Использует foundation-colors токены
  */
 const Sidebar = ({
-    activeSection = 'my-files',
-    activeItem = 'kudo-storage',
-    collapsed = false,
-    onCollapse = null,
-    onNavigate = null,
-    onFolderClick = null,
-    onStorageChange = null
+    activeSection,
+    activeItem,
+    isCollapsed = false,
+    onToggleCollapse,
+    onNavigate,
+    onFolderClick,
+    onStorageChange
 }) => {
     const { addToFavorites, addFileToFavorites } = useFavorites();
     const [expandedSections, setExpandedSections] = useState({
@@ -79,7 +85,7 @@ const Sidebar = ({
     const [favoritesDropZoneActive, setFavoritesDropZoneActive] = useState(false);
 
     const toggleSection = (sectionId) => {
-        if (!collapsed) {
+        if (!isCollapsed) {
             setExpandedSections(prev => ({
                 ...prev,
                 [sectionId]: !prev[sectionId]
@@ -148,6 +154,27 @@ const Sidebar = ({
         }
     };
 
+    // Helper function to check if section has active item
+    const isSectionActive = (sectionId) => {
+        // For standalone sections (recents, sample-files, learn, automation), they are active only when the section itself is active
+        if (sectionId === 'recents' || sectionId === 'sample-files' || sectionId === 'learn' || sectionId === 'automation') {
+            return activeSection === sectionId || activeItem === sectionId;
+        }
+
+        // For expandable sections (my-files, resources, favorites), check if any item within is active
+        if (activeSection === sectionId) {
+            return true;
+        }
+
+        // Check if any item within this section is active
+        const sectionItems = {
+            'my-files': ['kudo-storage', 'google-drive', 'one-drive', 'dropbox', 'box', 'sharepoint', 'nextcloud', 'webdav', 'manage-storage', 'deleted-files'],
+            'resources': ['my-templates', 'my-fonts', 'trinity-block-library', 'batch-process']
+        };
+
+        return sectionItems[sectionId]?.includes(activeItem);
+    };
+
     const handleNavigate = (sectionId, itemId = null) => {
         if (onNavigate) {
             onNavigate(sectionId, itemId);
@@ -174,57 +201,46 @@ const Sidebar = ({
     };
 
     return (
-        <div className={`sidebar ${collapsed ? 'sidebar--collapsed' : ''}`}>
+        <div className={`sidebar ${isCollapsed ? 'sidebar--collapsed' : ''}`}>
+            {/* Action Buttons - Fixed at top */}
+            {!isCollapsed && (
+                <div className="sidebar__actions">
+                    <Button
+                        variant="secondary"
+                        iconPosition="left"
+                        icon={<img src={UploadIcon} alt="Upload" width="16" height="16" />}
+                        onClick={() => console.log('Upload drawing clicked')}
+                        className="sidebar__action-btn"
+                    >
+                        Upload drawing
+                    </Button>
+                    <Button
+                        variant="secondary"
+                        iconPosition="left"
+                        icon={<img src={CreateFolderIcon} alt="Create folder" width="16" height="16" />}
+                        onClick={() => console.log('Create folder clicked')}
+                        className="sidebar__action-btn"
+                    >
+                        Create folder
+                    </Button>
+                    <Button
+                        variant="secondary"
+                        iconPosition="left"
+                        icon={<img src={CreateDrawingIcon} alt="Create drawing" width="16" height="16" />}
+                        onClick={() => console.log('Create drawing clicked')}
+                        className="sidebar__action-btn"
+                    >
+                        Create drawing
+                    </Button>
+                </div>
+            )}
+
+            {/* Scrollable content */}
             <div className="sidebar__top">
-                {/* Collapse Button */}
-                <button
-                    className="sidebar__collapse"
-                    onClick={onCollapse}
-                    title={collapsed ? "Expand" : "Collapse"}
-                >
-                    <div className={`sidebar__collapse-icon ${collapsed ? 'sidebar__collapse-icon--expanded' : ''}`}>
-                        <CollapseIcon />
-                    </div>
-                    {!collapsed && <p className="sidebar__collapse-text">Collapse</p>}
-                </button>
-
-                {/* Action Buttons */}
-                {!collapsed && (
-                    <div className="sidebar__actions">
-                        <Button
-                            variant="secondary"
-                            iconPosition="left"
-                            icon={<img src={UploadIcon} alt="Upload" width="16" height="16" />}
-                            onClick={() => console.log('Upload drawing clicked')}
-                            className="sidebar__action-btn"
-                        >
-                            Upload drawing
-                        </Button>
-                        <Button
-                            variant="secondary"
-                            iconPosition="left"
-                            icon={<img src={CreateFolderIcon} alt="Create folder" width="16" height="16" />}
-                            onClick={() => console.log('Create folder clicked')}
-                            className="sidebar__action-btn"
-                        >
-                            Create folder
-                        </Button>
-                        <Button
-                            variant="secondary"
-                            iconPosition="left"
-                            icon={<img src={CreateDrawingIcon} alt="Create drawing" width="16" height="16" />}
-                            onClick={() => console.log('Create drawing clicked')}
-                            className="sidebar__action-btn"
-                        >
-                            Create drawing
-                        </Button>
-                    </div>
-                )}
-
                 {/* My Files Section */}
                 <div className="sidebar__section">
                     <button
-                        className={`sidebar__section-header ${expandedSections['my-files'] ? 'expanded' : ''}`}
+                        className={`sidebar__section-header ${expandedSections['my-files'] ? 'expanded' : ''} ${isSectionActive('my-files') ? 'active' : ''}`}
                         onClick={() => toggleSection('my-files')}
                     >
                         <div className="sidebar__section-left">
@@ -344,12 +360,24 @@ const Sidebar = ({
                         </button>
                     </div>
 
-                    {/* Разделитель */}
-                    <div className={`sidebar__section-divider ${expandedSections['my-files'] ? 'visible' : ''}`}></div>
+                    {/* Разделитель между storage и дополнительными опциями */}
+                    <div className={`sidebar__inner-divider ${expandedSections['my-files'] ? 'visible' : ''}`}></div>
 
-                    {/* Deleted files - вне списка storage, показывается только при раскрытии */}
+                    {/* Manage storage и Deleted files - вне списка storage, показываются только при раскрытии */}
                     {expandedSections['my-files'] && (
                         <>
+                            <button
+                                className={`sidebar__section-header ${activeItem === 'manage-storage' ? 'active' : ''}`}
+                                onClick={() => handleNavigate('my-files', 'manage-storage')}
+                            >
+                                <div className="sidebar__section-left">
+                                    <div className="sidebar__section-icon">
+                                        <ManageStorageIcon />
+                                    </div>
+                                    <p className="sidebar__section-title">Manage storage</p>
+                                </div>
+                            </button>
+
                             <button
                                 className={`sidebar__section-header ${activeItem === 'deleted-files' ? 'active' : ''}`}
                                 onClick={() => handleNavigate('my-files', 'deleted-files')}
@@ -371,8 +399,8 @@ const Sidebar = ({
                 {/* Recents Section */}
                 <div className="sidebar__section">
                     <button
-                        className={`sidebar__section-header ${activeItem === 'recents' ? 'active' : ''}`}
-                        onClick={() => handleNavigate('recents', null)}
+                        className={`sidebar__section-header ${activeSection === 'recents' || activeItem === 'recents' ? 'active-standalone' : ''}`}
+                        onClick={() => handleNavigate('recents', 'recents')}
                     >
                         <div className="sidebar__section-left">
                             <div className="sidebar__section-icon">
@@ -381,12 +409,80 @@ const Sidebar = ({
                             <p className="sidebar__section-title">Recents</p>
                         </div>
                     </button>
+
+                    {/* Разделитель после Recents */}
+                    <div className="sidebar__section-divider visible"></div>
+                </div>
+
+                {/* Sample files Section */}
+                <div className="sidebar__section">
+                    <button
+                        className={`sidebar__section-header ${activeSection === 'sample-files' || activeItem === 'sample-files' ? 'active-standalone' : ''}`}
+                        onClick={() => handleNavigate('sample-files', 'sample-files')}
+                    >
+                        <div className="sidebar__section-left">
+                            <div className="sidebar__section-icon">
+                                <SampleFilesIcon />
+                            </div>
+                            <p className="sidebar__section-title">Sample files</p>
+                        </div>
+                    </button>
+
+                    {/* Разделитель после Sample files */}
+                    <div className="sidebar__section-divider visible"></div>
+                </div>
+
+                {/* Favorites Section */}
+                <div
+                    className={`sidebar__section ${favoritesDropZoneActive ? 'sidebar__section--drop-active' : ''}`}
+                    onDragOver={handleFavoritesDragOver}
+                    onDragLeave={handleFavoritesDragLeave}
+                    onDrop={handleFavoritesDrop}
+                >
+                    <button
+                        className={`sidebar__section-header ${expandedSections['favorites'] ? 'expanded' : ''}`}
+                        onClick={() => toggleSection('favorites')}
+                    >
+                        <div className="sidebar__section-left">
+                            <div className="sidebar__section-icon">
+                                <FavoritesIcon />
+                            </div>
+                            <p className="sidebar__section-title">Favorites</p>
+                        </div>
+                        <div className={`sidebar__section-arrow ${expandedSections['favorites'] ? 'expanded' : ''}`}>
+                            <ArrowDropDownIcon />
+                        </div>
+                    </button>
+
+                    <div className={`sidebar__section-content ${expandedSections['favorites'] ? 'expanded' : ''}`}>
+                        <FavoritesTabs
+                            onFolderClick={onFolderClick}
+                        />
+                    </div>
+                </div>
+
+                {/* Learn Section */}
+                <div className="sidebar__section">
+                    <button
+                        className={`sidebar__section-header ${activeSection === 'learn' || activeItem === 'learn' ? 'active-standalone' : ''}`}
+                        onClick={() => handleNavigate('learn', 'learn')}
+                    >
+                        <div className="sidebar__section-left">
+                            <div className="sidebar__section-icon">
+                                <LearnIcon />
+                            </div>
+                            <p className="sidebar__section-title">Learn</p>
+                        </div>
+                    </button>
+
+                    {/* Разделитель после Learn */}
+                    <div className="sidebar__section-divider visible"></div>
                 </div>
 
                 {/* Resources Section */}
                 <div className="sidebar__section">
                     <button
-                        className={`sidebar__section-header ${expandedSections['resources'] ? 'expanded' : ''}`}
+                        className={`sidebar__section-header ${expandedSections['resources'] ? 'expanded' : ''} ${isSectionActive('resources') ? 'active' : ''}`}
                         onClick={() => toggleSection('resources')}
                     >
                         <div className="sidebar__section-left">
@@ -434,26 +530,11 @@ const Sidebar = ({
                     <div className={`sidebar__section-divider ${expandedSections['resources'] ? 'visible' : ''}`}></div>
                 </div>
 
-                {/* Storage */}
-                <div className="sidebar__section">
-                    <button
-                        className="sidebar__section-header"
-                        onClick={() => handleNavigate('storage')}
-                    >
-                        <div className="sidebar__section-left">
-                            <div className="sidebar__section-icon">
-                                <StorageIcon />
-                            </div>
-                            <p className="sidebar__section-title">Storage</p>
-                        </div>
-                    </button>
-                </div>
-
                 {/* Automation */}
                 <div className="sidebar__section">
                     <button
-                        className="sidebar__section-header"
-                        onClick={() => handleNavigate('automation')}
+                        className={`sidebar__section-header ${activeSection === 'automation' || activeItem === 'automation' ? 'active-standalone' : ''}`}
+                        onClick={() => handleNavigate('automation', 'automation')}
                     >
                         <div className="sidebar__section-left">
                             <div className="sidebar__section-icon">
@@ -462,38 +543,6 @@ const Sidebar = ({
                             <p className="sidebar__section-title">Automation</p>
                         </div>
                     </button>
-                </div>
-
-                {/* Favorites Section */}
-                <div
-                    className={`sidebar__section ${favoritesDropZoneActive ? 'sidebar__section--drop-active' : ''}`}
-                    onDragOver={handleFavoritesDragOver}
-                    onDragLeave={handleFavoritesDragLeave}
-                    onDrop={handleFavoritesDrop}
-                >
-                    <button
-                        className={`sidebar__section-header ${expandedSections['favorites'] ? 'expanded' : ''}`}
-                        onClick={() => toggleSection('favorites')}
-                    >
-                        <div className="sidebar__section-left">
-                            <div className="sidebar__section-icon">
-                                <FavoritesIcon />
-                            </div>
-                            <p className="sidebar__section-title">Favorites</p>
-                        </div>
-                        <div className={`sidebar__section-arrow ${expandedSections['favorites'] ? 'expanded' : ''}`}>
-                            <ArrowDropDownIcon />
-                        </div>
-                    </button>
-
-                    <div className={`sidebar__section-content ${expandedSections['favorites'] ? 'expanded' : ''}`}>
-                        <FavoritesTabs
-                            onFolderClick={onFolderClick}
-                        />
-                    </div>
-
-                    {/* Разделитель */}
-                    <div className={`sidebar__section-divider ${expandedSections['favorites'] ? 'visible' : ''}`}></div>
                 </div>
             </div>
 
@@ -513,10 +562,11 @@ const Sidebar = ({
 Sidebar.propTypes = {
     activeSection: PropTypes.string,
     activeItem: PropTypes.string,
-    collapsed: PropTypes.bool,
-    onCollapse: PropTypes.func,
+    isCollapsed: PropTypes.bool,
+    onToggleCollapse: PropTypes.func,
     onNavigate: PropTypes.func,
-    onFolderClick: PropTypes.func
+    onFolderClick: PropTypes.func,
+    onStorageChange: PropTypes.func
 };
 
 export default Sidebar;

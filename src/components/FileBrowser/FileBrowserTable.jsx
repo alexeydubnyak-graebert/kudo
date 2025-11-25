@@ -16,11 +16,29 @@ const FileBrowserTable = ({
     onFileSelect = null,
     onFileDoubleClick = null,
     onFolderNameClick = null,
-    onContextMenu = null
+    onContextMenu = null,
+    onShare = null,
+    onLink = null,
+    onPermissions = null,
+    onFolderInsights = null,
+    onFileOpen = null,
+    isDetailsPanelOpen = false
 }) => {
     const handleRowClick = (file) => {
         if (onFileSelect) {
             onFileSelect(file);
+        }
+    };
+
+    const handleNameClick = (file) => {
+        if (file.type === 'folder' || file.type === 'shared-folder') {
+            if (onFolderNameClick) {
+                onFolderNameClick(file);
+            }
+        } else {
+            if (onFileOpen) {
+                onFileOpen(file);
+            }
         }
     };
 
@@ -58,9 +76,15 @@ const FileBrowserTable = ({
                         fileData={file}
                         isActive={selectedId === file.id}
                         isFavorite={file.isFavorite || false}
+                        isDetailsPanelOpen={isDetailsPanelOpen}
                         onClick={handleRowClick}
                         onDoubleClick={handleRowDoubleClick}
                         onFolderNameClick={onFolderNameClick}
+                        onNameClick={handleNameClick}
+                        onShare={onShare}
+                        onLink={onLink}
+                        onPermissions={onPermissions}
+                        onFolderInsights={onFolderInsights}
                         onContextMenu={onContextMenu}
                     />
                 ))}
@@ -86,7 +110,12 @@ FileBrowserTable.propTypes = {
     onFileSelect: PropTypes.func,
     onFileDoubleClick: PropTypes.func,
     onFolderNameClick: PropTypes.func,
-    onContextMenu: PropTypes.func
+    onContextMenu: PropTypes.func,
+    onShare: PropTypes.func,
+    onLink: PropTypes.func,
+    onPermissions: PropTypes.func,
+    onFolderInsights: PropTypes.func,
+    isDetailsPanelOpen: PropTypes.bool
 };
 
 export default FileBrowserTable;

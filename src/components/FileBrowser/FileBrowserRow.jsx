@@ -3,7 +3,7 @@ import './FileBrowserRow.css';
 import { useFavorites } from '../../contexts/FavoritesContext';
 import ShareSharpIcon from '../../assets/file-browser/ShareSharp.svg';
 import LinkSharpIcon from '../../assets/file-browser/LinkSharp.svg';
-import ActionsIcon from '../../assets/file-browser/actions.svg';
+import InfoPanelIcon from '../../assets/file-browser/info-panel.svg';
 import StarFilledGrayIcon from '../../assets/file-browser/StarFilledGray.svg';
 import StarFilledYellowIcon from '../../assets/file-browser/StarFilledYellow.svg';
 import FolderIcon from '../../assets/file-browser/folder.svg';
@@ -20,6 +20,7 @@ const FileBrowserRow = ({
     onClick = null,
     onDoubleClick = null,
     onFolderNameClick = null,
+    onNameClick = null,
     onShare = null,
     onLink = null,
     onPermissions = null,
@@ -28,6 +29,7 @@ const FileBrowserRow = ({
     onContextMenu = null,
     fileData = null,
     isActive = false,
+    isDetailsPanelOpen = false,
     ...props
 }) => {
     const { isFavorite, isFileFavorite, addToFavorites, removeFromFavorites, addFileToFavorites, removeFileFromFavorites } = useFavorites();
@@ -50,7 +52,8 @@ const FileBrowserRow = ({
         } else if (type === 'shared-folder') {
             return SharedFolderIcon;
         } else {
-            return PreviewSmallIcon;
+            // Use thumbnail if available, otherwise use default icon
+            return fileData?.thumbnail || PreviewSmallIcon;
         }
     };
 
@@ -84,7 +87,9 @@ const FileBrowserRow = ({
 
     const handleNameClick = (e) => {
         e.stopPropagation();
-        if (isFolder && onFolderNameClick) {
+        if (onNameClick) {
+            onNameClick(fileData || { type, name, access, modified, size, owner });
+        } else if (isFolder && onFolderNameClick) {
             onFolderNameClick(fileData || { type, name, access, modified, size, owner });
         }
     };
@@ -204,11 +209,11 @@ const FileBrowserRow = ({
             {/* ACTIONS секция - Permissions и Favorites */}
             <div className="file-browser-row__actions-section">
                 <button
-                    className="file-browser-row__action-btn"
+                    className={`file-browser-row__action-btn ${isActive && isDetailsPanelOpen ? 'file-browser-row__action-btn--active' : ''}`}
                     onClick={isFolder ? handleFolderInsights : handlePermissions}
                     title={isFolder ? "Folder Insights" : "Permissions"}
                 >
-                    <img src={ActionsIcon} alt={isFolder ? "Insights" : "Permissions"} />
+                    <img src={InfoPanelIcon} alt={isFolder ? "Insights" : "Permissions"} />
                 </button>
                 <button
                     className={`file-browser-row__action-btn ${inFavorites ? 'file-browser-row__action-btn--favorite-active' : ''}`}

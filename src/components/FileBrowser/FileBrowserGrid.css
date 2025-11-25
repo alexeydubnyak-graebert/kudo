@@ -1,0 +1,35 @@
+/**
+ * FileBrowserGrid Component
+ * Grid layout for file cards
+ */
+
+.file-browser-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 16px;
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    align-items: start;
+    --cards-per-row: 5;
+}
+
+/* Scrollbar styles */
+.file-browser-grid::-webkit-scrollbar {
+    width: 8px;
+}
+
+.file-browser-grid::-webkit-scrollbar-track {
+    background: var(--scrollbar-track);
+}
+
+.file-browser-grid::-webkit-scrollbar-thumb {
+    background: var(--scrollbar-thumb);
+    border-radius: 4px;
+}
+
+.file-browser-grid::-webkit-scrollbar-thumb:hover {
+    background: var(--scrollbar-thumb-hover);
+}

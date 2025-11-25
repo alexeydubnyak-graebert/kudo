@@ -1,48 +1,29 @@
-import { useEffect, useState } from 'react'
+import { useEffect } from 'react'
+import { HashRouter as Router, Routes, Route } from 'react-router-dom'
 import './App.css'
 import FileBrowser from './components/FileBrowser/FileBrowser'
+import EditorPage from './pages/EditorPage'
 import ButtonExamples from './components/Button/Button.stories'
 import SelectExamples from './components/Select/Select.stories'
 import { FavoritesProvider } from './contexts/FavoritesContext'
 
 function App() {
-  const [currentPage, setCurrentPage] = useState('browser') // 'browser' | 'buttons' | 'select'
-
   // Устанавливаем темную тему по умолчанию
   useEffect(() => {
     document.documentElement.setAttribute('data-theme', 'dark')
   }, [])
 
-  // Переключение страниц по URL hash
-  useEffect(() => {
-    const handleHashChange = () => {
-      const hash = window.location.hash.slice(1)
-      if (hash === 'buttons') {
-        setCurrentPage('buttons')
-      } else if (hash === 'select') {
-        setCurrentPage('select')
-      } else {
-        setCurrentPage('browser')
-      }
-    }
-
-    handleHashChange()
-    window.addEventListener('hashchange', handleHashChange)
-    return () => window.removeEventListener('hashchange', handleHashChange)
-  }, [])
-
-  if (currentPage === 'buttons') {
-    return <ButtonExamples />
-  }
-
-  if (currentPage === 'select') {
-    return <SelectExamples />
-  }
-
   return (
-    <FavoritesProvider>
-      <FileBrowser />
-    </FavoritesProvider>
+    <Router>
+      <FavoritesProvider>
+        <Routes>
+          <Route path="/" element={<FileBrowser />} />
+          <Route path="/editor" element={<EditorPage />} />
+          <Route path="/buttons" element={<ButtonExamples />} />
+          <Route path="/select" element={<SelectExamples />} />
+        </Routes>
+      </FavoritesProvider>
+    </Router>
   )
 }
 

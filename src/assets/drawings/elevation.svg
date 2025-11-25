@@ -1,0 +1,51 @@
+<svg viewBox="0 0 800 600" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Building outline -->
+  <rect x="150" y="200" width="500" height="300" stroke="#FFFFFF" stroke-width="3" fill="none" />
+  
+  <!-- Roof -->
+  <path d="M 150 200 L 400 100 L 650 200" stroke="#FFFFFF" stroke-width="3" fill="none" />
+  
+  <!-- Windows - First floor -->
+  <rect x="200" y="350" width="60" height="80" stroke="#0099FF" stroke-width="2" fill="none" />
+  <line x1="230" y1="350" x2="230" y2="430" stroke="#0099FF" stroke-width="1" />
+  <line x1="200" y1="390" x2="260" y2="390" stroke="#0099FF" stroke-width="1" />
+  
+  <rect x="300" y="350" width="60" height="80" stroke="#0099FF" stroke-width="2" fill="none" />
+  <line x1="330" y1="350" x2="330" y2="430" stroke="#0099FF" stroke-width="1" />
+  <line x1="300" y1="390" x2="360" y2="390" stroke="#0099FF" stroke-width="1" />
+  
+  <rect x="440" y="350" width="60" height="80" stroke="#0099FF" stroke-width="2" fill="none" />
+  <line x1="470" y1="350" x2="470" y2="430" stroke="#0099FF" stroke-width="1" />
+  <line x1="440" y1="390" x2="500" y2="390" stroke="#0099FF" stroke-width="1" />
+  
+  <rect x="540" y="350" width="60" height="80" stroke="#0099FF" stroke-width="2" fill="none" />
+  <line x1="570" y1="350" x2="570" y2="430" stroke="#0099FF" stroke-width="1" />
+  <line x1="540" y1="390" x2="600" y2="390" stroke="#0099FF" stroke-width="1" />
+  
+  <!-- Windows - Second floor -->
+  <rect x="200" y="240" width="50" height="70" stroke="#0099FF" stroke-width="2" fill="none" />
+  <line x1="225" y1="240" x2="225" y2="310" stroke="#0099FF" stroke-width="1" />
+  <line x1="200" y1="275" x2="250" y2="275" stroke="#0099FF" stroke-width="1" />
+  
+  <rect x="300" y="240" width="50" height="70" stroke="#0099FF" stroke-width="2" fill="none" />
+  <line x1="325" y1="240" x2="325" y2="310" stroke="#0099FF" stroke-width="1" />
+  <line x1="300" y1="275" x2="350" y2="275" stroke="#0099FF" stroke-width="1" />
+  
+  <rect x="450" y="240" width="50" height="70" stroke="#0099FF" stroke-width="2" fill="none" />
+  <line x1="475" y1="240" x2="475" y2="310" stroke="#0099FF" stroke-width="1" />
+  <line x1="450" y1="275" x2="500" y2="275" stroke="#0099FF" stroke-width="1" />
+  
+  <rect x="550" y="240" width="50" height="70" stroke="#0099FF" stroke-width="2" fill="none" />
+  <line x1="575" y1="240" x2="575" y2="310" stroke="#0099FF" stroke-width="1" />
+  <line x1="550" y1="275" x2="600" y2="275" stroke="#0099FF" stroke-width="1" />
+  
+  <!-- Door -->
+  <rect x="370" y="430" width="60" height="70" stroke="#00FF00" stroke-width="2" fill="none" />
+  
+  <!-- Ground line -->
+  <line x1="100" y1="500" x2="700" y2="500" stroke="#888888" stroke-width="2" />
+  
+  <!-- Dimensions -->
+  <text x="350" y="530" fill="#FFFF00" font-size="14" font-family="Arial">15000</text>
+  <text x="670" y="350" fill="#FFFF00" font-size="14" font-family="Arial">8000</text>
+</svg>

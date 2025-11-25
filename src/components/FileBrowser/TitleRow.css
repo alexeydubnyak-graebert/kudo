@@ -9,9 +9,9 @@
     font-family: 'Roboto', sans-serif;
     font-size: 11px;
     font-weight: 700;
-    color: var(--text-secondary);
-    background: var(--surface-base);
-    border-bottom: 1px solid var(--border-default);
+    color: var(--browser-text-secondary);
+    background: var(--browser-background);
+    border-bottom: 1px solid var(--browser-divider);
     position: relative;
 }
 
@@ -21,9 +21,10 @@
     align-items: center;
     justify-content: flex-start;
     gap: 4px;
-    width: 158px;
+    width: 300px;
     height: 24px;
     flex-shrink: 0;
+    padding-left: 10px;
 }
 
 .table-header__sort-icon {
@@ -34,7 +35,7 @@
     height: 24px;
     cursor: pointer;
     transition: opacity 0.15s ease;
-    color: var(--text-secondary);
+    color: var(--browser-text-secondary);
 }
 
 .table-header__sort-icon:hover {
@@ -95,7 +96,7 @@
     font-family: 'Roboto', sans-serif;
     font-size: 11px;
     font-weight: 700;
-    color: var(--text-secondary);
+    color: var(--browser-text-secondary);
     line-height: 16px;
     white-space: nowrap;
     user-select: none;

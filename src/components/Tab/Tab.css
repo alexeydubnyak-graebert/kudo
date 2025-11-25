@@ -14,20 +14,20 @@
     justify-content: center;
     gap: 8px;
     padding: 8px 12px;
-    background: var(--foundation-gray600);
-    border: 1px solid var(--border-strong);
+    background: var(--tab-bg);
+    border: 1px solid var(--tab-border);
     border-radius: 4px;
     font-family: 'Roboto', sans-serif;
     font-size: 13px;
-    color: var(--text-primary);
+    color: var(--tab-text);
     cursor: pointer;
     outline: none;
     user-select: none;
 }
 
-.tab:hover:not(.tab--disabled) {
-    border-color: var(--border-strong);
-    background: var(--foundation-gray500);
+.tab:hover:not(.tab--disabled):not(.tab--active) {
+    border-color: var(--tab-border);
+    background: var(--tab-bg-hover);
 }
 
 .tab:focus-visible {
@@ -36,24 +36,24 @@
 }
 
 .tab--active {
-    background: var(--sidebar-background);
-    color: var(--text-primary);
-    border-color: var(--border-default);
+    background: var(--tab-bg-active);
+    color: var(--tab-text);
+    border-color: var(--tab-border-active);
 }
 
 .tab--disabled {
-    background: var(--states-disabled-bg);
-    border-color: var(--border-subtle);
+    background: var(--tab-disabled-bg);
+    border-color: var(--tab-disabled-border);
     cursor: not-allowed;
     opacity: 0.6;
 }
 
 .tab--disabled .tab__icon {
-    color: var(--states-disabled-text);
+    color: var(--tab-disabled-text);
 }
 
 .tab--disabled .tab__label {
-    color: var(--states-disabled-text);
+    color: var(--tab-disabled-text);
 }
 
 /* ============================================
@@ -64,12 +64,12 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    color: var(--text-secondary);
+    color: var(--tab-icon);
     flex-shrink: 0;
 }
 
 .tab--active .tab__icon {
-    color: var(--text-primary);
+    color: var(--tab-icon-active);
 }
 
 .tab__label {
@@ -112,6 +112,37 @@
 }
 
 /* ============================================
+   ICON VARIANTS
+   ============================================ */
+
+/* Icon Only - только иконка */
+.tab--icon-only {
+    min-width: 32px;
+    width: 32px;
+    padding: 6px;
+    gap: 0;
+}
+
+.tab--icon-only .tab__label {
+    display: none;
+}
+
+/* Text Only - только текст */
+.tab--text-only .tab__icon {
+    display: none;
+}
+
+/* Icon Left - иконка слева (по умолчанию) */
+.tab--icon-left {
+    flex-direction: row;
+}
+
+/* Icon Right - иконка справа */
+.tab--icon-right {
+    flex-direction: row-reverse;
+}
+
+/* ============================================
    TAB GROUP
    ============================================ */
 
@@ -119,10 +150,9 @@
     display: flex;
     align-items: center;
     gap: 0;
-    background: var(--foundation-gray600);
-    border: 1px solid var(--border-strong);
+    background: var(--tab-group-bg);
+    border: 1px solid var(--tab-border);
     border-radius: 4px;
-    padding: 2px;
 }
 
 .tab-group .tab {
@@ -133,9 +163,9 @@
 }
 
 .tab-group .tab:not(.tab--active):hover {
-    background: var(--foundation-gray500);
+    background: var(--tab-bg-hover);
 }
 
 .tab-group .tab--active {
-    background: var(--sidebar-background);
+    background: var(--tab-bg-active);
 }

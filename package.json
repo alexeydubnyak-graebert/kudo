@@ -6,8 +6,11 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
+    "build:s3": "vite build --base=/ares-kudo/",
     "lint": "eslint .",
     "preview": "vite preview",
+    "deploy": "./deploy.sh",
+    "deploy:aws": "npm run build && aws s3 sync dist/ s3://graebert-dev-projects/ares-kudo/ --delete",
     "generate:tokens": "node scripts/generate-tokens-v2.js",
     "generate:tokens:old": "node scripts/generate-tokens.js",
     "tokens:watch": "nodemon --watch tokens-full.json --exec npm run generate:tokens",
@@ -18,7 +21,8 @@
   },
   "dependencies": {
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^7.9.6"
   },
   "devDependencies": {
     "@types/react": "^18.2.43",

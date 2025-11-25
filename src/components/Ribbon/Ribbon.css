@@ -1,0 +1,39 @@
+.ribbon {
+    width: 100%;
+    background: #1E2023;
+    border-bottom: none;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+}
+
+.ribbon__scroll-container {
+    width: 100%;
+    overflow-x: auto;
+    overflow-y: hidden;
+    display: flex;
+}
+
+.ribbon__scroll-container::-webkit-scrollbar {
+    height: 6px;
+}
+
+.ribbon__scroll-container::-webkit-scrollbar-track {
+    background: var(--scrollbar-track);
+}
+
+.ribbon__scroll-container::-webkit-scrollbar-thumb {
+    background: var(--scrollbar-thumb);
+    border-radius: 3px;
+}
+
+.ribbon__scroll-container::-webkit-scrollbar-thumb:hover {
+    background: var(--scrollbar-thumb-hover);
+}
+
+.ribbon__image {
+    height: auto;
+    width: auto;
+    display: block;
+    flex-shrink: 0;
+}

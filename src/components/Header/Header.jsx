@@ -5,6 +5,8 @@ import ProfileMenu from './ProfileMenu';
 import Tooltip from './Tooltip';
 import AresLogoDark from '../../assets/header/ares_logo_dark_theme.svg';
 import AresLogoLight from '../../assets/header/ares_logo_light_theme.svg';
+import LightModeIcon from '../../assets/header/light-mode.svg';
+import DarkModeIcon from '../../assets/header/dark-mode.svg';
 import './Header.css';
 
 const Header = ({
@@ -28,65 +30,8 @@ const Header = ({
         />
       </div>
 
-      {/* Right Section - Theme Toggle + Help + Profile */}
+      {/* Right Section - Help + Profile */}
       <div className="header__right">
-        {/* Component Examples Links */}
-        <div className="header__nav-link" style={{ display: 'flex', gap: '4px' }}>
-          <a
-            href="#buttons"
-            style={{
-              color: 'var(--text-secondary)',
-              textDecoration: 'none',
-              fontSize: '13px',
-              fontWeight: 500,
-              padding: '8px 12px',
-              borderRadius: '4px',
-              transition: 'all 0.2s ease'
-            }}
-            onMouseEnter={(e) => {
-              e.target.style.color = 'var(--text-primary)'
-              e.target.style.background = 'var(--surface-hover)'
-            }}
-            onMouseLeave={(e) => {
-              e.target.style.color = 'var(--text-secondary)'
-              e.target.style.background = 'transparent'
-            }}
-          >
-            Button
-          </a>
-          <a
-            href="#select"
-            style={{
-              color: 'var(--text-secondary)',
-              textDecoration: 'none',
-              fontSize: '13px',
-              fontWeight: 500,
-              padding: '8px 12px',
-              borderRadius: '4px',
-              transition: 'all 0.2s ease'
-            }}
-            onMouseEnter={(e) => {
-              e.target.style.color = 'var(--text-primary)'
-              e.target.style.background = 'var(--surface-hover)'
-            }}
-            onMouseLeave={(e) => {
-              e.target.style.color = 'var(--text-secondary)'
-              e.target.style.background = 'transparent'
-            }}
-          >
-            Select
-          </a>
-        </div>
-
-        {/* Theme Toggle Button */}
-        <div className="header__theme-toggle">
-          <Tooltip content={theme === 'light' ? 'Switch to Dark Theme' : 'Switch to Light Theme'} position="bottom">
-            <button onClick={onThemeToggle} className="theme-toggle-button">
-              {theme === 'light' ? '🌙' : '☀️'}
-            </button>
-          </Tooltip>
-        </div>
-
         {/* Help Menu */}
         <div className="header__help">
           <Tooltip content="Help & Support" position="bottom">

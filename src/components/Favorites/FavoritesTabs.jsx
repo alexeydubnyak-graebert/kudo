@@ -3,6 +3,7 @@ import { useFavorites } from '../../contexts/FavoritesContext';
 import FavoriteItem from './FavoriteItem';
 import FavoriteFileItem from './FavoriteFileItem';
 import ContextMenu from '../ContextMenu/ContextMenu';
+import Tab from '../Tab/Tab';
 import './FavoritesTabs.css';
 
 const FavoritesTabs = ({ onFolderClick, onFileClick }) => {
@@ -153,18 +154,20 @@ const FavoritesTabs = ({ onFolderClick, onFileClick }) => {
             onDrop={handleUnifiedDrop}
         >
             <div className="favorites-tabs__tab-buttons">
-                <button
-                    className={`favorites-tabs__tab-button ${activeTab === 'folders' ? 'favorites-tabs__tab-button--active' : ''}`}
+                <Tab
+                    label={`Folders (${favorites.length})`}
+                    active={activeTab === 'folders'}
                     onClick={() => setActiveTab('folders')}
-                >
-                    Folders ({favorites.length})
-                </button>
-                <button
-                    className={`favorites-tabs__tab-button ${activeTab === 'files' ? 'favorites-tabs__tab-button--active' : ''}`}
+                    size="small"
+                    variant="text-only"
+                />
+                <Tab
+                    label={`Files (${favoriteFiles.length})`}
+                    active={activeTab === 'files'}
                     onClick={() => setActiveTab('files')}
-                >
-                    Files ({favoriteFiles.length})
-                </button>
+                    size="small"
+                    variant="text-only"
+                />
             </div>
 
             <div className="favorites-tabs__content">
