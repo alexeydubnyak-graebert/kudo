@@ -37,6 +37,113 @@ const mockViewers = [
 ];
 
 export const fileSystemData = {
+    'recents': {
+        id: 'recents',
+        name: 'Recents',
+        type: 'folder',
+        children: [],
+        files: [
+            {
+                id: 'recent-file-1',
+                type: 'file',
+                name: 'Office Floor Plan.dwg',
+                access: 'shared',
+                modified: '2 hours ago',
+                owner: 'me',
+                size: 2883584, // 2.75 MB
+                isFavorite: true,
+                storageId: 'kudo',
+                storageType: 'KUDO',
+                thumbnail: FloorPlanSvg,
+                viewers: [mockViewers[0], mockViewers[1]],
+                lastModified: '2024-11-24T10:30:00'
+            },
+            {
+                id: 'recent-file-2',
+                type: 'file',
+                name: 'Electrical Scheme.dwg',
+                access: 'shared',
+                modified: '5 hours ago',
+                owner: 'Sarah Chen',
+                size: 1572864, // 1.5 MB
+                isFavorite: false,
+                storageId: 'kudo',
+                storageType: 'KUDO',
+                thumbnail: ElectricalSvg,
+                viewers: [mockViewers[2]],
+                lastModified: '2024-11-24T07:15:00'
+            },
+            {
+                id: 'recent-file-3',
+                type: 'file',
+                name: 'Building Front View.dwg',
+                access: 'private',
+                modified: '1 day ago',
+                owner: 'me',
+                size: 3407872, // 3.25 MB
+                isFavorite: false,
+                storageId: 'kudo',
+                storageType: 'KUDO',
+                thumbnail: ElevationSvg,
+                viewers: [mockViewers[0]],
+                lastModified: '2024-11-23T16:45:00'
+            },
+            {
+                id: 'recent-file-4',
+                type: 'file',
+                name: 'Construction Section.dwg',
+                access: 'shared',
+                modified: '2 days ago',
+                owner: 'me',
+                size: 2359296, // 2.25 MB
+                isFavorite: true,
+                storageId: 'kudo',
+                storageType: 'KUDO',
+                thumbnail: SectionSvg,
+                viewers: mockViewers,
+                lastModified: '2024-11-22T11:20:00'
+            },
+            {
+                id: 'recent-file-5',
+                type: 'file',
+                name: 'Campus Site Plan.dwg',
+                access: 'shared',
+                modified: '3 days ago',
+                owner: 'John Davis',
+                size: 4718592, // 4.5 MB
+                isFavorite: false,
+                storageId: 'kudo',
+                storageType: 'KUDO',
+                thumbnail: SitePlanSvg,
+                viewers: [mockViewers[1], mockViewers[2]],
+                lastModified: '2024-11-21T13:00:00'
+            },
+            {
+                id: 'recent-file-6',
+                type: 'file',
+                name: 'Project Plan.docx',
+                access: 'shared',
+                modified: '1 week ago',
+                owner: 'me',
+                size: 524288, // 512 KB
+                isFavorite: false,
+                storageId: 'kudo',
+                storageType: 'KUDO'
+            },
+            {
+                id: 'recent-file-7',
+                type: 'file',
+                name: 'Budget 2025.xlsx',
+                access: 'private',
+                modified: '1 week ago',
+                owner: 'me',
+                size: 102400, // 100 KB
+                isFavorite: true,
+                storageId: 'kudo',
+                storageType: 'KUDO'
+            }
+        ]
+    },
     'root': {
         id: 'root',
         name: 'My files',

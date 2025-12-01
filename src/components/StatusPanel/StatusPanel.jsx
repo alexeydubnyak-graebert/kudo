@@ -4,7 +4,6 @@ import './StatusPanel.css';
 import NotificationIcon from '../../assets/status-panel/notification.svg';
 import LicenseIcon from '../../assets/status-panel/license.svg';
 import FeedbackIcon from '../../assets/status-panel/feedback.svg';
-import HelpIcon from '../../assets/status-panel/help.svg';
 import AutomationIcon from '../../assets/status-panel/automation.svg';
 
 const StatusPanel = ({ isVisible, onClose }) => {
@@ -44,7 +43,7 @@ const StatusPanel = ({ isVisible, onClose }) => {
                         <div className="status-panel__card-header-icon">
                             <img src={LicenseIcon} alt="" />
                         </div>
-                        <span className="status-panel__card-title">Licenses</span>
+                        <span className="status-panel__card-title">Subscriptions</span>
                     </div>
                     <div className="status-panel__card-content">
                         <p className="status-panel__card-description">Your Account has expired and has been transformed to a Free Account with some limitations (no Editing, no Sharing Links).</p>
@@ -97,25 +96,6 @@ const StatusPanel = ({ isVisible, onClose }) => {
                     </div>
                 </div>
 
-                {/* Need help? */}
-                <div className="status-panel__card">
-                    <div className="status-panel__card-header">
-                        <div className="status-panel__card-header-icon">
-                            <img src={HelpIcon} alt="" />
-                        </div>
-                        <span className="status-panel__card-title">Need help?</span>
-                    </div>
-                    <div className="status-panel__card-content">
-                        <p className="status-panel__card-description">
-                            Get in touch in our support team
-                        </p>
-                        <div className="status-panel__card-actions">
-                            <Button variant="secondary" size="small">
-                                Contact now
-                            </Button>
-                        </div>
-                    </div>
-                </div>
             </div>
         </div>
     );

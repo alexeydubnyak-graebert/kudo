@@ -9,6 +9,7 @@ const FileBrowserGrid = ({
     onFileSelect = null,
     onFileDoubleClick = null,
     onFileOpen = null,
+    onDelete = null,
     cardsPerRow = 5
 }) => {
     const handleCardClick = (file, e) => {
@@ -33,6 +34,7 @@ const FileBrowserGrid = ({
                     onClick={handleCardClick}
                     onDoubleClick={handleCardDoubleClick}
                     onOpen={onFileOpen}
+                    onDelete={onDelete}
                 />
             ))}
         </div>
@@ -45,6 +47,7 @@ FileBrowserGrid.propTypes = {
     onFileSelect: PropTypes.func,
     onFileDoubleClick: PropTypes.func,
     onFileOpen: PropTypes.func,
+    onDelete: PropTypes.func,
     cardsPerRow: PropTypes.number
 };
 

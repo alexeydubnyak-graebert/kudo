@@ -71,8 +71,8 @@ const FileBrowser = () => {
     const [theme, setTheme] = useState('dark');
     const [selectedFileId, setSelectedFileId] = useState(null);
     const [isSidebarCollapsed, setIsSidebarCollapsed] = useState(false);
-    const [activeSection, setActiveSection] = useState('my-files');
-    const [activeItem, setActiveItem] = useState('kudo-storage');
+    const [activeSection, setActiveSection] = useState('recents');
+    const [activeItem, setActiveItem] = useState('recents');
     const [currentFolderId, setCurrentFolderId] = useState('root');
     const [items, setItems] = useState([]);
     const [sortBy, setSortBy] = useState('filename-asc');
@@ -99,9 +99,14 @@ const FileBrowser = () => {
 
     // Загружаем содержимое текущей папки
     useEffect(() => {
-        const folderItems = getAllItems(currentFolderId);
-        setItems(folderItems);
-    }, [currentFolderId]);
+        if (activeSection === 'recents' || activeItem === 'recents') {
+            const recentItems = getAllItems('recents');
+            setItems(recentItems);
+        } else {
+            const folderItems = getAllItems(currentFolderId);
+            setItems(folderItems);
+        }
+    }, [currentFolderId, activeSection, activeItem]);
 
     // Закрываем панель properties при переходе в Grid mode
     useEffect(() => {
@@ -239,6 +244,11 @@ const FileBrowser = () => {
         // 0% = 8 cards, 100% = 2 cards
         const cards = Math.round(8 - (value / 100) * 6);
         setCardsPerRow(Math.max(2, Math.min(8, cards)));
+    };
+
+    const handleDeleteFile = (file) => {
+        console.log('Delete file:', file);
+        // TODO: Implement delete functionality
     };
 
     const handleFavoriteFolderClick = (folder) => {
@@ -436,7 +446,7 @@ const FileBrowser = () => {
                             {/* Panel Toggles - Right Side */}
                             <div className="file-browser-page__panel-toggles">
                                 <Tab
-                                    label="Team activity"
+                                    label="Smart Trace"
                                     size="small"
                                     active={teamActivityVisible}
                                     onClick={() => setTeamActivityVisible(!teamActivityVisible)}
@@ -462,6 +472,7 @@ const FileBrowser = () => {
                                     onFileOpen={(file) => navigate('/editor')}
                                     onFolderInsights={handleFolderInsights}
                                     onPermissions={handlePermissions}
+                                    onDelete={handleDeleteFile}
                                     onContextMenu={handleContextMenu}
                                     isDetailsPanelOpen={fileDetailsVisible}
                                 />
@@ -472,6 +483,7 @@ const FileBrowser = () => {
                                     onFileSelect={handleFileSelect}
                                     onFileDoubleClick={handleFileDoubleClick}
                                     onFileOpen={(file) => navigate('/editor')}
+                                    onDelete={handleDeleteFile}
                                     cardsPerRow={cardsPerRow}
                                 />
                             )}

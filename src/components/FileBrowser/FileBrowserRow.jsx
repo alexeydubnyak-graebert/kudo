@@ -6,6 +6,7 @@ import LinkSharpIcon from '../../assets/file-browser/LinkSharp.svg';
 import InfoPanelIcon from '../../assets/file-browser/info-panel.svg';
 import StarFilledGrayIcon from '../../assets/file-browser/StarFilledGray.svg';
 import StarFilledYellowIcon from '../../assets/file-browser/StarFilledYellow.svg';
+import DeleteIcon from '../../assets/file-browser/CloseRounded.svg';
 import FolderIcon from '../../assets/file-browser/folder.svg';
 import SharedFolderIcon from '../../assets/file-browser/shared folder.svg';
 import PreviewSmallIcon from '../../assets/file-browser/preview-small.svg';
@@ -26,6 +27,7 @@ const FileBrowserRow = ({
     onPermissions = null,
     onFolderInsights = null,
     onToggleFavorite = null,
+    onDelete = null,
     onContextMenu = null,
     fileData = null,
     isActive = false,
@@ -144,6 +146,11 @@ const FileBrowserRow = ({
         onToggleFavorite?.(fileData);
     };
 
+    const handleDelete = (e) => {
+        e.stopPropagation();
+        onDelete?.(fileData);
+    };
+
     const handleContextMenu = (e) => {
         e.preventDefault();
         onContextMenu?.(e, fileData);
@@ -206,7 +213,7 @@ const FileBrowserRow = ({
                 </button>
             </div>
 
-            {/* ACTIONS секция - Permissions и Favorites */}
+            {/* ACTIONS секция - Permissions, Favorites и Delete */}
             <div className="file-browser-row__actions-section">
                 <button
                     className={`file-browser-row__action-btn ${isActive && isDetailsPanelOpen ? 'file-browser-row__action-btn--active' : ''}`}
@@ -221,6 +228,13 @@ const FileBrowserRow = ({
                     title={inFavorites ? "Remove from Favorites" : "Add to Favorites"}
                 >
                     <img src={inFavorites ? StarFilledYellowIcon : StarFilledGrayIcon} alt="Favorite" />
+                </button>
+                <button
+                    className="file-browser-row__action-btn"
+                    onClick={handleDelete}
+                    title="Delete"
+                >
+                    <img src={DeleteIcon} alt="Delete" />
                 </button>
             </div>
 

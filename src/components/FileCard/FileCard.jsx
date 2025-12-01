@@ -7,6 +7,7 @@ import FilePreviewIcon from '../../assets/file-browser/preview-big.svg';
 import { useFavorites } from '../../contexts/FavoritesContext';
 import StarFilledYellowIcon from '../../assets/file-browser/StarFilledYellow.svg';
 import StarIcon from '../../assets/file-browser/Star.svg';
+import DeleteIcon from '../../assets/file-browser/CloseRounded.svg';
 import './FileCard.css';
 
 const FileCard = ({
@@ -14,7 +15,8 @@ const FileCard = ({
     isSelected = false,
     onClick = null,
     onDoubleClick = null,
-    onOpen = null
+    onOpen = null,
+    onDelete = null
 }) => {
     const [isDropdownOpen, setIsDropdownOpen] = useState(false);
     const { isFavorite, isFileFavorite, addToFavorites, removeFromFavorites, addFileToFavorites, removeFileFromFavorites } = useFavorites();
@@ -108,6 +110,13 @@ const FileCard = ({
         }
     };
 
+    const handleDelete = (e) => {
+        e.stopPropagation();
+        if (onDelete && file) {
+            onDelete(file);
+        }
+    };
+
     return (
         <div
             className={`start-page-card ${isDropdownOpen ? 'dropdown-active' : ''}`}
@@ -117,6 +126,19 @@ const FileCard = ({
             onDragStart={handleDragStart}
         >
             <div className="start-page-card-image-wrapper">
+                {/* Delete button - top-left */}
+                <button
+                    className="start-page-card-delete-button"
+                    onClick={handleDelete}
+                    title="Delete"
+                >
+                    <img
+                        src={DeleteIcon}
+                        alt="Delete"
+                        className="start-page-card-delete-icon"
+                    />
+                </button>
+
                 {isFolder ? (
                     <div className="start-page-card-folder-preview">
                         <img
@@ -196,7 +218,8 @@ FileCard.propTypes = {
     isSelected: PropTypes.bool,
     onClick: PropTypes.func,
     onDoubleClick: PropTypes.func,
-    onOpen: PropTypes.func
+    onOpen: PropTypes.func,
+    onDelete: PropTypes.func
 };
 
 export default FileCard;

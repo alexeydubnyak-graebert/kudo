@@ -22,6 +22,7 @@ const FileBrowserTable = ({
     onPermissions = null,
     onFolderInsights = null,
     onFileOpen = null,
+    onDelete = null,
     isDetailsPanelOpen = false
 }) => {
     const handleRowClick = (file) => {
@@ -85,6 +86,7 @@ const FileBrowserTable = ({
                         onLink={onLink}
                         onPermissions={onPermissions}
                         onFolderInsights={onFolderInsights}
+                        onDelete={onDelete}
                         onContextMenu={onContextMenu}
                     />
                 ))}
@@ -115,6 +117,7 @@ FileBrowserTable.propTypes = {
     onLink: PropTypes.func,
     onPermissions: PropTypes.func,
     onFolderInsights: PropTypes.func,
+    onDelete: PropTypes.func,
     isDetailsPanelOpen: PropTypes.bool
 };
 
