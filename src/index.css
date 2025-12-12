@@ -3,16 +3,15 @@
  * Design tokens and base styles import
  * 
  * Import order is important:
- * 1. Palettes (base color scales)
- * 2. Foundation colors (semantic colors)
- * 3. Global tokens (states, surfaces, text, borders)
- * 4. Dimensions and typography
- * 5. Brand tokens (component-specific tokens)
- * 6. Base styles
+ * 1. Global colors (foundation and semantic colors)
+ * 2. Global tokens (surfaces, text, borders, states)
+ * 3. Dimensions and typography
+ * 4. Brand tokens (component-specific tokens)
+ * 5. Base styles
  */
 
-/* === Level 1: Foundation Colors & Palettes === */
-@import './styles/tokens/foundation-colors.css';
+/* === Level 1: Global Colors === */
+@import './styles/tokens/global-colors.css';
 
 /* === Level 2: Global Tokens === */
 @import './styles/tokens/global-tokens.css';

@@ -1,0 +1,52 @@
+/**
+ * GLOBAL COLORS
+ * Base colors of the design system
+ * Level 1: Foundation and semantic colors
+ */
+
+:root {
+    /* ============================================
+     FOUNDATION - Base Colors
+     ============================================ */
+
+    /* Primary */
+    --foundation-primary: #254CA8;
+    --foundation-primary-light: #8AB4FF;
+    --foundation-primary-alpha-10: rgba(37, 76, 168, 0.1);
+    --foundation-primary-alpha-20: rgba(37, 76, 168, 0.2);
+    --foundation-primary-alpha-30: rgba(37, 76, 168, 0.3);
+
+    /* Gray Scale - Blue-ish tones */
+    --foundation-gray900: #13151A;
+    --foundation-gray850: #181B21;
+    --foundation-gray800: #1D2027;
+    --foundation-gray750: #20232A;
+    --foundation-gray700: #23262D;
+    --foundation-gray650: #262930;
+    --foundation-gray600: #292C33;
+    --foundation-gray550: #2E3138;
+    --foundation-gray500: #32353C;
+    --foundation-gray450: #3C3F46;
+    --foundation-gray400: #464951;
+    --foundation-gray350: #50535C;
+    --foundation-gray300: #5A5D66;
+    --foundation-gray250: #686B75;
+    --foundation-gray200: #777A84;
+    --foundation-gray150: #8E919B;
+    --foundation-gray100: #A6A9B1;
+    --foundation-gray75: #BFC1C9;
+    --foundation-gray50: #D9DBE2;
+    --foundation-gray25: #EBECF3;
+    --foundation-gray0: #FFFFFF;
+
+    /* ============================================
+     SEMANTIC - Semantic Colors
+     ============================================ */
+
+    /* Semantic */
+    --semantic-success: #2ECC71;
+    --semantic-warning: #F1C40F;
+    --semantic-error: #E74C3C;
+    --semantic-error-alpha-20: rgba(231, 76, 60, 0.2);
+    --semantic-info: #3498DB;
+}
