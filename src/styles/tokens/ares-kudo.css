@@ -9,285 +9,285 @@
    ============================================ */
 
 :root {
-  /* === Slider === */
-  --kudo-slider-item-background: var(--palette-white);
-  --kudo-slider-line-background: var(--palette-white);
+   /* === Slider === */
+   --kudo-slider-item-background: var(--palette-white);
+   --kudo-slider-line-background: var(--palette-white);
 
-  /* === Tooltip === */
-  --kudo-tooltip-background: var(--palette-clone-tint-24);
-  --kudo-tooltip-border: var(--palette-jango-tint-13);
-  --kudo-tooltip-text-color: var(--palette-rey-shadow-24);
+   /* === Tooltip === */
+   --kudo-tooltip-background: var(--palette-clone-tint-24);
+   --kudo-tooltip-border: var(--palette-jango-tint-13);
+   --kudo-tooltip-text-color: var(--palette-rey-shadow-24);
 
-  /* === Header === */
-  --kudo-header-background-main: var(--background-header-main);
+   /* === Header === */
+   --kudo-header-background-main: var(--background-header-main);
 
-  /* === Ribbon === */
-  --kudo-ribbon-background-main: var(--background-ribbon-main);
+   /* === Ribbon === */
+   --kudo-ribbon-background-main: var(--background-ribbon-main);
 
-  /* === Ribbon Item === */
-  --kudo-ribbon-item-divider: var(--divider-ribbon);
+   /* === Ribbon Item === */
+   --kudo-ribbon-item-divider: var(--divider-ribbon);
 
-  /* Icon Colors */
-  --kudo-ribbon-item-icon-standard: var(--states-icon-color-standard);
-  --kudo-ribbon-item-icon-active: var(--states-icon-color-active);
-  --kudo-ribbon-item-icon-disabled: var(--states-icon-color-disabled);
+   /* Icon Colors */
+   --kudo-ribbon-item-icon-standard: var(--states-icon-color-standard);
+   --kudo-ribbon-item-icon-active: var(--states-icon-color-active);
+   --kudo-ribbon-item-icon-disabled: var(--states-icon-color-disabled);
 
-  /* Text Colors */
-  --kudo-ribbon-item-text-standard: var(--states-text-color-standard);
-  --kudo-ribbon-item-text-active: var(--states-text-color-active);
-  --kudo-ribbon-item-text-disabled: var(--states-text-color-disabled);
+   /* Text Colors */
+   --kudo-ribbon-item-text-standard: var(--states-text-color-standard);
+   --kudo-ribbon-item-text-active: var(--states-text-color-active);
+   --kudo-ribbon-item-text-disabled: var(--states-text-color-disabled);
 
-  /* Backgrounds */
-  --kudo-ribbon-item-bg-standard: var(--states-bg-secondary-standard);
-  --kudo-ribbon-item-bg-hover: var(--states-bg-secondary-hover);
-  --kudo-ribbon-item-bg-pressed: var(--states-bg-secondary-pressed);
-  --kudo-ribbon-item-bg-active: var(--states-bg-secondary-active);
-  --kudo-ribbon-item-bg-disabled: var(--states-bg-secondary-disabled);
+   /* Backgrounds */
+   --kudo-ribbon-item-bg-standard: var(--states-bg-secondary-standard);
+   --kudo-ribbon-item-bg-hover: var(--states-bg-secondary-hover);
+   --kudo-ribbon-item-bg-pressed: var(--states-bg-secondary-pressed);
+   --kudo-ribbon-item-bg-active: var(--states-bg-secondary-active);
+   --kudo-ribbon-item-bg-disabled: var(--states-bg-secondary-disabled);
 
-  /* Borders */
-  --kudo-ribbon-item-border-standard: var(--states-bg-secondary-standard);
-  --kudo-ribbon-item-border-hover: var(--states-bg-secondary-hover);
-  --kudo-ribbon-item-border-pressed: var(--states-bg-secondary-pressed);
-  --kudo-ribbon-item-border-active: var(--states-bg-secondary-active);
-  --kudo-ribbon-item-border-disabled: var(--states-bg-secondary-disabled);
+   /* Borders */
+   --kudo-ribbon-item-border-standard: var(--states-bg-secondary-standard);
+   --kudo-ribbon-item-border-hover: var(--states-bg-secondary-hover);
+   --kudo-ribbon-item-border-pressed: var(--states-bg-secondary-pressed);
+   --kudo-ribbon-item-border-active: var(--states-bg-secondary-active);
+   --kudo-ribbon-item-border-disabled: var(--states-bg-secondary-disabled);
 
-  /* === Dropdown Menu === */
-  --kudo-dropdown-menu-border: var(--states-border-secondary-standard);
+   /* === Dropdown Menu === */
+   --kudo-dropdown-menu-border: var(--states-border-secondary-standard);
 
-  /* === Input === */
-  --kudo-input-divider: var(--divider-ribbon);
+   /* === Input === */
+   --kudo-input-divider: var(--divider-ribbon);
 
-  --kudo-input-icon-standard: var(--states-icon-color-standard);
-  --kudo-input-icon-active: var(--states-icon-color-active);
-  --kudo-input-icon-disabled: var(--states-icon-color-disabled);
+   --kudo-input-icon-standard: var(--states-icon-color-standard);
+   --kudo-input-icon-active: var(--states-icon-color-active);
+   --kudo-input-icon-disabled: var(--states-icon-color-disabled);
 
-  --kudo-input-text-standard: var(--states-text-color-standard);
-  --kudo-input-text-active: var(--states-text-color-active);
-  --kudo-input-text-disabled: var(--states-text-color-disabled);
-  --kudo-input-text-error: var(--states-text-color-error);
+   --kudo-input-text-standard: var(--states-text-color-standard);
+   --kudo-input-text-active: var(--states-text-color-active);
+   --kudo-input-text-disabled: var(--states-text-color-disabled);
+   --kudo-input-text-error: var(--states-text-color-error);
 
-  --kudo-input-bg-standard: var(--states-bg-secondary-standard);
-  --kudo-input-bg-hover: var(--states-bg-secondary-hover);
-  --kudo-input-bg-pressed: var(--states-bg-secondary-pressed);
-  --kudo-input-bg-active: var(--states-bg-secondary-active);
-  --kudo-input-bg-disabled: var(--states-bg-secondary-disabled);
+   --kudo-input-bg-standard: var(--states-bg-secondary-standard);
+   --kudo-input-bg-hover: var(--states-bg-secondary-hover);
+   --kudo-input-bg-pressed: var(--states-bg-secondary-pressed);
+   --kudo-input-bg-active: var(--states-bg-secondary-active);
+   --kudo-input-bg-disabled: var(--states-bg-secondary-disabled);
 
-  --kudo-input-border-standard: var(--states-border-secondary-standard);
-  --kudo-input-border-hover: var(--states-border-secondary-hover);
-  --kudo-input-border-pressed: var(--states-border-secondary-pressed);
-  --kudo-input-border-active: var(--states-border-secondary-active);
-  --kudo-input-border-disabled: var(--states-border-secondary-disabled);
-  --kudo-input-border-error: var(--states-border-secondary-error);
+   --kudo-input-border-standard: var(--states-border-secondary-standard);
+   --kudo-input-border-hover: var(--states-border-secondary-hover);
+   --kudo-input-border-pressed: var(--states-border-secondary-pressed);
+   --kudo-input-border-active: var(--states-border-secondary-active);
+   --kudo-input-border-disabled: var(--states-border-secondary-disabled);
+   --kudo-input-border-error: var(--states-border-secondary-error);
 
-  /* === Split Arrow === */
-  --kudo-split-arrow-divider: var(--divider-ribbon);
+   /* === Split Arrow === */
+   --kudo-split-arrow-divider: var(--divider-ribbon);
 
-  --kudo-split-arrow-icon-standard: var(--states-icon-color-standard);
-  --kudo-split-arrow-icon-active: var(--states-icon-color-active);
-  --kudo-split-arrow-icon-disabled: var(--states-icon-color-disabled);
+   --kudo-split-arrow-icon-standard: var(--states-icon-color-standard);
+   --kudo-split-arrow-icon-active: var(--states-icon-color-active);
+   --kudo-split-arrow-icon-disabled: var(--states-icon-color-disabled);
 
-  --kudo-split-arrow-text-standard: var(--states-text-color-standard);
-  --kudo-split-arrow-text-active: var(--states-text-color-active);
-  --kudo-split-arrow-text-disabled: var(--states-text-color-disabled);
+   --kudo-split-arrow-text-standard: var(--states-text-color-standard);
+   --kudo-split-arrow-text-active: var(--states-text-color-active);
+   --kudo-split-arrow-text-disabled: var(--states-text-color-disabled);
 
-  --kudo-split-arrow-bg-standard: var(--states-bg-secondary-standard);
-  --kudo-split-arrow-bg-hover: var(--states-bg-secondary-hover);
-  --kudo-split-arrow-bg-pressed: var(--states-bg-secondary-pressed);
-  --kudo-split-arrow-bg-active: var(--states-bg-secondary-active);
-  --kudo-split-arrow-bg-disabled: var(--states-bg-secondary-disabled);
+   --kudo-split-arrow-bg-standard: var(--states-bg-secondary-standard);
+   --kudo-split-arrow-bg-hover: var(--states-bg-secondary-hover);
+   --kudo-split-arrow-bg-pressed: var(--states-bg-secondary-pressed);
+   --kudo-split-arrow-bg-active: var(--states-bg-secondary-active);
+   --kudo-split-arrow-bg-disabled: var(--states-bg-secondary-disabled);
 
-  --kudo-split-arrow-border-standard: var(--states-bg-secondary-standard);
-  --kudo-split-arrow-border-hover: var(--states-bg-secondary-hover);
-  --kudo-split-arrow-border-pressed: var(--states-bg-secondary-pressed);
-  --kudo-split-arrow-border-active: var(--states-bg-secondary-active);
-  --kudo-split-arrow-border-disabled: var(--states-bg-secondary-disabled);
+   --kudo-split-arrow-border-standard: var(--states-bg-secondary-standard);
+   --kudo-split-arrow-border-hover: var(--states-bg-secondary-hover);
+   --kudo-split-arrow-border-pressed: var(--states-bg-secondary-pressed);
+   --kudo-split-arrow-border-active: var(--states-bg-secondary-active);
+   --kudo-split-arrow-border-disabled: var(--states-bg-secondary-disabled);
 
-  /* Split Button Group Hover */
-  --kudo-split-button-border-group-hover: var(--kudo-ribbon-item-bg-hover);
+   /* Split Button Group Hover */
+   --kudo-split-button-border-group-hover: var(--kudo-ribbon-item-bg-hover);
 
-  /* === Tab Ribbon === */
-  --kudo-tab-ribbon-bg-standard: var(--states-bg-secondary-standard);
-  --kudo-tab-ribbon-bg-hover: var(--states-bg-secondary-hover);
-  --kudo-tab-ribbon-bg-pressed: var(--states-bg-secondary-pressed);
-  --kudo-tab-ribbon-bg-active: var(--states-bg-secondary-active);
-  --kudo-tab-ribbon-bg-disabled: var(--states-bg-secondary-disabled);
+   /* === Tab Ribbon === */
+   --kudo-tab-ribbon-bg-standard: var(--states-bg-secondary-standard);
+   --kudo-tab-ribbon-bg-hover: var(--states-bg-secondary-hover);
+   --kudo-tab-ribbon-bg-pressed: var(--states-bg-secondary-pressed);
+   --kudo-tab-ribbon-bg-active: var(--states-bg-secondary-active);
+   --kudo-tab-ribbon-bg-disabled: var(--states-bg-secondary-disabled);
 
-  --kudo-tab-ribbon-text-standard: var(--states-text-color-standard);
-  --kudo-tab-ribbon-text-active: var(--states-text-color-active);
-  --kudo-tab-ribbon-text-disabled: var(--states-text-color-disabled);
+   --kudo-tab-ribbon-text-standard: var(--states-text-color-standard);
+   --kudo-tab-ribbon-text-active: var(--states-text-color-active);
+   --kudo-tab-ribbon-text-disabled: var(--states-text-color-disabled);
 
-  --kudo-tab-ribbon-icon-standard: var(--states-icon-color-standard);
-  --kudo-tab-ribbon-icon-active: var(--states-icon-color-active);
-  --kudo-tab-ribbon-icon-disabled: var(--states-icon-color-disabled);
+   --kudo-tab-ribbon-icon-standard: var(--states-icon-color-standard);
+   --kudo-tab-ribbon-icon-active: var(--states-icon-color-active);
+   --kudo-tab-ribbon-icon-disabled: var(--states-icon-color-disabled);
 
-  /* === Dimensions === */
-  --kudo-item-margin: var(--size-6);
-  --kudo-item-padding: var(--size-6);
-  --kudo-item-padding-top: var(--size-6);
-  --kudo-item-padding-bottom: var(--size-6);
-  --kudo-item-padding-left: var(--size-6);
-  --kudo-item-padding-right: var(--size-6);
-  --kudo-item-border-radius: var(--size-4);
+   /* === Dimensions === */
+   --kudo-item-margin: var(--size-6);
+   --kudo-item-padding: var(--size-6);
+   --kudo-item-padding-top: var(--size-6);
+   --kudo-item-padding-bottom: var(--size-6);
+   --kudo-item-padding-left: var(--size-6);
+   --kudo-item-padding-right: var(--size-6);
+   --kudo-item-border-radius: var(--size-4);
 
-  --kudo-ribbon-margin: var(--size-4);
-  --kudo-ribbon-padding: var(--size-4);
+   --kudo-ribbon-margin: var(--size-4);
+   --kudo-ribbon-padding: var(--size-4);
 
-  --kudo-section-name-padding: var(--size-6);
+   --kudo-section-name-padding: var(--size-6);
 
-  --kudo-split-arrow-margin: var(--size-6);
-  --kudo-split-arrow-padding-top: var(--size-6);
-  --kudo-split-arrow-padding-bottom: var(--size-6);
-  --kudo-split-arrow-padding-left: 0px;
-  --kudo-split-arrow-padding-right: 0px;
-  --kudo-split-arrow-border-radius: var(--size-4);
+   --kudo-split-arrow-margin: var(--size-6);
+   --kudo-split-arrow-padding-top: var(--size-6);
+   --kudo-split-arrow-padding-bottom: var(--size-6);
+   --kudo-split-arrow-padding-left: 0px;
+   --kudo-split-arrow-padding-right: 0px;
+   --kudo-split-arrow-border-radius: var(--size-4);
 
-  --kudo-tab-ribbon-margin: var(--size-6);
-  --kudo-tab-ribbon-padding-top: var(--size-6);
-  --kudo-tab-ribbon-padding-bottom: var(--size-6);
-  --kudo-tab-ribbon-padding-left: var(--size-12);
-  --kudo-tab-ribbon-padding-right: var(--size-12);
-  --kudo-tab-ribbon-border-radius: 0px;
+   --kudo-tab-ribbon-margin: var(--size-6);
+   --kudo-tab-ribbon-padding-top: var(--size-6);
+   --kudo-tab-ribbon-padding-bottom: var(--size-6);
+   --kudo-tab-ribbon-padding-left: var(--size-12);
+   --kudo-tab-ribbon-padding-right: var(--size-12);
+   --kudo-tab-ribbon-border-radius: 0px;
 
-  /* === Divider === */
-  --kudo-divider: var(--divider-ribbon);
+   /* === Divider === */
+   --kudo-divider: var(--divider-ribbon);
 
-  /* ============================================
+   /* ============================================
      COMPONENT TOKENS
      ============================================ */
 
-  /* === Sidebar === */
-  --sidebar-background: var(--surface-base);
-  --sidebar-text: var(--foundation-gray0);
-  --sidebar-text-muted: var(--foundation-gray100);
-  --sidebar-icon: var(--foundation-gray300);
-  --sidebar-border-right: var(--border-default);
-  --sidebar-divider: var(--foundation-gray800);
+   /* === Sidebar === */
+   --sidebar-background: var(--surface-base);
+   --sidebar-text: var(--palette-gray0);
+   --sidebar-text-muted: var(--palette-gray100);
+   --sidebar-icon: var(--palette-gray300);
+   --sidebar-border-right: var(--border-default);
+   --sidebar-divider: var(--palette-gray800);
 
-  /* Sidebar Menu Items */
-  --sidebar-menuitem-bg: transparent;
-  --sidebar-menuitem-bg-standard: var(--surface-base);
-  --sidebar-menuitem-bg-hover: var(--states-hover-onBase);
-  --sidebar-menuitem-bg-active-expandable: var(--foundation-gray650);
-  --sidebar-menuitem-bg-active-standalone: var(--foundation-gray900);
-  --sidebar-menuitem-text: var(--sidebar-text);
-  --sidebar-menuitem-text-active: var(--text-on-primary);
-  --sidebar-menuitem-icon: var(--sidebar-icon);
-  --sidebar-menuitem-icon-active: var(--text-on-primary);
+   /* Sidebar Menu Items */
+   --sidebar-menuitem-bg: transparent;
+   --sidebar-menuitem-bg-standard: var(--surface-base);
+   --sidebar-menuitem-bg-hover: var(--states-hover-onBase);
+   --sidebar-menuitem-bg-active-expandable: var(--palette-gray650);
+   --sidebar-menuitem-bg-active-standalone: var(--palette-gray900);
+   --sidebar-menuitem-text: var(--sidebar-text);
+   --sidebar-menuitem-text-active: var(--text-on-primary);
+   --sidebar-menuitem-icon: var(--sidebar-icon);
+   --sidebar-menuitem-icon-active: var(--text-on-primary);
 
-  /* === Header === */
-  --header-background: var(--surface-alt);
-  --header-background-elevated: var(--foundation-gray700);
-  --header-text: var(--text-primary);
-  --header-text-secondary: var(--text-secondary);
-  --header-icon: var(--text-primary);
-  --header-border-bottom: var(--border-default);
-  --header-button-bg: var(--states-standard-onAlt);
-  --header-button-hover: var(--states-hover-onAlt);
-  --header-button-active: var(--states-active-onAlt);
-  --header-button-text: var(--text-primary);
+   /* === Header === */
+   --header-background: var(--surface-alt);
+   --header-background-elevated: var(--palette-gray700);
+   --header-text: var(--text-primary);
+   --header-text-secondary: var(--text-secondary);
+   --header-icon: var(--text-primary);
+   --header-border-bottom: var(--border-default);
+   --header-button-bg: var(--states-standard-onAlt);
+   --header-button-hover: var(--states-hover-onAlt);
+   --header-button-active: var(--states-active-onAlt);
+   --header-button-text: var(--text-primary);
 
-  /* === Browser === */
-  --browser-background: var(--surface-page);
-  --browser-background-alt: var(--surface-page);
-  --browser-row-bg: transparent;
-  --browser-row-hover: var(--states-hover-onPage);
-  --browser-row-selected: var(--states-selected-onPage);
-  --browser-text: var(--text-primary);
-  --browser-text-secondary: var(--text-secondary);
-  --browser-border-row: var(--border-default);
-  --browser-border-grid: var(--border-default);
-  --browser-divider: var(--foundation-gray650);
-  --browser-status-synced: var(--semantic-success);
-  --browser-status-error: var(--semantic-error);
-  --browser-status-warning: var(--semantic-warning);
-  --browser-status-info: var(--semantic-info);
+   /* === Browser === */
+   --browser-background: var(--surface-page);
+   --browser-background-alt: var(--surface-page);
+   --browser-row-bg: transparent;
+   --browser-row-hover: var(--states-hover-onPage);
+   --browser-row-selected: var(--states-selected-onPage);
+   --browser-text: var(--text-primary);
+   --browser-text-secondary: var(--text-secondary);
+   --browser-border-row: var(--border-default);
+   --browser-border-grid: var(--border-default);
+   --browser-divider: var(--palette-gray650);
+   --browser-status-synced: var(--semantic-success);
+   --browser-status-error: var(--semantic-error);
+   --browser-status-warning: var(--semantic-warning);
+   --browser-status-info: var(--semantic-info);
 
-  /* Browser Action Buttons */
-  --browser-action-btn-bg: var(--states-standard-onPage);
-  --browser-action-btn-border: var(--surface-page);
-  --browser-action-btn-text: var(--browser-text);
-  --browser-action-btn-hover-bg: var(--foundation-primary);
-  --browser-action-btn-hover-border: var(--foundation-primary);
-  --browser-action-btn-hover-text: var(--text-on-primary);
-  --browser-action-btn-active-bg: var(--foundation-primary);
+   /* Browser Action Buttons */
+   --browser-action-btn-bg: var(--states-standard-onPage);
+   --browser-action-btn-border: var(--surface-page);
+   --browser-action-btn-text: var(--browser-text);
+   --browser-action-btn-hover-bg: var(--palette-primary);
+   --browser-action-btn-hover-border: var(--palette-primary);
+   --browser-action-btn-hover-text: var(--text-on-primary);
+   --browser-action-btn-active-bg: var(--palette-primary);
 
-  /* === Activity === */
-  --activity-background: var(--surface-base);
-  --activity-background-alt: var(--surface-alt);
-  --activity-text: var(--text-primary);
-  --activity-text-secondary: var(--text-secondary);
-  --activity-text-highlight: var(--text-primary);
-  --activity-border-left: var(--border-default);
-  --activity-border-item: var(--border-default);
-  --activity-event-created: var(--semantic-success);
-  --activity-event-updated: var(--foundation-primary);
-  --activity-event-deleted: var(--semantic-error);
-  --activity-event-shared: var(--semantic-info);
+   /* === Activity === */
+   --activity-background: var(--surface-base);
+   --activity-background-alt: var(--surface-alt);
+   --activity-text: var(--text-primary);
+   --activity-text-secondary: var(--text-secondary);
+   --activity-text-highlight: var(--text-primary);
+   --activity-border-left: var(--border-default);
+   --activity-border-item: var(--border-default);
+   --activity-event-created: var(--semantic-success);
+   --activity-event-updated: var(--palette-primary);
+   --activity-event-deleted: var(--semantic-error);
+   --activity-event-shared: var(--semantic-info);
 
-  /* === Tab === */
-  --tab-bg: var(--states-standard-onPage);
-  --tab-bg-hover: var(--states-hover-onPage);
-  --tab-bg-active: var(--foundation-gray900);
-  --tab-border: var(--border-strong);
-  --tab-border-active: var(--border-default);
-  --tab-text: var(--text-primary);
-  --tab-text-secondary: var(--text-secondary);
-  --tab-icon: var(--text-secondary);
-  --tab-icon-active: var(--text-primary);
-  --tab-disabled-bg: var(--states-disabled-bg);
-  --tab-disabled-text: var(--states-disabled-text);
-  --tab-disabled-border: var(--border-subtle);
-  --tab-group-bg: var(--foundation-gray600);
+   /* === Tab === */
+   --tab-bg: var(--states-standard-onPage);
+   --tab-bg-hover: var(--states-hover-onPage);
+   --tab-bg-active: var(--palette-gray900);
+   --tab-border: var(--border-strong);
+   --tab-border-active: var(--border-default);
+   --tab-text: var(--text-primary);
+   --tab-text-secondary: var(--text-secondary);
+   --tab-icon: var(--text-secondary);
+   --tab-icon-active: var(--text-primary);
+   --tab-disabled-bg: var(--states-disabled-bg);
+   --tab-disabled-text: var(--states-disabled-text);
+   --tab-disabled-border: var(--border-subtle);
+   --tab-group-bg: var(--palette-gray600);
 
-  /* === Input === */
-  --input-bg: var(--foundation-gray700);
-  --input-bg-hover: var(--states-hover-onPage);
-  --input-bg-focus: var(--foundation-gray700);
-  --input-bg-disabled: var(--states-disabled-bg);
-  --input-border: var(--border-default);
-  --input-border-hover: var(--border-strong);
-  --input-border-focus: var(--foundation-primary);
-  --input-border-error: var(--semantic-error);
-  --input-border-disabled: var(--border-subtle);
-  --input-text: var(--text-primary);
-  --input-text-placeholder: var(--text-muted);
-  --input-text-disabled: var(--states-disabled-text);
+   /* === Input === */
+   --input-bg: var(--palette-gray700);
+   --input-bg-hover: var(--states-hover-onPage);
+   --input-bg-focus: var(--palette-gray700);
+   --input-bg-disabled: var(--states-disabled-bg);
+   --input-border: var(--border-default);
+   --input-border-hover: var(--border-strong);
+   --input-border-focus: var(--palette-primary);
+   --input-border-error: var(--semantic-error);
+   --input-border-disabled: var(--border-subtle);
+   --input-text: var(--text-primary);
+   --input-text-placeholder: var(--text-muted);
+   --input-text-disabled: var(--states-disabled-text);
 
-  /* === Select === */
-  --select-bg: var(--states-standard-onPage);
-  --select-bg-hover: var(--states-hover-onPage);
-  --select-bg-focus: var(--foundation-gray700);
-  --select-bg-disabled: var(--states-disabled-bg);
-  --select-border: var(--border-default);
-  --select-border-hover: var(--border-strong);
-  --select-border-focus: var(--foundation-primary);
-  --select-border-disabled: var(--border-subtle);
-  --select-text: var(--text-primary);
-  --select-text-placeholder: var(--text-muted);
-  --select-text-disabled: var(--states-disabled-text);
-  --select-icon: var(--text-secondary);
-  --select-dropdown-bg: var(--surface-alt);
-  --select-option-bg-hover: var(--states-hover-onAlt);
-  --select-option-bg-selected: var(--states-selected-onAlt);
+   /* === Select === */
+   --select-bg: var(--states-standard-onPage);
+   --select-bg-hover: var(--states-hover-onPage);
+   --select-bg-focus: var(--palette-gray700);
+   --select-bg-disabled: var(--states-disabled-bg);
+   --select-border: var(--border-default);
+   --select-border-hover: var(--border-strong);
+   --select-border-focus: var(--palette-primary);
+   --select-border-disabled: var(--border-subtle);
+   --select-text: var(--text-primary);
+   --select-text-placeholder: var(--text-muted);
+   --select-text-disabled: var(--states-disabled-text);
+   --select-icon: var(--text-secondary);
+   --select-dropdown-bg: var(--surface-alt);
+   --select-option-bg-hover: var(--states-hover-onAlt);
+   --select-option-bg-selected: var(--states-selected-onAlt);
 
-  /* === Button === */
-  --button-primary-bg: var(--foundation-primary);
-  --button-primary-hover: #305CBA;
-  --button-primary-active: #1C3F84;
-  --button-primary-text: var(--text-on-primary);
-  --button-primary-disabled-bg: var(--foundation-gray700);
-  --button-primary-disabled-text: var(--foundation-gray400);
-  --button-secondary-bg: var(--states-standard-onBase);
-  --button-secondary-border: var(--border-default);
-  --button-secondary-text: var(--text-primary);
-  --button-secondary-hover: var(--states-hover-onBase);
-  --button-secondary-active: var(--states-active-onBase);
+   /* === Button === */
+   --button-primary-bg: var(--palette-primary);
+   --button-primary-hover: #305CBA;
+   --button-primary-active: #1C3F84;
+   --button-primary-text: var(--text-on-primary);
+   --button-primary-disabled-bg: var(--palette-gray700);
+   --button-primary-disabled-text: var(--palette-gray400);
+   --button-secondary-bg: var(--states-standard-onBase);
+   --button-secondary-border: var(--border-default);
+   --button-secondary-text: var(--text-primary);
+   --button-secondary-hover: var(--states-hover-onBase);
+   --button-secondary-active: var(--states-active-onBase);
 
-  /* === Panel === */
-  --panel-background: var(--surface-base);
-  --panel-border: var(--border-default);
-  --panel-header-bg: var(--surface-alt);
-  --panel-header-text: var(--text-primary);
+   /* === Panel === */
+   --panel-background: var(--surface-base);
+   --panel-border: var(--border-default);
+   --panel-header-bg: var(--surface-alt);
+   --panel-header-text: var(--text-primary);
 }
 
 /* ============================================
@@ -295,46 +295,46 @@
    ============================================ */
 
 :root[data-theme="dark"] {
-  /* === Slider === */
-  --kudo-slider-item-background: var(--palette-rey-tint-12);
-  --kudo-slider-line-background: var(--palette-vader-tint-1);
+   /* === Slider === */
+   --kudo-slider-item-background: var(--palette-rey-tint-12);
+   --kudo-slider-line-background: var(--palette-vader-tint-1);
 
-  /* === Tooltip === */
-  /* Остается как в светлой теме */
+   /* === Tooltip === */
+   /* Остается как в светлой теме */
 
-  /* === Ribbon === */
-  /* Наследуется из глобальных токенов */
+   /* === Ribbon === */
+   /* Наследуется из глобальных токенов */
 
-  /* === Ribbon Item === */
-  /* Borders в темной теме отличаются */
-  --kudo-ribbon-item-border-standard: var(--states-border-secondary-standard);
-  --kudo-ribbon-item-border-hover: var(--states-border-secondary-hover);
-  --kudo-ribbon-item-border-pressed: var(--states-border-secondary-pressed);
-  --kudo-ribbon-item-border-active: var(--states-border-secondary-active);
-  --kudo-ribbon-item-border-disabled: var(--states-border-secondary-disabled);
+   /* === Ribbon Item === */
+   /* Borders в темной теме отличаются */
+   --kudo-ribbon-item-border-standard: var(--states-border-secondary-standard);
+   --kudo-ribbon-item-border-hover: var(--states-border-secondary-hover);
+   --kudo-ribbon-item-border-pressed: var(--states-border-secondary-pressed);
+   --kudo-ribbon-item-border-active: var(--states-border-secondary-active);
+   --kudo-ribbon-item-border-disabled: var(--states-border-secondary-disabled);
 
-  /* === Dropdown Menu === */
-  --kudo-dropdown-menu-border: var(--palette-black);
+   /* === Dropdown Menu === */
+   --kudo-dropdown-menu-border: var(--palette-black);
 
-  /* === Input === */
-  --kudo-input-bg-hover: var(--states-bg-tertiary-hover);
-  --kudo-input-bg-pressed: var(--states-bg-tertiary-pressed);
-  --kudo-input-bg-active: var(--states-bg-tertiary-active);
+   /* === Input === */
+   --kudo-input-bg-hover: var(--states-bg-tertiary-hover);
+   --kudo-input-bg-pressed: var(--states-bg-tertiary-pressed);
+   --kudo-input-bg-active: var(--states-bg-tertiary-active);
 
-  /* === Split Arrow === */
-  --kudo-split-arrow-icon-standard: var(--states-icon-color-standard);
-  --kudo-split-arrow-icon-active: var(--states-icon-color-active);
+   /* === Split Arrow === */
+   --kudo-split-arrow-icon-standard: var(--states-icon-color-standard);
+   --kudo-split-arrow-icon-active: var(--states-icon-color-active);
 
-  /* Фоны остаются secondary - наследуются из светлой темы */
-  /* Только borders переопределяются */
-  --kudo-split-arrow-border-standard: var(--states-border-secondary-standard);
-  --kudo-split-arrow-border-hover: var(--states-border-secondary-hover);
-  --kudo-split-arrow-border-pressed: var(--states-border-secondary-pressed);
-  --kudo-split-arrow-border-active: var(--states-border-secondary-active);
-  --kudo-split-arrow-border-disabled: var(--states-border-secondary-disabled);
+   /* Фоны остаются secondary - наследуются из светлой темы */
+   /* Только borders переопределяются */
+   --kudo-split-arrow-border-standard: var(--states-border-secondary-standard);
+   --kudo-split-arrow-border-hover: var(--states-border-secondary-hover);
+   --kudo-split-arrow-border-pressed: var(--states-border-secondary-pressed);
+   --kudo-split-arrow-border-active: var(--states-border-secondary-active);
+   --kudo-split-arrow-border-disabled: var(--states-border-secondary-disabled);
 
-  /* === Tab Ribbon === */
-  --kudo-tab-ribbon-bg-hover: var(--states-bg-tertiary-hover);
-  --kudo-tab-ribbon-bg-pressed: var(--states-bg-tertiary-pressed);
-  --kudo-tab-ribbon-bg-active: var(--states-bg-tertiary-active);
+   /* === Tab Ribbon === */
+   --kudo-tab-ribbon-bg-hover: var(--states-bg-tertiary-hover);
+   --kudo-tab-ribbon-bg-pressed: var(--states-bg-tertiary-pressed);
+   --kudo-tab-ribbon-bg-active: var(--states-bg-tertiary-active);
 }

@@ -6,38 +6,38 @@
 
 :root {
     /* ============================================
-     FOUNDATION - Base Colors
+     PALETTE - Base Colors
      ============================================ */
 
     /* Primary */
-    --foundation-primary: #254CA8;
-    --foundation-primary-light: #8AB4FF;
-    --foundation-primary-alpha-10: rgba(37, 76, 168, 0.1);
-    --foundation-primary-alpha-20: rgba(37, 76, 168, 0.2);
-    --foundation-primary-alpha-30: rgba(37, 76, 168, 0.3);
+    --palette-primary: #254CA8;
+    --palette-primary-light: #8AB4FF;
+    --palette-primary-alpha-10: rgba(37, 76, 168, 0.1);
+    --palette-primary-alpha-20: rgba(37, 76, 168, 0.2);
+    --palette-primary-alpha-30: rgba(37, 76, 168, 0.3);
 
     /* Gray Scale - Blue-ish tones */
-    --foundation-gray900: #13151A;
-    --foundation-gray850: #181B21;
-    --foundation-gray800: #1D2027;
-    --foundation-gray750: #20232A;
-    --foundation-gray700: #23262D;
-    --foundation-gray650: #262930;
-    --foundation-gray600: #292C33;
-    --foundation-gray550: #2E3138;
-    --foundation-gray500: #32353C;
-    --foundation-gray450: #3C3F46;
-    --foundation-gray400: #464951;
-    --foundation-gray350: #50535C;
-    --foundation-gray300: #5A5D66;
-    --foundation-gray250: #686B75;
-    --foundation-gray200: #777A84;
-    --foundation-gray150: #8E919B;
-    --foundation-gray100: #A6A9B1;
-    --foundation-gray75: #BFC1C9;
-    --foundation-gray50: #D9DBE2;
-    --foundation-gray25: #EBECF3;
-    --foundation-gray0: #FFFFFF;
+    --palette-gray900: #13151A;
+    --palette-gray850: #181B21;
+    --palette-gray800: #1D2027;
+    --palette-gray750: #20232A;
+    --palette-gray700: #23262D;
+    --palette-gray650: #262930;
+    --palette-gray600: #292C33;
+    --palette-gray550: #2E3138;
+    --palette-gray500: #32353C;
+    --palette-gray450: #3C3F46;
+    --palette-gray400: #464951;
+    --palette-gray350: #50535C;
+    --palette-gray300: #5A5D66;
+    --palette-gray250: #686B75;
+    --palette-gray200: #777A84;
+    --palette-gray150: #8E919B;
+    --palette-gray100: #A6A9B1;
+    --palette-gray75: #BFC1C9;
+    --palette-gray50: #D9DBE2;
+    --palette-gray25: #EBECF3;
+    --palette-gray0: #FFFFFF;
 
     /* ============================================
      SEMANTIC - Semantic Colors
