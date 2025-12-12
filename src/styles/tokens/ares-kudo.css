@@ -9,6 +9,9 @@
    ============================================ */
 
 :root {
+
+   /* === Divider === */
+   --kudo-divider: var(--divider-ribbon);
    /* === Slider === */
    --kudo-slider-item-background: var(--palette-white);
    --kudo-slider-line-background: var(--palette-white);
@@ -22,10 +25,10 @@
    --kudo-header-background-main: var(--background-header-main);
 
    /* === Ribbon === */
-   --kudo-ribbon-background-main: var(--background-ribbon-main);
+   --kudo-ribbon-background-main: var(--surface-base);
 
    /* === Ribbon Item === */
-   --kudo-ribbon-item-divider: var(--divider-ribbon);
+   --kudo-ribbon-item-divider: var(--kudo-divider);
 
    /* Icon Colors */
    --kudo-ribbon-item-icon-standard: var(--states-icon-color-standard);
@@ -55,7 +58,7 @@
    --kudo-dropdown-menu-border: var(--states-border-secondary-standard);
 
    /* === Input === */
-   --kudo-input-divider: var(--divider-ribbon);
+   --kudo-input-divider: var(--kudo-divider);
 
    --kudo-input-icon-standard: var(--states-icon-color-standard);
    --kudo-input-icon-active: var(--states-icon-color-active);
@@ -80,7 +83,7 @@
    --kudo-input-border-error: var(--states-border-secondary-error);
 
    /* === Split Arrow === */
-   --kudo-split-arrow-divider: var(--divider-ribbon);
+   --kudo-split-arrow-divider: var(--kudo-divider);
 
    --kudo-split-arrow-icon-standard: var(--states-icon-color-standard);
    --kudo-split-arrow-icon-active: var(--states-icon-color-active);
@@ -148,8 +151,7 @@
    --kudo-tab-ribbon-padding-right: var(--size-12);
    --kudo-tab-ribbon-border-radius: 0px;
 
-   /* === Divider === */
-   --kudo-divider: var(--divider-ribbon);
+   
 
    /* ============================================
      COMPONENT TOKENS

@@ -1,6 +1,6 @@
 .ribbon {
     width: 100%;
-    background: #1E2023;
+    background: var(--kudo-ribbon-background-main);
     border-bottom: none;
     overflow: hidden;
     padding: 0;

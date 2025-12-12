@@ -42,6 +42,7 @@
   --divider-page: var(--palette-gray500);
   --divider-base: var(--palette-gray600);
   --divider-alt: var(--palette-gray700);
+  --divider-ribbon: var(--palette-gray400);
 
   /* === States - Old States (for backward compatibility) === */
   --states-standard-onPage: var(--palette-gray700);
