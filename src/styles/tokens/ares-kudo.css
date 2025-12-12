@@ -1,7 +1,7 @@
 /**
- * ARES KUDO - ТОКЕНЫ БРЕНДА
- * Переиспользуют глобальные токены и палитры
- * Уровень 3: Специфичные для бренда kudo
+ * ARES KUDO - BRAND TOKENS
+ * Reuse global tokens and palettes
+ * Level 3: Brand-specific tokens for kudo + Component tokens
  */
 
 /* ============================================
@@ -150,6 +150,144 @@
 
   /* === Divider === */
   --kudo-divider: var(--divider-ribbon);
+
+  /* ============================================
+     COMPONENT TOKENS
+     ============================================ */
+
+  /* === Sidebar === */
+  --sidebar-background: var(--surface-base);
+  --sidebar-text: var(--foundation-gray0);
+  --sidebar-text-muted: var(--foundation-gray100);
+  --sidebar-icon: var(--foundation-gray300);
+  --sidebar-border-right: var(--border-default);
+  --sidebar-divider: var(--foundation-gray800);
+
+  /* Sidebar Menu Items */
+  --sidebar-menuitem-bg: transparent;
+  --sidebar-menuitem-bg-standard: var(--surface-base);
+  --sidebar-menuitem-bg-hover: var(--states-hover-onBase);
+  --sidebar-menuitem-bg-active-expandable: var(--foundation-gray650);
+  --sidebar-menuitem-bg-active-standalone: var(--foundation-gray900);
+  --sidebar-menuitem-text: var(--sidebar-text);
+  --sidebar-menuitem-text-active: var(--text-on-primary);
+  --sidebar-menuitem-icon: var(--sidebar-icon);
+  --sidebar-menuitem-icon-active: var(--text-on-primary);
+
+  /* === Header === */
+  --header-background: var(--surface-alt);
+  --header-background-elevated: var(--foundation-gray700);
+  --header-text: var(--text-primary);
+  --header-text-secondary: var(--text-secondary);
+  --header-icon: var(--text-primary);
+  --header-border-bottom: var(--border-default);
+  --header-button-bg: var(--states-standard-onAlt);
+  --header-button-hover: var(--states-hover-onAlt);
+  --header-button-active: var(--states-active-onAlt);
+  --header-button-text: var(--text-primary);
+
+  /* === Browser === */
+  --browser-background: var(--surface-page);
+  --browser-background-alt: var(--surface-page);
+  --browser-row-bg: transparent;
+  --browser-row-hover: var(--states-hover-onPage);
+  --browser-row-selected: var(--states-selected-onPage);
+  --browser-text: var(--text-primary);
+  --browser-text-secondary: var(--text-secondary);
+  --browser-border-row: var(--border-default);
+  --browser-border-grid: var(--border-default);
+  --browser-divider: var(--foundation-gray650);
+  --browser-status-synced: var(--semantic-success);
+  --browser-status-error: var(--semantic-error);
+  --browser-status-warning: var(--semantic-warning);
+  --browser-status-info: var(--semantic-info);
+
+  /* Browser Action Buttons */
+  --browser-action-btn-bg: var(--states-standard-onPage);
+  --browser-action-btn-border: var(--surface-page);
+  --browser-action-btn-text: var(--browser-text);
+  --browser-action-btn-hover-bg: var(--foundation-primary);
+  --browser-action-btn-hover-border: var(--foundation-primary);
+  --browser-action-btn-hover-text: var(--text-on-primary);
+  --browser-action-btn-active-bg: var(--foundation-primary);
+
+  /* === Activity === */
+  --activity-background: var(--surface-base);
+  --activity-background-alt: var(--surface-alt);
+  --activity-text: var(--text-primary);
+  --activity-text-secondary: var(--text-secondary);
+  --activity-text-highlight: var(--text-primary);
+  --activity-border-left: var(--border-default);
+  --activity-border-item: var(--border-default);
+  --activity-event-created: var(--semantic-success);
+  --activity-event-updated: var(--foundation-primary);
+  --activity-event-deleted: var(--semantic-error);
+  --activity-event-shared: var(--semantic-info);
+
+  /* === Tab === */
+  --tab-bg: var(--states-standard-onPage);
+  --tab-bg-hover: var(--states-hover-onPage);
+  --tab-bg-active: var(--foundation-gray900);
+  --tab-border: var(--border-strong);
+  --tab-border-active: var(--border-default);
+  --tab-text: var(--text-primary);
+  --tab-text-secondary: var(--text-secondary);
+  --tab-icon: var(--text-secondary);
+  --tab-icon-active: var(--text-primary);
+  --tab-disabled-bg: var(--states-disabled-bg);
+  --tab-disabled-text: var(--states-disabled-text);
+  --tab-disabled-border: var(--border-subtle);
+  --tab-group-bg: var(--foundation-gray600);
+
+  /* === Input === */
+  --input-bg: var(--foundation-gray700);
+  --input-bg-hover: var(--states-hover-onPage);
+  --input-bg-focus: var(--foundation-gray700);
+  --input-bg-disabled: var(--states-disabled-bg);
+  --input-border: var(--border-default);
+  --input-border-hover: var(--border-strong);
+  --input-border-focus: var(--foundation-primary);
+  --input-border-error: var(--semantic-error);
+  --input-border-disabled: var(--border-subtle);
+  --input-text: var(--text-primary);
+  --input-text-placeholder: var(--text-muted);
+  --input-text-disabled: var(--states-disabled-text);
+
+  /* === Select === */
+  --select-bg: var(--states-standard-onPage);
+  --select-bg-hover: var(--states-hover-onPage);
+  --select-bg-focus: var(--foundation-gray700);
+  --select-bg-disabled: var(--states-disabled-bg);
+  --select-border: var(--border-default);
+  --select-border-hover: var(--border-strong);
+  --select-border-focus: var(--foundation-primary);
+  --select-border-disabled: var(--border-subtle);
+  --select-text: var(--text-primary);
+  --select-text-placeholder: var(--text-muted);
+  --select-text-disabled: var(--states-disabled-text);
+  --select-icon: var(--text-secondary);
+  --select-dropdown-bg: var(--surface-alt);
+  --select-option-bg-hover: var(--states-hover-onAlt);
+  --select-option-bg-selected: var(--states-selected-onAlt);
+
+  /* === Button === */
+  --button-primary-bg: var(--foundation-primary);
+  --button-primary-hover: #305CBA;
+  --button-primary-active: #1C3F84;
+  --button-primary-text: var(--text-on-primary);
+  --button-primary-disabled-bg: var(--foundation-gray700);
+  --button-primary-disabled-text: var(--foundation-gray400);
+  --button-secondary-bg: var(--states-standard-onBase);
+  --button-secondary-border: var(--border-default);
+  --button-secondary-text: var(--text-primary);
+  --button-secondary-hover: var(--states-hover-onBase);
+  --button-secondary-active: var(--states-active-onBase);
+
+  /* === Panel === */
+  --panel-background: var(--surface-base);
+  --panel-border: var(--border-default);
+  --panel-header-bg: var(--surface-alt);
+  --panel-header-text: var(--text-primary);
 }
 
 /* ============================================

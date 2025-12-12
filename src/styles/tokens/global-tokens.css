@@ -77,6 +77,59 @@
 
   /* === Dividers === */
   --divider-ribbon: var(--palette-jango-tint-20);
+
+  /* === Surface - Surfaces === */
+  --surface-page: var(--foundation-gray500);
+  --surface-base: var(--foundation-gray550);
+  --surface-alt: var(--foundation-gray650);
+  --surface-overlay: rgba(0, 0, 0, 0.4);
+  --surface-hover: var(--foundation-gray700);
+  --surface-selected: var(--foundation-gray900);
+
+  /* === Shadows === */
+  --shadow-dropdown: 0 4px 12px rgba(0, 0, 0, 0.4);
+
+  /* === Text - Text Colors === */
+  --text-primary: var(--foundation-gray0);
+  --text-secondary: var(--foundation-gray100);
+  --text-muted: var(--foundation-gray200);
+  --text-inverse: var(--foundation-gray900);
+  --text-on-primary: var(--foundation-gray0);
+
+  /* === Border - Borders === */
+  --border-default: var(--foundation-gray600);
+  --border-strong: var(--foundation-gray500);
+  --border-subtle: var(--foundation-gray700);
+  --border-sidebar: var(--foundation-gray550);
+
+  /* === Scrollbar === */
+  --scrollbar-track: transparent;
+  --scrollbar-thumb: var(--foundation-gray650);
+  --scrollbar-thumb-hover: var(--foundation-gray500);
+
+  /* === Divider - Dividers === */
+  --divider-page: var(--foundation-gray500);
+  --divider-base: var(--foundation-gray600);
+  --divider-alt: var(--foundation-gray700);
+
+  /* === States - Old States (for backward compatibility) === */
+  --states-standard-onPage: var(--foundation-gray700);
+  --states-standard-onBase: var(--foundation-gray700);
+  --states-standard-onAlt: var(--foundation-gray500);
+  --states-hover-onPage: var(--foundation-gray900);
+  --states-hover-onBase: var(--foundation-gray850);
+  --states-hover-onAlt: var(--foundation-gray450);
+  --states-active-onPage: var(--foundation-gray900);
+  --states-active-onBase: var(--foundation-gray700);
+  --states-active-onAlt: var(--foundation-gray600);
+  --states-selected-onPage: var(--foundation-gray700);
+  --states-selected-onBase: var(--foundation-gray600);
+  --states-selected-onAlt: var(--foundation-gray500);
+  --states-focus: var(--foundation-primary);
+  --states-disabled-bg: var(--foundation-gray700);
+  --states-disabled-text: var(--foundation-gray400);
+  --states-favorite-active-bg: var(--foundation-primary-alpha-20);
+  --states-favorite-active-hover-bg: var(--foundation-primary-alpha-30);
 }
 
 /* ============================================
