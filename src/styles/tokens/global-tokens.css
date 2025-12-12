@@ -9,6 +9,72 @@
    ============================================ */
 
 :root {
+  /* === States: Background === */
+  --states-bg-disabled: var(--palette-gray700);
+
+  --states-bg-primary-standard: var(--palette-gray700);
+  --states-bg-primary-hover: var(--palette-gray650);
+  --states-bg-primary-pressed: var(--palette-gray600);
+  --states-bg-primary-active: var(--palette-gray900);
+  --states-bg-primary-disabled: var(--palette-gray700);
+
+  --states-bg-secondary-standard: var(--palette-gray700);
+  --states-bg-secondary-hover: var(--palette-gray900);
+  --states-bg-secondary-pressed: var(--palette-gray850);
+  --states-bg-secondary-active: var(--palette-gray650);
+  --states-bg-secondary-disabled: var(--palette-gray700);
+
+  --states-bg-tertiary-standard: var(--palette-gray700);
+  --states-bg-tertiary-hover: var(--palette-gray650);
+  --states-bg-tertiary-pressed: var(--palette-gray650);
+  --states-bg-tertiary-active: var(--palette-gray800);
+  --states-bg-tertiary-disabled: var(--palette-gray700);
+
+  --states-bg-fourth-standard: var(--palette-gray700);
+  --states-bg-fourth-hover: var(--palette-gray650);
+  --states-bg-fourth-pressed: var(--palette-gray650);
+  --states-bg-fourth-active: var(--palette-gray800);
+  --states-bg-fourth-disabled: var(--palette-gray700);
+
+  /* === States: Text Color === */
+  --states-text-color-standard: var(--palette-gray0);
+  --states-text-color-active: var(--palette-gray0);
+  --states-text-color-disabled: var(--palette-gray400);
+  --states-text-color-error: var(--semantic-error);
+
+  /* === States: Icon Color === */
+  --states-icon-color-standard: var(--palette-gray0);
+  --states-icon-color-active: var(--palette-gray0);
+  --states-icon-color-disabled: var(--palette-gray400);
+
+  /* === States: Border === */
+  --states-border-primary-standard: var(--palette-gray700);
+  --states-border-primary-hover: var(--palette-gray650);
+  --states-border-primary-pressed: var(--palette-gray650);
+  --states-border-primary-active: var(--palette-gray800);
+  --states-border-primary-disabled: var(--palette-gray700);
+  --states-border-primary-error: var(--semantic-error);
+
+  --states-border-secondary-standard: var(--palette-gray600);
+  --states-border-secondary-hover: var(--palette-gray550);
+  --states-border-secondary-pressed: var(--palette-gray550);
+  --states-border-secondary-active: var(--palette-gray750);
+  --states-border-secondary-disabled: var(--palette-gray650);
+  --states-border-secondary-error: var(--semantic-error);
+
+  /* === States: Highlight === */
+  --states-highlight-default: rgba(235, 197, 41, 0.5);
+
+  /* === Text Colors === */
+  --text-color-default: var(--palette-gray0);
+  --text-color-ribbon-section-name: var(--palette-gray200);
+
+  /* === Backgrounds === */
+  --background-tooltip: var(--palette-gray800);
+  --background-ribbon-main: var(--palette-gray700);
+  --background-palette-main: var(--palette-gray700);
+  --background-header-main: var(--palette-gray650);
+
   /* === Surface - Surfaces === */
   --surface-page: var(--palette-gray500);
   --surface-base: var(--palette-gray550);
@@ -42,7 +108,7 @@
   --divider-page: var(--palette-gray500);
   --divider-base: var(--palette-gray600);
   --divider-alt: var(--palette-gray700);
-  --divider-ribbon: var(--palette-gray400);
+  --divider-ribbon: var(--palette-gray900);
 
   /* === States - Old States (for backward compatibility) === */
   --states-standard-onPage: var(--palette-gray700);
