@@ -25,7 +25,7 @@
    --kudo-header-background-main: var(--background-header-main);
 
    /* === Ribbon === */
-   --kudo-ribbon-background-main: var(--surface-base);
+   --kudo-ribbon-background-main: var(--surface-page);
 
    /* === Ribbon Item === */
    --kudo-ribbon-item-divider: var(--kudo-divider);
@@ -41,14 +41,14 @@
    --kudo-ribbon-item-text-disabled: var(--states-text-color-disabled);
 
    /* Backgrounds */
-   --kudo-ribbon-item-bg-standard: var(--states-bg-secondary-standard);
+   --kudo-ribbon-item-bg-standard: var(--kudo-ribbon-background-main);
    --kudo-ribbon-item-bg-hover: var(--states-bg-secondary-hover);
    --kudo-ribbon-item-bg-pressed: var(--states-bg-secondary-pressed);
    --kudo-ribbon-item-bg-active: var(--states-bg-secondary-active);
    --kudo-ribbon-item-bg-disabled: var(--states-bg-secondary-disabled);
 
    /* Borders */
-   --kudo-ribbon-item-border-standard: var(--states-bg-secondary-standard);
+   --kudo-ribbon-item-border-standard: var(--kudo-ribbon-background-main);
    --kudo-ribbon-item-border-hover: var(--states-bg-secondary-hover);
    --kudo-ribbon-item-border-pressed: var(--states-bg-secondary-pressed);
    --kudo-ribbon-item-border-active: var(--states-bg-secondary-active);
@@ -93,13 +93,13 @@
    --kudo-split-arrow-text-active: var(--states-text-color-active);
    --kudo-split-arrow-text-disabled: var(--states-text-color-disabled);
 
-   --kudo-split-arrow-bg-standard: var(--states-bg-secondary-standard);
+   --kudo-split-arrow-bg-standard: var(--kudo-ribbon-background-main);
    --kudo-split-arrow-bg-hover: var(--states-bg-secondary-hover);
    --kudo-split-arrow-bg-pressed: var(--states-bg-secondary-pressed);
    --kudo-split-arrow-bg-active: var(--states-bg-secondary-active);
    --kudo-split-arrow-bg-disabled: var(--states-bg-secondary-disabled);
 
-   --kudo-split-arrow-border-standard: var(--states-bg-secondary-standard);
+   --kudo-split-arrow-border-standard: var(--kudo-ribbon-background-main);
    --kudo-split-arrow-border-hover: var(--states-bg-secondary-hover);
    --kudo-split-arrow-border-pressed: var(--states-bg-secondary-pressed);
    --kudo-split-arrow-border-active: var(--states-bg-secondary-active);

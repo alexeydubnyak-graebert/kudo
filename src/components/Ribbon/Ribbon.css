@@ -2,7 +2,7 @@
     width: 100%;
     background: var(--kudo-ribbon-background-main);
     border-bottom: none;
-    overflow: hidden;
+    overflow: visible;
     padding: 0;
     margin: 0;
 }
