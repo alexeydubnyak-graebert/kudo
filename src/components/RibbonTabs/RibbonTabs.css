@@ -1,0 +1,45 @@
+.ribbon-tabs {
+    display: flex;
+    align-items: center;
+    background-color: var(--kudo-ribbon-tabs-bg);
+    height: 32px;
+    padding: 0;
+    border-bottom: 1px solid var(--kudo-ribbon-tabs-border-bottom);
+}
+
+.ribbon-tabs__container {
+    display: flex;
+    align-items: stretch;
+    height: 100%;
+    gap: 0;
+}
+
+.ribbon-tabs__tab {
+    border: none;
+    outline: none;
+    background: var(--kudo-ribbon-tabs-tab-bg-standard);
+    color: var(--kudo-ribbon-tabs-tab-text-standard);
+
+    padding: 0 var(--size-12);
+    height: 100%;
+
+    font-family: var(--font-family-kudo);
+    font-size: var(--font-size-lg);
+    font-weight: var(--font-weight-md);
+    line-height: var(--line-height-md);
+
+    cursor: pointer;
+    user-select: none;
+    transition: background-color 0.15s ease, color 0.15s ease;
+
+    white-space: nowrap;
+}
+
+.ribbon-tabs__tab:hover:not(.ribbon-tabs__tab--active) {
+    background-color: var(--kudo-ribbon-tabs-tab-bg-hover);
+}
+
+.ribbon-tabs__tab--active {
+    background-color: var(--kudo-ribbon-tabs-tab-bg-active);
+    color: var(--kudo-ribbon-tabs-tab-text-active);
+}

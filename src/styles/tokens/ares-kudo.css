@@ -123,6 +123,15 @@
    --kudo-tab-ribbon-icon-active: var(--states-icon-color-active);
    --kudo-tab-ribbon-icon-disabled: var(--states-icon-color-disabled);
 
+   /* === Ribbon Tabs (File Tabs) === */
+   --kudo-ribbon-tabs-bg: var(--palette-gray800);
+   --kudo-ribbon-tabs-tab-bg-standard: transparent;
+   --kudo-ribbon-tabs-tab-bg-hover: var(--kudo-ribbon-item-bg-hover);
+   --kudo-ribbon-tabs-tab-bg-active: var(--kudo-ribbon-background-main);
+   --kudo-ribbon-tabs-tab-text-standard: var(--states-text-color-standard);
+   --kudo-ribbon-tabs-tab-text-active: var(--states-text-color-active);
+   --kudo-ribbon-tabs-border-bottom: var(--kudo-divider);
+
    /* === Dimensions === */
    --kudo-item-margin: var(--size-6);
    --kudo-item-padding: var(--size-6);
